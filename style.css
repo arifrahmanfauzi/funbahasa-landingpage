@@ -115551,3 +115551,32 @@ video {
             animation: bounce 1s infinite;
   }
 }
+
+@layer component{
+  .btn-blue {
+    --tw-bg-opacity: 1;
+    background-color: rgba(37, 170, 227, var(--tw-bg-opacity));
+  }
+
+  .btn-blue:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(22, 102, 136, var(--tw-bg-opacity));
+  }
+
+  .btn-blue {
+    border-radius: 0.25rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+
+  .img-card {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+    width: 100%;
+  }
+}
