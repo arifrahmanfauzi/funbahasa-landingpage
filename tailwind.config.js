@@ -6,6 +6,11 @@ module.exports = {
       'serif': ['Roboto-Slab'],
       'sans': ['Poppins', 'Segoe UI', 'sans-serif'],
     },
+    zIndex:{
+      '-10':'-10',
+      '-5':'-5',
+      '-1':'-1',
+    },
     colors: {
       blue: {
         100: "#d3eef9",
