@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fun Bahasa #BahasaAdalahKita</title>
+    <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Input" rel="stylesheet">
+</head>
+
+    <body class="antialiased bg-body text-body font-body">
+        <!--* Container -->
+        <div class="xl\:container px-4 mx-auto">
+            <!--* Navigator Bar -->
+            <header class="flex flex-wrap items-center justify-between p-4">
+                <div class="flex justify-between navbar-menu lg:w-full">
+                    <!--* Image  -->
+                    <div class="flex w-full lg:block lg:w-2/5">
+                        <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" width="150" height="50px">
+                    </div>
+                    <!--* Image End  -->
+                    <!--* Nav Menu Item -->
+                    <div class="hidden lg:flex lg:items-center">
+                        <nav>
+                            <a href="#" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Tentang Kami</a>
+                            <a href="#" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Unggah Karya</a>
+                            <a href="#" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Event</a>
+                            <a href="#" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Baca Karya</a>
+                            <button href="#" class="px-5 py-1 ml-3 font-sans font-semibold text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:bg-transparent hover:shadow-xl">Masuk</button>
+                        </nav>
+                    </div>
+                    <!--* Nav Menu Item End -->
+                </div>
+            </header>
+    <style>
+        p{
+            font-family: 'Quicksand', sans-serif;
+        }
+        h1 {
+            font-family: 'Quicksand', sans-serif;
+        }
+        h3 {
+            font-family: 'Quicksand', sans-serif;
+        }
+        .hv{
+            color:gray;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+            display: inline-block;
+            padding: 15px 20px;
+            font-family: 'Quicksand', sans-serif;
+            position: relative;
+            }
+            .hv:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            /* left: 50%; */
+            position: absolute;
+            background:rgba(96, 165, 250, 100);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+            }
+            .hv:hover:after { 
+            border-radius: 20px;
+            width: 40%; 
+            height: 7px;
+            /* left: 0;  */
+            }
+            .background1 {
+                background-color: #C6F7F0;
+                width: 986px;
+                height: 1758px;
+                top: 352px;
+                border-radius: 30px;
+                margin: auto;
+                z-index: 1;
+            }
+            .background2 {
+                background-color: #FFFFFF;
+                width: 785px;
+                height: 1611px;
+                margin: auto;
+                border-radius: 30px;
+                z-index: 2;
+            }
+            .judul {
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 160%;
+            }
+            .author {
+                color: #B6B6B6;
+                font-size: 24px;
+                line-height: 160%;
+            }
+            .content {
+                font-size: 24px;
+                line-height: 160%;
+                color: #404642;
+            }
+            .tanggal {
+                font-size: 24px;
+                line-height: 160%;
+            }
+    </style>
+    <section class="relative w-full bg-clip-border h-30">
+
+    <!--* Main Content -->
+    <main>
+        <!--* Greeting  -->
+        <section class="m-10">
+            <div class="pb-5 min-h-full">
+                <h4>Home / </i><a href="index.html" style="color: rgba(96, 165, 250, 100);">Baca Karya</a></h4>
+            </div>
+            <a href="#" class="inline-block text-sm px-10 py-5 leading-none bg-blue-400 text-white rounded-2xl hover:shadow-lg hover:text-teal mt-4 lg:mt-0 transform hover:scale-105 motion-reduce:transform-none" style="font-family: 'Quicksand', sans-serif;">Cerpen</a>
+            <!-- component -->
+<!-- This is an example component -->
+            
+            <div class="relative absolute right-1">
+                <input type="text" class="absolute right-0 border border-blue-200 py-2 px-5 outline-none">
+                <div class="absolute right-2 px-5 py-5">
+                    <button class="flex items-center border whitespace-no-wrap text-sm text-gray-600 bg-gray-200">
+                        <svg class="h-5 w-5 absolute" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <h3 class="tanggal pt-16">January 21, 2021</h3>
+            <h1 class="judul">
+                Ekologi Kepada Jalan
+            </h1>
+            <div class="background1 p-20">
+                <div class="background2 pt-5 pl-10">
+                    <h1 class="judul">
+                        Ekologi Kepada Jalan
+                    </h1>
+                    <h3 class="author">
+                        By : M.Rayfan Ardian
+                    </h3>
+                    <div class="content">
+                        <p class="py-4 mt-4">/1</p>
+                        <p>Di tubuh langit kelimut</p>
+                        <p>Melekat sebuah nukilan.</p>
+                        <p>Tentang nujum yang muncul dari bintang-bintang,</p>
+                        <p>Diundang turun oleh garis tangan dan kehidupan.</p>
+                        <p>Garis tangan adalah</p>
+                        <p>Penunjuk jalan-jalan yang hidup.</p>
+                        <p>Sedang garis kehidupan adalah</p>
+                        <p>Jalan-jalan yang dilalui derup.</p>
+                        <p>Semua orang menginjakkan kakinya</p>
+                        <p>Pada jalan-jalan berumur panjang</p>
+                        <p>Atau yang akan menjadi mendiang.</p>
+                        <p>Panjang atau pendek,</p>
+                        <p>Kehendak Sang Khalik.</p>
+                        <p class="py-4">/2</p>
+                        <p>Sebuah padah menemuiku dan berkata</p>
+                        <p>“Jalan ini buntu dan akan mati”.</p>
+                        <p>Mendengar dengan telinga tuli adalah</p>
+                        <p>Kesia-siaan yang kupeluk erat.</p>
+                        <p class="py-4">/3</p>
+                        <p>Pada jalan yang telah mati;</p>
+                        <p>Kusemai setangkup tangan penuh eulogi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!--* Greeting  End-->
+        <!--* Call To Action  -->
+        
+        <!--* Call To Action End  -->
+        <!--* Event  -->
+        <section>
+
+        </section>
+        <!--* Event End  -->
+        <!--* What They Said  -->
+        <section>
+
+        </section>
+        <!--* What They Said End  -->
+        <!--* Post  -->
+        <section>
+
+        </section>
+        <!--* Post End -->
+    </main>
+    <!--* Main Content End -->
+    <!--* Footer  -->
+    <footer>
+        
+    </footer>
+    <!--* Footer End  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="style.js"></script>
+</body>
+
+</html>
