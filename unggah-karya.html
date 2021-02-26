@@ -18,64 +18,32 @@
     <link href="https://fonts.googleapis.com/icon?family=Input" rel="stylesheet">
 </head>
 
-<body>
-    <style>
-        p{
-            font-family: 'Quicksand', sans-serif;
-        }
-        .hv{
-            color:gray;
-            text-decoration: none;
-            letter-spacing: 0.15em;
-            display: inline-block;
-            padding: 15px 20px;
-            font-family: 'Quicksand', sans-serif;
-            position: relative;
-            }
-            .hv:after {    
-            background: none repeat scroll 0 0 transparent;
-            bottom: 0;
-            content: "";
-            display: block;
-            height: 2px;
-            /* left: 50%; */
-            position: absolute;
-            background:rgba(96, 165, 250, 100);
-            transition: width 0.3s ease 0s, left 0.3s ease 0s;
-            width: 0;
-            }
-            .hv:hover:after { 
-            border-radius: 20px;
-            width: 40%; 
-            height: 7px;
-            /* left: 0;  */
-            }
-    </style>
+<body class="antialiased bg-body text-body font-body">
     <!--* Navigator Bar -->
-    <nav class="flex items-center justify-between flex-wrap bg-teal py-6 px-10">
-        <div class="flex items-center flex-no-shrink text-white">
-            <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" width="150" height="50px">
-        </div>
-        <div class="w-full text-center block flex-grow lg:flex lg:items-center lg:w-auto">
-            <div class="text-sm lg:flex-grow">
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter  hv">
-                    Tentang Kami
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hv">
-                    Publikasi Karya
-                </a>    
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hv">
-                    Event
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hv">
-                    Baca Karya
-                </a>
-            </div>
-            <div>
-                <a href="#" class="inline-block text-sm px-10 py-5 leading-none bg-blue-400 text-white rounded-full hover:shadow-lg hover:text-teal mt-4 lg:mt-0 transform hover:scale-105 motion-reduce:transform-none" style="font-family: 'Quicksand', sans-serif;">Masuk</a>
-            </div>
-        </div>
-    </nav>
+    
+        <!--* Container -->
+        <div class="xl\:container px-4 mx-auto">
+            <!--* Navigator Bar -->
+            <header class="flex flex-wrap items-center justify-between p-4">
+                <div class="flex justify-between navbar-menu lg:w-full">
+                    <!--* Image  -->
+                    <div class="flex w-full lg:block lg:w-2/5">
+                        <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" width="150" height="50px">
+                    </div>
+                    <!--* Image End  -->
+                    <!--* Nav Menu Item -->
+                    <div class="hidden lg:flex lg:items-center">
+                        <nav>
+                            <a href="#" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Tentang Kami</a>
+                            <a href="unggah-karya.html" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Unggah Karya</a>
+                            <a href="Event.html" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Event</a>
+                            <a href="#" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Baca Karya</a>
+                            <button href="#" class="px-5 py-1 ml-3 font-sans font-semibold text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:bg-transparent hover:shadow-xl">Masuk</button>
+                        </nav>
+                    </div>
+                    <!--* Nav Menu Item End -->
+                </div>
+            </header>
     <!--* Navigator Bar End -->
 
     <!--* Main Content -->
@@ -85,8 +53,8 @@
             <div class="pb-5 min-h-full">
                 <h4>Home / </i><a href="index.html" style="color: rgba(96, 165, 250, 100);">Publikasi Karya</a></h4>
             </div>
-                <div class="container">
-                    <div class="w-full px-24">
+                <div class="w-full">
+                    <div class="px-24">
                         <h1 class="flex justify-start text-4xl py-2 mb-1" 
                         style="font-family: Quicksand; font-size: 36px; font-style: normal; font-weight: normal; line-height: 110%;">Publish Karyamu</h1><hr class="mb-20" style="border: 1px solid #728196;">
                     </div>
@@ -143,9 +111,7 @@
                                         <input type="file" class="custom-file-input" id="file">
                                     </div>
                                 </div>
-                                <div class="mb-5">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4">Unggah</button>
-                                </div>
+                                <a href="#" class="inline-block text-sm py-2 px-4 leading-none bg-blue-500 text-white hover:shadow-lg hover:text-teal mt-4 lg:mt-0 transform hover:scale-105 motion-reduce:transform-none" style="font-family: 'Quicksand', sans-serif; font-size: 24px;">Unggah</a>
                             </form> 
                         </div>
                         <div class="w-1/2 mx-8 mb-5" style="font-family: Quicksand; font-style: normal; font-size: 18px; line-height: 22px; font-weight: 500px;">
