@@ -18,7 +18,8 @@
         <!--* Navigator Bar -->
         <header
             class="flex flex-wrap items-center justify-between w-full p-4 px-4 4xl:h-12 3xl:w-full lg:justify-between">
-            <div x-data="{open: false}" class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
+            <div x-data="{open: false}"
+                class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
                 <!--* Image  -->
                 <div class="flex w-full sm:w-1/3 lg:block lg:w-2/5 md:w-1/3">
                     <a href="index.html" class="">
@@ -100,13 +101,13 @@
         <!--* Greeting  -->
         <section class="relative w-full bg-clip-border h-30">
             <img src="img/bg-greeting.svg" alt="image-greeting" class="w-full h-auto">
-            <div class="absolute w-full pl-8 top-20">
-                <div class="flex flex-col">
+            <div class="absolute top-0 w-full pl-8 lg:top-20 lg:right-1 lg:w-11/12">
+                <div class="flex flex-col w-10/12">
                     <h2
                         class="font-sans text-xl font-bold text-gray-500 ease-in transform md:text-xl xl:text-6xl xl:text-bold 2xl:text-5xl lg:text-4xl sm:text-3xl 4xl:text-7xl 3xl:text-5xl 4xl:font-extrabold">
                         Akselerasi Bahasa <br> dan Sastra untuk <br> Budi Pekerti <br>Bangsa</h2>
                     <button
-                        class="px-8 py-2 mt-10 font-sans text-white transition duration-200 ease-in transform bg-blue-500 border border-blue-600 rounded-full shadow-sm xl:mt-20 max-w-max hover:shadow-lg hover:-translate-y-1 active:translate-y-0 lg:mt-16 lg:font-bold">
+                        class="px-4 py-1 mt-10 font-sans text-white transition duration-200 ease-in transform bg-blue-500 border border-blue-600 rounded-full shadow-md xl:mt-20 max-w-max hover:shadow-lg hover:-translate-y-1 active:translate-y-0 lg:mt-16 lg:font-bold">
                         Tentang Kami
                     </button>
                 </div>
@@ -126,12 +127,37 @@
                     Hidupkan karyamu sebagai inspirasi bangsa.
                 </p>
             </div>
-            <img class="" src="/img/call-to-action.svg" alt="image-reading">
+            <div class="relative w-full bg-contain">
+                <img class="w-full" src="/img/call-to-action.svg" alt="image-reading">
+            </div>
         </section>
         <!--* Call To Action End  -->
         <!--* Event  -->
-        <section>
+        <section class="flex flex-col px-4 py-4 lg:flex-row">
+            <div class="grid gap-4 lg:grid-cols-2 lg:w-3/5">
+                <div class="flex flex-col justify-center h-64 bg-white rounded-md shadow-lg w-60">
+                    <img src="/img/pendaftaran-bg.svg" alt="pendaftaran-image" class="items-center w-full h-32">
+                    <h3 class="flex justify-center mt-5">Pendaftaran</h3>
+                    <p class="flex justify-center mt-3">Unggah Puisi #FPPN2021</p>
+                </div>
+                <div class="flex flex-col justify-center h-64 bg-white rounded-md shadow-lg w-60">
+                    <img src="/img/panduan-image.svg" class="items-center w-full h-32">
+                    <h3 class="flex justify-center mt-5">Panduan</h3>
+                    <p class="flex justify-center mt-3">Panduan Lomba #FPPN2021</p>
+                </div>
+                <div class="flex flex-col justify-center h-64 bg-white rounded-md shadow-lg w-60">
+                    <img src="/img/poster-img.svg" class="items-center w-full h-32">
+                    <h3 class="flex justify-center mt-5">Poster</h3>
+                    <p class="flex justify-center mt-3">Poster Lomba #FPPN2021</p>
+                </div>
+                <div class="w-56 h-56 bg-blue-400"></div>
+                <div class="w-56 h-56 bg-blue-400"></div>
+                <div class="w-56 h-56 bg-blue-400"></div>
 
+            </div>
+            <div class="w-full bg-red-200 lg:w-2/5">
+                <div class="w-20 h-20 bg-yellow-200"></div>
+            </div>
         </section>
         <!--* Event End  -->
         <!--* What They Said  -->
@@ -141,131 +167,23 @@
         <!--* What They Said End  -->
         <!--* Post  -->
         <section class="bg-gradient-to-b from-blue-100">
-            <div class="grid grid-cols-3 gap-6 px-10 pt-10 pb-20">
-                <div class="p-5 bg-white border border-2 shadow-lg rounded-2xl">
-                    <h5 class="pb-2 font-medium" style="font-size: 14px; color: #FF33AB;">Artikel</h5>
-                    <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                    <h5 class="tanggal">
-                        <i class="fas fa-calendar"></i>
-                        FUNBAHASA / Januari 17, 2021
-                    </h5>
-                    <p class="pb-10 font-medium" style="font-size: 14px;">Rasyid Yudhistira MATAHARI MEMBELAH
-                        TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya
-                        kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
-                </div>
-                <div class="p-5 bg-white border border-2 shadow-lg rounded-2xl">
-                    <h5 class="pb-2 font-medium" style="font-size: 14px; color: #FF33AB;">Artikel</h5>
-                    <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                    <h5 class="tanggal">
-                        <i class="fas fa-calendar"></i>
-                        FUNBAHASA / Januari 17, 2021
-                    </h5>
-                    <p class="pb-10 font-medium" style="font-size: 14px;">Rasyid Yudhistira MATAHARI MEMBELAH
-                        TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya
-                        kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
-                </div>
-
-                <div class="p-5 bg-white border border-2 shadow-lg rounded-2xl">
-                    <h5 class="pb-2 font-medium" style="font-size: 14px; color: #FF33AB;">Artikel</h5>
-                    <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                    <h5 class="tanggal">
-                        <i class="fas fa-calendar"></i>
-                        FUNBAHASA / Januari 17, 2021
-                    </h5>
-                    <p class="pb-10 font-medium" style="font-size: 14px;">Rasyid Yudhistira MATAHARI MEMBELAH
-                        TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya
-                        kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-3 gap-6 px-10 pt-20 pb-20">
-                <div class="p-5 bg-white border border-2 shadow-lg rounded-2xl">
-                    <h5 class="pb-2 font-medium" style="font-size: 14px; color: #FF33AB;">Artikel</h5>
-                    <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                    <h5 class="tanggal">
-                        <i class="fas fa-calendar"></i>
-                        FUNBAHASA / Januari 17, 2021
-                    </h5>
-                    <p class="pb-10 font-medium" style="font-size: 14px;">Rasyid Yudhistira MATAHARI MEMBELAH
-                        TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya
-                        kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
-                </div>
-                <div class="p-5 bg-white border border-2 shadow-lg rounded-2xl">
-                    <h5 class="pb-2 font-medium" style="font-size: 14px; color: #FF33AB;">Artikel</h5>
-                    <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                    <h5 class="tanggal">
-                        <i class="fas fa-calendar"></i>
-                        FUNBAHASA / Januari 17, 2021
-                    </h5>
-                    <p class="pb-10 font-medium" style="font-size: 14px;">Rasyid Yudhistira MATAHARI MEMBELAH
-                        TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya
-                        kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
-                </div>
-
-                <div class="p-5 bg-white border border-2 shadow-lg rounded-2xl">
-                    <h5 class="pb-2 font-medium" style="font-size: 14px; color: #FF33AB;">Artikel</h5>
-                    <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                    <h5 class="tanggal">
-                        <i class="fas fa-calendar"></i>
-                        FUNBAHASA / Januari 17, 2021
-                    </h5>
-                    <p class="pb-10 font-medium" style="font-size: 14px;">Rasyid Yudhistira MATAHARI MEMBELAH
-                        TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya
-                        kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-3 gap-6 px-10 pt-20 pb-20">
-                <div class="p-5 bg-white border border-2 shadow-lg rounded-2xl">
-                    <h5 class="pb-10 font-medium" style="font-size: 14px; color: #FF33AB;">Artikel</h5>
-                    <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                    <h5 class="tanggal">
-                        <i class="fas fa-calendar"></i>
-                        FUNBAHASA / Januari 17, 2021
-                    </h5>
-                    <p class="pb-2 font-medium" style="font-size: 14px;">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU
-                        DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan
-                        dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
-                </div>
-                <div class="p-5 bg-white border border-2 shadow-lg rounded-2xl">
-                    <h5 class="pb-2 font-medium" style="font-size: 14px; color: #FF33AB;">Artikel</h5>
-                    <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                    <h5 class="tanggal">
-                        <i class="fas fa-calendar"></i>
-                        FUNBAHASA / Januari 17, 2021
-                    </h5>
-                    <p class="pb-10 font-medium" style="font-size: 14px;">Rasyid Yudhistira MATAHARI MEMBELAH
-                        TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya
-                        kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
-                </div>
-
-                <div class="p-5 bg-white border border-2 shadow-lg rounded-2xl">
-                    <h5 class="pb-2 font-medium" style="font-size: 14px; color: #FF33AB;">Artikel</h5>
-                    <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                    <h5 class="tanggal">
-                        <i class="fas fa-calendar"></i>
-                        FUNBAHASA / Januari 17, 2021
-                    </h5>
-                    <p class="pb-10 font-medium" style="font-size: 14px;">Rasyid Yudhistira MATAHARI MEMBELAH
-                        TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya
-                        kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
-                </div>
-            </div>
         </section>
         <!--* Post End -->
     </main>
     <!--* Main Content End -->
     <!--* Footer  -->
-    <footer class="relative w-full bg-clip-border h-30">
-        <img src="/img/footer-image.png" alt="image-greeting" class="w-full h-auto">
+    <footer class="relative w-full h-auto">
+        <div class="absolute w-full bg-clip-border">
+            <img src="/img/footer-image.png" alt="image-greeting" class="w-full h-auto">
+        </div>
         <!--* footer column 1 -->
         <div
-            class="absolute flex flex-row w-full lg:top-52 align-center lg:justify-around lg:flex-row lg:w-full lg:px-5">
-            <div class="lg:w-1/3 lg:justify-center">
+            class="relative top-0 flex w-full px-3 lg:-flex-row lg:top-72 align-center lg:justify-around lg:flex-row lg:w-full lg:px-5">
+            <div class="hidden lg:flex-col sm:flex md:flex lg:w-1/3 lg:justify-center">
                 <img src="/img/funbahasa-logo.svg" alt="funbahasa-logo"
                     class="object-cover h-16 mb-10 w-25 lg:place-self-center">
-                <h3 class="mb-2 font-sans text-lg font-semibold text-gray-500 lg:justify-center">Ikuti Kami di</h3>
-                <div class="flex items-center gap-2">
+                <h3 class="flex mb-2 font-sans text-lg font-semibold text-gray-500 lg:justify-center">Ikuti Kami di</h3>
+                <div class="flex items-center gap-2 lg:flex lg:justify-center">
                     <i><img src="/img/twitter-icon.svg" alt="twitter"></i>
                     <i><img src="/img/instagram-icon.svg" alt="instagram"></i>
                     <i><img src="/img/facebook-icon.svg" alt="facebook"></i>
@@ -289,7 +207,7 @@
                     <li class="text-gray-400">Puisi</li>
                 </ul>
             </div>
-            <div class="lg:w-1/3">
+            <div class="w-full lg:w-1/3">
                 <h3 class="mb-2 font-sans text-lg font-semibold text-gray-500">Kontak</h3>
                 <p class="w-full">Ruko De Farda RK-5, Dusun Keboan, Keboananom, Kec. Gedangan, Kabupaten Sidoarjo,
                     Jawa Timur 61254</p>
