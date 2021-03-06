@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Fun Bahasa #BahasaAdalahKita</title>
     <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
 </head>
@@ -22,8 +22,8 @@
                 <div class="hidden lg:flex lg:items-center">
                     <nav>
                         <a href="#" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Tentang Kami</a>
-                        <a href="#" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Unggah Karya</a>
-                        <a href="" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Event</a>
+                        <a href="unggah-karya.html" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Unggah Karya</a>
+                        <a href="Event.html" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Event</a>
                         <a href="#" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Baca Karya</a>
                         <button href="#" class="px-5 py-1 ml-3 font-sans font-semibold text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:bg-transparent hover:shadow-xl">Masuk</button>
                     </nav>
@@ -33,24 +33,41 @@
         </header>
         <!--* Navigator Bar End -->
         
-          <!--* Background Imgae Header -->
+        <!--* Background Imgae Header -->
         <div class="absolute top-0 -z-1 w-1\/2 right-5">
             <img src="img/bg-header-event.svg" alt="Back-ground-header-img">
         </div>
     <!--* Main Content -->
     <main>
-      
+    
         <!--* Greeting  -->
-        <section class="flex flex-col w-full mt-20 text-center">
-          
+        <section class="flex flex-col w-full text-center">
+            <!-- component -->
+            <!-- Display Container (not part of component) START -->
+            <div class="m-5 mx-auto p-8 sm:p-12 lg:p-16">
+                <!-- Carousel Body -->
+                <div class="relative w-96 min-w-full h-96 min-h-screen rounded-lg block md:flex items-center bg-gray-100 shadow-xl">
+                    <div class="relative w-full h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg">
+                        <img class="absolute inset-0 w-full h-full object-cover object-center" src="img/poster.jpeg" alt="">
+                    </div>
+                    <button class="absolute top-0 mt-64 left-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -ml-6 focus:outline-none focus:shadow-outline">
+                        <span class="block" style="transform: scale(-1);">&#x279c;</span>
+                    </button>
+                    <button class="absolute top-0 mt-64 right-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -mr-6 focus:outline-none focus:shadow-outline">
+                        <span class="block" style="transform: scale(1);">&#x279c;</span>
+                    </button>
+                </div>
+                
+            </div>
+            <!-- Display Container (not part of component) END -->
         </section>
 
         <section class="px-10 m-10">
-            <div class="grid grid-cols-3 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
                 <div class="text-center transform bg-blue-200 shadow md:shadow-lg group hover:shadow-2xl hover:bg-blue-400 hover:scale-105 motion-reduce:transform-none" style="border-radius: 25px;">
                     <div class="text-center bg-blue-200 " style="border-radius: 25px; position: relative; ">
                         <img
-                            src="img/poster.jpeg"
+                            src="img/poster.jpeg" class="w-full"
                             style="border-top-right-radius: 25px; border-top-left-radius: 25px;"
                         >
                     </div>
@@ -68,8 +85,7 @@
                 <div class="text-center transform bg-blue-200 shadow md:shadow-lg group hover:shadow-2xl hover:bg-blue-400 hover:scale-105 motion-reduce:transform-none" style="border-radius: 25px;">
                     <div class="text-center bg-blue-200 " style="border-radius: 25px; position: relative; ">
                         <img
-                        class="img-card"
-                            src="img/poster.jpeg"
+                            src="img/poster.jpeg" class="w-full"
                             style="border-top-right-radius: 25px; border-top-left-radius: 25px;"
                         >
                         
@@ -90,7 +106,7 @@
                 <div class="text-center transform bg-blue-200 shadow md:shadow-lg group hover:shadow-2xl hover:bg-blue-400 hover:scale-105 motion-reduce:transform-none" style="border-radius: 25px;">
                     <div class="text-center bg-blue-200 " style="border-radius: 25px; position: relative; ">
                         <img
-                            src="img/poster.jpeg"
+                            src="img/poster.jpeg" class="w-full"
                             style="border-top-right-radius: 25px; border-top-left-radius: 25px;"
                         >
                         
@@ -111,7 +127,7 @@
                 <div class="text-center transform bg-blue-200 shadow md:shadow-lg group hover:shadow-2xl hover:bg-blue-400 hover:scale-105 motion-reduce:transform-none" style="border-radius: 25px;">
                     <div class="text-center bg-blue-200 " style="border-radius: 25px; position: relative; ">
                         <img
-                            src="img/poster.jpeg"
+                            src="img/poster.jpeg" class="w-full"
                             style="border-top-right-radius: 25px; border-top-left-radius: 25px;"
                         >
                         
@@ -132,7 +148,7 @@
                 <div class="text-center transform bg-blue-200 shadow md:shadow-lg group hover:shadow-2xl hover:bg-blue-400 hover:scale-105 motion-reduce:transform-none" style="border-radius: 25px;">
                     <div class="text-center bg-blue-200 " style="border-radius: 25px; position: relative; ">
                         <img
-                            src="img/poster.jpeg"
+                            src="img/poster.jpeg" class="w-full"
                             style="border-top-right-radius: 25px; border-top-left-radius: 25px;"
                         >
                         
@@ -153,7 +169,7 @@
                 <div class="text-center transform bg-blue-200 shadow md:shadow-lg group hover:shadow-2xl hover:bg-blue-400 hover:scale-105 motion-reduce:transform-none" style="border-radius: 25px;">
                     <div class="text-center bg-blue-200 " style="border-radius: 25px; position: relative; ">
                         <img
-                            src="img/poster.jpeg"
+                            src="img/poster.jpeg" class="w-full"
                             style="border-top-right-radius: 25px; border-top-left-radius: 25px;"
                         >
                         
@@ -202,19 +218,19 @@
     <!--* Footer  -->
     <footer class="relative pt-8 pb-6" style="background-image: url('img/Footer.svg'); background-repeat: repeat-y;  background-size: cover; height: 500px;">
         
-        <div class="container mx-auto px-4" >
+        <div class="container px-4 mx-auto" >
         <div class="flex flex-wrap text-center lg:text-left" style="position: relative; top: 200px;">
             <div class="w-full lg:w-6/12" style="position: relative; top: 60px;">
                 <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" width="150" height="50px">
-            <div class="mt-6 lg:mb-0 mb-6">
-                <h4 class="text-3xl font-semibold pb-2">Follow Us On</h4>
+            <div class="mt-6 mb-6 lg:mb-0">
+                <h4 class="pb-2 text-3xl font-semibold">Follow Us On</h4>
                 <button
-                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                class="items-center justify-center w-10 h-10 mr-2 font-normal text-blue-400 bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
                 type="button">
                 <i class="fab fa-twitter"></i>
                 </button>
                 <button
-                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                class="items-center justify-center w-10 h-10 mr-2 font-normal text-blue-600 bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
                 type="button">
                 <div>
                     <svg class="svg-icon" viewBox="0 0 20 20">
@@ -223,103 +239,103 @@
                 </div>
                 </button>
                 <button
-                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                class="items-center justify-center w-10 h-10 mr-2 font-normal text-pink-400 bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
                 type="button">
                 <i class="fab fa-dribbble"></i>
                 </button>
                 <button
-                class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                class="items-center justify-center w-10 h-10 mr-2 font-normal text-gray-900 bg-white rounded-full shadow-lg outline-none align-center focus:outline-none"
                 type="button">
                 <i class="fab fa-github"></i>
                 </button>
             </div>
             </div>
-            <div class="w-full lg:w-6/12 px-4">
-            <div class="flex flex-wrap items-top mb-6" >
-                <div class="w-full lg:w-4/12 px-4 ml-auto">
-                <span class="block text-gray-600 text-sm font-semibold mb-2 font-bold">
+            <div class="w-full px-4 lg:w-6/12">
+            <div class="flex flex-wrap mb-6 items-top" >
+                <div class="w-full px-4 ml-auto lg:w-4/12">
+                <span class="block mb-2 text-sm font-semibold font-bold text-gray-600">
                     Informasi Event
                 </span>
                 <ul class="list-unstyled">
                     <li>
-                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                         href="#">
                         Pendaftaran
                     </a>
                     </li>
                     <li>
-                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                         href="#">
                         Panduan
                     </a>
                     </li>
                     <li>
-                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                         href="#">
                         Poster
                     </a>
                     </li>
                     <li>
-                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                         href="#">
                         Unggah
                     </a>
                     </li>
                     <li>
-                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                             href="#">
                             Pengumuman
                         </a>
                     </li>
                 </ul>
                 </div>
-                <div class="w-full lg:w-4/12 px-4">
-                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">
+                <div class="w-full px-4 lg:w-4/12">
+                <span class="block mb-2 text-sm font-semibold text-gray-600 uppercase">
                     List Kategori
                 </span>
                 <ul class="list-unstyled">
                     <li>
-                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                         href="#">
                         Cerpen
                     </a>
                     </li>
                     <li>
-                    <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                         href="#">
                         Artikel
                     </a>
                     </li>
                     <li>
-                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                             href="#">
                             Puisi
                         </a>
                     </li>
                 </ul>
                 </div>
-                <div class="w-full lg:w-4/12 px-4">
-                    <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">
+                <div class="w-full px-4 lg:w-4/12">
+                    <span class="block mb-2 text-sm font-semibold text-gray-600 uppercase">
                         Contact
                     </span>
                     <ul class="list-unstyled">
                         <li>
-                        <p class="text-gray-70 hover:text-gray-900 font-semibold block pb-2 text-sm">
+                        <p class="block pb-2 text-sm font-semibold text-gray-70 hover:text-gray-900">
                             Ruko de Farda RK-5, Dusun Keboan, Keboananom, Kec. Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254
                         </p>
                         </li>
                         <li>
-                        <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm">
+                        <p class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900">
                             funbahasa@gmail.com
                         </p>
                         </li>
                         <li>
-                        <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="www.funbahasa.com">
+                        <a class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900" href="www.funbahasa.com">
                             www.funbahasa.com
                         </a>
                         </li>
                         <li>
-                        <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        <p class="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
                         >
                             +62 815-1531-2240
                         </p>
@@ -330,10 +346,10 @@
             </div>
         </div>
         <div class="relative" style="top: 110px;">
-            <div class="flex flex-wrap items-center md:justify-between justify-center">
-                <div class="w-full md:w-4/12 px-4 mx-auto text-center pt-10">
+            <div class="flex flex-wrap items-center justify-center md:justify-between">
+                <div class="w-full px-4 pt-10 mx-auto text-center md:w-4/12">
                 <div style="height: 2px; width: 400px; background-color: black;"></div>
-                <div class="text-sm text-gray-600 font-semibold py-1">
+                <div class="py-1 text-sm font-semibold text-gray-600">
                     Fun Bahasa Indonesia ©
                 </div>
                 </div>
@@ -341,7 +357,7 @@
         </div>
         </div>
     </footer>
-    <!-- <div class="bg-cover md:bg-contain absolute">
+    <!-- <div class="absolute bg-cover md:bg-contain">
             <img src="img/Footer.svg">
     </div> -->
     <!--* Footer End  -->
