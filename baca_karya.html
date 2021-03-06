@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Fun Bahasa #BahasaAdalahKita</title>
     <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,244 +14,141 @@
 
 <body>
     <!--* Navigator Bar -->
-    <header class="flex max-w-full py-3 shadow-xl outline-black">
-        <div class="flex justify-between w-full bg-blue-100">
-            <!--* Image  -->
-            <div>
-                <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" width="150" height="50px">
-            </div>
-            <!--* Image End  -->
-            <!--* Nav Menu Item -->
-            <div>
-                <nav>
-                    <a href="#">Tentang Kami</a>
-                    <a href="#">Unggah Karya</a>
-                    <a href="#">Event</a>
-                    <a href="#">Baca Karya</a>
-                </nav>
-            </div>
-            <!--* Nav Menu Item End -->
-        </div>
-    </header>
+    <header class="flex flex-wrap items-center justify-between p-4">
+                <div class="flex justify-between navbar-menu lg:w-full">
+                    <!--* Image  -->
+                    <div class="flex w-full lg:block lg:w-2/5">
+                        <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" width="150" height="50px">
+                    </div>
+                    <!--* Image End  -->
+                    <!--* Nav Menu Item -->
+                    <div class="hidden lg:flex lg:items-center">
+                        <nav>
+                            <a href="#" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Tentang Kami</a>
+                            <a href="unggah-karya.html" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Unggah Karya</a>
+                            <a href="Event.html" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Event</a>
+                            <a href="#" class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Baca Karya</a>
+                            <button href="#" class="px-5 py-1 ml-3 font-sans font-semibold text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:bg-transparent hover:shadow-xl">Masuk</button>
+                        </nav>
+                    </div>
+                    <!--* Nav Menu Item End -->
+                </div>
     <!--* Navigator Bar End -->
 
     <!--* Main Content -->
     <main>
         <!--* Greeting  -->
         <section class="m-10">
-            <!-- <div class="w-full px-24">
-
-                <h1 class="flex justify-start text-4xl py-2 ml-80" id="judul">BACA
-                </h1>
-                <h1 class="flex justify-start text-4xl" id="judul2"
-                >Funners</h1>
-                <h1 class="flex justify-start text-4xl py-2 mb-1 ml-80" id="judul">KARYA
-                </h1>
-                <div class="text-center py-12">
-                    <button class="bg-blue-200 hover:bg-blue-300 text-black py-2 px-4 rounded">Di Bawah Ini</button>
+            <div class="" style="font-family: Poppins;">
+                <div class="w-full px-24 mt-36">
+                    <h1 class="flex justify-start text-9xl ml-80 text-white absolute" style="-webkit-text-stroke: 1px #25AAE3;">BACA
+                    </h1>
                 </div>
-            </div> -->
-            <div class="w-full px-24 mt-44">
-                <h1 class="flex justify-start text-4xl ml-80" id="judul">BACA
-                </h1>
-            </div>
 
-            <div class="w-full px-60 pt-10 pb-5">
-                <h1 class="flex justify-start text-4xl z-10" id="judul2">Funners</h1>
-            </div>
+                <div class="w-full px-60 pt-20">
+                    <h1 class="flex justify-start text-8xl relative ml-20">Funners</h1>
+                </div>
 
-            <div class="w-full px-24 mb-36">
-                <h1 class="flex justify-start text-4xl ml-80" id="judul3">KARYA
-                </h1>
-            </div>
-            <div class="text-center mb-20">
-                <button class="bg-blue-200 hover:bg-blue-300 text-black py-2 px-6 rounded">Di Bawah Ini</button>
+                <div class="w-full px-24 mb-36">
+                    <h1 class="flex justify-start text-9xl ml-80 text-white absolute" style="-webkit-text-stroke: 1px #25AAE3;">KARYA
+                    </h1>
+                </div>
+                <div class="text-center mb-20">
+                    <button class="bg-blue-200 hover:bg-blue-300 text-black py-2 px-6 rounded">Di Bawah Ini</button>
+                </div>
             </div>
             <div class="flex -mx-2 px-28">
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-3 gap-4" style="font-family: Poppins;">
                     <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
-                        <h5 class="artikel">Artikel</h5>
-                        <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                        <h5 class="tanggal">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <h1 class="text-xl py-2">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
+                        <h5 class="text-xs text-gray-300 mb-2">
                             <i class="fas fa-calendar"></i>
                             FUNBAHASA / Januari 17, 2021
                         </h5>
-                        <p class="content">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
                     </div>
                     <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
-                        <h5 class="artikel">Artikel</h5>
-                        <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                        <h5 class="tanggal">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <h1 class="text-xl py-2">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
+                        <h5 class="text-xs text-gray-300 mb-2">
                             <i class="fas fa-calendar"></i>
                             FUNBAHASA / Januari 17, 2021
                         </h5>
-                        <p class="content">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
-                    </div>
-                    
-                    <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
-                        <h5 class="artikel">Artikel</h5>
-                        <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                        <h5 class="tanggal">
-                            <i class="fas fa-calendar"></i>
-                            FUNBAHASA / Januari 17, 2021
-                        </h5>
-                        <p class="content">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
                     </div>
                     
                     <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
-                        <h5 class="artikel">Artikel</h5>
-                        <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                        <h5 class="tanggal">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <h1 class="text-xl py-2">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
+                        <h5 class="text-xs text-gray-300 mb-2">
                             <i class="fas fa-calendar"></i>
                             FUNBAHASA / Januari 17, 2021
                         </h5>
-                        <p class="content">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
                     </div>
                     
                     <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
-                        <h5 class="artikel">Artikel</h5>
-                        <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                        <h5 class="tanggal">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <h1 class="text-xl py-2">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
+                        <h5 class="text-xs text-gray-300 mb-2">
                             <i class="fas fa-calendar"></i>
                             FUNBAHASA / Januari 17, 2021
                         </h5>
-                        <p class="content">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
                     </div>
 
                     <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
-                        <h5 class="artikel">Artikel</h5>
-                        <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                        <h5 class="tanggal">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <h1 class="text-xl py-2">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
+                        <h5 class="text-xs text-gray-300 mb-2">
                             <i class="fas fa-calendar"></i>
                             FUNBAHASA / Januari 17, 2021
                         </h5>
-                        <p class="content">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
                     </div>
 
                     <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
-                        <h5 class="artikel">Artikel</h5>
-                        <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                        <h5 class="tanggal">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <h1 class="text-xl py-2">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
+                        <h5 class="text-xs text-gray-300 mb-2">
                             <i class="fas fa-calendar"></i>
                             FUNBAHASA / Januari 17, 2021
                         </h5>
-                        <p class="content">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
                     </div>
 
                     <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
-                        <h5 class="artikel">Artikel</h5>
-                        <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                        <h5 class="tanggal">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <h1 class="text-xl py-2">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
+                        <h5 class="text-xs text-gray-300 mb-2">
                             <i class="fas fa-calendar"></i>
                             FUNBAHASA / Januari 17, 2021
                         </h5>
-                        <p class="content">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
                     </div>
 
                     <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
-                        <h5 class="artikel">Artikel</h5>
-                        <h1 class="judul">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
-                        <h5 class="tanggal">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <h1 class="text-xl py-2">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
+                        <h5 class="text-xs text-gray-300 mb-2">
                             <i class="fas fa-calendar"></i>
                             FUNBAHASA / Januari 17, 2021
                         </h5>
-                        <p class="content">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
+                    </div>
+
+                    <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <h1 class="text-xl py-2">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</h1>
+                        <h5 class="text-xs text-gray-300 mb-2">
+                            <i class="fas fa-calendar"></i>
+                            FUNBAHASA / Januari 17, 2021
+                        </h5>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa siapa yang menunggu itu.</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="w-full px-24 py-5"></div>
-                <div class="text-center">
-                    <div class="pagination">
-                        <a href="#">Previous</a>
-                        <a href="#">1</a>
-                        <a href="#" class="active">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">Next</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <style>
-            h1 {
-                font-family: Poppins;
-            }
-            h5 {
-                font-family: Poppins; 
-            }
-            p {
-                font-family: Poppins;
-                color: #404642
-            }
-            .judul {
-                color: #404642;
-                font-style: normal; 
-                font-weight: 500; 
-                font-size: 24px; 
-                line-height: 110%;
-                padding-bottom: 10px;
-            }
-            #judul {
-                font-size: 96px; 
-                font-weight: 500; 
-                color: #FFFFFF;
-                -webkit-text-stroke: 1px #25AAE3;
-                position: absolute;
-            }
-            #judul2 {
-                color: #404642;
-                font-size: 96px; 
-                font-weight: 500;
-                position: relative;
-            }
-            #judul3 {
-                font-size: 96px; 
-                font-weight: 500; 
-                color: #FFFFFF;
-                -webkit-text-stroke: 1px #25AAE3;
-                position: absolute;
-            }
-            .artikel {
-                font-weight: 500; 
-                font-size: 14px;
-                padding-bottom: 10px;
-                color: #FF33AB;
-            }
-            .tanggal {
-                font-family: Poppins;
-                font-size: 13px;
-                color: #BBBBBB
-            }
-            .content {
-                font-weight: 500; 
-                font-size: 14px;
-                padding-bottom: 10px;
-            }
-            .pagination {
-                display: inline-block;
-            }
-
-            .pagination a {
-                color: black;
-                float: left;
-                padding: 8px 16px;
-                text-decoration: none;
-            }
-
-            .pagination a.active {
-                background-color: #25AAE3;
-                color: white;
-                border-radius: 5px;
-            }
-
-            .pagination a:hover:not(.active) {
-                background-color: #ddd;
-                border-radius: 5px;
-            }
-        </style>
         <!--* Greeting  End-->
         <!--* Call To Action  -->
         <section>
