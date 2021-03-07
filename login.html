@@ -5,14 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -20,71 +12,92 @@
     <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
   </head>
   <body>
-  
-
-  
-  <div class="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 order-md-2">
-          <img src="img/login.svg" alt="Image" class="img-fluid">
-        </div>
-        <div class="col-md-6 contents">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="mb-4">
-              <h3>Sign In to <strong>FUNBAHASA</strong></h3>
-              <p class="mb-4">Fun Bahasa #BahasaAdalahKita</p>
-            </div>
-            <form action="#" method="post">
-              <div class="form-group first">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username">
-
+    <div class="min-w-screen min-h-screen bg-white flex items-center justify-center px-5 py-5">
+      <div class="bg-white text-gray-500 w-full" style="max-width:1000px">
+          <div class="flex flex-col-reverse md:flex-row w-full">
+              <div class="w-full md:w-2/5 py-1 md:py-5 px-10">
+                  <div class="py-8">
+                      <h1 class="font-bold text-2xl text-gray-900">Sign In to FUNBAHASA</h1>
+                      <p>Fun Bahasa #BahasaAdalahKita</p>
+                  </div>
+                  <form action="#" class="pb-20">
+                      <div class="flex -mx-3">
+                          <div class="w-full px-3 mb-5">
+                              <label for="" class="text-xs font-semibold px-1">Username</label>
+                              <div class="flex">
+                                  <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
+                                  <input type="email" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500 mt-1">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex -mx-3">
+                          <div class="w-full px-3 mb-1">
+                              <label for="" class="text-xs font-semibold px-1">Password</label>
+                              <div class="flex">
+                                  <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i class="mdi mdi-lock-outline text-gray-400 text-lg"></i></div>
+                                  <input type="password" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500 mt-1">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex -mx-3 mb-5">
+                        <div class="w-1/2 px-3">
+                          <label class="block text-gray-500 font-bold my-4">
+                            <input type="checkbox" class="leading-loose text-pink-600"> 
+                            <span class="py-2 text-sm text-gray-600">Remember Me</span>
+                          </label>
+                        </div>
+                        <div class="w-1/2 px-3 text-right">
+                          <label class="block text-gray-500 font-bold my-4">
+                            <a href="#" class="text-gray-600 hover:text-blue-600">
+                              <span>Forgot Password?</span>
+                            </a>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="flex -mx-3">
+                          <div class="w-full px-3 mb-5">
+                              <button class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">SIGN IN</button>
+                          </div>
+                      </div>
+                      <div class="flex -mx-3">
+                        <div class="w-full px-3 mb-3">
+                          <p>Don't have an account? <a href="register.html" class="text-blue-500">Register</a></p>
+                        </div>
+                      </div>
+                      <div class="flex -mx-3">
+                        <div class="w-full px-3 mb-5">
+                          <p>Or Sign In with</p>
+                        </div>
+                      </div>
+                      <div class="flex flex-row -mx-3">
+                        <div class="px-3">
+                          <a href="#">
+                            <img src="img/icon-facebook-color.png" class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-8 w-8 rounded-full" alt="">
+                          </a>
+                        </div>
+                        <div class="px-3 mb-5">
+                          <a href="#">
+                            <img src="img/icon-twitter-color.png" class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-8 w-8 rounded-full" alt="">
+                          </a>
+                        </div>
+                        <div class="px-3 mb-5">
+                          <a href="#">
+                            <img src="img/icon-instagram-color.png" class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-8 w-8 rounded-full" alt="">
+                          </a>
+                        </div>
+                        <div class="px-3 mb-5">
+                          <a href="#">
+                            <img src="img/icon-google-color.png" class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-8 w-8 rounded-full" alt="">
+                          </a>
+                        </div>
+                      </div>
+                  </form>
               </div>
-              <div class="form-group last mb-4">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
-                
+              <div class="w-full md:w-3/5 bg-transparent py-1 md:py-5 px-5 md:px-10 text-center">
+                <img src="img/login.svg" alt="Image" class="img-fluid">
               </div>
-              
-              <div class="d-flex mb-5 align-items-center">
-                <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
-                  <input type="checkbox" checked="checked"/>
-                  <div class="control__indicator"></div>
-                </label>
-                <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
-              </div>
-
-              <input type="submit" value="Log In" class="btn text-white btn-block btn-info">
-            <span class="d-block text-left my-4 text-muted"> Already have an account?
-              <a href="#" class="text-danger">Sign Up</a>
-            </span>
-              <span class="d-block text-left my-4 text-muted"> or sign in with</span>
-              
-              <div class="social-login">
-                <a href="#" class="facebook">
-                  <span class="icon-facebook mr-3"></span> 
-                </a>
-                <a href="#" class="twitter">
-                  <span class="icon-twitter mr-3"></span> 
-                </a>
-                <a href="#" class="google">
-                  <span class="icon-google mr-3"></span> 
-                </a>
-              </div>
-            </form>
             </div>
           </div>
-        </div>
-      </div>
     </div>
-  </div>
-
-  
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
