@@ -16,9 +16,9 @@
     <!--* Navigator Bar -->
     
         <!--* Container -->
-        <div class="xl\:container px-4 mx-auto">
+    <div class="xl\:container mx-auto">
             <!--* Navigator Bar -->
-        <header class="flex flex-wrap items-center justify-between w-full p-4 px-4 4xl:h-12 3xl:w-full lg:justify-between">
+            <header class="top-0 fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
             <div x-data="{open: false}"
                 class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
                 <!--* Image  -->
@@ -37,7 +37,7 @@
                 <div
                     class="flex-row hidden flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end">
                     <nav class="sm:justify-end sm:w-full sm:flex">
-                        <a href="#"
+                        <a href="tentang_kami.html"
                             class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Tentang
                             Kami</a>
                         <a href="unggah-karya.html"
@@ -45,7 +45,7 @@
                             Karya</a>
                         <a href="Event.html"
                             class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Event</a>
-                        <a href="#"
+                        <a href="baca_karya.html"
                             class="block mt-4 mr-10 font-sans font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Baca
                             Karya</a>
                         <a href="login.html"
@@ -60,13 +60,13 @@
                         <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                             <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                                 <div class="ml-2">
-                                    <a href="/tentang-kami.html" class="text-base font-medium text-gray-900">
+                                    <a href="tentang-kami.html" class="text-base font-medium text-gray-900">
                                         Tentang Kami
                                     </a>
                                 </div>
                             </a>
     
-                            <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                            <a href="unggah-karya.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                                 <div class="ml-2">
                                     <a class="text-base font-medium text-gray-900">
                                         Unggah Karya
@@ -74,7 +74,7 @@
                                 </div>
                             </a>
     
-                            <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                            <a href="Event.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                                 <div class="ml-2">
                                     <a class="text-base font-medium text-gray-900">
                                         Event
@@ -82,7 +82,7 @@
                                 </div>
                             </a>
     
-                            <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                            <a href="baca_karya.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                                 <div class="ml-2">
                                     <a class="text-base font-medium text-gray-900">
                                         Baca Karya
@@ -94,23 +94,23 @@
                 </div>
             </div>
         </header>
-        </div>
+    </div>
     <!--* Navigator Bar End -->
 
     <!--* Main Content -->
     <main>
         <!--* Greeting  -->
-        <section class="m-10">
+        <section class="m-10 pt-10">
             <div class="pb-5 min-h-full">
                 <h4>Home / </i><a href="index.html" style="color: rgba(96, 165, 250, 100);">Publikasi Karya</a></h4>
             </div>
-                <div class="w-full">
-                    <div class="px-24">
+            <div class="w-full">
+                <div class="px-10">
                         <h1 class="flex justify-start text-4xl py-2 mb-1" 
-                        style="font-family: Quicksand; font-size: 36px; font-style: normal; font-weight: normal; line-height: 110%;">Publish Karyamu</h1><hr class="mb-20" style="border: 1px solid #728196;">
-                    </div>
-                    <div class="flex -mx-2 px-24">
-                        <div class="w-1/2 mx-2">
+                        style="font-family: Quicksand; font-size: 36px; font-style: normal; font-weight: normal; line-height: 110%;">Publish Karyamu</h1><hr class="mb-10 lg:mb-20" style="border: 1px solid #728196;">
+                </div>
+                <div class="flex flex-col-reverse lg:flex-row -mx-2 px-10">
+                        <div class="w-full lg:w-1/2 mx-2">
                             <form action="" style="font-family: Quicksand; font-size: 24px; font-style: normal; font-weight: 500; line-height: 110%;">
                                 <div class="mb-5">
                                     <label class="capitalize text-black block mb-2" for="Name"> Nama Lengkap
@@ -130,9 +130,6 @@
                                         </div>	
                                         <input type="text" class="w-px flex-1 border border-blue-200 py-3 px-4 outline-none">
                                     </div>
-                                    <!-- <label class="capitalize text-black" for="Nomor"> Nomor Whatsapp
-                                    </label>
-                                    <input class="w-full bg-white text-black border border-blue-200 outline-none py-3 px-4" id="Nomor" type="text"> -->
                                 </div>
                                 <!-- component -->
     
@@ -165,14 +162,14 @@
                                 <a href="#" class="inline-block text-sm py-2 px-4 leading-none bg-blue-500 text-white hover:shadow-lg hover:text-teal mt-4 lg:mt-0 transform hover:scale-105 motion-reduce:transform-none" style="font-family: 'Quicksand', sans-serif; font-size: 24px;">Unggah</a>
                             </form> 
                         </div>
-                        <div class="w-1/2 mx-8 mb-5" style="font-family: Quicksand; font-style: normal; font-size: 18px; line-height: 22px; font-weight: 500px;">
+                        <div class="w-full lg:w-1/2 mx-2 lg:mx-8 mb-5" style="font-family: Quicksand; font-style: normal; font-size: 18px; line-height: 22px; font-weight: 500px;">
                             <h3 class="mb-5">Hi, Funners!</h3>
                             <p class="mb-5">Fun Bahasa memberikan kesempatan kepada Funners yang ingin mengirim karya/tulisan melalui laman funbahasa yang dapat dibaca oleh semua orang.</p>
                             <p class="mb-5">Tidak ada ketentuan khusus dalam penulisan, cukup pastikan penggunaan tanda baca, huruf kapital, dan sesuai dengan PUEBI. Serta jangan lupa melampirkan bionarasi singkat di bawah naskah tulisan. Tentu sebelumnya akan ada proses kurasi dari tim Fun Bahasa. Kami tunggu karya terbaik kalian ya, Funners!</p>
                             <p class="mb-5">Catatan: form ini bukan untuk mengirimkan karya/naskah dalam lomba yang diselenggarakan oleh Fun Bahasa.</p>
                         </div>
-                    </div>
                 </div>
+            </div>
         </section>
         <!--* Call To Action End  -->
         <!--* Event  -->
@@ -192,7 +189,7 @@
         <!--* Post End -->
     </main>
     <!--* Main Content End -->
-    <footer class="relative pt-8 pb-6" style="background-image: url('img/Footer.svg'); background-repeat: repeat-y;  background-size: cover; min-height: 550px;">
+    <footer class="relative pt-8 pb-6 bg-repeat-y bg-cover" style="background-image: url('img/Footer.svg'); min-height: 550px;">
         <div class="container relative mx-auto px-4 -top-60 lg:-top-0" style="font-family: Quicksand;">
             <div class="flex flex-wrap text-center lg:text-left">
                 <div class="relative w-full lg:w-4/12 px-4 top-72 lg:top-64 xl:top-72">
@@ -218,19 +215,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full lg:w-8/12 px-4 mt-80 lg:mt-0" style="position: relative; top: 250px;">
+                <div class="relative w-full lg:w-8/12 px-4 mt-80 lg:mt-0" style="top: 250px;">
                     <div class="flex flex-wrap items-top mb-6">
                         <div class="w-6/12 lg:w-3/12 px-4 ml-auto mb-10 lg:mb-0">
                             <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">
                                 Informasi Event
                             </span>
                             <ul class="list-unstyled">
-                                <li> <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#"> Pendaftaran </a> </li>
-                                <li>
-                                <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#"> Panduan </a> </li>
-                                <li> <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#"> Poster </a> </li>
-                                <li> <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#"> Unggah </a> </li>
-                                <li> <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#"> Pengumuman</a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Pendaftaran </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Panduan </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Poster </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Unggah </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Pengumuman</a> </li>
                             </ul>
                         </div>
                         <div class="w-6/12 lg:w-2/12 px-4 ml-auto mb-10 lg:mb-0">
@@ -238,10 +234,10 @@
                                 List Kategori
                             </span>
                             <ul class="list-unstyled">
-                                <li> <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#"> Cerpen </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Cerpen </a> </li>
                                 <li>
-                                <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#"> Artikel </a> </li>
-                                <li> <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#"> Puisi </a> </li>
+                                <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Artikel </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Puisi </a> </li>
                             </ul>
                         </div>
                         <div class="w-full lg:w-4/12 px-4 ml-auto">
@@ -251,7 +247,7 @@
                             <ul class="list-unstyled">
                                 <li> <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" > Ruko de Farda RK-5, Dusun Keboan, Keboananom, Kec. Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254 </p> </li>
                                 <li> <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" > funbahasa@gmail.com </p> </li>
-                                <li> <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
                                 <li> <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" > +62 815-1531-2240 </p> </li>
                             </ul>
                         </div>
