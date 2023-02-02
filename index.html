@@ -26,14 +26,14 @@
         <div x-data="{open: false}"
             class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
             <!--* Image  -->
-            <div class="flex w-full sm:w-1/4 lg:block lg:w-2/5 md:w-1/3">
+            <div class="flex w-full sm:w-1/4 lg:block lg:w-3/2 md:w-1/3">
                 <a href="index-fixed.html" class="">
-                    <img src="img/funbahasa-logo.svg" alt="funbahasa-logo">
+                    <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" class="lg:w-32">
                 </a>
             </div>
             <!--* Hamburger Menu -->
             <button @click="open = true"
-                class="flex justify-center w-20 h-10 px-1 py-1 hover:bg-gray-300 sm:w-8 h-8 py-4 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+                class="flex justify-center w-20 h-10 px-1 py-1 place-content-center hover:bg-gray-300 sm:w-8 h-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
                 <img src="img/hamburger-menu.svg" alt="">
             </button>
             <!--* Image End  -->
@@ -42,13 +42,13 @@
                 class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end sm:hidden md:hidden">
                 <nav class="sm:justify-end sm:w-full sm:flex">
                     <a href="tentang_kami.html"
-                        class="block mt-4 mr-10  font-bold font-title text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Tentang Kami</a>
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Tentang Kami</a>
                     <a href="unggah-karya.html"
-                        class="block mt-4 mr-10 font-bold font-title text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Unggah Karya</a>
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Unggah Karya</a>
                     <a href="Event.html"
-                        class="block mt-4 mr-10 font-bold font-title text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Event</a>
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Event</a>
                     <a href="baca_karya.html"
-                        class="block mt-4 mr-10 font-bold font-title text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500">Baca Karya</a>
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Baca Karya</a>
                     <a href="login.html"
                         class="px-5 py-1 ml-3 font-bold font-title text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
                 </nav>
