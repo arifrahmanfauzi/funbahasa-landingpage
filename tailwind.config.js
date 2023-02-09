@@ -1,3 +1,14 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
+module.exports = {
+  theme: {
+    screens: {
+      'xs': '475px',
+      ...defaultTheme.screens,
+    },
+  },
+  plugins: [],
+}
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -6,7 +17,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      xs: '393px',
+      'xs': '393px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
