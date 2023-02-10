@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
 </head>
 
-<body class="antialiased bg-body text-body font-body">
+<body class="antialiased bg-body text-body font-body absolute">
     <!--* Container -->
     
     <div class="xl\:container mx-auto">
@@ -101,8 +101,13 @@
     <!--* Main Content -->
     <main>
         <!--* Greeting  -->
-        <section class="relative bg-clip-border w-full xl:pt-13 sm:pt-16 font-title">
-            <img src="img/sec-1-2.svg" alt="image-greeting" class="w-full h-auto">
+        <section class="relative bg-clip-border mx-auto w-full xl:pt-13 sm:pt-16 font-title">
+            <picture>
+                <source 
+                   media="(min-width: 640px)"
+                   srcset="img/sec-1-2.svg" alt="image-greeting" class="w-full h-auto">
+                   <img src="img/sec-1-mob.svg" class="mx-auto py-20 w-3/4">
+             </picture>
             <div class="absolute xl:top-40 sm:top-28 md:top-32 lg:top-36 xl:left-36 sm:left-20 md:left-24 lg:left-32">
                 <div class="flex flex-col">
                     <h2
