@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Fun Bahasa #BahasaAdalahKita</title>
     <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
 </head>
 
@@ -257,41 +256,169 @@
         
         <!--* Post  -->
         <style>
+            @media screen and (max-width: 767px) {
+                .puisi-col1{
+                    display: none;
+                }
+                .dots-icon{
+                    display: none;
+                }
+                .post-column{
+                    padding-left: 15%;
+                    padding-right: 15%;
+                }
+                .div-puisi{
+                    display: flex;
+                    align-items: center;
+                }
+                .div-cerpen{
+                    display: flex;
+                    align-items: center;
+                }
+                .div-cer-anak{
+                    display: flex;
+                    align-items: center;
+                }
+                .div-artikel{
+                    display: flex;
+                    align-items: center;
+                }
+                .div-esai{
+                    display: flex;
+                    align-items: center;
+                }
+                /* .div-kategori{
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    padding-top: 20px;
+                }
+                .button-kategori{
+                    display: grid;
+                    place-items: end;
+                } */
+                .plus-icon{
+                    left: 80%;
+                    bottom:80%;
+                    width: 82px;
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                .dots-icon{
+                    left: 80.3%;
+                    bottom:7%;
+                    width: 82px;
+                }
+                .post-column{
+                    padding-left: 12%;
+                    padding-right: 12%;
+                }
+                .puisi-col2{
+                    display: none;
+                }
+                .plus-icon{
+                    left: 84%;
+                    bottom:68%;
+                    width: 82px;
+                }
+            }
+
+            @media screen and (min-width: 1024px) {
+                .dots-icon{
+                    left: 74.3%;
+                    bottom:14.35%;
+                    width: 90px;
+                }
+                .post-column{
+                    padding-left: 20%;
+                    padding-right: 20%;
+                }
+                .puisi-col2{
+                    display: none;
+                }
+            }
+
             @media screen and (min-width: 1280px) {
                 .dots-icon{
-                    position: absolute;
-                    left: 80%;
+                    left: 74.7%;
+                    bottom: 14.35%;
+                    width: 90px;
+                }
+                .post-column{
+                    padding-left: 20%;
+                    padding-right: 20%;
+                }
+                .puisi-col2{
+                    display: none;
                 }
             }
         </style>
         <section>
             <img src="img/wave.png" alt="wave" class="w-full h-auto">
-            <div class="xl:mx-72 my-16 font-title">
-                <img src="img/dots-icon.svg" alt="dots" class="dots-icon w-14">
-                <div class="grid xl:grid-cols-4 gap-7 mb-10 relative">
-                    <div class="rounded-xl pl-7 py-5" style="background: #F8F8F8;">
-                        <p>Puisi</p>
+            <img src="img/dots-icon.svg" alt="dots" class="dots-icon absolute">
+            <div class="post-column my-16 font-title">
+                <div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 gap-7 mb-10 relative">
+                    <img src="img/plus-icon.svg" alt="plus" class="plus-icon absolute">
+                    <div class="puisi-col1 rounded-xl p-4 text-left transform hover:scale-105 motion-reduce:transform-none" style="background-color: #F8F8F8;">
+                        <a href="#">
+                            <div>
+                                <img src="img/puisi.svg" class="display block ml-3 mt-3 xl:w-9 md:w-7 lg:w-8 pb-3">
+                                <p class="font-bold font-title ml-3 xl:text-base lg:text-base md:text-sm">Puisi</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-span-3 rounded-xl pl-7 py-5 xl:text-2xl" style="background: #FCB316;">
-                        <p><i class="font-black">Kategori</i> Karya</p>
-                        <div class="w-max transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">
-                            <!-- <a href="login.html" class="xl:font-bold font-title text-white text-xs ">Lihat Semua</a> -->
-                            <a href="">Lihat Semua</a>
+                    <div class="div-kategori col-span-3 rounded-xl px-7 py-5 xl:text-3xl lg:text-3xl md:text-2xl text-2xl" style="background: #FCB316;">
+                        <div class="text-kategori">
+                            <p><i class="font-black">Kategori</i> Karya</p>
+                        </div>
+                        <div class="button-kategori">
+                            <a href="login.html">
+                                <button class="mt-4 xl:mt-4 lg:mt-4 md:mt-4 px-5 xl:px-6 sm:px-4 md:px-4 lg:px-5 py-1 xl:py-2 md:py-1 lg:py-2 text-xs text-white transition duration-200 ease-in transform bg-blue-500 rounded-full shadow-md  max-w-max hover:shadow-lg hover:translate-x-1 active:translate-y-0 mx-auto font-title font-bold"> Lihat Semua <i class="bi bi-arrow-right-short" style="font-size: 20px;"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>
+                    <div class="puisi-col2 col-span-3 rounded-xl p-4 text-left transform hover:scale-105 motion-reduce:transform-none" style="background-color: #F8F8F8;">
+                        <a href="#">
+                            <div class="div-puisi">
+                                <img src="img/puisi.svg" class="display block ml-3 mt-3 w-8 sm:w-8 pb-3">
+                                <p class="font-bold font-title ml-3 sm:text-base">Puisi</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="grid xl:grid-cols-4 gap-7">
-                    <div class="rounded-xl pl-7 py-5" style="background-color: #F8F8F8;">
-                        <p>Cerpen</p>
+                <div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 gap-7">
+                    <div class="rounded-xl p-4 text-left transform hover:scale-105 motion-reduce:transform-none" style="background-color: #F8F8F8;">
+                        <a href="#">
+                            <div class="div-cerpen">
+                                <img src="img/cerpen.svg" class="display block ml-3 mt-3 w-8 xl:w-9 sm:w-8 md:w-7 lg:w-8 pb-3">
+                                <p class="font-bold font-title ml-3 xl:pb-3 lg:pb-3 md:pb-3 xl:text-base lg:text-base md:text-sm sm:text-base">Cerpen</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="rounded-xl pl-7 py-5" style="background-color: #F8F8F8;">
-                        <p>Cerita Anak</p>
+                    <div class="rounded-xl p-4 text-left transform hover:scale-105 motion-reduce:transform-none" style="background-color: #F8F8F8;">
+                        <a href="#">
+                            <div class="div-cer-anak">
+                                <img src="img/cer-anak.svg" class="display block ml-3 mt-3 w-8 xl:w-9 sm:w-8 md:w-7 lg:w-8 pb-3">
+                                <p class="font-bold font-title ml-3 xl:pb-3 lg:pb-3 md:pb-3 xl:text-base lg:text-base md:text-sm sm:text-base">Cerita Anak</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="rounded-xl pl-7 py-5" style="background-color: #F8F8F8;">
-                        <p>Esai</p>
+                    <div class="rounded-xl p-4 text-left transform hover:scale-105 motion-reduce:transform-none" style="background-color: #F8F8F8;">
+                        <a href="#">
+                            <div class="div-artikel">
+                                <img src="img/artikel.svg" class="display block ml-3 mt-3 w-8 xl:w-9 sm:w-8 md:w-7 lg:w-8 pb-3">
+                                <p class="font-bold font-title ml-3 xl:pb-3 lg:pb-3 md:pb-3 xl:text-base lg:text-base md:text-sm sm:text-base">Artikel</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="rounded-xl pl-7 py-5" style="background-color: #F8F8F8;">
-                        <p>Artikel</p>
+                    <div class="rounded-xl p-4 text-left transform hover:scale-105 motion-reduce:transform-none" style="background-color: #F8F8F8;">
+                        <a href="#">
+                            <div class="div-esai">
+                                <img src="img/esai.svg" class="display block ml-3 mt-3 h-11 xl:h-12 sm:h-10 md:h-10 lg:h-11 pb-3">
+                                <p class="font-bold font-title ml-3 xl:pb-3 lg:pb-3 md:pb-3 xl:text-base lg:text-base md:text-sm sm:text-base">Esai</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -301,9 +428,9 @@
     <!--* Main Content End -->
     
     <!--* Footer  -->
-    <!-- <footer class="relative pt-16 xl:mx-20 sm:mx-10">
+    <footer class="relative pt-16 xl:mx-20 sm:mx-10">
         <div class="mt-5 px-10 bg-blue-100 rounded-t-2xl">
-            <div class="grid xl:grid-cols-5">
+            <div class="grid xl:grid-cols-5 lg:grid-cols-5">
                 <div class="col-span-2">
                     <img class="mt-7 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
                     <div class="mt-8 mb-6">
@@ -327,41 +454,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="mb-10 pt-12 sm:invisible xl:visible">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        Informasi Event
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
-                    </ul>
-                </div>
-                <div class="mb-10 pt-12 sm:invisible xl:visible">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        List Kategori
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Puisi </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Cerpen </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Artikel </a> </li>
-                    </ul>
-                </div>
-                <div class="mb-10 pt-12 sm:invisible xl:visible">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        Contact
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> +62 815-1531-2240 </a> </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="grid sm:grid-cols-3 md:hidden lg:hidden xl:hidden">
                 <div class="mb-10 pt-12">
                     <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
                         Informasi Event
@@ -396,6 +488,41 @@
                     </ul>
                 </div>
             </div>
+            <!-- <div class="grid sm:grid-cols-3 md:hidden lg:hidden xl:hidden">
+                <div class="mb-10 pt-12">
+                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        Informasi Event
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
+                    </ul>
+                </div>
+                <div class="mb-10 pt-12">
+                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        List Kategori
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Puisi </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Cerpen </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Artikel </a> </li>
+                    </ul>
+                </div>
+                <div class="mb-10 pt-12">
+                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        Contact
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> +62 815-1531-2240 </a> </li>
+                    </ul>
+                </div>
+            </div> -->
             <div class="flex flex-wrap items-center justify-center text-center">
                 <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center">
                     <div class="bg-black content-center w-full" style="height: 2px;"></div>
@@ -406,7 +533,7 @@
             </div>
         </div>
         
-    </footer> -->
+    </footer>
     <!--* Footer End  -->
 </body>
 
