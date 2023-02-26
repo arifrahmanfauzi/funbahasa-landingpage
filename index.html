@@ -301,12 +301,18 @@
                     bottom:80%;
                     width: 82px;
                 }
+                .foll-us{
+                    display: none;
+                }
+                .sosmed{
+                    display: none;
+                }
             }
 
             @media screen and (min-width: 768px) {
                 .dots-icon{
-                    left: 80.3%;
-                    bottom:7%;
+                    left: 81.2%;
+                    bottom:50%;
                     width: 82px;
                 }
                 .post-column{
@@ -321,12 +327,15 @@
                     bottom:68%;
                     width: 82px;
                 }
+                .sosmed-2{
+                    display: none;
+                }
             }
 
             @media screen and (min-width: 1024px) {
                 .dots-icon{
                     left: 74.3%;
-                    bottom:14.35%;
+                    bottom:49%;
                     width: 90px;
                 }
                 .post-column{
@@ -334,14 +343,17 @@
                     padding-right: 20%;
                 }
                 .puisi-col2{
+                    display: none;
+                }
+                .sosmed-2{
                     display: none;
                 }
             }
 
             @media screen and (min-width: 1280px) {
                 .dots-icon{
-                    left: 74.7%;
-                    bottom: 14.35%;
+                    left: 75%;
+                    bottom: 49.5%;
                     width: 90px;
                 }
                 .post-column{
@@ -351,12 +363,16 @@
                 .puisi-col2{
                     display: none;
                 }
+                .sosmed-2{
+                    display: none;
+                }
             }
         </style>
         <section>
             <img src="img/wave.png" alt="wave" class="w-full h-auto">
-            <img src="img/dots-icon.svg" alt="dots" class="dots-icon absolute">
-            <div class="post-column my-16 font-title">
+            
+            <div class="post-column my-16 font-title relative">
+                <img src="img/dots-icon.svg" alt="dots" class="dots-icon absolute">
                 <div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 gap-7 mb-10 relative">
                     <img src="img/plus-icon.svg" alt="plus" class="plus-icon absolute">
                     <div class="puisi-col1 rounded-xl p-4 text-left transform hover:scale-105 motion-reduce:transform-none" style="background-color: #F8F8F8;">
@@ -429,100 +445,82 @@
     
     <!--* Footer  -->
     <footer class="relative pt-16 xl:mx-20 sm:mx-10">
-        <div class="mt-5 px-10 bg-blue-100 rounded-t-2xl">
-            <div class="grid xl:grid-cols-5 lg:grid-cols-5">
-                <div class="col-span-2">
-                    <img class="mt-7 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
+        <div class="mt-5 px-9 xl:px-10 lg:px-10 md:px-10 sm:px-10 bg-blue-100 xl:rounded-t-2xl lg:rounded-t-2xl md:rounded-t-2xl sm:rounded-t-2xl">
+            <div class="grid grid-cols-2 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3">
+                <div class="col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-3">
+                    <img class="mt-7 w-32 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
                     <div class="mt-8 mb-6">
-                        <h4 class="pb-2 font-bold font-sans xl:text-base lg:text-base md:text-xs sm:text-xs">Follow Us On</h4>
-                        <div class="flex flex-row -mx-2 mt-2 justify-start">
-                            <div class="xl:px-2 sm:px-1">
+                        <h4 class="foll-us pb-2 font-bold font-sans xl:text-base lg:text-base md:text-xs sm:text-xs">Follow Us On</h4>
+                        <div class="sosmed flex flex-row mt-2 justify-start">
+                            <div class="px-1 xl:px-2 sm:px-1">
                                 <a href="#">
-                                    <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                    <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
                                 </a>
                             </div>
-                            <div class="xl:px-2 sm:px-1">
+                            <div class="px-1 xl:px-2 sm:px-1">
                                 <a href="#">
-                                    <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                    <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
                                 </a>
                             </div>
-                            <div class="xl:px-2 sm:px-1">
+                            <div class="px-1 xl:px-2 sm:px-1">
                                 <a href="#">
-                                    <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                    <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mb-10 pt-12">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-sm font-bold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
                         Informasi Event
                     </span>
                     <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
                     </ul>
                 </div>
-                <div class="mb-10 pt-12">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-sm font-bold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
                         List Kategori
                     </span>
                     <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Puisi </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Cerpen </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Artikel </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Puisi </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Cerpen </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Artikel </a> </li>
                     </ul>
                 </div>
-                <div class="mb-10 pt-12">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-sm font-bold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
                         Contact
                     </span>
                     <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> +62 815-1531-2240 </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> +62 815-1531-2240 </a> </li>
                     </ul>
+                    <div class="sosmed-2 flex flex-row mt-2 justify-start">
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="#">
+                                <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="#">
+                                <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="#">
+                                <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="grid sm:grid-cols-3 md:hidden lg:hidden xl:hidden">
-                <div class="mb-10 pt-12">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        Informasi Event
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
-                    </ul>
-                </div>
-                <div class="mb-10 pt-12">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        List Kategori
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Puisi </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Cerpen </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Artikel </a> </li>
-                    </ul>
-                </div>
-                <div class="mb-10 pt-12">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        Contact
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> +62 815-1531-2240 </a> </li>
-                    </ul>
-                </div>
-            </div> -->
             <div class="flex flex-wrap items-center justify-center text-center">
                 <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center">
                     <div class="bg-black content-center w-full" style="height: 2px;"></div>
