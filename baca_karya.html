@@ -302,562 +302,561 @@
           </div>
         </div>
       <!-- Esai End -->
-          <style>
-            svg.arrow:hover{
-              stroke: white;
-            }
-            svg.arrow{
-              stroke: rgba(64, 70, 66);
-            }
-            @media screen and (max-width: 767px) {
-              .content{
-                display: none;
-              }
-              .sub-category{
-                display: none;
-              }
-            }
-          </style>
-          <script>
-            //Data Puisi
-            var dataPuisi = [
-              {
-                id: "1",
-                month: "Jan",
-                date: "21",
-                category: "Puisi",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
-              },
-              {
-                id: "2",
-                month: "Jan",
-                date: "21",
-                category: "Puisi",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
-              },
-              {
-                id: "3",
-                month: "Jan",
-                date: "21",
-                category: "Puisi",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/3.jpg",
-              },
-              {
-                id: "4",
-                month: "Jan",
-                date: "21",
-                category: "Puisi",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
-              },
-              {
-                id: "5",
-                month: "Jan",
-                date: "21",
-                category: "Puisi",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/5.jpg",
-              },
-              {
-                id: "6",
-                month: "Jan",
-                date: "21",
-                category: "Puisi",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/6.jpg",
-              },
-            ];
 
-            //Data Cerpen
-            var dataCerpen = [
-              {
-                id: "1",
-                month: "Jan",
-                date: "21",
-                category: "Cerpen",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
-              },
-              {
-                id: "2",
-                month: "Jan",
-                date: "21",
-                category: "Cerpen",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
-              },
-              {
-                id: "3",
-                month: "Jan",
-                date: "21",
-                category: "Cerpen",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/3.jpg",
-              },
-              {
-                id: "4",
-                month: "Jan",
-                date: "21",
-                category: "Cerpen",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
-              },
-              {
-                id: "5",
-                month: "Jan",
-                date: "21",
-                category: "Cerpen",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/5.jpg",
-              },
-              {
-                id: "6",
-                month: "Jan",
-                date: "21",
-                category: "Cerpen",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/6.jpg",
-              },
-            ];
+      <style>
+        svg.arrow:hover{
+          stroke: white;
+        }
+        svg.arrow{
+          stroke: rgba(64, 70, 66);
+        }
+        @media screen and (max-width: 767px) {
+          .content{
+            display: none;
+          }
+          .sub-category{
+            display: none;
+          }
+        }
+      </style>
+      
+      <script>
+        //Data Puisi
+        var dataPuisi = [
+          {
+            id: "1",
+            month: "Jan",
+            date: "21",
+            category: "Puisi",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
+          },
+          {
+            id: "2",
+            month: "Jan",
+            date: "21",
+            category: "Puisi",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
+          },
+          {
+            id: "3",
+            month: "Jan",
+            date: "21",
+            category: "Puisi",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/3.jpg",
+          },
+          {
+            id: "4",
+            month: "Jan",
+            date: "21",
+            category: "Puisi",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
+          },
+          {
+            id: "5",
+            month: "Jan",
+            date: "21",
+            category: "Puisi",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/women/5.jpg",
+          },
+          {
+            id: "6",
+            month: "Jan",
+            date: "21",
+            category: "Puisi",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/women/6.jpg",
+          },
+        ];
 
-            //Data Cerita Anak
-            var dataCeritaAnak = [
-              {
-                id: "1",
-                month: "Jan",
-                date: "21",
-                category: "Cerita Anak",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
-              },
-              {
-                id: "2",
-                month: "Jan",
-                date: "21",
-                category: "Cerita Anak",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
-              },
-              {
-                id: "3",
-                month: "Jan",
-                date: "21",
-                category: "Cerita Anak",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/3.jpg",
-              },
-              {
-                id: "4",
-                month: "Jan",
-                date: "21",
-                category: "Cerita Anak",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
-              },
-              {
-                id: "5",
-                month: "Jan",
-                date: "21",
-                category: "Cerita Anak",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/5.jpg",
-              },
-              {
-                id: "6",
-                month: "Jan",
-                date: "21",
-                category: "Cerita Anak",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/6.jpg",
-              },
-            ];
+        //Data Cerpen
+        var dataCerpen = [
+          {
+            id: "1",
+            month: "Jan",
+            date: "21",
+            category: "Cerpen",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
+          },
+          {
+            id: "2",
+            month: "Jan",
+            date: "21",
+            category: "Cerpen",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
+          },
+          {
+            id: "3",
+            month: "Jan",
+            date: "21",
+            category: "Cerpen",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/3.jpg",
+          },
+          {
+            id: "4",
+            month: "Jan",
+            date: "21",
+            category: "Cerpen",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
+          },
+          {
+            id: "5",
+            month: "Jan",
+            date: "21",
+            category: "Cerpen",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/women/5.jpg",
+          },
+          {
+            id: "6",
+            month: "Jan",
+            date: "21",
+            category: "Cerpen",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/women/6.jpg",
+          },
+        ];
 
-            //Data Artikel
-            var dataArtikel = [
-              {
-                id: "1",
-                month: "Jan",
-                date: "21",
-                category: "Artikel",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
-              },
-              {
-                id: "2",
-                month: "Jan",
-                date: "21",
-                category: "Artikel",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
-              },
-              {
-                id: "3",
-                month: "Jan",
-                date: "21",
-                category: "Artikel",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/3.jpg",
-              },
-              {
-                id: "4",
-                month: "Jan",
-                date: "21",
-                category: "Artikel",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
-              },
-              {
-                id: "5",
-                month: "Jan",
-                date: "21",
-                category: "Artikel",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/5.jpg",
-              },
-              {
-                id: "6",
-                month: "Jan",
-                date: "21",
-                category: "Artikel",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/6.jpg",
-              },
-            ];
+        //Data Cerita Anak
+        var dataCeritaAnak = [
+          {
+            id: "1",
+            month: "Jan",
+            date: "21",
+            category: "Cerita Anak",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
+          },
+          {
+            id: "2",
+            month: "Jan",
+            date: "21",
+            category: "Cerita Anak",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
+          },
+          {
+            id: "3",
+            month: "Jan",
+            date: "21",
+            category: "Cerita Anak",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/3.jpg",
+          },
+          {
+            id: "4",
+            month: "Jan",
+            date: "21",
+            category: "Cerita Anak",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
+          },
+          {
+            id: "5",
+            month: "Jan",
+            date: "21",
+            category: "Cerita Anak",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/women/5.jpg",
+          },
+          {
+            id: "6",
+            month: "Jan",
+            date: "21",
+            category: "Cerita Anak",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/women/6.jpg",
+          },
+        ];
 
-            //Data Esai
-            var dataEsai = [
-              {
-                id: "1",
-                month: "Jan",
-                date: "21",
-                category: "Esai",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
-              },
-              {
-                id: "2",
-                month: "Jan",
-                date: "21",
-                category: "Esai",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
-              },
-              {
-                id: "3",
-                month: "Jan",
-                date: "21",
-                category: "Esai",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/3.jpg",
-              },
-              {
-                id: "4",
-                month: "Jan",
-                date: "21",
-                category: "Esai",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
-              },
-              {
-                id: "5",
-                month: "Jan",
-                date: "21",
-                category: "Esai",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/5.jpg",
-              },
-              {
-                id: "6",
-                month: "Jan",
-                date: "21",
-                category: "Esai",
-                title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
-                content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/6.jpg",
-              },
-            ];
+        //Data Artikel
+        var dataArtikel = [
+          {
+            id: "1",
+            month: "Jan",
+            date: "21",
+            category: "Artikel",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
+          },
+          {
+            id: "2",
+            month: "Jan",
+            date: "21",
+            category: "Artikel",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
+          },
+          {
+            id: "3",
+            month: "Jan",
+            date: "21",
+            category: "Artikel",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/3.jpg",
+          },
+          {
+            id: "4",
+            month: "Jan",
+            date: "21",
+            category: "Artikel",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
+          },
+          {
+            id: "5",
+            month: "Jan",
+            date: "21",
+            category: "Artikel",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/women/5.jpg",
+          },
+          {
+            id: "6",
+            month: "Jan",
+            date: "21",
+            category: "Artikel",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/women/6.jpg",
+          },
+        ];
+
+        //Data Esai
+        var dataEsai = [
+          {
+            id: "1",
+            month: "Jan",
+            date: "21",
+            category: "Esai",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
+          },
+          {
+            id: "2",
+            month: "Jan",
+            date: "21",
+            category: "Esai",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
+          },
+          {
+            id: "3",
+            month: "Jan",
+            date: "21",
+            category: "Esai",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/3.jpg",
+          },
+          {
+            id: "4",
+            month: "Jan",
+            date: "21",
+            category: "Esai",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
+          },
+          {
+            id: "5",
+            month: "Jan",
+            date: "21",
+            category: "Esai",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/women/5.jpg",
+          },
+          {
+            id: "6",
+            month: "Jan",
+            date: "21",
+            category: "Esai",
+            title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
+            content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan",
+            author: "Rasyid Yudhistira",
+            profile_image: "https://randomuser.me/api/portraits/women/6.jpg",
+          },
+        ];
+        
+        //Funtion Puisi
+        function loadPuisi() {
+          return {
+            search: "",
+            pageNumber: 0,
+            size: 3,
+            total: "",
+            myForData: dataPuisi,
             
-            //Funtion Puisi
-            function loadPuisi() {
-              return {
-                search: "",
-                pageNumber: 0,
-                size: 3,
-                total: "",
-                myForData: dataPuisi,
-                
-                get filteredEmployees() {
-                  const start = this.pageNumber * this.size,
-                  end = start + this.size;
+            get filteredEmployees() {
+              const start = this.pageNumber * this.size,
+              end = start + this.size;
 
-                  if (this.search === "") {
-                    this.total = this.myForData.length;
-                    return this.myForData.slice(start, end);
-                  }
-                },
-                //Create array of all pages (for loop to display page numbers)
-                pages() {
-                  return Array.from({
-                    length: Math.ceil(this.total / this.size),
-                  });
-                },
-                //Next Page
-                nextPage() {
-                  this.pageNumber++;
-                },
-                //Previous Page
-                prevPage() {
-                  this.pageNumber--;
-                },
-                //Total number of pages
-                pageCount() {
-                  return Math.ceil(this.total / this.size);
-                },
-                //Link to navigate to page
-                viewPage(index) {
-                  this.pageNumber = index;
-                },
-              };
-            }
+              if (this.search === "") {
+                this.total = this.myForData.length;
+                return this.myForData.slice(start, end);
+              }
+            },
+            //Create array of all pages (for loop to display page numbers)
+            pages() {
+              return Array.from({
+                length: Math.ceil(this.total / this.size),
+              });
+            },
+            //Next Page
+            nextPage() {
+              this.pageNumber++;
+            },
+            //Previous Page
+            prevPage() {
+              this.pageNumber--;
+            },
+            //Total number of pages
+            pageCount() {
+              return Math.ceil(this.total / this.size);
+            },
+            //Link to navigate to page
+            viewPage(index) {
+              this.pageNumber = index;
+            },
+          };
+        }
 
-            //Function Cerpen
-            function loadCerpen() {
-              return {
-                search: "",
-                pageNumber: 0,
-                size: 3,
-                total: "",
-                myForData: dataCerpen,
-                
-                get filteredEmployees() {
-                  const start = this.pageNumber * this.size,
-                  end = start + this.size;
+        //Function Cerpen
+        function loadCerpen() {
+          return {
+            search: "",
+            pageNumber: 0,
+            size: 3,
+            total: "",
+            myForData: dataCerpen,
+            
+            get filteredEmployees() {
+              const start = this.pageNumber * this.size,
+              end = start + this.size;
 
-                  if (this.search === "") {
-                    this.total = this.myForData.length;
-                    return this.myForData.slice(start, end);
-                  }
-                },
-                //Create array of all pages (for loop to display page numbers)
-                pages() {
-                  return Array.from({
-                    length: Math.ceil(this.total / this.size),
-                  });
-                },
-                //Next Page
-                nextPage() {
-                  this.pageNumber++;
-                },
-                //Previous Page
-                prevPage() {
-                  this.pageNumber--;
-                },
-                //Total number of pages
-                pageCount() {
-                  return Math.ceil(this.total / this.size);
-                },
-                //Link to navigate to page
-                viewPage(index) {
-                  this.pageNumber = index;
-                },
-              };
-            }
+              if (this.search === "") {
+                this.total = this.myForData.length;
+                return this.myForData.slice(start, end);
+              }
+            },
+            //Create array of all pages (for loop to display page numbers)
+            pages() {
+              return Array.from({
+                length: Math.ceil(this.total / this.size),
+              });
+            },
+            //Next Page
+            nextPage() {
+              this.pageNumber++;
+            },
+            //Previous Page
+            prevPage() {
+              this.pageNumber--;
+            },
+            //Total number of pages
+            pageCount() {
+              return Math.ceil(this.total / this.size);
+            },
+            //Link to navigate to page
+            viewPage(index) {
+              this.pageNumber = index;
+            },
+          };
+        }
 
-            //Function Cerita Anak
-            function loadCeritaAnak() {
-              return {
-                search: "",
-                pageNumber: 0,
-                size: 3,
-                total: "",
-                myForData: dataCeritaAnak,
-                
-                get filteredEmployees() {
-                  const start = this.pageNumber * this.size,
-                  end = start + this.size;
+        //Function Cerita Anak
+        function loadCeritaAnak() {
+          return {
+            search: "",
+            pageNumber: 0,
+            size: 3,
+            total: "",
+            myForData: dataCeritaAnak,
+            
+            get filteredEmployees() {
+              const start = this.pageNumber * this.size,
+              end = start + this.size;
 
-                  if (this.search === "") {
-                    this.total = this.myForData.length;
-                    return this.myForData.slice(start, end);
-                  }
-                },
-                //Create array of all pages (for loop to display page numbers)
-                pages() {
-                  return Array.from({
-                    length: Math.ceil(this.total / this.size),
-                  });
-                },
-                //Next Page
-                nextPage() {
-                  this.pageNumber++;
-                },
-                //Previous Page
-                prevPage() {
-                  this.pageNumber--;
-                },
-                //Total number of pages
-                pageCount() {
-                  return Math.ceil(this.total / this.size);
-                },
-                //Link to navigate to page
-                viewPage(index) {
-                  this.pageNumber = index;
-                },
-              };
-            }
+              if (this.search === "") {
+                this.total = this.myForData.length;
+                return this.myForData.slice(start, end);
+              }
+            },
+            //Create array of all pages (for loop to display page numbers)
+            pages() {
+              return Array.from({
+                length: Math.ceil(this.total / this.size),
+              });
+            },
+            //Next Page
+            nextPage() {
+              this.pageNumber++;
+            },
+            //Previous Page
+            prevPage() {
+              this.pageNumber--;
+            },
+            //Total number of pages
+            pageCount() {
+              return Math.ceil(this.total / this.size);
+            },
+            //Link to navigate to page
+            viewPage(index) {
+              this.pageNumber = index;
+            },
+          };
+        }
 
-            //Function Artikel
-            function loadArtikel() {
-              return {
-                search: "",
-                pageNumber: 0,
-                size: 3,
-                total: "",
-                myForData: dataArtikel,
-                
-                get filteredEmployees() {
-                  const start = this.pageNumber * this.size,
-                  end = start + this.size;
+        //Function Artikel
+        function loadArtikel() {
+          return {
+            search: "",
+            pageNumber: 0,
+            size: 3,
+            total: "",
+            myForData: dataArtikel,
+            
+            get filteredEmployees() {
+              const start = this.pageNumber * this.size,
+              end = start + this.size;
 
-                  if (this.search === "") {
-                    this.total = this.myForData.length;
-                    return this.myForData.slice(start, end);
-                  }
-                },
-                //Create array of all pages (for loop to display page numbers)
-                pages() {
-                  return Array.from({
-                    length: Math.ceil(this.total / this.size),
-                  });
-                },
-                //Next Page
-                nextPage() {
-                  this.pageNumber++;
-                },
-                //Previous Page
-                prevPage() {
-                  this.pageNumber--;
-                },
-                //Total number of pages
-                pageCount() {
-                  return Math.ceil(this.total / this.size);
-                },
-                //Link to navigate to page
-                viewPage(index) {
-                  this.pageNumber = index;
-                },
-              };
-            }
+              if (this.search === "") {
+                this.total = this.myForData.length;
+                return this.myForData.slice(start, end);
+              }
+            },
+            //Create array of all pages (for loop to display page numbers)
+            pages() {
+              return Array.from({
+                length: Math.ceil(this.total / this.size),
+              });
+            },
+            //Next Page
+            nextPage() {
+              this.pageNumber++;
+            },
+            //Previous Page
+            prevPage() {
+              this.pageNumber--;
+            },
+            //Total number of pages
+            pageCount() {
+              return Math.ceil(this.total / this.size);
+            },
+            //Link to navigate to page
+            viewPage(index) {
+              this.pageNumber = index;
+            },
+          };
+        }
 
-            //Function Esai
-            function loadEsai() {
-              return {
-                search: "",
-                pageNumber: 0,
-                size: 3,
-                total: "",
-                myForData: dataEsai,
-                
-                get filteredEmployees() {
-                  const start = this.pageNumber * this.size,
-                  end = start + this.size;
+        //Function Esai
+        function loadEsai() {
+          return {
+            search: "",
+            pageNumber: 0,
+            size: 3,
+            total: "",
+            myForData: dataEsai,
+            
+            get filteredEmployees() {
+              const start = this.pageNumber * this.size,
+              end = start + this.size;
 
-                  if (this.search === "") {
-                    this.total = this.myForData.length;
-                    return this.myForData.slice(start, end);
-                  }
-                },
-                //Create array of all pages (for loop to display page numbers)
-                pages() {
-                  return Array.from({
-                    length: Math.ceil(this.total / this.size),
-                  });
-                },
-                //Next Page
-                nextPage() {
-                  this.pageNumber++;
-                },
-                //Previous Page
-                prevPage() {
-                  this.pageNumber--;
-                },
-                //Total number of pages
-                pageCount() {
-                  return Math.ceil(this.total / this.size);
-                },
-                //Link to navigate to page
-                viewPage(index) {
-                  this.pageNumber = index;
-                },
-              };
-            }
-          </script>
-        <!-- Frame -->
-        
-        
-        
+              if (this.search === "") {
+                this.total = this.myForData.length;
+                return this.myForData.slice(start, end);
+              }
+            },
+            //Create array of all pages (for loop to display page numbers)
+            pages() {
+              return Array.from({
+                length: Math.ceil(this.total / this.size),
+              });
+            },
+            //Next Page
+            nextPage() {
+              this.pageNumber++;
+            },
+            //Previous Page
+            prevPage() {
+              this.pageNumber--;
+            },
+            //Total number of pages
+            pageCount() {
+              return Math.ceil(this.total / this.size);
+            },
+            //Link to navigate to page
+            viewPage(index) {
+              this.pageNumber = index;
+            },
+          };
+        }
+      </script>
+    <!-- Frame -->
     </main>
     <!--* Main Content End -->
 
