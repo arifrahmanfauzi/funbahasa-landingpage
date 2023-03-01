@@ -121,6 +121,7 @@
               type="search"
               class="block w-full bg-gray-200 focus:outline-none focus:bg-white focus:shadow text-gray-700 font-bold rounded-lg px-4 py-3"
             /> -->
+            
             <div class="mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               <template x-for="item in filteredEmployees" :key="item">
                 <div class="flex items-center shadow hover:bg-indigo-100 hover:shadow-lg hover:rounded transition duration-150 ease-in-out transform hover:scale-105 p-3">
@@ -141,12 +142,12 @@
                   <line x1="5" y1="19" x2="5" y2="5"></line>
                 </svg>
               </button> -->
-      
+              <!-- <div class="buttons ml-auto flex text-gray-500 mr-1">
+                
+              </div> -->
               <!--Previous Button-->
               <button x-on:click="prevPage" :disabled="pageNumber==0" :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber==0 }">
-                <svg class="h-8 w-8 text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
+                <svg class="arrow w-7 border-2 rounded-full p-1 cursor-pointer border-gray-500 hover:bg-gray-500 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
               </button>
       
               <!-- Display page numbers -->
@@ -162,24 +163,8 @@
               </template> -->
       
               <!--Next Button-->
-              <button
-                x-on:click="nextPage"
-                :disabled="pageNumber >= pageCount() -1"
-                :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= pageCount() -1 }"
-              >
-                <svg
-                  class="h-8 w-8 text-indigo-600"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
+              <button x-on:click="nextPage" :disabled="pageNumber >= pageCount() -1" :class="{ 'disabled cursor-not-allowed text-gray-600' : pageNumber >= pageCount() -1 }">
+                <svg class="arrow w-7 border-2 rounded-full p-1 cursor-pointer border-gray-500 hover:bg-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
               </button>
       
               <!--Last Button-->
@@ -205,7 +190,7 @@
               </button> -->
             </div>
       
-            <div>
+            <!-- <div>
               <div
                 class="mt-6 flex flex-wrap justify-between items-center text-sm leading-5 text-gray-700"
               >
@@ -226,7 +211,7 @@
                   Total <span class="font-bold" x-text="total"></span> results
                 </div>
       
-                <!--Message to display when no results-->
+                Message to display when no results
                 <div
                   class="mx-auto flex items-center font-bold text-red-500"
                   x-show="total===0"
@@ -250,8 +235,13 @@
                   <span class="ml-4"> No results!!</span>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
+          <style>
+            svg.arrow:hover{
+              stroke: white;
+            }
+          </style>
           <script>
             var sourceData = [
               {
