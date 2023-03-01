@@ -111,10 +111,10 @@
         </section> -->
         <!-- Breadcrumbs End -->
 
-        <div class="container mx-auto pt-36 px-10 xl:px-16" x-data="loadPuisi()">
+        <div class="container mx-auto pt-28 xl:pt-36 px-10 xl:px-16" x-data="loadPuisi()">
             <div>
-              <a href="#" class="font-title font-extrabold text-2xl xl:text-4xl lg:text-3xl text-gray-500 hover:text-blue-500">Puisi</a>
-              <p class="font-sans font-medium pb-3 text-sm text-gray-500 ">Temukan berbagai karya sastra dengan irama, lirik, rima, dan ritme pada setiap barisnya</p>
+              <a href="#" class="font-title font-extrabold xl:pb-3 text-2xl xl:text-4xl lg:text-3xl text-gray-500 hover:text-blue-500">Puisi</a>
+              <p class="sub-category font-sans font-medium pb-3 text-sm text-gray-500 ">Temukan berbagai karya sastra dengan irama, lirik, rima, dan ritme pada setiap barisnya</p>
             </div>
             <div class="mt-8 grid grid-cols-1 xl:grid-cols-3 md:grid-cols-1 lg:grid-cols-3 gap-6">
               <template x-for="item in filteredEmployees" :key="item">
@@ -157,6 +157,9 @@
             }
             @media screen and (max-width: 767px) {
               .content{
+                display: none;
+              }
+              .sub-category{
                 display: none;
               }
             }
