@@ -103,9 +103,49 @@
 
     <!--* Main Content -->
     <main>
-        <div>
-            
+        <div class="mx-auto pt-28 xl:pt-36 lg:pt-32 px-10 xl:px-16 lg:px-16 md:px-10" x-data="loadPuisi()">
+            <template x-for="item in filteredEmployees" :key="item">
+                <a class="inline-flex items-center">
+                    <img alt="blog" :src="`${item.profile_image}`" class="w-6 h-6 rounded-full flex-shrink-0 object-cover object-center">
+                    <span class="flex flex-grow pl-3">
+                      <span class="title-font font-medium text-gray-500 font-sans text-xs xl:text-sm" x-text="item.author"></span>
+                    </span>
+                  </a>
+            </template>
         </div>
+        <script>
+            var sourceData = [
+            {
+                id: "1",
+                date: "21 Jan 2021",
+                category: "Puisi",
+                title: "Ekologi Kepada Jalan",
+                content: "Di tubuh langit kelimut Melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, Diundang turun oleh garis tangan dan kehidupan.",
+                author: "Rasyid Yudhistira",
+                profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
+              },
+            ]
+
+            function loadPuisi(){
+                return {
+                search: "",
+                pageNumber: 0,
+                size: 3,
+                total: "",
+                myForData: sourceData,
+      
+                get filteredEmployees() {
+                  const start = this.pageNumber * this.size,
+                    end = start + this.size;
+      
+                  if (this.search === "") {
+                    this.total = this.myForData.length;
+                    return this.myForData.slice(start, end);
+                  }
+                },
+                }
+            }
+        </script>
     </main>
     <!--* Main Content End -->
 

@@ -351,22 +351,6 @@
                     this.total = this.myForData.length;
                     return this.myForData.slice(start, end);
                   }
-      
-                  //Return the total results of the filters
-                  this.total = this.myForData.filter((item) => {
-                    return item.employee_name
-                      .toLowerCase()
-                      .includes(this.search.toLowerCase());
-                  }).length;
-      
-                  //Return the filtered data
-                  return this.myForData
-                    .filter((item) => {
-                      return item.employee_name
-                        .toLowerCase()
-                        .includes(this.search.toLowerCase());
-                    })
-                    .slice(start, end);
                 },
       
                 //Create array of all pages (for loop to display page numbers)
