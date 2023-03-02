@@ -103,25 +103,86 @@
 
     <!--* Main Content -->
     <main>
-        <div class="mx-auto pt-28 xl:pt-36 lg:pt-32 px-10 xl:px-16 lg:px-16 md:px-10" x-data="loadPuisi()">
-            <template x-for="item in filteredEmployees" :key="item">
-                <a class="inline-flex items-center">
-                    <img alt="blog" :src="`${item.profile_image}`" class="w-6 h-6 rounded-full flex-shrink-0 object-cover object-center">
-                    <span class="flex flex-grow pl-3">
-                      <span class="title-font font-medium text-gray-500 font-sans text-xs xl:text-sm" x-text="item.author"></span>
-                    </span>
-                  </a>
-            </template>
+        <div class="grid grid-cols-4 gap-2 mx-auto pt-28 xl:pt-36 lg:pt-32 px-10 xl:px-20 lg:px-16 md:px-10">
+            <div class="col-span-4 xl:col-span-3 lg:col-span-3 md:col-span-4 sm:col-span-4" x-data="loadPuisi()">
+                <template x-for="item in filteredEmployees" :key="item">
+                    <div>
+                        <div class="flex items-center w-full pb-5 border-b">
+                            <img :src="`${item.profile_image}`" alt="blog" class="w-8 xl:w-12 lg:w-12 md:w-10 sm:w-10 h-8 xl:h-12 lg:h-12 md:h-10 sm:h-10 rounded-full flex-shrink-0 object-cover object-center">
+                            <div class="pl-3">
+                                <p class="font-title font-bold text-gray-500 text-base" x-text="item.author"></p>
+                                <span class="font-sans font-thin text-blue-500 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs" x-text="item.category"></span>
+                                <i class="bi bi-dot text-gray-300 text-xs"></i>
+                                <span class="font-sans font-thin text-gray-300 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs" x-text="item.date"></span>
+                                <i class="bi bi-dot text-gray-300 text-xs"></i>
+                                <span class="font-sans font-thin text-gray-300 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs" x-text="item.duration + ' min read'"></span>
+                            </div>
+                        </div>
+                        <div class="py-10">
+                            <p class="font-title font-extrabold text-gray-500 pb-4 text-2xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl" x-text="item.title"></p>
+                            <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Di tubuh langit kelimut <br> melekat sebuah nukilan. <br> Tentang nujum yang muncul dari bintang-bintang, <br> diundang turun oleh garis tangan dan kehidupan.
+                            </p>
+                            <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Garis tangan adalah <br>penunjuk jalan-jalan yang hidup. <br> Sedang garis kehidupan adalah <br> jalan-jalan yang dilalui derup.
+                            </p>
+                            <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Semua orang menginjakkan kakinya <br> pada jalan-jalan berumur panjang <br> atau yang akan menjadi mendiang. <br> Panjang atau pendek, <br> kehendak Sang Khalik.
+                            </p>
+                            <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Sebuah padah menemuiku dan berkata <br> “Jalan ini buntu dan akan mati”. <br> Mendengar dengan telinga tuli adalah <br> kesia-siaan yang kupeluk erat.
+                            </p>
+                        </div>
+                        <div class="flex pb-8">
+                            <div class="pr-7">
+                                <i class="bi bi-bar-chart text-2xl text-gray-500 pr-1"></i>
+                                <span class="font-sans font-thin text-gray-500 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-sm">139</span>
+                            </div>
+                            <div>
+                                <i class="bi bi-hand-thumbs-up text-2xl text-gray-500 pr-1"></i>
+                                <span class="font-sans font-thin text-gray-500 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-sm">10</span>
+                            </div>
+                        </div>
+                        <div class="border-t pt-8">
+                            <p class="font-sans font-medium text-sm xl:text-base lg:text-base md:text-base sm:text-base">Tulis Komentar</p>
+                            <div class="flex pt-2">
+                                <div class="w-11/12">
+                                    <form action="" class="mb-0 font-sans">
+                                        <div>
+                                          <label for="comment" class="sr-only mb-2 text-sm font-medium text-gray-500 dark:text-white">comment</label>
+                                          <input class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-l-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Bagaimana tanggapanmu?">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="flex justify-center items-center w-1/12 px-5 bg-blue-500 rounded-r-lg">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-send" viewBox="0 0 16 16">
+                                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
         </div>
+
+        <style>
+            @media screen and (max-width: 767px) {
+            svg{
+                width: 17px;
+                height: 17px;
+            }
+        }
+        </style>
+        
         <script>
             var sourceData = [
             {
                 id: "1",
                 date: "21 Jan 2021",
                 category: "Puisi",
-                title: "Ekologi Kepada Jalan",
-                content: "Di tubuh langit kelimut Melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, Diundang turun oleh garis tangan dan kehidupan.",
                 author: "Rasyid Yudhistira",
+                title: "Ekologi Kepada Jalan",
+                content: "",
+                duration: "4",
                 profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
               },
             ]
@@ -130,7 +191,7 @@
                 return {
                 search: "",
                 pageNumber: 0,
-                size: 3,
+                size: 1,
                 total: "",
                 myForData: sourceData,
       
