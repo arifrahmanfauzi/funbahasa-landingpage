@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div id="container">
+    <div id="first">
+      <span class="bottom">bottom of div</span>
+    </div>
+    <div id="second">
+      <span class="bottom">bottom of div</span>
+    </div>
+</div>
+
+<style>
+#container {
+  position:relative;
+}
+#first {
+  width:50%;
+  background:#333;
+  height:10000px;
+  overflow: auto;
+}
+#second {
+  position: absolute;
+  right: 0;
+  top:0;
+  width:50%;
+  height:2000px;
+  background: limegreen;
+  overflow: auto;
+}
+#second.sticky {
+  position: fixed;
+  bottom: 0;
+  top: initial;
+}
+
+/* only to show bottom for demo */
+.bottom {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}
+</style>
+
+<script>
+    var sh = $('#second').height();
+
+$(window).scroll(function(){
+  if (($(window).scrollTop() + $(window).innerHeight()) >= sh) {
+    $('#second').addClass("sticky");
+  }
+  else {
+    $('#second').removeClass("sticky");
+  }
+});
+</script>
