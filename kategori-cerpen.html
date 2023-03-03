@@ -105,7 +105,7 @@
     <main>
         <div class="container mx-auto pt-28 xl:pt-36 lg:pt-32 px-10 xl:px-16 lg:px-16 md:px-10" x-data="loadCerpen()">
             <div>
-              <a href="kategori-puisi.html" class="font-title xl:pb-3 text-gray-500">
+              <a href="kategori-cerpen.html" class="font-title xl:pb-3 text-gray-500">
                 <p class="pb-2 font-extrabold text-2xl xl:text-3xl lg:text-3xl md:text-2xl">Kategori</p>
                 <div class="relative hover:text-blue-500">
                     <img src="img/rounded-line-2.svg" alt="rounded-line" class="absolute w-36 sm:w-36 xl:w-44 lg:w-44 md:w-36 -left-4 sm:-left-5 xl:-left-7 lg:-left-7 md:-left-5 -top-3 xl:-top-2 lg:-top-2 md:-top-3 sm:-top-3">
@@ -116,7 +116,7 @@
             <div class="mt-8 grid grid-cols-1">
               <template x-for="item in filteredData" :key="item">
                 <div class="h-full flex items-start transform border-b">
-                    <div class="flex flex-wrap xl:flex-nowrap md:flex-nowrap py-5">
+                    <div class="flex flex-wrap xl:flex-nowrap md:flex-nowrap py-4">
                         <div class="w-44 mb-4 flex-shrink-0 flex flex-col">
                             <span class="font-semibold text-xs xl:text-sm title-font text-gray-500 mb-1 font-sans" x-text="item.category"></span>
                             <span class="mt-1 text-gray-300 text-xs xl:text-sm lg:text-sm font-sans" x-text="item.date"></span>
@@ -132,7 +132,7 @@
                                     </span>
                                   </a>
                             </div>
-                            <a href="puisi.html" class="text-sm font-sans text-blue-500 inline-flex items-center mt-4 transform hover:scale-105">Baca Selengkapnya
+                            <a href="puisi.html" class="text-sm font-sans text-blue-500 inline-flex items-center mt-2 transform hover:scale-105">Baca Selengkapnya
                                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M5 12h14"></path>
                                     <path d="M12 5l7 7-7 7"></path>
