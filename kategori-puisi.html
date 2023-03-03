@@ -113,7 +113,7 @@
             </a>
             </div>
             <div class="mt-8 grid grid-cols-1">
-              <template x-for="item in filteredEmployees" :key="item">
+              <template x-for="item in filteredData" :key="item">
                 <div class="h-full flex items-start transform border-b">
                     <div class="flex flex-wrap xl:flex-nowrap md:flex-nowrap py-5">
                         <div class="w-44 mb-4 flex-shrink-0 flex flex-col">
@@ -347,7 +347,7 @@
                 total: "",
                 myForData: sourceData,
       
-                get filteredEmployees() {
+                get filteredData() {
                   const start = this.pageNumber * this.size,
                     end = start + this.size;
       

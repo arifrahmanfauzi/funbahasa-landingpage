@@ -110,7 +110,7 @@
               <p class="sub-category font-sans font-medium pb-3 text-sm text-gray-500 ">Temukan berbagai karya sastra dengan irama, lirik, rima, dan ritme pada setiap barisnya</p>
             </div>
             <div class="mt-8 grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6">
-              <template x-for="item in filteredEmployees" :key="item">
+              <template x-for="item in filteredData" :key="item">
                 <div class="h-full flex items-start rounded-xl shadow-xl transform hover:scale-105" style="background-color: rgba(176,224,245,255);">
                   <a href="puisi.html">
                     <div class="flex-grow px-6 py-5">
@@ -150,7 +150,7 @@
             <p class="sub-category font-sans font-medium pb-3 text-sm text-gray-500 ">Temukan berbagai prosa fiksi yang dikemas secara menarik</p>
           </div>
           <div class="mt-8 grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6">
-            <template x-for="item in filteredEmployees" :key="item">
+            <template x-for="item in filteredData" :key="item">
               <div class="h-full flex items-start rounded-xl shadow-xl transform hover:scale-105" style="background-color: rgba(211,238,249,255);">
                 <a href="cerpen.html">
                   <div class="flex-grow px-6 py-5">
@@ -190,7 +190,7 @@
             <p class="sub-category font-sans font-medium pb-3 text-sm text-gray-500 ">Temukan berbagai karya sastra prosa yang mengisahkan kehidupan anak-anak</p>
           </div>
           <div class="mt-8 grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6">
-            <template x-for="item in filteredEmployees" :key="item">
+            <template x-for="item in filteredData" :key="item">
               <div class="h-full flex items-start rounded-xl shadow-xl transform hover:scale-105" style="background-color: rgba(245,245,245,255)">
                 <a href="#">
                   <div class="flex-grow px-6 py-5">
@@ -230,7 +230,7 @@
             <p class="sub-category font-sans font-medium pb-3 text-sm text-gray-500 ">Temukan berbagai karangan aktual dengan persoalan terkini</p>
           </div>
           <div class="mt-8 grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6">
-            <template x-for="item in filteredEmployees" :key="item">
+            <template x-for="item in filteredData" :key="item">
               <div class="h-full flex items-start rounded-xl shadow-xl transform hover:scale-105" style="background-color: rgba(245, 220, 164,255)">
                 <a href="artikel.html">
                   <div class="flex-grow px-6 py-5">
@@ -270,7 +270,7 @@
             <p class="sub-category font-sans font-medium pb-3 text-sm text-gray-500 ">Temukan karya tulis ilmiah dengan berbagai tema dan sudut pandang</p>
           </div>
           <div class="mt-8 grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6">
-            <template x-for="item in filteredEmployees" :key="item">
+            <template x-for="item in filteredData" :key="item">
               <div class="h-full flex items-start rounded-xl shadow-xl transform hover:scale-105" style="background-color: rgba(255,213,121,255)">
                 <a href="#">
                   <div class="flex-grow px-6 py-5">
@@ -650,7 +650,7 @@
             total: "",
             myForData: dataPuisi,
             
-            get filteredEmployees() {
+            get filteredData() {
               const start = this.pageNumber * this.size,
               end = start + this.size;
 
@@ -693,7 +693,7 @@
             total: "",
             myForData: dataCerpen,
             
-            get filteredEmployees() {
+            get filteredData() {
               const start = this.pageNumber * this.size,
               end = start + this.size;
 
@@ -736,7 +736,7 @@
             total: "",
             myForData: dataCeritaAnak,
             
-            get filteredEmployees() {
+            get filteredData() {
               const start = this.pageNumber * this.size,
               end = start + this.size;
 
@@ -779,7 +779,7 @@
             total: "",
             myForData: dataArtikel,
             
-            get filteredEmployees() {
+            get filteredData() {
               const start = this.pageNumber * this.size,
               end = start + this.size;
 
@@ -822,7 +822,7 @@
             total: "",
             myForData: dataEsai,
             
-            get filteredEmployees() {
+            get filteredData() {
               const start = this.pageNumber * this.size,
               end = start + this.size;
 

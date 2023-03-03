@@ -107,7 +107,7 @@
         <div class="grid grid-cols-4 gap-2 mx-auto pt-28 xl:pt-36 lg:pt-32 px-10 xl:px-20 lg:px-16 md:px-10">
             <div id="first" class="col-span-4 xl:col-span-3 lg:col-span-3 md:col-span-4 sm:col-span-4">
                 <div x-data="loadPuisi()">
-                    <template x-for="item in filteredEmployees" :key="item">
+                    <template x-for="item in filteredData" :key="item">
                         <div>
                             <div class="flex items-center w-full pb-5 border-b">
                                 <img :src="`${item.profile_image}`" alt="blog" class="w-8 xl:w-12 lg:w-12 md:w-10 sm:w-10 h-8 xl:h-12 lg:h-12 md:h-10 sm:h-10 rounded-full flex-shrink-0 object-cover object-center">
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                     </div>
-                    <template x-for="item in filteredEmployees" :key="item">
+                    <template x-for="item in filteredData" :key="item">
                         <div>
                             <div class="h-full flex items-start transform border-b pt-2">
                                 <div class="py-3">
@@ -182,7 +182,7 @@
             </div>
             <div id="second" class="read-more xl:pl-10 lg:pl-6" x-data="loadRecommend()">
                 <p class="font-title text-base font-bold text-gray-500">Baca Lebih Banyak</p>
-                <template x-for="item in filteredEmployees" :key="item">
+                <template x-for="item in filteredData" :key="item">
                     <div>
                         <div class="h-full flex items-start transform border-b pt-2">
                             <div class="py-3">
@@ -372,7 +372,7 @@
                 total: "",
                 myForData: sourceData,
       
-                get filteredEmployees() {
+                get filteredData() {
                   const start = this.pageNumber * this.size,
                     end = start + this.size;
       
@@ -391,7 +391,7 @@
                 total: "",
                 myForData: sourceData,
       
-                get filteredEmployees() {
+                get filteredData() {
                   const start = this.pageNumber * this.size,
                     end = start + this.size;
       
@@ -410,7 +410,7 @@
                 total: "",
                 myForData: commentData,
       
-                get filteredEmployees() {
+                get filteredData() {
                   const start = this.pageNumber * this.size,
                     end = start + this.size;
       
