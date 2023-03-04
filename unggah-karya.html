@@ -8,243 +8,427 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Fun Bahasa #BahasaAdalahKita</title>
     <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
 </head>
 
-<body class="antialiased bg-body text-body font-body">
+<body class="antialiased bg-body text-body font-body absolute">
     <!--* Navigator Bar -->
     
-        <!--* Container -->
+    <!--* Container -->
     <div class="xl\:container mx-auto">
-            <!--* Navigator Bar -->
-            <header class="top-0 fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
-            <div x-data="{open: false}"
-                class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
-                <!--* Image  -->
-                <div class="flex w-full sm:w-1/3 lg:block lg:w-2/5 md:w-1/3">
-                    <a href="index.html" class="">
-                        <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" width="150" height="50px">
-                    </a>
-                </div>
-                <!--* Hamburger Menu -->
-                <button @click="open = true"
-                    class="flex justify-center w-10 h-10 px-1 py-1 hover:bg-gray-300 md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
-                    <img src="img/hamburger-menu.svg" alt="">
-                </button>
-                <!--* Image End  -->
-                <!--* Nav Menu Item -->
-                <div
-                    class="flex-row hidden flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end">
-                    <nav class="sm:justify-end sm:w-full sm:flex">
-                        <a href="tentang_kami.html"
-                            class="block mt-4 mr-10  font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500" style="font-family: 'Poppins', sans-serif;">Tentang Kami</a>
-                        <a href="unggah-karya.html"
-                            class="block mt-4 mr-10 font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500" style="font-family: 'Poppins', sans-serif;">Unggah Karya</a>
-                        <a href="Event.html"
-                            class="block mt-4 mr-10 font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500" style="font-family: 'Poppins', sans-serif;">Event</a>
-                        <a href="baca_karya.html"
-                            class="block mt-4 mr-10 font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500" style="font-family: 'Poppins', sans-serif;">Baca Karya</a>
-                        <a href="login.html"
-                            class="px-5 py-1 ml-3 font-semibold text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400" style="font-family: 'Quicksand', sans-serif;">Masuk</a>
-                    </nav>
-                </div>
-                <!--* Nav Menu Item End -->
-                <!--* Nav Menu Mobile -->
-                <div x-show="open" @click.away="open = false"
-                    class="absolute z-10 max-w-md px-2 transform right-10 w-screen-md mt-7 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                    <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
-                            <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                                <div class="ml-2">
-                                    <a href="tentang-kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                        Tentang Kami
-                                    </a>
-                                </div>
-                            </a>
-    
-                            <a href="unggah-karya.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                                <div class="ml-2">
-                                    <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                        Unggah Karya
-                                    </a>
-                                </div>
-                            </a>
-    
-                            <a href="Event.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                                <div class="ml-2">
-                                    <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                        Event
-                                    </a>
-                                </div>
-                            </a>
-    
-                            <a href="baca_karya.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                                <div class="ml-2">
-                                    <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                        Baca Karya
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
+        <!--* Navigator Bar -->
+        <header class="fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
+        <div x-data="{open: false}"
+            class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
+            <!--* Image  -->
+            <div class="flex w-full sm:w-1/4 lg:block lg:w-3/2 md:w-1/3">
+                <a href="index.html" class="">
+                    <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" class="w-28 xl:w-40 lg:w-32 sm:w-28 md:w-28">
+                </a>
+            </div>
+            <!--* Hamburger Menu -->
+            <button @click="open = true"
+                class="flex justify-center items-center w-8 h-8 px-1 hover:bg-gray-300 sm:w-8 h-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+                <img src="img/hamburger-menu.svg" alt="hamburger-menu-icon">
+            </button>
+            <!--* Image End  -->
+            <!--* Nav Menu Item -->
+            <div
+                class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end hidden sm:hidden md:hidden">
+                <nav class="sm:justify-end sm:w-full sm:flex">
+                    <a href="tentang_kami.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500 xs:font-black-italic">Tentang Kami</a>
+                    <a href="unggah-karya.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Unggah Karya</a>
+                    <a href="Event.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Event</a>
+                    <a href="baca_karya.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Baca Karya</a>
+                    <a href="login.html"
+                        class="px-5 py-1 ml-3 font-bold font-title text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
+                </nav>
+            </div>
+            <!--* Nav Menu Item End -->
+            <!--* Nav Menu Mobile -->
+            <div x-show="open" @click.away="open = false"
+                class="absolute z-10 max-w-md px-2 transform right-10 w-screen-md mt-8 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                    <div class="relative grid bg-white gap-4 p-5">
+                        <a href="#" class="flex items-start rounded-lg hover:bg-gray-50">
+                            <div class="ml-2">
+                                <a href="tentang-kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                    Tentang Kami
+                                </a>
+                            </div>
+                        </a>
+
+                        <a href="unggah-karya.html" class="flex items-start rounded-lg hover:bg-gray-50">
+                            <div class="ml-2">
+                                <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                    Unggah Karya
+                                </a>
+                            </div>
+                        </a>
+
+                        <a href="Event.html" class="flex items-start rounded-lg hover:bg-gray-50">
+                            <div class="ml-2">
+                                <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                    Event
+                                </a>
+                            </div>
+                        </a>
+
+                        <a href="baca_karya.html" class="flex items-start rounded-lg hover:bg-gray-50">
+                            <div class="ml-2">
+                                <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                    Baca Karya
+                                </a>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
         </header>
     </div>
     <!--* Navigator Bar End -->
 
     <!--* Main Content -->
     <main>
-        <!--* Greeting  -->
-        <section class="m-10 pt-16" style="font-family: 'Quicksand', sans-serif;">
-            <div class="pb-5 min-h-full" style="font-family: 'Quicksand', sans-serif;">
-                <h4><a href="index.html">Home</a> > <a href="unggah-karya.html" style="color: rgba(96, 165, 250, 100);">Unggah Karya</a></h4>
+        <!-- <section class="m-9 pt-16">
+            <div class="absolute xl:top-40 sm:top-28 md:top-32 lg:top-36 xl:left-36 sm:left-20 md:left-24 lg:left-32">
+                <h5 class="rounded-lg bg-gray-100 py-2 text-left px-2 w-96 font-title font-normal">
+                    <a href="index.html" style="color: rgba(64, 70, 66, 1);">Home</a>
+                    <a href="unggah-karya.html" style="color: rgba(123, 128, 154, 1);"> / Unggah Karya</a>
+                </h5>
             </div>
-            <div class="w-full">
-                <div class="px-10">
-                        <h1 class="flex justify-start text-4xl py-2 mb-1" 
-                        style="font-family: Quicksand; font-size: 36px; font-style: normal; font-weight: normal; line-height: 110%;">Publish Karyamu</h1><hr class="mb-10 lg:mb-20" style="border: 1px solid #728196;">
+        </section> -->
+
+        <!-- Section-1 -->
+        <section class=" bg-white mt-24">
+            
+            <div class="container mx-auto px-4">
+                <!-- <div class="p-8">
+                    <div class="absolute pb-28 xl:top-40 sm:top-28 md:top-32 lg:top-36 xl:left-40 sm:left-20 md:left-24 lg:left-32">
+                        <h5 class="rounded-lg bg-gray-100 py-2 text-left px-2 w-96 font-title font-normal">
+                            <a href="index.html" class="text-gray-100 font-title text-md">Home</a>
+                            <a href="unggah-karya.html" class="text-gray-500 font-title text-md"> / Unggah Karya</a>
+                        </h5>
+                    </div>
+                </div> -->
+                <div class="flex flex-wrap">
+                    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center hidden">
+                        <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-1 shadow-lg rounded-lg">
+                            <div class="px-4 flex-auto">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col-reverse lg:flex-row -mx-2 px-10">
-                        <div class="w-full lg:w-1/2 mx-2">
-                            <form action="" style="font-family: Quicksand; font-size: 24px; font-style: normal; font-weight: 500; line-height: 110%;">
-                                <div class="mb-5">
-                                    <label class="capitalize text-black block mb-2" for="Name"> Nama Lengkap
-                                    </label>
-                                    <input class="w-full bg-white text-black border border-blue-200 rounded-3xl outline-none py-3 px-4" id="Name" type="text">
-                                </div>
-                                <div class="mb-5">
-                                    <label class="capitalize text-black block mb-2" for="Email"> Alamat Email
-                                    </label>
-                                    <input class="w-full bg-white text-black border border-blue-200 rounded-3xl outline-none py-3 px-4" id="Email" type="text">
-                                </div>
-                                <div class="mb-5">
-                                    <label class="capitalize text-black block mb-2" for="Nomor"> Nomor Whatsapp</label>
-                                    <div class="flex flex-wrap items-stretch w-full mb-4 relative">
-                                        <div class="flex -mr-px">
-                                            <span class="flex items-center border border-blue-200 px-3 whitespace-no-wrap text-sm text-gray-600 bg-gray-200">+62</span>
-                                        </div>	
-                                        <input type="text" class="w-px flex-1 border border-blue-200 py-3 px-4 outline-none">
-                                    </div>
-                                </div>
-                                <!-- component -->
-    
-                                <div class="mb-5">
-                                    <label class="capitalize text-black block mb-2" for="Karya"> Jenis Karya
-                                    </label>
-                                    <input class="w-full bg-white text-black border border-blue-200 rounded-3xl outline-none py-3 px-4" id="Karya" type="text">
-                                </div>
-                                <div class="mb-5">
-                                    <label class="capitalize text-black block mb-2" for="Judul"> Judul Karya
-                                    </label>
-                                    <input class="w-full bg-white text-black border border-blue-200 rounded-3xl outline-none py-3 px-4" id="Judul" type="text">
-                                </div>
-                                <div class="mb-5">
-                                    <label class="capitalize text-black block mb-2" for="Judul">Upload Full Naskah</label>
-                                    <div class="custom-file">
-                                        <h5 class="text-gray-400 pb-2">File Naskah</h5>
-                                        <label class="custom-file-label" for="file"></label>
-                                        <input type="file" class="custom-file-input" id="file">
-                                    </div>
-                                </div>
-                                <div class="mb-5">
-                                    <label class="capitalize text-black block mb-2" for="Judul">Gambar / Illustrasi</label>
-                                    <div class="custom-file">
-                                        <h5 class="text-gray-400 pb-2">Gambar / Illustrasi</h5>
-                                        <label class="custom-file-label" for="file"></label>
-                                        <input type="file" class="custom-file-input" id="file">
-                                    </div>
-                                </div>
-                                <a href="#" class="inline-block text-sm py-2 px-4 leading-none bg-blue-500 text-white hover:shadow-lg hover:text-teal mt-4 lg:mt-0 transform hover:scale-105 motion-reduce:transform-none" style="font-family: 'Quicksand', sans-serif; font-size: 24px;">Unggah</a>
-                            </form> 
+                <div class="flex flex-wrap items-center my-5 lg:my-28">
+                    <div class="w-full sm:w-10/12 md:w-9/12 lg:w-6/12 px-4 mx-auto">
+                        <h2 class="font-title font-extrabold text-4xl lg:text-5xl text-gray-500">Publikasi Karya</h2>
+                        <div class="bg-yellow-600 w-52 mt-2 rounded-xl left-36 h-2 "></div>
+                        <p class="font-sans text-md text-left pt-11 leading-normal w-8/12 text-gray-500 lg:text-base">
+                            Hi, Funners!
+                        </p>
+                        <p class="font-sans text-md text-left pt-3 leading-normal w-8/11 text-gray-500 lg:text-base">
+                            Fun Bahasa memberikan kesempatan kepada Funners yang ingin mengirim karya/tulisan melalui laman funbahasa yang 
+                            dapat dibaca oleh semua orang.
+                        </p>
+                        <p class="font-sans text-md text-left pt-3 leading-normal w-8/11 text-gray-500 lg:text-base">
+                            Tidak ada ketentuan khusus dalam penulisan; pastikan penggunaan huruf kapital, tanda baca dan PUEBI yang sesuai, 
+                            serta tambahkan bionarasi singkat dibawah naskah kalian. 
+                        </p>
+                        <p class="font-sans text-md text-left pt-3 leading-normal w-8/12 text-gray-500 lg:text-base">
+                            Kami tunggu karya terbaik kalian ya, Funners!
+                        </p>
+                    </div>
+                    <div class="w-full sm:w-10/12 md:w-9/12 lg:w-5/12 xl:w-4/12 px-4 mx-auto py-8">
+                        <div class="relative flex flex-col min-w-0 break-words w-full mb-2 shadow-2xl rounded-2xl bg-white">
+                            <div class="border-t rounded-t-2xl bg-yellow-600">
+                                <img src="img/warning-publish-page.svg" alt="image warning" class="mx-auto">
+                            </div>
+                            <blockquote class="relative p-8 mb-4 text-center">
+                        
+                            <h4 class="font-title text-xl font-extrabold text-gray-500">
+                                Catatan!
+                            </h4>
+                            <p class="font-sans text-sm font-light mt-2 text-gray-500 sm:text-md lg:text-base">
+                                Form ini bukan untuk mengirimkan karya/naskah 
+                                dalam lomba yang diselenggarakan oleh Fun Bahasa.
+                            </p>
+                            </blockquote>
                         </div>
-                        <div class="w-full lg:w-1/2 mx-2 lg:mx-8 mb-5" style="font-family: Quicksand; font-style: normal; font-size: 18px; line-height: 22px; font-weight: 500px;">
-                            <h3 class="mb-5">Hi, Funners!</h3>
-                            <p class="mb-5">Fun Bahasa memberikan kesempatan kepada Funners yang ingin mengirim karya/tulisan melalui laman funbahasa yang dapat dibaca oleh semua orang.</p>
-                            <p class="mb-5">Tidak ada ketentuan khusus dalam penulisan, cukup pastikan penggunaan tanda baca, huruf kapital, dan sesuai dengan PUEBI. Serta jangan lupa melampirkan bionarasi singkat di bawah naskah tulisan. Tentu sebelumnya akan ada proses kurasi dari tim Fun Bahasa. Kami tunggu karya terbaik kalian ya, Funners!</p>
-                            <p class="mb-5">Catatan: form ini bukan untuk mengirimkan karya/naskah dalam lomba yang diselenggarakan oleh Fun Bahasa.</p>
-                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-    </main>
-    <!--* Main Content End -->
-    <footer class="relative pt-8 pb-6 bg-repeat-y bg-cover" style="background-image: url('img/Footer.svg'); min-height: 550px;">
-        <div class="container relative mx-auto px-4 -top-60 lg:-top-0">
-            <div class="flex flex-wrap text-center lg:text-left">
-                <div class="relative w-full lg:w-4/12 px-4 top-72 lg:top-64 xl:top-72">
-                    <img class="ml-auto lg:ml-0 mr-auto lg:mr-0 w-56" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
-                    <div class="mt-6 mb-6 lg:mb-0">
-                        <h4 class="pb-2 text-3xl font-semibold" style="font-family: 'Quicksand', sans-serif;">Follow Us On</h4>
-                        <div class="flex flex-row -mx-3 mt-2 justify-center lg:justify-start">
-                            <div class="px-3">
-                                <a href="#">
-                                    <img src="img/icon-facebook-color.png" class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-10 w-10 rounded-full" alt="">
-                                </a>
+        <!-- Section-1 End -->
+
+        <!-- Publish-form -->
+        <style>
+            @media screen and (max-width: 768px){
+              .spacing-t{
+                margin-top: 1.25rem;
+              }
+            }
+            @media screen and (max-width: 1023px){
+              .spacing-t-lg{
+                margin-top: 1.25rem;
+              }
+            }
+          </style>
+        <section>
+            <div>
+                <div class="w-4/5 xl:w-10/12 border-t rounded-t-2xl bg-blue-500 h-12 mx-auto"></div>
+                <div class="flex-col border shadow-lg bg-white rounded-b-2xl h-3/4 w-4/5 xl:w-10/12 mx-auto">
+                    <div class="min-h-screen p-6 flex items-center justify-center rounded-b-2xl" style="background-color: rgba(245, 245, 245);">
+                        <div class="container max-w-screen-lg mx-auto">
+                            <div>
+                                <h2 class="font-title text-xl font-extrabold xl:text-xl text-gray-500 text-center">
+                                    Lembar Muat Karya
+                                </h2>
+                                <p class="font-sans text-sm xl:text-base text-gray-500 mb-6 text-center">
+                                    Pastikan kalian telah memenuhi seluruh data pada formulir ini untuk publikasi karya
+                                </p>
+
+                            <div class="bg-white rounded-2xl shadow-lg p-4 px-4 md:p-8 mb-6">
+                                <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+                                    <div class="text-gray-600">
+                                        <p class="text-sm font-sans font-semibold xl:text-lg">Data Diri</p>
+                                        <p class="font-sans text-sm mt-1 xl:text-md">Harap melengkapi data diri kalian.</p>
+                                    </div>
+                                
+                                <div class="lg:col-span-2 mt-5 sm:mt-0 spacing-t spacing-t-lg">
+                                    <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
+                                        <div class="md:col-span-5">
+                                            <label for="nama-lengkap" class="font-sans text-xs lg:text-sm xl:text-base">Nama Lengkap</label>
+                                            <input type="text" name="nama-lengkap" id="nama-lengkap" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" />
+                                        </div>
+
+                                        <div class="md:col-span-5">
+                                            <label for="asal" class="font-sans text-xs lg:text-sm xl:text-base">Alamat</label>
+                                            <input type="text" name="asal" id="asal" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
+                                        </div>
+                    
+                                        <div class="md:col-span-3">
+                                            <label for="addrs-email" class="font-sans text-xs lg:text-sm xl:text-base">Email</label>
+                                            <input type="email" name="addrs-email" id="addrs-email" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
+                                        </div>
+                        
+                                        <div class="md:col-span-2">
+                                            <label for="nomor-hp" class="font-sans text-xs lg:text-sm xl:text-base">Nomor Whatsapp</label>
+                                            <input type="text" name="nomor-hp" id="nomor-hp" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <hr class="my-5">
+
+                                <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+                                    <div class="text-gray-600">
+                                        <p class="text-sm font-sans font-semibold xl:text-lg">Detail Karya</p>
+                                        <p class="font-sans text-xs mt-1 xl:text-md">Lengkapi detail karya kalian sebelum 
+                                            melakukan pengiriman.
+                                        </p>
+                                    </div>
+                    
+                                <div class="lg:col-span-2 mt-5 sm:mt-0 spacing-t spacing-t-lg">
+                                    <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
+                                        <div class="md:col-span-3">
+                                            <label for="judul-karya" class="font-sans text-xs lg:text-sm xl:text-base">Judul Karya</label>
+                                            <input type="text" name="judul-karya" id="judul-karya" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
+                                        </div>
+
+                                        <div class="md:col-span-2">
+                                            <label for="kategori-karya" class="font-sans text-xs lg:text-sm xl:text-base">Kategori Karya</label>
+                                            <select name="kategori-karya" id="kategori-karya" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50">
+                                                <option value=""></option>
+                                                <option class="font-sans text-xs lg:text-sm xl:text-base" value="">Puisi</option>
+                                                <option class="font-sans text-xs lg:text-sm xl:text-base" value="">Cerpen</option>
+                                                <option class="font-sans text-xs lg:text-sm xl:text-base" value="">Cerita Anak</option>
+                                                <option class="font-sans text-xs lg:text-sm xl:text-base" value="">Esai</option>
+                                                <option class="font-sans text-xs lg:text-sm xl:text-base" value="">Artikel</option>
+                                                <option class="font-sans text-xs lg:text-sm xl:text-base" value="">Tips & Trik Menulis</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="md:col-span-3">
+                                            <label for="upload-karya" class="font-sans text-xs lg:text-sm xl:text-base">Berkas Naskah</label>
+                                            <div class="file_upload p-5 relative border-4 border-dotted border-gray-300 rounded h-36 w-full mt-1">
+                                                <img src="img/file-upload-rev2.svg" alt="image file-upload" class="mx-auto py-2">
+                                                <div class="input_field flex flex-col w-max mx-auto text-center">
+                                                    <label>
+                                                        <input class="text-sm cursor-pointer w-36 hidden" type="file" multiple />
+                                                        <div class="text bg-gray-200 text-white rounded font-semibold cursor-pointer p-1 px-3 hover:bg-gray-400">
+                                                            Pilih
+                                                        </div>
+                                                    </label>
+                                    
+                                                    <div class="font-sans font-thin text-xs text-gray-200">Tambahkan berkas</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md:col-span-2">
+                                            <label for="upload-karya" class="font-sans text-xs lg:text-sm xl:text-base">Sampul Naskah</label>
+                                            <div class="file_upload p-5 relative border-4 border-dotted border-gray-300 rounded h-36 w-full mt-1">
+                                                <img src="img/file-upload-rev2.svg" alt="image file-upload" class="mx-auto py-2">
+                                                <div class="input_field flex flex-col w-max mx-auto text-center">
+                                                    <label>
+                                                        <input class="text-sm cursor-pointer w-36 hidden" type="file" multiple />
+                                                        <div class="text bg-gray-200 text-white rounded font-semibold cursor-pointer p-1 px-3 hover:bg-gray-400">
+                                                            Pilih
+                                                        </div>
+                                                    </label>
+                                    
+                                                    <div class="font-sans font-thin text-xs text-gray-200">Tambahkan gambar</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                        <div class="md:col-span-5 text-right">
+                                            <div class="inline-flex items-end pt-4">
+                                                <button class="font-sans bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded w-24">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="px-3">
-                                <a href="#">
-                                    <img src="img/icon-twitter-color.png" class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-10 w-10 rounded-full" alt="">
-                                </a>
                             </div>
-                            <div class="px-3">
-                                <a href="#">
-                                    <img src="img/icon-instagram-color.png" class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-10 w-10 rounded-full" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative w-full lg:w-8/12 px-4 mt-80 lg:mt-0" style="top: 250px;">
-                    <div class="flex flex-wrap items-top mb-6">
-                        <div class="w-6/12 lg:w-3/12 px-4 ml-auto mb-10 lg:mb-0">
-                            <span class="block uppercase text-gray-600 text-sm font-semibold mb-2" style="font-family: 'Poppins', sans-serif;">
-                                Informasi Event
-                            </span>
-                            <ul class="list-unstyled" style="font-family: 'Quicksand', sans-serif;">
-                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Pendaftaran </a> </li>
-                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Panduan </a> </li>
-                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Poster </a> </li>
-                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Unggah </a> </li>
-                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Pengumuman</a> </li>
-                            </ul>
-                        </div>
-                        <div class="w-6/12 lg:w-2/12 px-4 ml-auto mb-10 lg:mb-0">
-                            <span class="block uppercase text-gray-600 text-sm font-semibold mb-2" style="font-family: 'Poppins', sans-serif;">
-                                List Kategori
-                            </span>
-                            <ul class="list-unstyled" style="font-family: 'Quicksand', sans-serif;">
-                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="kategori-puisi.html"> Puisi </a> </li>
-                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="kategori-cerpen.html"> Cerpen </a> </li>
-                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="kategori-artikel.html"> Artikel </a> </li>
-                            </ul>
-                        </div>
-                        <div class="w-full lg:w-4/12 px-4 ml-auto">
-                            <span class="block uppercase text-gray-600 text-sm font-semibold mb-2" style="font-family: 'Poppins', sans-serif;">
-                                CONTACT
-                            </span>
-                            <ul class="list-unstyled" style="font-family: 'Quicksand', sans-serif;">
-                                <li> <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" > Ruko de Farda RK-5, Dusun Keboan, Keboananom, Kec. Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254 </p> </li>
-                                <li> <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" > funbahasa@gmail.com </p> </li>
-                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
-                                <li> <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" > +62 815-1531-2240 </p> </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-wrap items-center md:justify-between justify-center text-center">
-                <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center top-64 lg:top-56 xl:top-64">
-                    <div class="bg-black content-center w-full" style="height: 2px;"></div>
-                    <div class="py-1 text-sm font-semibold text-gray-600" style="font-family: 'Quicksand', sans-serif;">
-                        Fun Bahasa Indonesia ©
+        </section>
+        <!-- Publish-form End -->
+
+    </main>
+
+    <!--* Footer  -->
+    <style>
+        @media screen and (max-width: 767px) {
+            .foll-us{
+                display: none;
+            }
+            .sosmed{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+    </style>
+    <footer class="relative pt-16 xl:mx-20 sm:mx-10 text-gray-500">
+        <div class="mt-5 px-9 xl:px-10 lg:px-10 md:px-10 sm:px-10 bg-blue-100 xl:rounded-t-2xl lg:rounded-t-2xl md:rounded-t-2xl sm:rounded-t-2xl">
+            <div class="grid grid-cols-2 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3">
+                <div class="col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-3">
+                    <img class="mt-7 w-32 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
+                    <div class="mt-8 mb-6">
+                        <h4 class="foll-us pb-2 font-bold font-sans xl:text-base lg:text-base md:text-xs sm:text-xs">Follow Us On</h4>
+                        <div class="sosmed flex flex-row mt-2 justify-start">
+                            <div class="pr-1 xl:pr-2 sm:pr-1">
+                                <a href="#">
+                                    <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                            <div class="px-1 xl:px-2 sm:px-1">
+                                <a href="#">
+                                    <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                            <div class="px-1 xl:px-2 sm:px-1">
+                                <a href="#">
+                                    <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        Informasi Event
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
+                    </ul>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        List Kategori
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Puisi </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Cerpen </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Artikel </a> </li>
+                    </ul>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        Contact
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> +62 815-1531-2240 </a> </li>
+                    </ul>
+                    <div class="sosmed-2 flex flex-row mt-2 justify-start">
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="#">
+                                <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="#">
+                                <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="#">
+                                <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center justify-center text-center">
+                <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center">
+                    <div class="bg-black content-center w-full" style="height: 2px;"></div>
+                        <div class="py-1 text-sm font-extrabold text-gray-600 font-title">
+                            Fun Bahasa Indonesia ©
+                        </div>
                 </div>
             </div>
         </div>
+        
     </footer>
-</body>
+    <!--* Footer End  -->
 
+</body>
 </html>
