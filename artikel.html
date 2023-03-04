@@ -8,250 +8,580 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Fun Bahasa #BahasaAdalahKita</title>
     <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body class="antialiased bg-body text-body font-body">
     <!--* Container -->
-<div class="xl\:container mx-auto">
+    
+    <div class="xl\:container mx-auto">
         <!--* Navigator Bar -->
-        <header class="top-0 fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
+        <header class="fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
         <div x-data="{open: false}"
             class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
             <!--* Image  -->
-            <div class="flex w-full sm:w-1/3 lg:block lg:w-2/5 md:w-1/3">
+            <div class="flex w-full sm:w-1/4 lg:block lg:w-3/2 md:w-1/3">
                 <a href="index.html" class="">
-                    <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" width="150" height="50px">
+                    <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" class="w-28 xl:w-40 lg:w-32 sm:w-28 md:w-28">
                 </a>
             </div>
             <!--* Hamburger Menu -->
             <button @click="open = true"
-                class="flex justify-center w-10 h-10 px-1 py-1 hover:bg-gray-300 md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
-                <img src="img/hamburger-menu.svg" alt="">
+                class="flex justify-center items-center w-8 h-8 px-1 hover:bg-gray-300 sm:w-8 h-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+                <img src="img/hamburger-menu.svg" alt="hamburger-menu-icon">
             </button>
             <!--* Image End  -->
             <!--* Nav Menu Item -->
             <div
-                class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end">
+                class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end hidden sm:hidden md:hidden">
                 <nav class="sm:justify-end sm:w-full sm:flex">
                     <a href="tentang_kami.html"
-                        class="block mt-4 mr-10  font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500" style="font-family: 'Poppins', sans-serif;">Tentang Kami</a>
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500 xs:font-black-italic">Tentang Kami</a>
                     <a href="unggah-karya.html"
-                        class="block mt-4 mr-10 font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500" style="font-family: 'Poppins', sans-serif;">Unggah Karya</a>
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Unggah Karya</a>
                     <a href="Event.html"
-                        class="block mt-4 mr-10 font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500" style="font-family: 'Poppins', sans-serif;">Event</a>
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Event</a>
                     <a href="baca_karya.html"
-                        class="block mt-4 mr-10 font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500" style="font-family: 'Poppins', sans-serif;">Baca Karya</a>
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Baca Karya</a>
                     <a href="login.html"
-                        class="px-5 py-1 ml-3 font-semibold text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400" style="font-family: 'Quicksand', sans-serif;">Masuk</a>
+                        class="px-5 py-1 ml-3 font-bold font-title text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
                 </nav>
             </div>
             <!--* Nav Menu Item End -->
             <!--* Nav Menu Mobile -->
             <div x-show="open" @click.away="open = false"
-                class="absolute z-10 max-w-md px-2 transform right-10 w-screen-md mt-7 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                class="absolute z-10 max-w-md px-2 transform right-10 w-screen-md mt-8 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                 <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                    <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
-                        <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                            <div class="ml-2">
-                                <a href="tentang-kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Tentang Kami
-                                </a>
-                            </div>
-                        </a>
+                    <div class="relative grid bg-white gap-4 p-5">
+                      <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="tentang_kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Tentang Kami
+                            </a>
+                        </div>
+                    </a>
 
-                        <a href="unggah-karya.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                            <div class="ml-2">
-                                <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Unggah Karya
-                                </a>
-                            </div>
-                        </a>
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="unggah-karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Unggah Karya
+                            </a>
+                        </div>
+                    </a>
 
-                        <a href="Event.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                            <div class="ml-2">
-                                <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Event
-                                </a>
-                            </div>
-                        </a>
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="Event.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Event
+                            </a>
+                        </div>
+                    </a>
 
-                        <a href="baca_karya.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                            <div class="ml-2">
-                                <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Baca Karya
-                                </a>
-                            </div>
-                        </a>
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="baca_karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Baca Karya
+                            </a>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                      <div class="flex ml-2 bg-blue-500 rounded-lg -ml-2 -mr-2 h-10">
+                          <a href="login.html" class="pl-4 mt-2 text-base font-medium text-white" style="font-family: 'Poppins', sans-serif;">
+                              Masuk
+                          </a>
+                      </div>
+                    </a>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-</div>
-<!--* Main Content -->
-<main>
-    <!--* Greeting  -->
-    <section class="m-10 pt-16">
-        <div class="pb-5 min-h-full" style="font-family: 'Quicksand', sans-serif;">
-            <h4><a href="index.html">Home</a> > <a href="kategori-artikel.html">Artikel</a> > <a href="cerpen.html" style="color: rgba(96, 165, 250, 100);">Ekologi Kepada Jalan</a></h4>
+        </header>
+    </div>
+    <!--* Navigator Bar End -->
+
+    <!--* Main Content -->
+    <main>
+        <div class="grid grid-cols-4 gap-2 mx-auto pt-28 xl:pt-36 lg:pt-32 px-10 xl:px-20 lg:px-16 md:px-10">
+            <div id="first" class="col-span-4 xl:col-span-3 lg:col-span-3 md:col-span-4 sm:col-span-4">
+                <div x-data="loadArtikel()">
+                    <template x-for="item in filteredData" :key="item">
+                        <div>
+                            <div class="flex items-center w-full pb-5 border-b">
+                                <img :src="`${item.profile_image}`" alt="blog" class="w-8 xl:w-12 lg:w-12 md:w-10 sm:w-10 h-8 xl:h-12 lg:h-12 md:h-10 sm:h-10 rounded-full flex-shrink-0 object-cover object-center">
+                                <div class="pl-3">
+                                    <p class="font-title font-bold text-gray-500 text-base" x-text="item.author"></p>
+                                    <span class="font-sans font-thin text-blue-500 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs">
+                                        <a href="kategori-puisi.html" x-text="item.category"></a>
+                                    </span>
+                                    <i class="bi bi-dot text-gray-300 text-xs"></i>
+                                    <span class="font-sans font-thin text-gray-300 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs" x-text="item.date"></span>
+                                    <i class="bi bi-dot text-gray-300 text-xs"></i>
+                                    <span class="font-sans font-thin text-gray-300 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs" x-text="item.duration + ' min read'"></span>
+                                </div>
+                            </div>
+                            <div class="py-10">
+                                <p class="font-title font-extrabold text-gray-500 pb-4 text-2xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl" x-text="item.title"></p>
+                                <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Di tubuh langit kelimut <br> melekat sebuah nukilan. <br> Tentang nujum yang muncul dari bintang-bintang, <br> diundang turun oleh garis tangan dan kehidupan.
+                                </p>
+                                <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Garis tangan adalah <br>penunjuk jalan-jalan yang hidup. <br> Sedang garis kehidupan adalah <br> jalan-jalan yang dilalui derup.
+                                </p>
+                                <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Semua orang menginjakkan kakinya <br> pada jalan-jalan berumur panjang <br> atau yang akan menjadi mendiang. <br> Panjang atau pendek, <br> kehendak Sang Khalik.
+                                </p>
+                                <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Sebuah padah menemuiku dan berkata <br> “Jalan ini buntu dan akan mati”. <br> Mendengar dengan telinga tuli adalah <br> kesia-siaan yang kupeluk erat.
+                                </p>
+                            </div>
+                            <div class="flex pb-8">
+                                <div class="pr-7">
+                                    <i class="bi bi-bar-chart text-2xl text-gray-500 pr-1"></i>
+                                    <span class="font-sans font-thin text-gray-500 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-sm">139</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-hand-thumbs-up text-2xl text-gray-500 pr-1"></i>
+                                    <span class="font-sans font-thin text-gray-500 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-sm">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+                <div x-data="loadComment()">
+                    <div class="border-t pt-8 mb-10">
+                        <p class="font-sans font-bold text-gray-500 text-base">Komentar</p>
+                        <div class="flex pt-2">
+                            <div class="w-11/12">
+                                <form action="" class="mb-0 font-sans">
+                                    <div>
+                                      <label for="comment" class="sr-only mb-2 text-sm font-medium text-gray-500 dark:text-white">comment</label>
+                                      <input class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-l-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Bagaimana tanggapanmu?">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="flex justify-center items-center w-1/12 px-5 bg-blue-500 rounded-r-lg hover:bg-blue-400">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <template x-for="item in filteredData" :key="item">
+                        <div>
+                            <div class="h-full flex items-start transform border-b pt-2">
+                                <div class="py-3">
+                                    <h2 class="text-base font-medium text-gray-500 font-sans title-font mb-1" x-text="item.writer"></h2>
+                                    <p class="font-sans font-thin text-gray-300 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs mb-1" x-text="item.date"></p>
+                                    <p class="leading-relaxed font-sans text-sm text-gray-500" x-text="item.content"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            <div id="second" class="read-more xl:pl-10 lg:pl-6" x-data="loadRecommend()">
+                <p class="font-title text-base font-bold text-gray-500">Baca Lebih Banyak</p>
+                <template x-for="item in filteredData" :key="item">
+                    <div>
+                        <div class="h-full flex items-start transform border-b pt-2">
+                            <div class="py-3">
+                                <p class="font-sans font-thin text-gray-300 text-xs mb-1" x-text="item.category"></p>
+                                <div class="flex items-center mb-2">
+                                    <img :src="`${item.profile_image}`" alt="blog" class="w-5 h-5 rounded-full flex-shrink-0 object-cover object-center">
+                                    <h2 class="text-sm font-medium text-gray-500 font-sans title-font mb-1 pl-2" x-text="item.author"></h2>
+                                </div>
+                                <p class="leading-relaxed font-title font-extrabold text-lg text-gray-500" x-text="item.title"></p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
         </div>
-        <a href="#" class="inline-block text-sm px-10 py-5 leading-none bg-yellow-400 text-black rounded-2xl hover:shadow-lg hover:text-teal mt-4 lg:mt-0 transform hover:scale-105 motion-reduce:transform-none" style="font-family: 'Quicksand', sans-serif;">Artikel</a>
-        <!-- component -->
-        <!-- This is an example component -->
+
+        <style>
+            @media screen and (max-width: 767px) {
+                svg{
+                    width: 17px;
+                    height: 17px;
+                }
+                /* .read-more{
+                    display: none;
+                } */
+            }
+            @media screen and (max-width: 1024px){
+                .read-more{
+                    display: none;
+                }
+            }
+            @media screen and (min-width: 1024px){
+                .read-more{
+                    display: block;
+                }
+            }
+        /* #first{
+            overflow: auto;
+        }
+        #second{
+            position: absolute;
+            overflow: auto;
+            top: 0;
+            bottom: 0;
+            left: 72%;
+            height: 1000px;
+
+        }
+        #second.sticky {
+            position: fixed;
+            bottom: 0;
+            top: initial;
+        } */
+        </style>
         
-        <div class="relative right-1">
-            <input type="text" class="absolute bg-white right-0 border border-blue-200 py-2 px-4 outline-none w-64 md:w-72 lg:w-4/12" placeholder="Search">
-            <div class="absolute right-2 px-5 py-5">
-                <button class="flex items-center border whitespace-no-wrap text-sm text-gray-600 bg-gray-200">
-                    <svg class="h-5 w-5 absolute" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="flex flex-row w-full">
-            <div class="w-3/4">
-                <h3 class="pt-16 pb-5" style="font-family: 'Quicksand', sans-serif; font-size: 24px; font-weight: normal;">January 21, 2021</h3>
-                <h1 class="pb-10" style="font-family: 'Quicksand', sans-serif; font-size: 35px; font-weight: bold;">
-                    Ekologi Kepada Jalan
-                </h1>
-            </div>
-            <div class="relative w-1/4 right-0" style="top: 20px;">
-                <img class="h-40 md:h-48 lg:h-64" src="img/Books.png">
-            </div>
-        </div>
-        <div class="relative px-0 md:px-12 lg:px-32">
-        <div class="rounded-3xl p-10 md:p-15 lg:p-20 bg-yellow-200">
-            <div class="rounded-3xl py-5 pl-10 bg-white" style="font-family: 'Quicksand', sans-serif;">
-                <h1 class="text-3xl mb-2">
-                    Ekologi Kepada Jalan
-                </h1>
-                <h3 class="text-gray-400 text-lg">
-                    By : M.Rayfan Ardian
-                </h3>
-                <div class="text-lg" style="font-family: 'Times New Roman', Times, serif;">
-                    <p class="py-4 mt-4">/1</p>
-                    <p>Di tubuh langit kelimut</p>
-                    <p>Melekat sebuah nukilan.</p>
-                    <p>Tentang nujum yang muncul dari bintang-bintang,</p>
-                    <p>Diundang turun oleh garis tangan dan kehidupan.</p>
-                    <p>Garis tangan adalah</p>
-                    <p>Penunjuk jalan-jalan yang hidup.</p>
-                    <p>Sedang garis kehidupan adalah</p>
-                    <p>Jalan-jalan yang dilalui derup.</p>
-                    <p>Semua orang menginjakkan kakinya</p>
-                    <p>Pada jalan-jalan berumur panjang</p>
-                    <p>Atau yang akan menjadi mendiang.</p>
-                    <p>Panjang atau pendek,</p>
-                    <p>Kehendak Sang Khalik.</p>
-                    <p class="py-4">/2</p>
-                    <p>Sebuah padah menemuiku dan berkata</p>
-                    <p>“Jalan ini buntu dan akan mati”.</p>
-                    <p>Mendengar dengan telinga tuli adalah</p>
-                    <p>Kesia-siaan yang kupeluk erat.</p>
-                    <p class="py-4">/3</p>
-                    <p>Pada jalan yang telah mati;</p>
-                    <p>Kusemai setangkup tangan penuh eulogi.</p>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-row pt-14 justify-between" style="font-family: 'Poppins', sans-serif;">
-            <div class="w-auto text-left">
-                <a class="flex-auto text-black hover:text-yellow-500" href="#">
-                    <p class="pb-2">PREVIOUS POST</p>
-                    <p>Keberadaan Harapan Manusia Modern</p>
-                </a>
-            </div>
-            <div class="w-auto text-right">
-                <a class="flex-auto text-black hover:text-yellow-500" href="#">
-                    <p class="pb-2">NEXT POST</p>
-                    <p>Tasbih Baru untuk Bapak</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    </section>
-</main>
-<!--* Main Content End -->
+        <script>
+            // var sh = $('#second').height();
 
-<footer class="relative pt-8 pb-6 bg-repeat-y bg-cover" style="background-image: url('img/Footer.svg'); min-height: 550px;">
-    <div class="container relative mx-auto px-4 -top-60 lg:-top-0">
-        <div class="flex flex-wrap text-center lg:text-left">
-            <div class="relative w-full lg:w-4/12 px-4 top-72 lg:top-64 xl:top-72">
-                <img class="ml-auto lg:ml-0 mr-auto lg:mr-0 w-56" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
-                <div class="mt-6 mb-6 lg:mb-0">
-                    <h4 class="pb-2 text-3xl font-semibold" style="font-family: 'Quicksand', sans-serif;">Follow Us On</h4>
-                    <div class="flex flex-row -mx-3 mt-2 justify-center lg:justify-start">
-                        <div class="px-3">
-                            <a href="#">
-                                <img src="img/icon-facebook-color.png" class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-10 w-10 rounded-full" alt="">
-                            </a>
-                        </div>
-                        <div class="px-3">
-                            <a href="#">
-                                <img src="img/icon-twitter-color.png" class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-10 w-10 rounded-full" alt="">
-                            </a>
-                        </div>
-                        <div class="px-3">
-                            <a href="#">
-                                <img src="img/icon-instagram-color.png" class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-10 w-10 rounded-full" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative w-full lg:w-8/12 px-4 mt-80 lg:mt-0" style="top: 250px;">
-                <div class="flex flex-wrap items-top mb-6">
-                    <div class="w-6/12 lg:w-3/12 px-4 ml-auto mb-10 lg:mb-0">
-                        <span class="block uppercase text-gray-600 text-sm font-semibold mb-2" style="font-family: 'Poppins', sans-serif;">
-                            Informasi Event
-                        </span>
-                        <ul class="list-unstyled" style="font-family: 'Quicksand', sans-serif;">
-                            <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Pendaftaran </a> </li>
-                            <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Panduan </a> </li>
-                            <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Poster </a> </li>
-                            <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Unggah </a> </li>
-                            <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="#"> Pengumuman</a> </li>
-                        </ul>
-                    </div>
-                    <div class="w-6/12 lg:w-2/12 px-4 ml-auto mb-10 lg:mb-0">
-                        <span class="block uppercase text-gray-600 text-sm font-semibold mb-2" style="font-family: 'Poppins', sans-serif;">
-                            List Kategori
-                        </span>
-                        <ul class="list-unstyled" style="font-family: 'Quicksand', sans-serif;">
-                            <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="kategori-puisi.html"> Puisi </a> </li>
-                            <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="kategori-cerpen.html"> Cerpen </a> </li>
-                            <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="kategori-artikel.html"> Artikel </a> </li>
-                        </ul>
-                    </div>
-                    <div class="w-full lg:w-4/12 px-4 ml-auto">
-                        <span class="block uppercase text-gray-600 text-sm font-semibold mb-2" style="font-family: 'Poppins', sans-serif;">
-                            CONTACT
-                        </span>
-                        <ul class="list-unstyled" style="font-family: 'Quicksand', sans-serif;">
-                            <li> <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" > Ruko de Farda RK-5, Dusun Keboan, Keboananom, Kec. Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254 </p> </li>
-                            <li> <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" > funbahasa@gmail.com </p> </li>
-                            <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
-                            <li> <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" > +62 815-1531-2240 </p> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-wrap items-center md:justify-between justify-center text-center">
-            <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center top-64 lg:top-56 xl:top-64">
-                <div class="bg-black content-center w-full" style="height: 2px;"></div>
-                <div class="py-1 text-sm font-semibold text-gray-600" style="font-family: 'Quicksand', sans-serif;">
-                    Fun Bahasa Indonesia ©
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+            // $(window).scroll(function(){
+            //     if (($(window).scrollTop() + $(window).innerHeight()) >= sh) {
+            //         $('#second').addClass("sticky");
+            //     }
+            //     else {
+            //         $('#second').removeClass("sticky");
+            //     }
+            // });
 
+            var sourceData = [
+            {
+                id: "1",
+                date: "21 Jan 2021",
+                category: "Artikel",
+                author: "Rasyid Yudhistira",
+                title: "Ekologi Kepada Jalan",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
+              },
+              {
+                id: "2",
+                date: "21 Jan 2021",
+                category: "Artikel",
+                author: "Rasyid Yudhistira",
+                title: "Telur, Susu dan Kalajengking",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
+              },
+              {
+                id: "3",
+                date: "21 Jan 2021",
+                category: "Artikel",
+                author: "Rasyid Yudhistira",
+                title: "Saat-Saat Terakhir Mayor Fransisco Soledad",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
+              },
+              {
+                id: "4",
+                date: "21 Jan 2021",
+                category: "Artikel",
+                author: "Rasyid Yudhistira",
+                title: "Cinta Bajing",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
+              },
+              {
+                id: "5",
+                date: "21 Jan 2021",
+                category: "Artikel",
+                author: "Rasyid Yudhistira",
+                title: "Darah Yang Terus Mengalir",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+              },
+              {
+                id: "6",
+                date: "21 Jan 2021",
+                category: "Artikel",
+                author: "Rasyid Yudhistira",
+                title: "Darah Yang Terus Mengalir",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+              },
+              {
+                id: "7",
+                date: "21 Jan 2021",
+                category: "Artikel",
+                author: "Rasyid Yudhistira",
+                title: "Darah Yang Terus Mengalir",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+              },
+              {
+                id: "8",
+                date: "21 Jan 2021",
+                category: "Artikel",
+                author: "Rasyid Yudhistira",
+                title: "Darah Yang Terus Mengalir",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+              },
+              {
+                id: "9",
+                date: "21 Jan 2021",
+                category: "Artikel",
+                author: "Rasyid Yudhistira",
+                title: "Darah Yang Terus Mengalir",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+              },
+            ]
+
+            var commentData = [
+            {
+                id: "1",
+                writer: "Tiara Melati",
+                date: "21 Jan 2021",
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              },
+              {
+                id: "2",
+                writer: "Bagaskoro",
+                date: "21 Jan 2021",
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              },
+              {
+                id: "3",
+                writer: "Tiara Melati",
+                date: "21 Jan 2021",
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              },
+            ]
+
+            function loadArtikel(){
+                return {
+                search: "",
+                pageNumber: 0,
+                size: 1,
+                total: "",
+                myForData: sourceData,
+      
+                get filteredData() {
+                  const start = this.pageNumber * this.size,
+                    end = start + this.size;
+      
+                  if (this.search === "") {
+                    this.total = this.myForData.length;
+                    return this.myForData.slice(start, end);
+                  }
+                },
+                }
+            }
+            function loadRecommend(){
+                return {
+                search: "",
+                pageNumber: 0,
+                size: 10,
+                total: "",
+                myForData: sourceData,
+      
+                get filteredData() {
+                  const start = this.pageNumber * this.size,
+                    end = start + this.size;
+      
+                  if (this.search === "") {
+                    this.total = this.myForData.length;
+                    return this.myForData.slice(start, end);
+                  }
+                },
+                }
+            }
+            function loadComment(){
+                return {
+                search: "",
+                pageNumber: 0,
+                size: 30,
+                total: "",
+                myForData: commentData,
+      
+                get filteredData() {
+                  const start = this.pageNumber * this.size,
+                    end = start + this.size;
+      
+                  if (this.search === "") {
+                    this.total = this.myForData.length;
+                    return this.myForData.slice(start, end);
+                  }
+                },
+                }
+            }
+        </script>
+    </main>
+    <!--* Main Content End -->
+
+    <!--* Footer  -->
+    <style>
+        @media screen and (max-width: 767px) {
+            .foll-us{
+                display: none;
+            }
+            .sosmed{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+    </style>
+    <!--* Footer  -->
+    <style>
+        @media screen and (max-width: 767px) {
+            .foll-us{
+                display: none;
+            }
+            .sosmed{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+    </style>
+    <footer class="relative pt-16 xl:mx-20 sm:mx-10 text-gray-500">
+        <div class="mt-5 px-9 xl:px-10 lg:px-10 md:px-10 sm:px-10 bg-blue-100 xl:rounded-t-2xl lg:rounded-t-2xl md:rounded-t-2xl sm:rounded-t-2xl">
+            <div class="grid grid-cols-2 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3">
+                <div class="col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-3">
+                    <img class="mt-7 w-32 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
+                    <div class="mt-8 mb-6">
+                        <h4 class="foll-us pb-2 font-bold font-sans xl:text-base lg:text-base md:text-xs sm:text-xs">Follow Us On</h4>
+                        <div class="sosmed flex flex-row mt-2 justify-start">
+                            <div class="pr-1 xl:pr-2 sm:pr-1">
+                                <a href="https://www.facebook.com/funbahasa/">
+                                    <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                            <div class="px-1 xl:px-2 sm:px-1">
+                                <a href="https://twitter.com/funbahasa">
+                                    <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                            <div class="px-1 xl:px-2 sm:px-1">
+                                <a href="https://www.instagram.com/funbahasa/">
+                                    <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        Informasi Event
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
+                    </ul>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        List Kategori
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-puisi.html"> Puisi </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerpen.html"> Cerpen </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerita-anak.html"> Cerita Anak </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-artikel.html"> Artikel </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-esai.html"> Esai </a> </li>
+                    </ul>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        Contact
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</p> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
+                        <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> +62 815-1531-2240 </p> </li>
+                    </ul>
+                    <div class="sosmed-2 flex flex-row mt-2 justify-start">
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="https://www.facebook.com/funbahasa/">
+                                <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="https://twitter.com/funbahasa">
+                                <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="https://www.instagram.com/funbahasa/">
+                                <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center justify-center text-center">
+                <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center">
+                    <div class="bg-black content-center w-full" style="height: 2px;"></div>
+                        <div class="py-1 text-sm font-extrabold text-gray-600 font-title">
+                            Fun Bahasa Indonesia ©
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!--* Footer End  -->
 </body>
 
 </html>
