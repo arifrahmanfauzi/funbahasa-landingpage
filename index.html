@@ -8,92 +8,99 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Fun Bahasa #BahasaAdalahKita</title>
     <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
 </head>
 
 <body class="antialiased bg-body text-body font-body">
     <!--* Container -->
-    
+
     <div class="xl\:container mx-auto">
         <!--* Navigator Bar -->
-        <header class="fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
-        <div x-data="{open: false}"
-            class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
-            <!--* Image  -->
-            <div class="flex w-full sm:w-1/4 lg:block lg:w-3/2 md:w-1/3">
-                <a href="index-fixed.html" class="">
-                    <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" class="lg:w-32 sm:w-28 md:w-28">
-                </a>
-            </div>
-            <!--* Hamburger Menu -->
-            <button @click="open = true"
-                class="flex justify-center items-center w-20 h-10 px-1  hover:bg-gray-300 sm:w-8 h-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
-                <img src="img/hamburger-menu.svg" alt="hamburger-menu-icon">
-            </button>
-            <!--* Image End  -->
-            <!--* Nav Menu Item -->
-            <div
-                class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end sm:hidden md:hidden">
-                <nav class="sm:justify-end sm:w-full sm:flex">
-                    <a href="tentang_kami.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500 xs:font-black-italic">Tentang Kami</a>
-                    <a href="unggah-karya.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Unggah Karya</a>
-                    <a href="Event.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Event</a>
-                    <a href="baca_karya.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Baca Karya</a>
-                    <a href="login.html"
-                        class="px-5 py-1 ml-3 font-bold font-title text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
-                </nav>
-            </div>
-            <!--* Nav Menu Item End -->
-            <!--* Nav Menu Mobile -->
-            <div x-show="open" @click.away="open = false"
-                class="absolute z-10 max-w-md px-2 transform right-10 w-screen-md mt-8 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                    <div class="relative grid bg-white sm:gap-4 p-5">
-                        <a href="#" class="flex items-start rounded-lg hover:bg-gray-50">
-                            <div class="ml-2">
-                                <a href="tentang-kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Tentang Kami
-                                </a>
-                            </div>
-                        </a>
+        <header
+            class="top-0 fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
+            <div x-data="{open: false}"
+                class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
+                <!--* Image  -->
+                <div class="flex w-full sm:w-1/3 lg:block lg:w-2/5 md:w-1/3">
+                    <a href="index.html" class="">
+                        <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" width="150" height="50px">
+                    </a>
+                </div>
+                <!--* Hamburger Menu -->
+                <button @click="open = true"
+                    class="flex justify-center w-10 h-10 px-1 py-1 hover:bg-gray-300 md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+                    <img src="img/hamburger-menu.svg" alt="">
+                </button>
+                <!--* Image End  -->
+                <!--* Nav Menu Item -->
+                <div
+                    class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end">
+                    <nav class="sm:justify-end sm:w-full sm:flex">
+                        <a href="tentang_kami.html"
+                            class="block mt-4 mr-10  font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500"
+                            style="font-family: 'Poppins', sans-serif;">Tentang Kami</a>
+                        <a href="unggah-karya.html"
+                            class="block mt-4 mr-10 font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500"
+                            style="font-family: 'Poppins', sans-serif;">Unggah Karya</a>
+                        <a href="Event.html"
+                            class="block mt-4 mr-10 font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500"
+                            style="font-family: 'Poppins', sans-serif;">Event</a>
+                        <a href="baca_karya.html"
+                            class="block mt-4 mr-10 font-semibold text-gray-500 lg:inline-block lg:mt-0 hover:text-blue-500"
+                            style="font-family: 'Poppins', sans-serif;">Baca Karya</a>
+                        <a href="login.html"
+                            class="px-5 py-1 ml-3 font-semibold text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400"
+                            style="font-family: 'Quicksand', sans-serif;">Masuk</a>
+                    </nav>
+                </div>
+                <!--* Nav Menu Item End -->
+                <!--* Nav Menu Mobile -->
+                <div x-show="open" @click.away="open = false"
+                    class="absolute z-10 max-w-md px-2 transform right-10 w-screen-md mt-7 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                    <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                        <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
+                            <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                                <div class="ml-2">
+                                    <a href="tentang-kami.html" class="text-base font-medium text-gray-900"
+                                        style="font-family: 'Poppins', sans-serif;">
+                                        Tentang Kami
+                                    </a>
+                                </div>
+                            </a>
 
-                        <a href="unggah-karya.html" class="flex items-start rounded-lg hover:bg-gray-50">
-                            <div class="ml-2">
-                                <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Unggah Karya
-                                </a>
-                            </div>
-                        </a>
+                            <a href="unggah-karya.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                                <div class="ml-2">
+                                    <a class="text-base font-medium text-gray-900"
+                                        style="font-family: 'Poppins', sans-serif;">
+                                        Unggah Karya
+                                    </a>
+                                </div>
+                            </a>
 
-                        <a href="Event.html" class="flex items-start rounded-lg hover:bg-gray-50">
-                            <div class="ml-2">
-                                <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Event
-                                </a>
-                            </div>
-                        </a>
+                            <a href="Event.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                                <div class="ml-2">
+                                    <a class="text-base font-medium text-gray-900"
+                                        style="font-family: 'Poppins', sans-serif;">
+                                        Event
+                                    </a>
+                                </div>
+                            </a>
 
-                        <a href="baca_karya.html" class="flex items-start rounded-lg hover:bg-gray-50">
-                            <div class="ml-2">
-                                <a class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Baca Karya
-                                </a>
-                            </div>
-                        </a>
+                            <a href="baca_karya.html" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                                <div class="ml-2">
+                                    <a class="text-base font-medium text-gray-900"
+                                        style="font-family: 'Poppins', sans-serif;">
+                                        Baca Karya
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </header>
     </div>
     <!--* Navigator Bar End -->
@@ -101,337 +108,490 @@
     <!--* Main Content -->
     <main>
         <!--* Greeting  -->
-        <section class="relative w-full bg-clip-border xl:pt-12 sm:pt-16 font-title">
-            <img src="img/sec-1-2.svg" alt="image-greeting" class="w-full h-auto">
-            <div class="absolute xl:top-40 sm:top-28 md:top-32 lg:top-36 xl:left-36 sm:left-20 md:left-24 lg:left-32">
+        <section class="relative w-full bg-clip-border h-30 pt-16" style="font-family: 'Quicksand', sans-serif;">
+            <img src="img/bg-greeting.svg" alt="image-greeting" class="w-full h-auto">
+            <!-- <div class="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"> -->
+            <div class="absolute top-20 left-36 md:top-28 lg:top-28 ml-14 lg:ml-20">
                 <div class="flex flex-col">
                     <h2
-                        class="text-gray-500 ease-in transform font-title font-extrabold xl:text-5xl sm:text-2xl md:text-3xl lg:text-4xl">                        
+                        class="text-xl font-bold text-gray-500 ease-in transform md:text-4xl xl:text-6xl xl:text-bold 2xl:text-5xl lg:text-5xl sm:text-3xl 4xl:text-7xl 3xl:text-5xl 4xl:font-extrabold">
                         Akselerasi Bahasa <br> dan Sastra untuk <br> Budi Pekerti <br>Bangsa
                     </h2>
                     <button
-                        class="text-white font-title 
-                        xl:px-6 xl:py-3 xl:font-bold xl:text-sm xl:mt-6
-                        sm:px-4 sm:py-2 sm:font-medium sm:text-xs sm:mt-4
-                        md:font-bold md:mt-5
-                        lg:font-bold lg:text-sm lg:py-3
-                        transition duration-200 ease-in transform bg-blue-500 rounded-full shadow-md max-w-max hover:shadow-lg hover:-translate-y-1 active:translate-y-0">
+                        class="px-4 py-2 lg:py-3 mt-10 text-white transition duration-200 ease-in transform bg-blue-500 border border-blue-600 rounded-full shadow-md xl:mt-20 max-w-max hover:shadow-lg hover:-translate-y-1 active:translate-y-0 lg:mt-8 lg:font-bold">
                         Tentang Kami
                     </button>
                 </div>
             </div>
-           
         </section>
         <!--* Greeting  End-->
-        
         <!--* Call To Action  -->
-        <section class="relative w-full h-auto text-center bg-blue-figma">
-            <div class="relative xl:pt-96 sm:pt-28 md:pt-28 py-10">
-                <img class="object-contain w-full xl:h-80 mx-auto sm:invisible xl:visible" src="img/sec-2.svg" alt="image-reading">
+        <section class="relative w-full mt-48 text-center">
+            <div class="bg-contain">
+                <img class="w-full" src="img/call-to-action.svg" alt="image-reading">
             </div>
-            <div class="absolute xl:top-20 sm:top-14 md:top-16 lg:top-20 w-full mx-auto" >
+            <div class="flex flex-col absolute -top-32 w-full mx-auto" style="font-family: 'Poppins', sans-serif;">
                 <h2
-                    class="content-center justify-center font-title xl:text-5xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center text-gray-500">
-                    Kirim <i class="font-black">Karya Terbaik</i> Kalian
-                </h2>
-                <div class="bg-orange-figma xl:w-80 sm:w-40 md:w-64 lg:w-56 xl:mt-2 sm:mt-1 rounded-xl mx-auto xl:h-2 sm:h-1 lg:h-2"></div>
-                <p class="xl:my-16 sm:my-10 lg:my-14 xl:mx-24 sm:mx-16 md:mx-28 lg:mx-16 text-center font-sans xl:text-lg sm:text-sm md:text-base lg:text-lg font-thin xl:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed">
-                    Setiap orang pasti punya pengalaman dan cerita. Pengalaman merupakan sebuah perjalanan yang
-                    berharga, itu kami hadir untuk mendengarkan pengalaman dan cerita yang kalian
+                    class="content-center justify-center text-2xl font-bold text-center text-gray-500 xl:text-5xl md:text-4xl lg:font-bold xl:font-bold">
+                    Kirim Karya Terbaik Kalian</h2>
+                <p class="mt-5 text-center text-sm md:text-lg">
+                    Setiap orang pasti punya pengalaman dan cerita. Pengalaman merupakan <br> sebuah perjalanan yang
+                    berharga, untuk itu kami hadir untuk <br> mendengarkan pengalaman dan cerita yang kalian
                     bagikan. <br>
                     Hidupkan karyamu sebagai inspirasi bangsa.
                 </p>
                 <button
-                    class="xl:px-10 sm:px-6 lg:px-8 xl:py-4 sm:py-3 md:py-3 lg:py-4 xl:text-lg sm:text-xs md:text-sm lg:text-base text-gray-500 transition duration-200 ease-in transform bg-orange-figma rounded-full shadow-md  max-w-max hover:shadow-lg hover:-translate-y-1 active:translate-y-0 mx-auto font-title font-extrabold" >
+                    class="px-4 py-2 lg:py-3 mt-10 text-white transition duration-200 ease-in transform bg-gray-500 border border-gray-600 rounded-xl shadow-md xl:mt-16 max-w-max hover:shadow-lg hover:-translate-y-1 active:translate-y-0 lg:mt-16 lg:font-bold mx-auto"
+                    style="font-family: 'Quicksand', sans-serif;">
                     Ikuti Kami
                 </button>
             </div>
-
         </section>
-        <!--* Call To Action End -->
-        
+        <!--* Call To Action End  -->
         <!--* Event  -->
         <section>
-            <div class="flex flex-col md:flex-row lg:flex-row w-full xl:my-32 sm:my-24 xl:px-36 sm:px-36 md:px-16 lg:px-32">
-                <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 bg-transparent">
-                    <div class="grid xl:grid-cols-3 gap-7 sm:mr-0 md:mr-10 lg:mr-16 xl:mr-10">
-                        <div class="border shadow-lg bg-grey rounded-xl p-4 text-left col-span-2 transform hover:scale-105 hover:border-blue-500 motion-reduce:transform-none">
-                            <a href="#">
-                                <div>
-                                    <img src="img/sec-3 pendaftaran.svg" class="display block ml-3 xl:w-11 sm:w-8 lg:w-9 pb-3">
-                                    <p class="font-bold font-title ml-3 xl:text-xl sm:text-lg">Pendaftaran</p>
-                                    <p class="font-regular font-title ml-3 text-xs">Pendaftaran Puisi #FPPN2020</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="border shadow-lg bg-grey rounded-xl p-4 text-left col-span-2 transform hover:scale-105 hover:border-blue-500 motion-reduce:transform-none">
-                            <a href="#">
-                                <div>
-                                    <img src="img/sec-3 panduan.svg" class="display block ml-3 xl:w-11 sm:w-8 lg:w-9 pb-3">
-                                    <p class="font-bold font-title ml-3 xl:text-xl sm:text-lg">Panduan</p>
-                                    <p class="font-regular font-title ml-3 text-xs">Pendaftaran Puisi #FPPN2020</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="border shadow-lg bg-grey rounded-xl p-4 text-left col-span-2 transform hover:scale-105 hover:border-blue-500 motion-reduce:transform-none">
-                            <a href="#">
-                                <div>
-                                    <img src="img/sec-3 unggah.svg" class="display block ml-3 xl:h-14 sm:h-11 lg:h-12 pb-3">
-                                    <p class="font-bold font-title ml-3 xl:text-xl sm:text-lg">Unggah</p>
-                                    <p class="font-regular font-title ml-3 text-xs">Pendaftaran Puisi #FPPN2020</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="border shadow-lg bg-grey rounded-xl p-4 text-left col-span-2 transform hover:scale-105 hover:border-blue-500 motion-reduce:transform-none">
-                            <a href="#">
-                                <div>
-                                    <img src="img/sec-3 poster.svg" class="display block ml-3 xl:w-10 sm:w-8 lg:w-8 pb-3">
-                                    <p class="font-bold font-title ml-3 xl:text-xl sm:text-lg">Poster</p>
-                                    <p class="font-regular font-title ml-3 text-xs">Unduh Poster</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="border shadow-lg bg-grey rounded-xl p-4 sm:mb-20 md:mb-0 text-left col-span-2 transform hover:scale-105 hover:border-blue-500 motion-reduce:transform-none">
-                            <a href="#">
-                                <div>
-                                    <img src="img/sec-3 pengumuman.svg" class="display block ml-3  xl:h-14 sm:h-11 lg:h-12 pb-3">
-                                    <p class="font-bold font-title ml-3 xl:text-xl sm:text-lg">Pengumuman</p>
-                                    <p class="font-regular font-title ml-3 text-xs">Pengumuman Juara #FPPN2020</p>
-                                </div>
-                            </a>
-                        </div>
+            <div class="flex flex-col md:flex-row lg:flex-row w-full p-4"
+                style="background-image: url(img/vector_section_event.png); background-repeat: no-repeat;">
+                <div class="w-full md:w-1/2 lg:w-1/2 bg-transparent">
+                    <div class="grid grid-cols-2 gap-4 p-4">
+                        <a href="#">
+                            <div
+                                class="border shadow-lg bg-white rounded-xl p-4 text-center transform hover:scale-105 hover:border-blue-500 motion-reduce:transform-none">
+                                <img src="img/Pendaftaran.svg" class="display block ml-auto mr-auto py-4 w-full">
+                                <p class="font-bold" style="font-family: 'Quicksand', sans-serif;">Pendaftaran</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div
+                                class="border shadow-lg bg-white rounded-xl p-4 text-center transform hover:scale-105 hover:border-blue-500 motion-reduce:transform-none">
+                                <img src="img/Panduan.svg" class="display block ml-auto mr-auto py-4 w-full">
+                                <p class="font-bold" style="font-family: 'Quicksand', sans-serif;">Panduan</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div
+                                class="border shadow-lg bg-white rounded-xl p-4 text-center transform hover:scale-105 hover:border-blue-500 motion-reduce:transform-none">
+                                <img src="img/Poster.svg" class="display block ml-auto mr-auto py-4 w-full">
+                                <p class="font-bold" style="font-family:  'Quicksand', sans-serif;">Poster</p>
+                                <p style="font-family: 'Poppins', sans-serif;">Unduh Poster</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div
+                                class="border shadow-lg bg-white rounded-xl p-4 text-center transform hover:scale-105 hover:border-blue-500 motion-reduce:transform-none">
+                                <img src="img/Unggah.svg" class="display block ml-auto mr-auto py-4 w-full">
+                                <p class="font-bold" style="font-family: 'Quicksand', sans-serif;">Unggah</p>
+                                <p style="font-family: 'Poppins', sans-serif;">Unggah Puisi #FPPN2020</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div
+                                class="border shadow-lg bg-white rounded-xl p-4 text-center transform hover:scale-105 hover:border-blue-500 motion-reduce:transform-none">
+                                <img src="img/Pengumuman.svg" class="display block ml-auto mr-auto py-4 w-full">
+                                <p class="font-bold" style="font-family: 'Quicksand', sans-serif;">Pengumuman</p>
+                                <p style="font-family: 'Poppins', sans-serif;">Pengumuman Juara #FPPN2020</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/2 sm:h-screen md:h-auto lg:h-auto xl:h-auto border shadow-lg bg-white rounded-xl ">
-                    <div class="text-center">
+                <div class="w-full md:w-1/2 lg:w-1/2 bg-transparent">
+                    <div class="border shadow-lg bg-white rounded-xl p-4 m-4 text-center" style="height: 750px;">
                         <!-- Isi Instragram -->
-                        
+                        <img src="img/Pengumuman.svg" class="display block ml-auto mr-auto py-4 w-full">
+                        <p class="font-bold" style="font-family: 'Quicksand', sans-serif;">Pengumuman</p>
+                        <p style="font-family: 'Poppins', sans-serif;">Pengumuman Juara #FPPN2020</p>
                     </div>
                 </div>
             </div>
-            
         </section>
         <!--* Event End  -->
-        
         <!--* What They Said  -->
-        <section class="bg-blue-figma py-14">
-            <div class="text-center font-title font-extrabold text-3xl">
-                <p>Apa Kata Mereka <i class="font-black-italic text-5xl">?</i></p>
+        <section>
+            <div class="w-full text-center">
+                <p class="text-5xl" style="font-family: 'Quicksand', sans-serif;">Apa Kata Mereka</p>
             </div>
-            <div class="xl:px-36 sm:px-24 pt-8">
-                <img src="img/quote.svg" class="xl:w-24 sm:w-16 md:w-16 lg:w-24">
-                <div class="font-sans sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose xl:text-sm sm:text-xs md:text-xs lg:text-sm xl:font-regular sm:font-thin md:font-thin lg:font-regular">
-                    <p>Syukur tak habisnya kepada Tuhan Yesus karena telah memantaskan saya sebagai Juara 1 Lomba Kreasi Puisi Pendek Nasional 2020 yang diadakan oleh Fun Bahasa.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4 p-8"
+                style="font-family: 'Poppins', sans-serif;">
+                <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
+                    <p>Syukur tak habisnya kepada Tuhan Yesus karena telah memantaskan saya sebagai Juara 1 Lomba Kreasi
+                        Puisi Pendek Nasional 2020 yang diadakan oleh Fun Bahasa.</p>
                     <br>
-                    <p>Juga teruntuk Dewan Juri dan Fun Bahasa, terima kasih banyak. Akhirnya “Melukis Wajah Ibu” menjadi karya pertama saya yang berhasil menjuarai Event Lomba Cipta Puisi Nasional.</p>
+                    <p>Juga teruntuk Dewan Juri dan Fun Bahasa, terima kasih banyak. Akhirnya “Melukis Wajah Ibu”
+                        menjadi karya pertama saya yang berhasil menjuarai Event Lomba Cipta Puisi Nasional.</p>
                     <br>
-                    <p>Teman-teman yang sempat membaca ini, jangan menyerah untuk melangitkan mimpi yah. Makin tinggi gunung yang kita daki, makin indah pemandangannya. Ngomong-ngomong selagi masih #dirumahaja yuk sama-sama berkarya. Dan yang terpenting, jangan behenti menulis.</p>
-                </div>
-                <div class="flex items-center w-3/4">
-                    <img src="img/org-1.svg" class="display block mr-5 py-7 rounded-full sm:h-28 md:h-28">
-                    <div>
-                        <p class="font-title font-bold xl:text-base sm:text-sm md:text-sm lg:text-base">Sevryade Anugrah Sambolangi</p>
-                        <span class="font-sans xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs">Author</span>
+                    <p>Teman-teman yang sempat membaca ini, jangan menyerah untuk melangitkan mimpi yah. Makin tinggi
+                        gunung yang kita daki, makin indah pemandangannya. Ngomong-ngomong selagi masih #dirumahaja yuk
+                        sama-sama berkarya. Dan yang terpenting, jangan behenti menulis.</p>
+                    <div class="flex pt-4 pb-2">
+                        <div class="w-1/3 text-center">
+                            <img src="img/org-1.svg" class="display block ml-auto mr-auto py-4 rounded-full"
+                                style="width: 70%;">
+                        </div>
+                        <div class="w-2/3 my-auto">
+                            <h2>Sevryade Anugrah</h2>
+                            <h5>Author</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="my-auto flex items-center place-content-end">
-                    <div>
-                        <a href="#">
-                            <img src="img/arrow-left.svg" style="width: 60%;" class="transform hover:scale-150 motion-reduce:transform-none">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img src="img/arrow-right.svg" style="width: 60%;" class="transform hover:scale-150 motion-reduce:transform-none">
-                        </a>
+                <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
+                    <p>Syukur tak habisnya kepada Tuhan Yesus karena telah memantaskan saya sebagai Juara 1 Lomba Kreasi
+                        Puisi Pendek Nasional 2020 yang diadakan oleh Fun Bahasa.</p>
+                    <br>
+                    <p>Juga teruntuk Dewan Juri dan Fun Bahasa, terima kasih banyak. Akhirnya “Melukis Wajah Ibu”
+                        menjadi karya pertama saya yang berhasil menjuarai Event Lomba Cipta Puisi Nasional.</p>
+                    <br>
+                    <p>Teman-teman yang sempat membaca ini, jangan menyerah untuk melangitkan mimpi yah. Makin tinggi
+                        gunung yang kita daki, makin indah pemandangannya. Ngomong-ngomong selagi masih #dirumahaja yuk
+                        sama-sama berkarya. Dan yang terpenting, jangan behenti menulis.</p>
+                    <div class="flex pt-4 pb-2">
+                        <div class="w-1/3 text-center">
+                            <img src="img/org-1.svg" class="display block ml-auto mr-auto py-4 rounded-full"
+                                style="width: 70%;">
+                        </div>
+                        <div class="w-2/3 my-auto">
+                            <h2>Sevryade Anugrah</h2>
+                            <h5>Author</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl">
+                    <p>Syukur tak habisnya kepada Tuhan Yesus karena telah memantaskan saya sebagai Juara 1 Lomba Kreasi
+                        Puisi Pendek Nasional 2020 yang diadakan oleh Fun Bahasa.</p>
+                    <br>
+                    <p>Juga teruntuk Dewan Juri dan Fun Bahasa, terima kasih banyak. Akhirnya “Melukis Wajah Ibu”
+                        menjadi karya pertama saya yang berhasil menjuarai Event Lomba Cipta Puisi Nasional.</p>
+                    <br>
+                    <p>Teman-teman yang sempat membaca ini, jangan menyerah untuk melangitkan mimpi yah. Makin tinggi
+                        gunung yang kita daki, makin indah pemandangannya. Ngomong-ngomong selagi masih #dirumahaja yuk
+                        sama-sama berkarya. Dan yang terpenting, jangan behenti menulis.</p>
+                    <div class="flex pt-4 pb-2">
+                        <div class="w-1/3 text-center">
+                            <img src="img/org-1.svg" class="display block ml-auto mr-auto py-4 rounded-full"
+                                style="width: 70%;">
+                        </div>
+                        <div class="w-2/3 my-auto">
+                            <h2>Sevryade Anugrah</h2>
+                            <h5>Author</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!--* What They Said End  -->
-        
         <!--* Post  -->
-        <section>
-            <img src="img/wave.png" alt="wave" class="w-full h-auto">
-            <div class="grid grid-cols-3 gap-16 mx-72 mt-8">
-                <a href="#">
-                    <div class="shadow-lg bg-blue-500 rounded-2xl py-3 transform hover:scale-105 hover:bg-sky-700 motion-reduce:transform-none text-center">
-                        <p class="font-bold font-title text-lg text-white">Puisi</p>
+        <section class="bg-gradient-to-b from-blue-100" style="font-family: 'Poppins', sans-serif;">
+            <div class="w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 pb-10 px-10">
+                    <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl hover:border-blue-500">
+                        <h5 class="text-sm" style="color: #FF33AB;">Puisi</h5>
+                        <a href="puisi.html" class="text-xl py-2 text-black hover:text-blue-500">Matahari Membelah
+                            Tubuhmu Dan Mereka Tak Tahu Itu</a>
+                        <div class="flex flex-row mb-2">
+                            <img src="img/icon-calendar.png" class="w-6 mr-2">
+                            <h5 class="text-sm text-gray-300 my-auto">
+                                FUNBAHASA / Januari 17, 2021
+                            </h5>
+                        </div>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa
+                            terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa
+                            siapa yang menunggu itu.</p>
                     </div>
-                </a>
-                <a href="#">
-                    <div class="shadow-lg bg-blue-500 rounded-2xl py-3 transform hover:scale-105 hover:bg-sky-700 motion-reduce:transform-none text-center">
-                        <p class="font-bold font-title text-lg text-white">Cerpen</p>
+                    <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl hover:border-blue-500">
+                        <h5 class="text-sm" style="color: #FF33AB;">Puisi</h5>
+                        <a href="puisi.html" class="text-xl py-2 text-black hover:text-blue-500">Matahari Membelah
+                            Tubuhmu Dan Mereka Tak Tahu Itu</a>
+                        <div class="flex flex-row mb-2">
+                            <img src="img/icon-calendar.png" class="w-6 mr-2">
+                            <h5 class="text-sm text-gray-300 my-auto">
+                                FUNBAHASA / Januari 17, 2021
+                            </h5>
+                        </div>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa
+                            terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa
+                            siapa yang menunggu itu.</p>
                     </div>
-                </a>
-                <a href="#">
-                    <div class="shadow-lg bg-blue-500 rounded-2xl py-3 transform hover:scale-105 hover:bg-sky-700 motion-reduce:transform-none text-center">
-                        <p class="font-bold font-title text-lg text-white">Artikel</p>
+                    <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl hover:border-blue-500">
+                        <h5 class="text-sm" style="color: #FF33AB;">Puisi</h5>
+                        <a href="puisi.html" class="text-xl py-2 text-black hover:text-blue-500">Matahari Membelah
+                            Tubuhmu Dan Mereka Tak Tahu Itu</a>
+                        <div class="flex flex-row mb-2">
+                            <img src="img/icon-calendar.png" class="w-6 mr-2">
+                            <h5 class="text-sm text-gray-300 my-auto">
+                                FUNBAHASA / Januari 17, 2021
+                            </h5>
+                        </div>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa
+                            terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa
+                            siapa yang menunggu itu.</p>
                     </div>
-                </a>
+                </div>
+                <div class="pb-5">
+                    <ul class="flex justify-center">
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="font-bold" href="#">1</a>
+                        </li>
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="font-bold" href="#">2</a>
+                        </li>
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="font-bold" href="#">3</a>
+                        </li>
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="flex items-center font-bold" href="#">
+                                <span class="mx-3">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="grid grid-cols-3 gap-5 mx-40 mt-20">
-                <a href="#">
-                    <div class="shadow-lg bg-white rounded-2xl h-56 transform hover:scale-105 motion-reduce:transform-none">
-                        <div class="bg-yellow rounded-t-2xl h-5 px-8">
-                            <p class="font-sans text-xs text-blue-500 pt-10">Puisi</p>
-                            <p class="font-extrabold font-title text-lg ">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</p>
-                            <p class="font-sans text-xs pt-5">Rasyid Yudhistira</p>
-                            <p class="font-sans text-xs text-gray-100 pt-1">FUNBAHASA / Januari 17, 2021</p>
+            <div class="w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 pb-10 px-10">
+                    <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl hover:border-blue-500">
+                        <h5 class="text-sm" style="color: #FF33AB;">Cerpen</h5>
+                        <a href="cerpen.html" class="text-xl py-2 text-black hover:text-blue-500">Matahari Membelah
+                            Tubuhmu Dan Mereka Tak Tahu Itu</a>
+                        <div class="flex flex-row mb-2">
+                            <img src="img/icon-calendar.png" class="w-6 mr-2">
+                            <h5 class="text-sm text-gray-300 my-auto">
+                                FUNBAHASA / Januari 17, 2021
+                            </h5>
                         </div>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa
+                            terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa
+                            siapa yang menunggu itu.</p>
                     </div>
-                </a>
-                <a href="#">
-                    <div class="shadow-lg bg-white rounded-2xl h-56 transform hover:scale-105 motion-reduce:transform-none">
-                        <div class="bg-yellow rounded-t-2xl h-5 px-8">
-                            <p class="font-sans text-xs text-blue-500 pt-10">Puisi</p>
-                            <p class="font-extrabold font-title text-lg ">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</p>
-                            <p class="font-sans text-xs pt-5">Rasyid Yudhistira</p>
-                            <p class="font-sans text-xs text-gray-100 pt-1">FUNBAHASA / Januari 17, 2021</p>
+                    <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl hover:border-blue-500">
+                        <h5 class="text-sm" style="color: #FF33AB;">Cerpen</h5>
+                        <a href="cerpen.html" class="text-xl py-2 text-black hover:text-blue-500">Matahari Membelah
+                            Tubuhmu Dan Mereka Tak Tahu Itu</a>
+                        <div class="flex flex-row mb-2">
+                            <img src="img/icon-calendar.png" class="w-6 mr-2">
+                            <h5 class="text-sm text-gray-300 my-auto">
+                                FUNBAHASA / Januari 17, 2021
+                            </h5>
                         </div>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa
+                            terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa
+                            siapa yang menunggu itu.</p>
                     </div>
-                </a>
-                <a href="#">
-                    <div class="shadow-lg bg-white rounded-2xl h-56 transform hover:scale-105 motion-reduce:transform-none">
-                        <div class="bg-yellow rounded-t-2xl h-5 px-8">
-                            <p class="font-sans text-xs text-blue-500 pt-10">Puisi</p>
-                            <p class="font-extrabold font-title text-lg ">Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</p>
-                            <p class="font-sans text-xs pt-5">Rasyid Yudhistira</p>
-                            <p class="font-sans text-xs text-gray-100 pt-1">FUNBAHASA / Januari 17, 2021</p>
+                    <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl hover:border-blue-500">
+                        <h5 class="text-sm" style="color: #FF33AB;">Cerpen</h5>
+                        <a href="cerpen.html" class="text-xl py-2 text-black hover:text-blue-500">Matahari Membelah
+                            Tubuhmu Dan Mereka Tak Tahu Itu</a>
+                        <div class="flex flex-row mb-2">
+                            <img src="img/icon-calendar.png" class="w-6 mr-2">
+                            <h5 class="text-sm text-gray-300 my-auto">
+                                FUNBAHASA / Januari 17, 2021
+                            </h5>
                         </div>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa
+                            terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa
+                            siapa yang menunggu itu.</p>
                     </div>
-                </a>
+                </div>
+                <div class="pb-5">
+                    <ul class="flex justify-center">
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="font-bold" href="#">1</a>
+                        </li>
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="font-bold" href="#">2</a>
+                        </li>
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="font-bold" href="#">3</a>
+                        </li>
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="flex items-center font-bold" href="#">
+                                <span class="mx-3">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="pb-10 mt-16">
-                <ul class="flex justify-center font-sans">
-                    <li class="mx-3 px-3 py-2 bg-gray-100 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
-                        <a class="font-bold" href="#">1</a>
-                    </li>
-                    <li class="mx-3 px-3 py-2 bg-gray-100 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
-                        <a class="font-bold" href="#">2</a>
-                    </li>
-                    <li class="mx-3 px-3 py-2 bg-gray-100 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
-                        <a class="font-bold" href="#">3</a>
-                    </li>
-                    <li class="mx-3 px-3 py-2 bg-gray-100 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
-                        <a class="flex items-center font-bold" href="#">
-                            <span class="mx-3">Next</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 pb-10 px-10">
+                    <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl hover:border-blue-500">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <a href="artikel.html" class="text-xl py-2 text-black hover:text-blue-500">Matahari Membelah
+                            Tubuhmu Dan Mereka Tak Tahu Itu</a>
+                        <div class="flex flex-row mb-2">
+                            <img src="img/icon-calendar.png" class="w-6 mr-2">
+                            <h5 class="text-sm text-gray-300 my-auto">
+                                FUNBAHASA / Januari 17, 2021
+                            </h5>
+                        </div>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa
+                            terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa
+                            siapa yang menunggu itu.</p>
+                    </div>
+                    <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl hover:border-blue-500">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <a href="artikel.html" class="text-xl py-2 text-black hover:text-blue-500">Matahari Membelah
+                            Tubuhmu Dan Mereka Tak Tahu Itu</a>
+                        <div class="flex flex-row mb-2">
+                            <img src="img/icon-calendar.png" class="w-6 mr-2">
+                            <h5 class="text-sm text-gray-300 my-auto">
+                                FUNBAHASA / Januari 17, 2021
+                            </h5>
+                        </div>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa
+                            terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa
+                            siapa yang menunggu itu.</p>
+                    </div>
+                    <div class="border border-2 shadow-lg shadow-lg bg-white p-5 rounded-2xl hover:border-blue-500">
+                        <h5 class="text-sm" style="color: #FF33AB;">Artikel</h5>
+                        <a href="artikel.html" class="text-xl py-2 text-black hover:text-blue-500">Matahari Membelah
+                            Tubuhmu Dan Mereka Tak Tahu Itu</a>
+                        <div class="flex flex-row mb-2">
+                            <img src="img/icon-calendar.png" class="w-6 mr-2">
+                            <h5 class="text-sm text-gray-300 my-auto">
+                                FUNBAHASA / Januari 17, 2021
+                            </h5>
+                        </div>
+                        <p class="text-sm">Rasyid Yudhistira MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU Kenapa
+                            terburu-buru untuk menunjuk ke atas dan bertanya kapan akan dibelah? Kau tentu tahu siapa
+                            siapa yang menunggu itu.</p>
+                    </div>
+                </div>
+                <div class="pb-10">
+                    <ul class="flex justify-center">
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="font-bold" href="#">1</a>
+                        </li>
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="font-bold" href="#">2</a>
+                        </li>
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="font-bold" href="#">3</a>
+                        </li>
+                        <li
+                            class="mx-3 px-3 py-2 bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg">
+                            <a class="flex items-center font-bold" href="#">
+                                <span class="mx-3">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!--* Post End -->
     </main>
     <!--* Main Content End -->
-    
     <!--* Footer  -->
-    <footer class="relative pt-16 xl:mx-20 sm:mx-10">
-        <div class="mt-5 px-10 bg-blue-figma rounded-t-2xl">
-            <div class="grid xl:grid-cols-5">
-                <div class="col-span-2">
-                    <img class="mt-7 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
-                    <div class="mt-8 mb-6">
-                        <h4 class="pb-2 font-bold font-sans xl:text-base lg:text-base md:text-xs sm:text-xs">Follow Us On</h4>
-                        <div class="flex flex-row -mx-2 mt-2 justify-start">
-                            <div class="xl:px-2 sm:px-1">
+    <footer class="relative pt-8 pb-6 bg-repeat-y bg-cover"
+        style="background-image: url('img/Footer.svg'); min-height: 550px;">
+        <div class="container relative mx-auto px-4 -top-60 lg:-top-0">
+            <div class="flex flex-wrap text-center lg:text-left">
+                <div class="relative w-full lg:w-4/12 px-4 top-72 lg:top-64 xl:top-72">
+                    <img class="ml-auto lg:ml-0 mr-auto lg:mr-0 w-56" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
+                    <div class="mt-6 mb-6 lg:mb-0">
+                        <h4 class="pb-2 text-3xl font-semibold" style="font-family: 'Quicksand', sans-serif;">Follow Us
+                            On</h4>
+                        <div class="flex flex-row -mx-3 mt-2 justify-center lg:justify-start">
+                            <div class="px-3">
                                 <a href="#">
-                                    <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                    <img src="img/icon-facebook-color.png"
+                                        class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-10 w-10 rounded-full"
+                                        alt="">
                                 </a>
                             </div>
-                            <div class="xl:px-2 sm:px-1">
+                            <div class="px-3">
                                 <a href="#">
-                                    <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                    <img src="img/icon-twitter-color.png"
+                                        class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-10 w-10 rounded-full"
+                                        alt="">
                                 </a>
                             </div>
-                            <div class="xl:px-2 sm:px-1">
+                            <div class="px-3">
                                 <a href="#">
-                                    <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                    <img src="img/icon-instagram-color.png"
+                                        class="shadow-md hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-10 w-10 rounded-full"
+                                        alt="">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mb-10 pt-12 sm:invisible xl:visible">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        Informasi Event
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
-                    </ul>
-                </div>
-                <div class="mb-10 pt-12 sm:invisible xl:visible">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        List Kategori
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Puisi </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Cerpen </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Artikel </a> </li>
-                    </ul>
-                </div>
-                <div class="mb-10 pt-12 sm:invisible xl:visible">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        Contact
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> +62 815-1531-2240 </a> </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="grid sm:grid-cols-3 md:hidden lg:hidden xl:hidden">
-                <div class="mb-10 pt-12">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        Informasi Event
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
-                    </ul>
-                </div>
-                <div class="mb-10 pt-12">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        List Kategori
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Puisi </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Cerpen </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Artikel </a> </li>
-                    </ul>
-                </div>
-                <div class="mb-10 pt-12">
-                    <span class="uppercase text-gray-600 xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        Contact
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> +62 815-1531-2240 </a> </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex flex-wrap items-center justify-center text-center">
-                <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center">
-                    <div class="bg-black content-center w-full" style="height: 2px;"></div>
-                        <div class="py-1 text-sm font-extrabold text-gray-600 font-title">
-                            Fun Bahasa Indonesia ©
+                <div class="relative w-full lg:w-8/12 px-4 mt-80 lg:mt-0" style="top: 250px;">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-6/12 lg:w-3/12 px-4 ml-auto mb-10 lg:mb-0">
+                            <span class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                                style="font-family: 'Poppins', sans-serif;">
+                                Informasi Event
+                            </span>
+                            <ul class="list-unstyled" style="font-family: 'Quicksand', sans-serif;">
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm"
+                                        href="#"> Pendaftaran </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm"
+                                        href="#"> Panduan </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm"
+                                        href="#"> Poster </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm"
+                                        href="#"> Unggah </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm"
+                                        href="#"> Pengumuman</a> </li>
+                            </ul>
                         </div>
+                        <div class="w-6/12 lg:w-2/12 px-4 ml-auto mb-10 lg:mb-0">
+                            <span class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                                style="font-family: 'Poppins', sans-serif;">
+                                List Kategori
+                            </span>
+                            <ul class="list-unstyled" style="font-family: 'Quicksand', sans-serif;">
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm"
+                                        href="kategori-puisi.html"> Puisi </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm"
+                                        href="kategori-cerpen.html"> Cerpen </a> </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm"
+                                        href="kategori-artikel.html"> Artikel </a> </li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                                style="font-family: 'Poppins', sans-serif;">
+                                CONTACT
+                            </span>
+                            <ul class="list-unstyled" style="font-family: 'Quicksand', sans-serif;">
+                                <li>
+                                    <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"> Ruko
+                                        de Farda RK-5, Dusun Keboan, Keboananom, Kec. Gedangan, Kabupaten Sidoarjo, Jawa
+                                        Timur 61254 </p>
+                                </li>
+                                <li>
+                                    <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm">
+                                        funbahasa@gmail.com </p>
+                                </li>
+                                <li> <a class="text-gray-700 hover:text-blue-500 font-semibold block pb-2 text-sm"
+                                        href="www.funbahasa.com"> www.funbahasa.com </a> </li>
+                                <li>
+                                    <p class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"> +62
+                                        815-1531-2240 </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center md:justify-between justify-center text-center">
+                <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center top-64 lg:top-56 xl:top-64">
+                    <div class="bg-black content-center w-full" style="height: 2px;"></div>
+                    <div class="py-1 text-sm font-semibold text-gray-600" style="font-family: 'Quicksand', sans-serif;">
+                        Fun Bahasa Indonesia ©
+                    </div>
                 </div>
             </div>
         </div>
-        
     </footer>
     <!--* Footer End  -->
 </body>
