@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fun Bahasa #BahasaAdalahKita</title>
+    <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body class="antialiased bg-body text-body font-body">
+    <!--* Container -->
+    
+    <div class="xl\:container mx-auto">
+        <!--* Navigator Bar -->
+        <header class="fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
+        <div x-data="{open: false}"
+            class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
+            <!--* Image  -->
+            <div class="flex w-full sm:w-1/4 lg:block lg:w-3/2 md:w-1/3">
+                <a href="index.html" class="">
+                    <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" class="w-28 xl:w-40 lg:w-32 sm:w-28 md:w-28">
+                </a>
+            </div>
+            <!--* Hamburger Menu -->
+            <button @click="open = true"
+                class="flex justify-center items-center w-8 h-8 px-1 hover:bg-gray-300 sm:w-8 h-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+                <img src="img/hamburger-menu.svg" alt="hamburger-menu-icon">
+            </button>
+            <!--* Image End  -->
+            <!--* Nav Menu Item -->
+            <div
+                class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end hidden sm:hidden md:hidden">
+                <nav class="sm:justify-end sm:w-full sm:flex">
+                    <a href="tentang_kami.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500 xs:font-black-italic">Tentang Kami</a>
+                    <a href="unggah-karya.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Unggah Karya</a>
+                    <a href="Event.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Event</a>
+                    <a href="baca_karya.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Baca Karya</a>
+                    <a href="login.html"
+                        class="px-5 py-1 ml-3 font-bold font-title text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
+                </nav>
+            </div>
+            <!--* Nav Menu Item End -->
+            <!--* Nav Menu Mobile -->
+            <div x-show="open" @click.away="open = false"
+                class="absolute z-10 max-w-md px-2 transform right-10 w-screen-md mt-8 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                    <div class="relative grid bg-white gap-4 p-5">
+                      <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="tentang_kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Tentang Kami
+                            </a>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="unggah-karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Unggah Karya
+                            </a>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="Event.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Event
+                            </a>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="baca_karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Baca Karya
+                            </a>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                      <div class="flex ml-2 bg-blue-500 rounded-lg -ml-2 -mr-2 h-10">
+                          <a href="login.html" class="pl-4 mt-2 text-base font-medium text-white" style="font-family: 'Poppins', sans-serif;">
+                              Masuk
+                          </a>
+                      </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+    </div>
+    <!--* Navigator Bar End -->
+
+    <!--* Main Content -->
+    <main>
+        <div class="grid grid-cols-4 gap-2 mx-auto pt-28 xl:pt-36 lg:pt-32 px-10 xl:px-20 lg:px-16 md:px-10">
+            <div id="first" class="col-span-4 xl:col-span-3 lg:col-span-3 md:col-span-4 sm:col-span-4">
+                <div x-data="loadEsai()">
+                    <template x-for="item in filteredData" :key="item">
+                        <div>
+                            <div class="flex items-center w-full pb-5 border-b">
+                                <img :src="`${item.profile_image}`" alt="blog" class="w-8 xl:w-12 lg:w-12 md:w-10 sm:w-10 h-8 xl:h-12 lg:h-12 md:h-10 sm:h-10 rounded-full flex-shrink-0 object-cover object-center">
+                                <div class="pl-3">
+                                    <p class="font-title font-bold text-gray-500 text-base" x-text="item.author"></p>
+                                    <span class="font-sans font-thin text-blue-500 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs">
+                                        <a href="kategori-esai.html" x-text="item.category"></a>
+                                    </span>
+                                    <i class="bi bi-dot text-gray-300 text-xs"></i>
+                                    <span class="font-sans font-thin text-gray-300 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs" x-text="item.date"></span>
+                                    <i class="bi bi-dot text-gray-300 text-xs"></i>
+                                    <span class="font-sans font-thin text-gray-300 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs" x-text="item.duration + ' min read'"></span>
+                                </div>
+                            </div>
+                            <div class="py-10">
+                                <p class="font-title font-extrabold text-gray-500 pb-4 text-2xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl" x-text="item.title"></p>
+                                <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Di tubuh langit kelimut <br> melekat sebuah nukilan. <br> Tentang nujum yang muncul dari bintang-bintang, <br> diundang turun oleh garis tangan dan kehidupan.
+                                </p>
+                                <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Garis tangan adalah <br>penunjuk jalan-jalan yang hidup. <br> Sedang garis kehidupan adalah <br> jalan-jalan yang dilalui derup.
+                                </p>
+                                <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Semua orang menginjakkan kakinya <br> pada jalan-jalan berumur panjang <br> atau yang akan menjadi mendiang. <br> Panjang atau pendek, <br> kehendak Sang Khalik.
+                                </p>
+                                <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Sebuah padah menemuiku dan berkata <br> “Jalan ini buntu dan akan mati”. <br> Mendengar dengan telinga tuli adalah <br> kesia-siaan yang kupeluk erat.
+                                </p>
+                            </div>
+                            <div class="flex pb-8">
+                                <div class="pr-7">
+                                    <i class="bi bi-bar-chart text-2xl text-gray-500 pr-1"></i>
+                                    <span class="font-sans font-thin text-gray-500 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-sm">139</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-hand-thumbs-up text-2xl text-gray-500 pr-1"></i>
+                                    <span class="font-sans font-thin text-gray-500 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-sm">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+                <div x-data="loadComment()">
+                    <div class="border-t pt-8 mb-10">
+                        <p class="font-sans font-bold text-gray-500 text-base">Komentar</p>
+                        <div class="flex pt-2">
+                            <div class="w-11/12">
+                                <form action="" class="mb-0 font-sans">
+                                    <div>
+                                      <label for="comment" class="sr-only mb-2 text-sm font-medium text-gray-500 dark:text-white">comment</label>
+                                      <input class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-l-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Bagaimana tanggapanmu?">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="flex justify-center items-center w-1/12 px-5 bg-blue-500 rounded-r-lg hover:bg-blue-400">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <template x-for="item in filteredData" :key="item">
+                        <div>
+                            <div class="h-full flex items-start transform border-b pt-2">
+                                <div class="py-3">
+                                    <h2 class="text-base font-medium text-gray-500 font-sans title-font mb-1" x-text="item.writer"></h2>
+                                    <p class="font-sans font-thin text-gray-300 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs mb-1" x-text="item.date"></p>
+                                    <p class="leading-relaxed font-sans text-sm text-gray-500" x-text="item.content"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            <div id="second" class="read-more xl:pl-10 lg:pl-6" x-data="loadRecommend()">
+                <p class="font-title text-base font-bold text-gray-500">Baca Lebih Banyak</p>
+                <template x-for="item in filteredData" :key="item">
+                    <div>
+                        <div class="h-full flex items-start transform border-b pt-2">
+                            <div class="py-3">
+                                <p class="font-sans font-thin text-gray-300 text-xs mb-1" x-text="item.category"></p>
+                                <div class="flex items-center mb-2">
+                                    <img :src="`${item.profile_image}`" alt="blog" class="w-5 h-5 rounded-full flex-shrink-0 object-cover object-center">
+                                    <h2 class="text-sm font-medium text-gray-500 font-sans title-font mb-1 pl-2" x-text="item.author"></h2>
+                                </div>
+                                <p class="leading-relaxed font-title font-extrabold text-lg text-gray-500" x-text="item.title"></p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+        <style>
+            @media screen and (max-width: 767px) {
+                svg{
+                    width: 17px;
+                    height: 17px;
+                }
+                /* .read-more{
+                    display: none;
+                } */
+            }
+            @media screen and (max-width: 1024px){
+                .read-more{
+                    display: none;
+                }
+            }
+            @media screen and (min-width: 1024px){
+                .read-more{
+                    display: block;
+                }
+            }
+        /* #first{
+            overflow: auto;
+        }
+        #second{
+            position: absolute;
+            overflow: auto;
+            top: 0;
+            bottom: 0;
+            left: 72%;
+            height: 1000px;
+
+        }
+        #second.sticky {
+            position: fixed;
+            bottom: 0;
+            top: initial;
+        } */
+        </style>
+        
+        <script>
+            // var sh = $('#second').height();
+
+            // $(window).scroll(function(){
+            //     if (($(window).scrollTop() + $(window).innerHeight()) >= sh) {
+            //         $('#second').addClass("sticky");
+            //     }
+            //     else {
+            //         $('#second').removeClass("sticky");
+            //     }
+            // });
+
+            var sourceData = [
+            {
+                id: "1",
+                date: "21 Jan 2021",
+                category: "Esai",
+                author: "Rasyid Yudhistira",
+                title: "Ekologi Kepada Jalan",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
+              },
+              {
+                id: "2",
+                date: "21 Jan 2021",
+                category: "Esai",
+                author: "Rasyid Yudhistira",
+                title: "Telur, Susu dan Kalajengking",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
+              },
+              {
+                id: "3",
+                date: "21 Jan 2021",
+                category: "Esai",
+                author: "Rasyid Yudhistira",
+                title: "Saat-Saat Terakhir Mayor Fransisco Soledad",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
+              },
+              {
+                id: "4",
+                date: "21 Jan 2021",
+                category: "Esai",
+                author: "Rasyid Yudhistira",
+                title: "Cinta Bajing",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
+              },
+              {
+                id: "5",
+                date: "21 Jan 2021",
+                category: "Esai",
+                author: "Rasyid Yudhistira",
+                title: "Darah Yang Terus Mengalir",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+              },
+              {
+                id: "6",
+                date: "21 Jan 2021",
+                category: "Esai",
+                author: "Rasyid Yudhistira",
+                title: "Darah Yang Terus Mengalir",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+              },
+              {
+                id: "7",
+                date: "21 Jan 2021",
+                category: "Esai",
+                author: "Rasyid Yudhistira",
+                title: "Darah Yang Terus Mengalir",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+              },
+              {
+                id: "8",
+                date: "21 Jan 2021",
+                category: "Esai",
+                author: "Rasyid Yudhistira",
+                title: "Darah Yang Terus Mengalir",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+              },
+              {
+                id: "9",
+                date: "21 Jan 2021",
+                category: "Esai",
+                author: "Rasyid Yudhistira",
+                title: "Darah Yang Terus Mengalir",
+                content: "",
+                duration: "4",
+                profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+              },
+            ]
+
+            var commentData = [
+            {
+                id: "1",
+                writer: "Tiara Melati",
+                date: "21 Jan 2021",
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              },
+              {
+                id: "2",
+                writer: "Bagaskoro",
+                date: "21 Jan 2021",
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              },
+              {
+                id: "3",
+                writer: "Tiara Melati",
+                date: "21 Jan 2021",
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              },
+            ]
+
+            function loadEsai(){
+                return {
+                search: "",
+                pageNumber: 0,
+                size: 1,
+                total: "",
+                myForData: sourceData,
+      
+                get filteredData() {
+                  const start = this.pageNumber * this.size,
+                    end = start + this.size;
+      
+                  if (this.search === "") {
+                    this.total = this.myForData.length;
+                    return this.myForData.slice(start, end);
+                  }
+                },
+                }
+            }
+            function loadRecommend(){
+                return {
+                search: "",
+                pageNumber: 0,
+                size: 10,
+                total: "",
+                myForData: sourceData,
+      
+                get filteredData() {
+                  const start = this.pageNumber * this.size,
+                    end = start + this.size;
+      
+                  if (this.search === "") {
+                    this.total = this.myForData.length;
+                    return this.myForData.slice(start, end);
+                  }
+                },
+                }
+            }
+            function loadComment(){
+                return {
+                search: "",
+                pageNumber: 0,
+                size: 30,
+                total: "",
+                myForData: commentData,
+      
+                get filteredData() {
+                  const start = this.pageNumber * this.size,
+                    end = start + this.size;
+      
+                  if (this.search === "") {
+                    this.total = this.myForData.length;
+                    return this.myForData.slice(start, end);
+                  }
+                },
+                }
+            }
+        </script>
+    </main>
+    <!--* Main Content End -->
+
+    <!--* Footer  -->
+    <style>
+        @media screen and (max-width: 767px) {
+            .foll-us{
+                display: none;
+            }
+            .sosmed{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+    </style>
+    <!--* Footer  -->
+    <style>
+        @media screen and (max-width: 767px) {
+            .foll-us{
+                display: none;
+            }
+            .sosmed{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+    </style>
+    <footer class="relative pt-16 xl:mx-20 sm:mx-10 text-gray-500">
+        <div class="mt-5 px-9 xl:px-10 lg:px-10 md:px-10 sm:px-10 bg-blue-100 xl:rounded-t-2xl lg:rounded-t-2xl md:rounded-t-2xl sm:rounded-t-2xl">
+            <div class="grid grid-cols-2 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3">
+                <div class="col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-3">
+                    <img class="mt-7 w-32 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
+                    <div class="mt-8 mb-6">
+                        <h4 class="foll-us pb-2 font-bold font-sans xl:text-base lg:text-base md:text-xs sm:text-xs">Follow Us On</h4>
+                        <div class="sosmed flex flex-row mt-2 justify-start">
+                            <div class="pr-1 xl:pr-2 sm:pr-1">
+                                <a href="https://www.facebook.com/funbahasa/">
+                                    <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                            <div class="px-1 xl:px-2 sm:px-1">
+                                <a href="https://twitter.com/funbahasa">
+                                    <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                            <div class="px-1 xl:px-2 sm:px-1">
+                                <a href="https://www.instagram.com/funbahasa/">
+                                    <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        Informasi Event
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
+                    </ul>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        List Kategori
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-puisi.html"> Puisi </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerpen.html"> Cerpen </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerita-anak.html"> Cerita Anak </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-artikel.html"> Artikel </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-esai.html"> Esai </a> </li>
+                    </ul>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        Contact
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</p> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
+                        <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> +62 815-1531-2240 </p> </li>
+                    </ul>
+                    <div class="sosmed-2 flex flex-row mt-2 justify-start">
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="https://www.facebook.com/funbahasa/">
+                                <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="https://twitter.com/funbahasa">
+                                <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="https://www.instagram.com/funbahasa/">
+                                <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center justify-center text-center">
+                <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center">
+                    <div class="bg-black content-center w-full" style="height: 2px;"></div>
+                        <div class="py-1 text-sm font-extrabold text-gray-600 font-title">
+                            Fun Bahasa Indonesia ©
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!--* Footer End  -->
+</body>
+
+</html>
