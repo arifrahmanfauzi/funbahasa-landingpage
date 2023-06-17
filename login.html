@@ -52,12 +52,12 @@
           <form action="" class="mx-auto mt-6 mb-0 max-w-md space-y-4 ">
             <div>
               <label for="email" class="sr-only block mb-2 text-sm font-medium text-gray-500 dark:text-white">alamat-email</label>
-              <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="email" required>
+              <input type="email" name="email" id="user-email" class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="email" required>
             </div>
             
             <div>
               <label for="password" class="sr-only block mb-2 text-sm font-medium text-gray-500 dark:text-white">kata-sandi</label>
-              <input type="password" name="password" id="password" placeholder="kata sandi" class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+              <input type="password" name="password" id="user-password" placeholder="kata sandi" class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
             </div>
 
             <div class="flex justify-between">
@@ -69,13 +69,34 @@
               </div>
               <a href="#" class="text-xs font-sans font-semibold mt-3 text-blue-500 hover:underline dark:text-blue-500">Lupa kata sandi?</a>
             </div>
-            <button type="submit" class="w-full text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Masuk</button>
+            <button onclick="login()" type="submit" class="w-full text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Masuk</button>
             <div class="text-xs text-center font-sans font-semibold text-gray-500 dark:text-gray-300 lg:pb-4">
                 Sudah punya akun? <a href="register.html" class="text-blue-500 hover:underline dark:text-blue-500">Silahkan daftar</a>
             </div>
           </form>
       </div>
     </section>
+    <script>
+      function login() {
+      var email = document.getElementById("user-email").value = Text;
+      var password = document.getElementById("user-password").value = Text;
+      var checkbox = document.getElementById("remember").checked;
+
+      // Periksa apakah email dan kata sandi diisi
+      if (email !== "" && password !== "") {
+        // Periksa apakah checkbox dicentang
+        if (checkbox) {
+          // Redirect ke halaman beranda
+          window.location.href = "index-after-login.html";
+        } else {
+          alert("Harap centang kotak persetujuan.");
+        }
+      } else {
+        alert("Harap isi semua field.");
+      }
+      
+    }
+    </script>
     <!-- <section class="relative flex flex-wrap lg:h-screen lg:items-center">
       <div class="blue-div min-h-screen flex items-center w-full sm:h-96 lg:h-full lg:w-1/2 bg-blue-500">
         <div class="container mx-auto p-9 bg-blue-500 max-w-xl rounded-xl overflow-hidden shadow-t-2xl hover:shadow-2xl transition duration-300">

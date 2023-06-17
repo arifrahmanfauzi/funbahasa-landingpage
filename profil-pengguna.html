@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fun Bahasa #BahasaAdalahKita</title>
+    <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
+</head>
+
+  <body>
+        <section>
+            <div class="pt-10"  style="background-color: rgba(245, 245, 245);">
+                <div class=" p-6 flex items-center justify-center rounded-b-2xl">
+                    <div class="container max-w-screen-lg mx-auto">
+                        <div>
+                            <h2 class="font-title text-xl font-extrabold xl:text-xl text-gray-500 text-center">
+                                Profil Pengguna
+                            </h2>
+                            <p class="font-sans text-sm xl:text-base text-gray-500 mb-6 text-center">
+                                Silahkan memeriksa data terkait informasi Anda
+                            </p>
+
+                        <div class="bg-white rounded-2xl shadow-lg p-4 px-4 md:p-8 mb-6">
+                            <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+                                <div class="text-gray-600">
+                                    <p class="text-sm font-sans font-semibold xl:text-lg">Informasi Pribadi</p>
+                                    <p class="font-sans text-sm mt-1 xl:text-md">Pastikan data Anda yang telah sesuai.</p>
+                                </div>
+                            
+                                <div class="lg:col-span-2 mt-5 sm:mt-0 spacing-t spacing-t-lg">
+                                    <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-6">
+                                        <div class="md:col-span-3">
+                                            <label for="user-first-name" class="font-sans text-xs lg:text-sm xl:text-base">Nama Depan</label>
+                                            <input type="text" name="first-name" id="user-first-name" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" />
+                                        </div>
+
+                                        <div class="md:col-span-3">
+                                            <label for="user-last-name" class="font-sans text-xs lg:text-sm xl:text-base">Nama Belakang</label>
+                                            <input type="text" name="last-name" id="user-last-name" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" />
+                                        </div>
+                    
+                                        <div class="md:col-span-6">
+                                            <label for="user-email" class="font-sans text-xs lg:text-sm xl:text-base">Email</label>
+                                            <input type="email" name="email" id="user-email" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <hr class="my-5">
+
+                            <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+                                <div class="text-gray-600">
+                                    <p class="text-sm font-sans font-semibold xl:text-lg">Ganti Kata Sandi</p>
+                                    <p class="font-sans text-xs mt-1 xl:text-md">Perbarui kata sandi Anda yang terkait dengan akun Anda.
+                                    </p>
+                                </div>
+                
+                                <div class="lg:col-span-2 mt-5 sm:mt-0 spacing-t spacing-t-lg">
+                                    <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-6">
+                                        <div class="md:col-span-3">
+                                            <label for="user-current-password" class="font-sans text-xs lg:text-sm xl:text-base">Kata Sandi Lama</label>
+                                            <input type="text" name="current-password" id="user-current-password" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
+                                        </div>
+
+                                        <div class="md:col-span-3">
+                                            <label for="user-new-password" class="font-sans text-xs lg:text-sm xl:text-base">Kata Sandi Baru</label>
+                                            <input type="text" name="new-password" id="user-new-password" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
+                                        </div>
+
+                                        <div class="md:col-span-6">
+                                            <label for="user-confirm-password" class="font-sans text-xs lg:text-sm xl:text-base">Konfirmasi Kata Sandi</label>
+                                            <input type="text" name="confirm-password" id="user-confirm-password" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
+                                        </div>
+
+                                    </div>
+                            
+                                        <div class="md:col-span-5 text-right">
+                                            <div class="inline-flex items-end pt-4">
+                                                <button class="font-sans hover:text-blue-700 text-blue-500 font-bold py-2 px-2 rounded w-24">Batal</button>
+                                            </div>
+                                            <div class="inline-flex items-end pt-4">
+                                                <button class="font-sans bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded w-24">Simpan</button>
+                                            </div>
+                                        </div>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  </body>
+</html>
