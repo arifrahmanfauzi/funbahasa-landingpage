@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fun Bahasa #BahasaAdalahKita</title>
+    <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
+    <script src="../path/to/datatables.min.js"></script>
+</head>
+
+<body class="antialiased bg-body text-body font-body absolute">
+    <div class="xl\:container mx-auto">
+        <!--* Navigator Bar -->
+        <header class="fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
+        <div x-data="{open: false}"
+            class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
+            <!--* Image  -->
+            <div class="flex w-full sm:w-1/4 lg:block lg:w-3/2 md:w-1/3">
+                <a href="index.html" class="">
+                    <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" class="w-28 xl:w-40 lg:w-32 sm:w-28 md:w-28">
+                </a>
+            </div>
+            <!--* Hamburger Menu -->
+            <button @click="open = true"
+                class="flex justify-center items-center w-8 h-8 px-1 hover:bg-gray-300 sm:w-8 h-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+                <img src="img/hamburger-menu.svg" alt="hamburger-menu-icon">
+            </button>
+            <!--* Image End  -->
+            <!--* Nav Menu Item -->
+            <div
+                class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end hidden sm:hidden md:hidden">
+                <nav class="sm:justify-end sm:w-full sm:flex">
+                    <a href="tentang_kami.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500 xs:font-black-italic">Tentang Kami</a>
+                    <a href="unggah-karya.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Unggah Karya</a>
+                    <a href="Event.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Event</a>
+                    <a href="baca_karya.html"
+                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Baca Karya</a>
+                    <a href="login.html"
+                        class="px-5 py-1 ml-3 font-bold font-title text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
+                </nav>
+            </div>
+            <!--* Nav Menu Item End -->
+            <!--* Nav Menu Mobile -->
+            <div x-show="open" @click.away="open = false"
+                class="absolute z-10 max-w-md px-2 transform right-10 w-screen-md mt-8 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                    <div class="relative grid bg-white gap-4 p-5">
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="tentang_kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Tentang Kami
+                            </a>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="unggah-karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Unggah Karya
+                            </a>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="Event.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Event
+                            </a>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div class="ml-2">
+                            <a href="baca_karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                                Baca Karya
+                            </a>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                    <div class="flex ml-2 bg-blue-500 rounded-lg -ml-2 -mr-2 h-10">
+                        <a href="login.html" class="pl-4 mt-2 text-base font-medium text-white" style="font-family: 'Poppins', sans-serif;">
+                            Masuk
+                        </a>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+    </div>
+    <!--* Navigator Bar End -->
+
+        <!--* Main Content -->
+        <main>
+            <div class="container mx-auto pt-28 xl:pt-36 lg:pt-32 px-10 xl:px-16 lg:px-16 md:px-10">
+                <!--* Greeting -->
+                <h1 class="title-pengumuman font-title font-extrabold text-gray-500 text-2xl xl:text-5xl xl:text-5xl sm:text-3xl md:text-4xl lg:text-4xl text-center">Pengumuman Pemenang</h1>
+                <h1 class="title-lomba font-title font-extrabold text-gray-500 text-2xl xl:text-5xl xl:text-5xl sm:text-3xl md:text-4xl lg:text-4xl text-center">Kreasi Puisi Pendek Nasional 2023</h1>
+                <div class="flex justify-center">
+                    <div class="bg-blue-500 w-52 mt-2 rounded-xl left-36 h-2 "></div>
+                </div>
+                <div class="flex pt-10">
+                    <div>
+                        <p class="font-sans font-medium xl:text-sm text-gray-500 leading-loose sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose">
+                            Funmin ucapkan terima kasih kepada peserta Kreasi Puisi Pendek Nasional 2023 yang telah mengirimkan karya terbaiknya. Selamat bagi para pemenang dan finalis 200 puisi terbaik. Bagi Funners yang belum menjadi juara, tetaplah berkarya dan tetap semangat untuk mengembangkan kemampuan menulis. Hari esok masih ada bagi Funners untuk terus belajar dan berkembang. Funmin percaya, kita semua akan dapat mencapai hasil yang terbaik.
+
+                            <br><br>Kepada pemenang, akan dihubungi langsung oleh Kak Anisa melalui nomor +62 857-4957-0828. Harap berhati-hati apabila dihubungi oleh nomor tidak dikenal mengatasnamakan Fun Bahasa untuk menghindari penipuan.
+
+                            <br><br>Fasilitas lomba akan mulai dikirim pada tanggal 15 Mei 2023 melalui surel masing-masing. Apabila tidak ada di kotak masuk, segera periksa ke seluruh folder, termasuk di folder spam. Jika masih belum ada, bisa langsung segera hubungi narahubung, ya.
+
+                            <br><br>Salam literasi,
+
+                            <br><br>Fun Bahasa
+                        </p>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <!--* Greeting End  -->
+
+            <!--* Catatan Penjurian  -->
+            <section class="bg-blue-100 mt-16 py-14 text-gray-500">
+                <div class="text-center font-title font-extrabold text-3xl">
+                    <p>Catatan Penjurian</p>
+                </div>
+                <div class="slider-wrapper pl-4 xl:px-36 lg:px-32 md:px-28 sm:px-24 pt-8">
+                    <div class="slides-container" id="slides-container">
+                        <div class="slide">
+                            <img src="img/quote.svg" class="w-16 xl:w-24 sm:w-16 md:w-16 lg:w-24">
+                            <div class="font-sans leading-loose sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose text-xs xl:text-sm sm:text-xs md:text-xs lg:text-sm font-thin xl:font-regular sm:font-thin md:font-thin lg:font-regular">
+                                <p>Selain kesegaran diksi, kerapian tipografi, dan keindahan gaya bahasa, ada isu dan konten yang juga perlu diperhatikan dalam suatu karya puisi. Karena isu dan konten akan mempengaruhi bagaimana proses riset dilakukan, serta pemilihan diksi yang akan berkaitan dengan pembangunan citraan atau nuansa yang diinginkan penyair. Sehingga, dalam penyusunan kata per kata, kalimat per kalimat, hingga pada tiap baitnya, puisi tidak lepas dari logika bahasa.
+                                <br><br>
+                                Dalam kasus ini, semisal konten puisi bicara soal ‘petani’, maka secara umum akan muncul diksi-diksi yang mencitrakan petani seperti sawah, kerbau, cangkul, dan lain sebagainya. Sedangkan, Issue yang dimunculkan semisal adalah ‘gagal panen’, maka diksi yang muncul akan mencitrakan kesedihan, harapan, mimpi, kekacauan, dan lain sebagainya. Pada event kali ini, saya melihat masih banyak penyair yang kurang memperhatikan logika-logika tersebut, sehingga konten dan isu yang sebenarnya menarik pada akhirnya tidak begitu terbaca dikarenakan diksi yang dimunculkan tidak sampai pada citraan yang diinginkan. Namun, ada juga beberapa yang sudah berupaya untuk melakukannya. Meskipun beberapa puisi tersebut masih perlu dilakukan pembacaan yang intens, dan melalui proses editing yang ketat. Selebihnya, penyair terpilih, saya pikir sudah berupaya semaksimal mungkin untuk melalui proses kreatif dalam keberhasilannya.</p>
+                            </div>
+                            <div class="mt-10">
+                                <p class="font-title font-bold text-sm xl:text-base sm:text-sm md:text-sm lg:text-base">Yusri Ihza F. A.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="img/quote.svg" class="w-16 xl:w-24 sm:w-16 md:w-16 lg:w-24">
+                            <div class="font-sans leading-loose sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose text-xs xl:text-sm sm:text-xs md:text-xs lg:text-sm font-thin xl:font-regular sm:font-thin md:font-thin lg:font-regular">
+                                <p>Setidaknya, 20 besar puisi KPPN2023 memiliki rentang tawaran puitik yang serupa. Puisi naratif kami catat mendominasi di antara itu. Dan dapat dikatakan, di situlah permasalahannya. Menjadi PR bagi tim juri – dan tentunya para peserta – untuk merespon ruang naratif dalam batasan jumlah kata semacam ini. Pertaruhannya adalah demi mewujudkan  tokoh (subjek lirik) serta kisah atau situasi secara efektif tanpa kehilangan efek puitik sehingga tidak mencerabut jiwa puisi. Di antara judul-judul puisi tersebut, sebagian dinilai cukup berhasil mencapai arah itu.</p>
+                            </div>
+                            <div class="mt-10">
+                                <p class="font-title font-bold text-sm xl:text-base sm:text-sm md:text-sm lg:text-base">Nanda Alifya Rahmah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Button -->
+                <div class="flex justify-end px-7 xl:px-36 lg:px-32 md:px-28 sm:px-24">
+                    <div>
+                        <button class="slide-arrow" id="slide-arrow-prev">
+                            <img src="img/arrow-left.svg" alt="arrow-left" class="w-8 xl:mx-2 lg:mx-2 md:mx-2 sm:mx-1">
+                        </button>
+                    </div>
+                    <div>
+                        <button class="slide-arrow" id="slide-arrow-next">
+                            <img src="img/arrow-right.svg" alt="arrow-right" class="w-8 xl:mx-2 lg:mx-2 md:mx-2 sm:mx-1">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <style>
+                .slider-wrapper {
+                    position: relative;
+                    overflow: hidden;
+                }
+                .slides-container {
+                    /* width: 100%; */
+                    display: flex;
+                    overflow: scroll;
+                    scroll-behavior: smooth;
+                    list-style: none;
+                    /* margin: 0;
+                    padding: 0; */
+                }
+                .slide {
+                    /* width: 100%;
+                    height: 100%; */
+                    flex: 1 0 100%;
+                }
+                .slides-container {
+                    scrollbar-width: none; /* Firefox */
+                    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+                }
+                /* WebKit */
+                .slides-container::-webkit-scrollbar { 
+                    width: 0;
+                    height: 0;
+                }
+            </style>
+            
+            <script>
+                const slidesContainer = document.getElementById("slides-container");
+                const slide = document.querySelector(".slide");
+                const prevButton = document.getElementById("slide-arrow-prev");
+                const nextButton = document.getElementById("slide-arrow-next");
+            
+                nextButton.addEventListener("click", () => {
+                    const slideWidth = slide.clientWidth;
+                    slidesContainer.scrollLeft += slideWidth;
+                });
+            
+                prevButton.addEventListener("click", () => {
+                    const slideWidth = slide.clientWidth;
+                    slidesContainer.scrollLeft -= slideWidth;
+                });
+            </script>
+            <!--* What They Said End  -->
+
+            <!--* Datatable -->
+            <div class="w-full max-w-full">
+                <div class="relative flex flex-col min-w-0 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
+                  <div class="table-responsive">
+                    <table class="table table-flush text-slate-500" datatable id="datatable-search">
+                      <thead class="thead-light">
+                        <tr>
+                          <th>Name</th>
+                          <th>Position</th>
+                          <th>Office</th>
+                          <th>Age</th>
+                          <th>Salary</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Tiger Nixon</td>
+                          <td class="font-normal leading-normal text-sm">System Architect</td>
+                          <td class="font-normal leading-normal text-sm">Edinburgh</td>
+                          <td class="font-normal leading-normal text-sm">61</td>
+                          <td class="font-normal leading-normal text-sm">$320,800</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Garrett Winters</td>
+                          <td class="font-normal leading-normal text-sm">Accountant</td>
+                          <td class="font-normal leading-normal text-sm">Tokyo</td>
+                          <td class="font-normal leading-normal text-sm">63</td>
+                          <td class="font-normal leading-normal text-sm">$170,750</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Ashton Cox</td>
+                          <td class="font-normal leading-normal text-sm">Junior Technical Author</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">66</td>
+                          <td class="font-normal leading-normal text-sm">$86,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Cedric Kelly</td>
+                          <td class="font-normal leading-normal text-sm">Senior Javascript Developer</td>
+                          <td class="font-normal leading-normal text-sm">Edinburgh</td>
+                          <td class="font-normal leading-normal text-sm">22</td>
+                          <td class="font-normal leading-normal text-sm">$433,060</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Airi Satou</td>
+                          <td class="font-normal leading-normal text-sm">Accountant</td>
+                          <td class="font-normal leading-normal text-sm">Tokyo</td>
+                          <td class="font-normal leading-normal text-sm">33</td>
+                          <td class="font-normal leading-normal text-sm">$162,700</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Brielle Williamson</td>
+                          <td class="font-normal leading-normal text-sm">Integration Specialist</td>
+                          <td class="font-normal leading-normal text-sm">New York</td>
+                          <td class="font-normal leading-normal text-sm">61</td>
+                          <td class="font-normal leading-normal text-sm">$372,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Herrod Chandler</td>
+                          <td class="font-normal leading-normal text-sm">Sales Assistant</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">59</td>
+                          <td class="font-normal leading-normal text-sm">$137,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Rhona Davidson</td>
+                          <td class="font-normal leading-normal text-sm">Integration Specialist</td>
+                          <td class="font-normal leading-normal text-sm">Tokyo</td>
+                          <td class="font-normal leading-normal text-sm">55</td>
+                          <td class="font-normal leading-normal text-sm">$327,900</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Colleen Hurst</td>
+                          <td class="font-normal leading-normal text-sm">Javascript Developer</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">39</td>
+                          <td class="font-normal leading-normal text-sm">$205,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Sonya Frost</td>
+                          <td class="font-normal leading-normal text-sm">Software Engineer</td>
+                          <td class="font-normal leading-normal text-sm">Edinburgh</td>
+                          <td class="font-normal leading-normal text-sm">23</td>
+                          <td class="font-normal leading-normal text-sm">$103,600</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Jena Gaines</td>
+                          <td class="font-normal leading-normal text-sm">Office Manager</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">30</td>
+                          <td class="font-normal leading-normal text-sm">$90,560</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Quinn Flynn</td>
+                          <td class="font-normal leading-normal text-sm">Support Lead</td>
+                          <td class="font-normal leading-normal text-sm">Edinburgh</td>
+                          <td class="font-normal leading-normal text-sm">22</td>
+                          <td class="font-normal leading-normal text-sm">$342,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Charde Marshall</td>
+                          <td class="font-normal leading-normal text-sm">Regional Director</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">36</td>
+                          <td class="font-normal leading-normal text-sm">$470,600</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Haley Kennedy</td>
+                          <td class="font-normal leading-normal text-sm">Senior Marketing Designer</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">43</td>
+                          <td class="font-normal leading-normal text-sm">$313,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Tatyana Fitzpatrick</td>
+                          <td class="font-normal leading-normal text-sm">Regional Director</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">19</td>
+                          <td class="font-normal leading-normal text-sm">$385,750</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Michael Silva</td>
+                          <td class="font-normal leading-normal text-sm">Marketing Designer</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">66</td>
+                          <td class="font-normal leading-normal text-sm">$198,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Paul Byrd</td>
+                          <td class="font-normal leading-normal text-sm">Chief Financial Officer (CFO)</td>
+                          <td class="font-normal leading-normal text-sm">New York</td>
+                          <td class="font-normal leading-normal text-sm">64</td>
+                          <td class="font-normal leading-normal text-sm">$725,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Gloria Little</td>
+                          <td class="font-normal leading-normal text-sm">Systems Administrator</td>
+                          <td class="font-normal leading-normal text-sm">New York</td>
+                          <td class="font-normal leading-normal text-sm">59</td>
+                          <td class="font-normal leading-normal text-sm">$237,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Bradley Greer</td>
+                          <td class="font-normal leading-normal text-sm">Software Engineer</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">41</td>
+                          <td class="font-normal leading-normal text-sm">$132,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Dai Rios</td>
+                          <td class="font-normal leading-normal text-sm">Personnel Lead</td>
+                          <td class="font-normal leading-normal text-sm">Edinburgh</td>
+                          <td class="font-normal leading-normal text-sm">35</td>
+                          <td class="font-normal leading-normal text-sm">$217,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Jenette Caldwell</td>
+                          <td class="font-normal leading-normal text-sm">Development Lead</td>
+                          <td class="font-normal leading-normal text-sm">New York</td>
+                          <td class="font-normal leading-normal text-sm">30</td>
+                          <td class="font-normal leading-normal text-sm">$345,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Yuri Berry</td>
+                          <td class="font-normal leading-normal text-sm">Chief Marketing Officer (CMO)</td>
+                          <td class="font-normal leading-normal text-sm">New York</td>
+                          <td class="font-normal leading-normal text-sm">40</td>
+                          <td class="font-normal leading-normal text-sm">$675,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Caesar Vance</td>
+                          <td class="font-normal leading-normal text-sm">Pre-Sales Support</td>
+                          <td class="font-normal leading-normal text-sm">New York</td>
+                          <td class="font-normal leading-normal text-sm">21</td>
+                          <td class="font-normal leading-normal text-sm">$106,450</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Doris Wilder</td>
+                          <td class="font-normal leading-normal text-sm">Sales Assistant</td>
+                          <td class="font-normal leading-normal text-sm">Sidney</td>
+                          <td class="font-normal leading-normal text-sm">23</td>
+                          <td class="font-normal leading-normal text-sm">$85,600</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Angelica Ramos</td>
+                          <td class="font-normal leading-normal text-sm">Chief Executive Officer (CEO)</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">47</td>
+                          <td class="font-normal leading-normal text-sm">$1,200,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Gavin Joyce</td>
+                          <td class="font-normal leading-normal text-sm">Developer</td>
+                          <td class="font-normal leading-normal text-sm">Edinburgh</td>
+                          <td class="font-normal leading-normal text-sm">42</td>
+                          <td class="font-normal leading-normal text-sm">$92,575</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Jennifer Chang</td>
+                          <td class="font-normal leading-normal text-sm">Regional Director</td>
+                          <td class="font-normal leading-normal text-sm">Singapore</td>
+                          <td class="font-normal leading-normal text-sm">28</td>
+                          <td class="font-normal leading-normal text-sm">$357,650</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Brenden Wagner</td>
+                          <td class="font-normal leading-normal text-sm">Software Engineer</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">28</td>
+                          <td class="font-normal leading-normal text-sm">$206,850</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Fiona Green</td>
+                          <td class="font-normal leading-normal text-sm">Chief Operating Officer (COO)</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">48</td>
+                          <td class="font-normal leading-normal text-sm">$850,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Shou Itou</td>
+                          <td class="font-normal leading-normal text-sm">Regional Marketing</td>
+                          <td class="font-normal leading-normal text-sm">Tokyo</td>
+                          <td class="font-normal leading-normal text-sm">20</td>
+                          <td class="font-normal leading-normal text-sm">$163,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Michelle House</td>
+                          <td class="font-normal leading-normal text-sm">Integration Specialist</td>
+                          <td class="font-normal leading-normal text-sm">Sidney</td>
+                          <td class="font-normal leading-normal text-sm">37</td>
+                          <td class="font-normal leading-normal text-sm">$95,400</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Suki Burks</td>
+                          <td class="font-normal leading-normal text-sm">Developer</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">53</td>
+                          <td class="font-normal leading-normal text-sm">$114,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Prescott Bartlett</td>
+                          <td class="font-normal leading-normal text-sm">Technical Author</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">27</td>
+                          <td class="font-normal leading-normal text-sm">$145,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Gavin Cortez</td>
+                          <td class="font-normal leading-normal text-sm">Team Leader</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">22</td>
+                          <td class="font-normal leading-normal text-sm">$235,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Martena Mccray</td>
+                          <td class="font-normal leading-normal text-sm">Post-Sales support</td>
+                          <td class="font-normal leading-normal text-sm">Edinburgh</td>
+                          <td class="font-normal leading-normal text-sm">46</td>
+                          <td class="font-normal leading-normal text-sm">$324,050</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Unity Butler</td>
+                          <td class="font-normal leading-normal text-sm">Marketing Designer</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">47</td>
+                          <td class="font-normal leading-normal text-sm">$85,675</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Howard Hatfield</td>
+                          <td class="font-normal leading-normal text-sm">Office Manager</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">51</td>
+                          <td class="font-normal leading-normal text-sm">$164,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Hope Fuentes</td>
+                          <td class="font-normal leading-normal text-sm">Secretary</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">41</td>
+                          <td class="font-normal leading-normal text-sm">$109,850</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Vivian Harrell</td>
+                          <td class="font-normal leading-normal text-sm">Financial Controller</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">62</td>
+                          <td class="font-normal leading-normal text-sm">$452,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Timothy Mooney</td>
+                          <td class="font-normal leading-normal text-sm">Office Manager</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">37</td>
+                          <td class="font-normal leading-normal text-sm">$136,200</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Jackson Bradshaw</td>
+                          <td class="font-normal leading-normal text-sm">Director</td>
+                          <td class="font-normal leading-normal text-sm">New York</td>
+                          <td class="font-normal leading-normal text-sm">65</td>
+                          <td class="font-normal leading-normal text-sm">$645,750</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Olivia Liang</td>
+                          <td class="font-normal leading-normal text-sm">Support Engineer</td>
+                          <td class="font-normal leading-normal text-sm">Singapore</td>
+                          <td class="font-normal leading-normal text-sm">64</td>
+                          <td class="font-normal leading-normal text-sm">$234,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Bruno Nash</td>
+                          <td class="font-normal leading-normal text-sm">Software Engineer</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">38</td>
+                          <td class="font-normal leading-normal text-sm">$163,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Sakura Yamamoto</td>
+                          <td class="font-normal leading-normal text-sm">Support Engineer</td>
+                          <td class="font-normal leading-normal text-sm">Tokyo</td>
+                          <td class="font-normal leading-normal text-sm">37</td>
+                          <td class="font-normal leading-normal text-sm">$139,575</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Thor Walton</td>
+                          <td class="font-normal leading-normal text-sm">Developer</td>
+                          <td class="font-normal leading-normal text-sm">New York</td>
+                          <td class="font-normal leading-normal text-sm">61</td>
+                          <td class="font-normal leading-normal text-sm">$98,540</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Finn Camacho</td>
+                          <td class="font-normal leading-normal text-sm">Support Engineer</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">47</td>
+                          <td class="font-normal leading-normal text-sm">$87,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Serge Baldwin</td>
+                          <td class="font-normal leading-normal text-sm">Data Coordinator</td>
+                          <td class="font-normal leading-normal text-sm">Singapore</td>
+                          <td class="font-normal leading-normal text-sm">64</td>
+                          <td class="font-normal leading-normal text-sm">$138,575</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Zenaida Frank</td>
+                          <td class="font-normal leading-normal text-sm">Software Engineer</td>
+                          <td class="font-normal leading-normal text-sm">New York</td>
+                          <td class="font-normal leading-normal text-sm">63</td>
+                          <td class="font-normal leading-normal text-sm">$125,250</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Zorita Serrano</td>
+                          <td class="font-normal leading-normal text-sm">Software Engineer</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">56</td>
+                          <td class="font-normal leading-normal text-sm">$115,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Jennifer Acosta</td>
+                          <td class="font-normal leading-normal text-sm">Junior Javascript Developer</td>
+                          <td class="font-normal leading-normal text-sm">Edinburgh</td>
+                          <td class="font-normal leading-normal text-sm">43</td>
+                          <td class="font-normal leading-normal text-sm">$75,650</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Cara Stevens</td>
+                          <td class="font-normal leading-normal text-sm">Sales Assistant</td>
+                          <td class="font-normal leading-normal text-sm">New York</td>
+                          <td class="font-normal leading-normal text-sm">46</td>
+                          <td class="font-normal leading-normal text-sm">$145,600</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Hermione Butler</td>
+                          <td class="font-normal leading-normal text-sm">Regional Director</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">47</td>
+                          <td class="font-normal leading-normal text-sm">$356,250</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Lael Greer</td>
+                          <td class="font-normal leading-normal text-sm">Systems Administrator</td>
+                          <td class="font-normal leading-normal text-sm">London</td>
+                          <td class="font-normal leading-normal text-sm">21</td>
+                          <td class="font-normal leading-normal text-sm">$103,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Jonas Alexander</td>
+                          <td class="font-normal leading-normal text-sm">Developer</td>
+                          <td class="font-normal leading-normal text-sm">San Francisco</td>
+                          <td class="font-normal leading-normal text-sm">30</td>
+                          <td class="font-normal leading-normal text-sm">$86,500</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Shad Decker</td>
+                          <td class="font-normal leading-normal text-sm">Regional Director</td>
+                          <td class="font-normal leading-normal text-sm">Edinburgh</td>
+                          <td class="font-normal leading-normal text-sm">51</td>
+                          <td class="font-normal leading-normal text-sm">$183,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Michael Bruce</td>
+                          <td class="font-normal leading-normal text-sm">Javascript Developer</td>
+                          <td class="font-normal leading-normal text-sm">Singapore</td>
+                          <td class="font-normal leading-normal text-sm">29</td>
+                          <td class="font-normal leading-normal text-sm">$183,000</td>
+                        </tr>
+                        <tr>
+                          <td class="font-normal leading-normal text-sm">Donna Snider</td>
+                          <td class="font-normal leading-normal text-sm">Customer Support</td>
+                          <td class="font-normal leading-normal text-sm">New York</td>
+                          <td class="font-normal leading-normal text-sm">27</td>
+                          <td class="font-normal leading-normal text-sm">$112,000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+        </main>
+
+    <!--* Footer  -->
+    <style>
+        @media screen and (max-width: 767px) {
+            .foll-us{
+                display: none;
+            }
+            .sosmed{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            .sosmed-2{
+                display: none;
+            }
+        }
+    </style>
+    <footer class="relative pt-16 xl:mx-20 sm:mx-10 text-gray-500">
+        <div class="mt-5 px-9 xl:px-10 lg:px-10 md:px-10 sm:px-10 bg-blue-100 xl:rounded-t-2xl lg:rounded-t-2xl md:rounded-t-2xl sm:rounded-t-2xl">
+            <div class="grid grid-cols-2 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3">
+                <div class="col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-3">
+                    <img class="mt-7 w-32 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
+                    <div class="mt-8 mb-6">
+                        <h4 class="foll-us pb-2 font-bold font-sans xl:text-base lg:text-base md:text-xs sm:text-xs">Follow Us On</h4>
+                        <div class="sosmed flex flex-row mt-2 justify-start">
+                            <div class="pr-1 xl:pr-2 sm:pr-1">
+                                <a href="https://www.facebook.com/funbahasa/">
+                                    <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                            <div class="px-1 xl:px-2 sm:px-1">
+                                <a href="https://twitter.com/funbahasa">
+                                    <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                            <div class="px-1 xl:px-2 sm:px-1">
+                                <a href="https://www.instagram.com/funbahasa/">
+                                    <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        Informasi Event
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
+                    </ul>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        List Kategori
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-puisi.html"> Puisi </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerpen.html"> Cerpen </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerita-anak.html"> Cerita Anak </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-artikel.html"> Artikel </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-esai.html"> Esai </a> </li>
+                    </ul>
+                </div>
+                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                        Contact
+                    </span>
+                    <ul class="list-unstyled font-sans">
+                        <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</p> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
+                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
+                        <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> +62 815-1531-2240 </p> </li>
+                    </ul>
+                    <div class="sosmed-2 flex flex-row mt-2 justify-start">
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="https://www.facebook.com/funbahasa/">
+                                <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="https://twitter.com/funbahasa">
+                                <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="https://www.instagram.com/funbahasa/">
+                                <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center justify-center text-center">
+                <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center">
+                    <div class="bg-black content-center w-full" style="height: 2px;"></div>
+                        <div class="py-1 text-sm font-extrabold text-gray-600 font-title">
+                            Fun Bahasa Indonesia ©
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!--* Footer End  -->
+    
+</body>
+
+</html>
