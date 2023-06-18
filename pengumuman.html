@@ -14,7 +14,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
-    <script src="../path/to/datatables.min.js"></script>
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
+
+    <style>
+		/*Overrides for Tailwind CSS */
+
+		/*Form fields*/
+		.dataTables_wrapper select,
+		.dataTables_wrapper .dataTables_filter input {
+			color: rgb(64, 70, 66);
+			padding-left: 1rem;
+			padding-right: 1rem;
+			padding-top: .5rem;
+			padding-bottom: .5rem;
+			line-height: 1.25;
+			border-width: 2px;
+			border-radius: .25rem;
+			border-color: rgb(237, 242, 247);
+			background-color: rgb(237, 242, 247);
+		}
+
+		/*Row Hover*/
+		table.dataTable.hover tbody tr:hover,
+		table.dataTable.display tbody tr:hover {
+			background-color: rgb(211, 238, 249);
+		}
+
+		/*Pagination Buttons*/
+		.dataTables_wrapper .dataTables_paginate .paginate_button {
+			font-weight: 700;
+			border-radius: .25rem;
+			border: 1px solid transparent;
+		}
+
+		/*Pagination Buttons - Current selected */
+		.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+			color: #fff !important;
+			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+			font-weight: 700;
+			border-radius: .25rem;
+			background: rgb(37, 170, 227) !important;
+			border: 1px solid transparent;
+		}
+
+		/*Pagination Buttons - Hover */
+		.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+			color: #fff !important;
+			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+			font-weight: 700;
+			border-radius: .25rem;
+			background: rgb(37, 170, 227) !important;
+			border: 1px solid transparent;
+		}
+
+		/*Add padding to bottom border */
+		table.dataTable.no-footer {
+			border-bottom: 1px solid #e2e8f0;
+			margin-top: 0.75em;
+			margin-bottom: 0.75em;
+		}
+
+		/*Change colour of responsive icon*/
+		table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+		table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+			background-color: rgb(37, 170, 227) !important;
+		}
+	</style>
 </head>
 
 <body class="antialiased bg-body text-body font-body absolute">
@@ -114,28 +180,28 @@
                     <div class="bg-blue-500 w-52 mt-2 rounded-xl left-36 h-2 "></div>
                 </div>
                 <div class="flex pt-20">
+                    <div class="xl:pr-14 xl:w-2/5">
+                      <img class="img-winner" style="width: 500px;" src="img/winner-announce-shadow.svg" alt="">
+                    </div>
                     <div class="xl:w-3/5 lg:w-full md:w-full sm:w-full w-full">
-                        <p class="font-sans font-medium xl:text-sm text-gray-500 leading-loose sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose">
+                        <p class="font-sans font-medium text-sm text-gray-500 leading-loose sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose">
                             Funmin ucapkan terima kasih kepada peserta Kreasi Puisi Pendek Nasional 2023 yang telah mengirimkan karya terbaiknya. Selamat bagi para pemenang dan finalis 200 puisi terbaik. Bagi Funners yang belum menjadi juara, tetaplah berkarya dan tetap semangat untuk mengembangkan kemampuan menulis. Hari esok masih ada bagi Funners untuk terus belajar dan berkembang. Funmin percaya, kita semua akan dapat mencapai hasil yang terbaik.
-
+    
                             <br><br>Kepada pemenang, akan dihubungi langsung oleh Kak Anisa melalui nomor +62 857-4957-0828. Harap berhati-hati apabila dihubungi oleh nomor tidak dikenal mengatasnamakan Fun Bahasa untuk menghindari penipuan.
-
+    
                             <br><br>Fasilitas lomba akan mulai dikirim pada tanggal 15 Mei 2023 melalui surel masing-masing. Apabila tidak ada di kotak masuk, segera periksa ke seluruh folder, termasuk di folder spam. Jika masih belum ada, bisa langsung segera hubungi narahubung, ya.
-
+    
                             <br><br>Salam literasi,
-
+    
                             <br><br>Fun Bahasa
                         </p>
-                    </div>
-                    <div class="xl:pl-14 xl:w-2/5">
-                      <img class="img-winner" style="width: 500px;" src="img/winner-announce-shadow.svg" alt="">
                     </div>
                 </div>
             </div>
             <!--* Greeting End  -->
 
             <!--* Catatan Penjurian  -->
-            <section class="bg-blue-100 mt-16 py-14 text-gray-500">
+            <section class="bg-blue-100 mt-16 py-14 text-gray-500 mb-10">
                 <div class="text-center font-title font-extrabold text-3xl">
                     <p>Catatan Penjurian</p>
                 </div>
@@ -225,6 +291,60 @@
                 });
             </script>
             <!--* What They Said End  -->
+
+            <!--* Table -->
+            <div>
+                <!--Container-->
+                <div class="container w-full md:w-4/5 xl:w-3/5 mx-auto px-2 font-title">
+                    <!--Card-->
+                    <div id='recipients' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
+                        <table id="content" class="stripe hover" style="width:100%; padding-top: 1em; padding-bottom: 1em;">
+                            <thead>
+                                <tr>
+                                    <th data-priority="1">No</th>
+                                    <th data-priority="2">Nama</th>
+                                    <th data-priority="3">Judul Karya</th>
+                                    <th data-priority="4">Sebagai</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Daviatul Umam</td>
+                                    <td>Megaremmeng</td>
+                                    <td>Juara 1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Ikhda Amelia Syahhadati</td>
+                                    <td>Relikui Jarak</td>
+                                    <td>Juara 2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--/Card-->
+                </div>
+                <!--/container-->
+            </div>
+            <!--* Table End -->
+            
+            <!-- jQuery -->
+	        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+            <!--Datatables -->
+            <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+            <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+            <script>
+                $(document).ready(function() {
+
+                    var table = $('#content').DataTable({
+                            responsive: true
+                        })
+                        .columns.adjust()
+                        .responsive.recalc();
+                });
+            </script>
         </main>
 
     <!--* Footer  -->
@@ -250,7 +370,7 @@
             }
         }
 
-        @media screen and (max-width: 1280px) {
+        @media screen and (max-width: 1279px) {
             .img-winner{
                 display: none;
             }
