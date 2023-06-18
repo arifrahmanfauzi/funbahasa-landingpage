@@ -114,7 +114,7 @@
                     <div class="bg-blue-500 w-52 mt-2 rounded-xl left-36 h-2 "></div>
                 </div>
                 <div class="flex pt-20">
-                    <div class="w-3/5">
+                    <div class="xl:w-3/5 lg:w-full md:w-full sm:w-full w-full">
                         <p class="font-sans font-medium xl:text-sm text-gray-500 leading-loose sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose">
                             Funmin ucapkan terima kasih kepada peserta Kreasi Puisi Pendek Nasional 2023 yang telah mengirimkan karya terbaiknya. Selamat bagi para pemenang dan finalis 200 puisi terbaik. Bagi Funners yang belum menjadi juara, tetaplah berkarya dan tetap semangat untuk mengembangkan kemampuan menulis. Hari esok masih ada bagi Funners untuk terus belajar dan berkembang. Funmin percaya, kita semua akan dapat mencapai hasil yang terbaik.
 
@@ -127,14 +127,8 @@
                             <br><br>Fun Bahasa
                         </p>
                     </div>
-                    <div class="img-winner pl-14 w-2/5">
-                      <picture>
-                        <source 
-                        media="(min-width: 1280px)"
-                        srcset="img/winner-announce-shadow.svg" alt="image-winner" class="w-full h-auto">
-                        <!-- <img src="img/sec-1-mob-2.svg" class="mx-auto py-12 xl:py-0 lg:py-0 md:py-0 sm:py-0 w-3/4 xl:w-full lg:w-full md:w-full sm:w-full" alt="image logo mobile"> -->
-                    </picture>
-                      <!-- <img style="width: 500px;" src="img/winner-announce-shadow.svg" alt=""> -->
+                    <div class="xl:pl-14 xl:w-2/5">
+                      <img class="img-winner" style="width: 500px;" src="img/winner-announce-shadow.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -247,11 +241,17 @@
         @media screen and (min-width: 768px) {
             .sosmed-2{
                 display: none;
-            } 
+            }
         }
 
         @media screen and (min-width: 1024px) {
             .sosmed-2{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1280px) {
+            .img-winner{
                 display: none;
             }
         }
