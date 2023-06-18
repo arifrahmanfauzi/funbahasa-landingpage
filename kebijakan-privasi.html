@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Fun Bahasa #BahasaAdalahKita</title>
+  <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+</head>
+
+<body class="antialiased bg-body text-body font-body absolute">
+  <!--* Navigator Bar -->
+  <header class="fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
+    <div x-data="{open: false}"
+        class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
+        <!--* Image  -->
+        <div class="flex w-full sm:w-1/4 lg:block lg:w-3/2 md:w-1/3">
+            <a href="index.html" class="">
+                <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" class="w-28 xl:w-40 lg:w-32 sm:w-28 md:w-28">
+            </a>
+        </div>
+        <!--* Hamburger Menu -->
+        <button @click="open = true"
+            class="flex justify-center items-center w-8 h-8 px-1 hover:bg-gray-300 sm:w-8 h-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+            <img src="img/hamburger-menu.svg" alt="hamburger-menu-icon">
+        </button>
+        <!--* Image End  -->
+        <!--* Nav Menu Item -->
+        <div
+            class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end hidden sm:hidden md:hidden">
+            <nav class="sm:justify-end sm:w-full sm:flex">
+                <a href="tentang_kami.html"
+                    class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500 xs:font-black-italic">Tentang Kami</a>
+                <a href="unggah-karya.html"
+                    class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Unggah Karya</a>
+                <a href="Event.html"
+                    class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Event</a>
+                <a href="baca_karya.html"
+                    class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Baca Karya</a>
+                <a href="login.html"
+                    class="px-5 py-1 ml-3 font-bold font-title text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
+            </nav>
+        </div>
+        <!--* Nav Menu Item End -->
+        <!--* Nav Menu Mobile -->
+        <div x-show="open" @click.away="open = false"
+            class="absolute z-10 max-w-md px-2 transform right-10 w-screen-md mt-8 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+            <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                <div class="relative grid bg-white gap-4 p-5">
+                  <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                    <div class="ml-2">
+                        <a href="tentang_kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                            Tentang Kami
+                        </a>
+                    </div>
+                </a>
+
+                <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                    <div class="ml-2">
+                        <a href="unggah-karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                            Unggah Karya
+                        </a>
+                    </div>
+                </a>
+
+                <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                    <div class="ml-2">
+                        <a href="Event.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                            Event
+                        </a>
+                    </div>
+                </a>
+
+                <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                    <div class="ml-2">
+                        <a href="baca_karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
+                            Baca Karya
+                        </a>
+                    </div>
+                </a>
+
+                <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                  <div class="flex ml-2 bg-blue-500 rounded-lg -ml-2 -mr-2 h-10">
+                      <a href="login.html" class="pl-4 mt-2 text-base font-medium text-white" style="font-family: 'Poppins', sans-serif;">
+                          Masuk
+                      </a>
+                  </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!--* Navigator Bar End -->
+
+  <!--* Main Content -->
+  <main class="pt-28 xl:pt-36 lg:pt-32 px-10 xl:px-16 lg:px-16 md:px-10">
+    <div class="flex justify-center items-start">
+      <div class="w-full my-3">
+        <h2 class="text-2xl font-extrabold font-title mb-2">Kebijakan Privasi</h2>
+        <p class="font-sans font-normal text-sm py-10">
+            funbahasa.com dimiliki oleh PT. Kreasi Bahasa Kita, yang merupakan pengontrol data-data pribadi Anda. Kami telah mengadopsi Kebijakan Privasi ini, yang menentukan bagaimana kami memproses informasi yang dikumpulkan oleh funbahasa.com, yang juga memberikan alasan mengapa kami harus mengumpulkan data pribadi tertentu tentang Anda. Oleh karena itu, Anda harus membaca Kebijakan Privasi ini sebelum menggunakan situs funbahasa.com. Kami menjaga data pribadi Anda dan berjanji untuk menjamin kerahasiaan dan keamanannya.
+        </p>
+        <ul class="flex flex-col fons-sans text-sm">
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(1)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Pengumpulan Informasi Personal</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-blue-500 h-5 w-5 sm:h-5 md:h-5 lg:h-7 xl:h-6 sm:w-5 md:w-5 lg:w-7  xl:w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-blue-500 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 text-xs">
+                Saat Anda mengunjungi funbahasa.com, kami secara otomatis mengumpulkan informasi tertentu tentang perangkat Anda, termasuk informasi tentang browser web, alamat IP, zona waktu, dan beberapa cookie yang terpasang di perangkat Anda. Selain itu, saat Anda menelusuri Situs, kami mengumpulkan informasi tentang halaman web individu atau produk yang Anda lihat, situs web atau istilah pencarian apa yang merujuk Anda ke Situs, dan bagaimana Anda berinteraksi dengan Situs. Kami menyebut informasi yang dikumpulkan secara otomatis ini sebagai “Informasi Perangkat.” Selain itu, kami mungkin mengumpulkan data pribadi yang Anda berikan kepada kami (termasuk namun tidak terbatas pada Nama, Alamat, profesi, dll.) pada saat pendaftaran untuk dapat memenuhi perjanjian.              
+            </p>
+            </div>
+          </li>
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(2)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Mengapa Kami Memproses Data Anda</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-blue-500 h-5 w-5 sm:h-5 md:h-5 lg:h-7 xl:h-6 sm:w-5 md:w-5 lg:w-7  xl:w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-blue-500 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 text-xs">
+                Prioritas utama kami adalah keamanan data pelanggan, dan, dengan demikian, kami hanya dapat memproses data pengguna minimal, hanya sebanyak yang benar-benar diperlukan untuk memelihara situs web. Informasi yang dikumpulkan secara otomatis hanya digunakan untuk mengidentifikasi potensi kasus penyalahgunaan dan menetapkan informasi statistik mengenai penggunaan situs web. Informasi statistik ini tidak dikumpulkan sedemikian rupa sehingga akan mengidentifikasi pengguna tertentu dari sistem.<br><br>
+
+                Anda dapat mengunjungi situs web tanpa memberi tahu kami siapa Anda atau mengungkapkan informasi apa pun, yang dengannya seseorang dapat mengidentifikasi Anda sebagai individu yang spesifik dan dapat diidentifikasi. Namun, jika Anda ingin menggunakan beberapa fitur situs web, atau Anda ingin menerima buletin kami atau memberikan detail lainnya dengan mengisi formulir, Anda dapat memberikan data pribadi kepada kami, seperti email, nama depan, nama belakang, kota tempat tinggal, organisasi, nomor telepon. Anda dapat memilih untuk tidak memberikan data pribadi Anda kepada kami, tetapi Anda mungkin tidak dapat memanfaatkan beberapa fitur situs web. Misalnya, Anda tidak akan dapat menerima Buletin kami atau menghubungi kami langsung dari situs web. Pengguna yang tidak yakin tentang informasi apa yang wajib dipersilakan untuk menghubungi kami melalui funbahasa@gmail.com.              
+            </p>
+            </div>
+          </li>
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(3)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Tautan ke Situs Web Lain</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-blue-500 h-5 w-5 sm:h-5 md:h-5 lg:h-7 xl:h-6 sm:w-5 md:w-5 lg:w-7  xl:w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-blue-500 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 text-xs">
+                Situs web kami mungkin berisi tautan ke situs web lain yang tidak dimiliki atau dikendalikan oleh kami. Perlu diketahui bahwa kami tidak bertanggung jawab atas situs web lain atau praktik privasi pihak ketiga tersebut. Kami mendorong Anda untuk berhati-hati ketika Anda meninggalkan situs web kami dan membaca pernyataan privasi dari setiap situs web yang mungkin mengumpulkan informasi pribadi.              
+            </p>
+            </div>
+          </li>
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(4)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Informasi Keamanan</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-blue-500 h-5 w-5 sm:h-5 md:h-5 lg:h-7 xl:h-6 sm:w-5 md:w-5 lg:w-7  xl:w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-blue-500 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 text-xs">
+                Kami mengamankan informasi yang Anda berikan di server komputer dalam lingkungan yang terkendali dan aman, terlindung dari akses, penggunaan, atau pengungkapan yang tidak sah. Kami menjaga pengamanan administratif, teknis, dan fisik yang wajar untuk melindungi dari akses, penggunaan, modifikasi, dan pengungkapan data pribadi yang tidak sah dalam kendali dan penyimpanannya. Namun, tidak ada transmisi data melalui Internet atau jaringan nirkabel yang dapat dijamin.              
+            </p>
+            </div>
+          </li>
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(5)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Pengungkapan Hukum</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-blue-500 h-5 w-5 sm:h-5 md:h-5 lg:h-7 xl:h-6 sm:w-5 md:w-5 lg:w-7  xl:w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-blue-500 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 text-xs">
+                Kami akan mengungkapkan informasi apa pun yang kami kumpulkan, gunakan, atau terima jika diperlukan atau diizinkan oleh hukum, seperti untuk mematuhi panggilan pengadilan atau proses hukum serupa, dan ketika kami yakin dengan itikad baik bahwa pengungkapan diperlukan untuk melindungi hak kami, melindungi keselamatan Anda, atau keselamatan orang lain, menyelidiki penipuan, atau menanggapi permintaan pemerintah.              
+            </p>
+            </div>
+          </li>
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(6)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Perubahan Kebijakan Privasi</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-blue-500 h-5 w-5 sm:h-5 md:h-5 lg:h-7 xl:h-6 sm:w-5 md:w-5 lg:w-7  xl:w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-blue-500 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 text-xs">
+                Kami dapat mengubah Kebijakan Privasi sewaktu-waktu karena berbagai alasan, termasuk untuk meningkatkannya, untuk mencerminkan perubahan Layanan kami, dan untuk mematuhi hukum yang berlaku. Kami akan memberitahu Anda tentang perubahan melalui Layanan kami. Perubahan terhadap Kebijakan Privasi ini efektif ketika dimuat di halaman ini. Kami menyarankan Anda untuk meninjau perubahan Kebijakan Privasi kami dengan hati-hati. Jika Anda setuju dengan perubahan, maka Anda dapat terus menggunakan Layanan kami. Sebaliknya jika Anda tidak setuju dengan perubahan layanan kami dan Anda tidak ingin menggunakan Layanan kami, maka Anda bebas untuk berhenti menggunakan funbahasa. Apabila Anda tetap menggunakan Layanan kami setelah perubahan Kebijakan Privasi, maka Anda menyatakan setuju dan menerima perubahan Kebijakan Privasi.              
+            </p>
+            </div>
+          </li>
+          <li class="bg-white my-2 shadow-lg" x-data="accordion(7)">
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Informasi Kontak</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-blue-500 h-5 w-5 sm:h-5 md:h-5 lg:h-7 xl:h-6 sm:w-5 md:w-5 lg:w-7  xl:w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-blue-500 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 text-xs">
+                Jika Anda ingin menghubungi kami untuk memahami lebih lanjut tentang Kebijakan ini atau ingin menghubungi kami mengenai masalah apa pun yang berkaitan dengan hak individu dan Informasi Pribadi Anda, Anda dapat mengirim email ke funbahasa@gmail.com.              
+            </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <!--* Main Content End -->
+
+  <!--* Footer  -->
+  <style>
+    @media screen and (max-width: 767px) {
+        .foll-us{
+            display: none;
+        }
+        .sosmed{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .sosmed-2{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .sosmed-2{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        .sosmed-2{
+            display: none;
+        }
+    }
+  </style>
+  <footer class="relative pt-16 xl:mx-20 sm:mx-10 text-gray-500">
+    <div class="mt-5 px-9 xl:px-10 lg:px-10 md:px-10 sm:px-10 bg-blue-100 xl:rounded-t-2xl lg:rounded-t-2xl md:rounded-t-2xl sm:rounded-t-2xl">
+        <div class="grid grid-cols-2 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3">
+            <div class="col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-3">
+                <img class="mt-7 w-32 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
+                <div class="mt-8 mb-6">
+                    <a href="faq.html">
+                        <h4 class="faq pb-2 font-extrabold xl:font-bold lg:font-bold md:font-extrabold sm:font-extrabold font-title text-xs xl:text-base sm:text-xs hover:text-blue-500">FAQ</h4>
+                    </a>
+                    <a href="kebijakan-privasi.html">
+                      <h4 class="keb-priv pb-2 font-extrabold xl:font-bold lg:font-bold md:font-extrabold sm:font-extrabold font-title text-xs xl:text-base sm:text-xs hover:text-blue-500">Kebijakan Privasi</h4>
+                    </a>
+                    <h4 class="foll-us pb-2 font-bold font-title text-base">Follow Us On</h4>
+                    <div class="sosmed flex flex-row mt-2 justify-start">
+                        <div class="pr-1 xl:pr-2 sm:pr-1">
+                            <a href="https://www.facebook.com/funbahasa/">
+                                <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="https://twitter.com/funbahasa">
+                                <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                        <div class="px-1 xl:px-2 sm:px-1">
+                            <a href="https://www.instagram.com/funbahasa/">
+                                <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                <span class="uppercase text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                    Informasi Event
+                </span>
+                <ul class="list-unstyled font-sans">
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
+                </ul>
+            </div>
+            <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                <span class="uppercase text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                    List Kategori
+                </span>
+                <ul class="list-unstyled font-sans">
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-puisi.html"> Puisi </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerpen.html"> Cerpen </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerita-anak.html"> Cerita Anak </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-artikel.html"> Artikel </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-esai.html"> Esai </a> </li>
+                </ul>
+            </div>
+            <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
+                <span class="uppercase text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                    Contact
+                </span>
+                <ul class="list-unstyled font-sans">
+                    <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</p> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
+                    <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> +62 815-1531-2240 </p> </li>
+                </ul>
+                <div class="sosmed-2 flex flex-row mt-2 justify-start">
+                    <div class="px-1 xl:px-2 sm:px-1">
+                        <a href="https://www.facebook.com/funbahasa/">
+                            <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                        </a>
+                    </div>
+                    <div class="px-1 xl:px-2 sm:px-1">
+                        <a href="https://twitter.com/funbahasa">
+                            <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                        </a>
+                    </div>
+                    <div class="px-1 xl:px-2 sm:px-1">
+                        <a href="https://www.instagram.com/funbahasa/">
+                            <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap items-center justify-center text-center">
+            <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center">
+                <div class="bg-gray-500 content-center w-full" style="height: 2px;"></div>
+                    <div class="py-1 text-sm font-extrabold text-gray-600 font-title">
+                        Fun Bahasa Indonesia ©
+                    </div>
+            </div>
+        </div>
+    </div>  
+  </footer>
+  <!--* Footer End  -->
+</body>
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.store('accordion', {
+      tab: 0
+    });
+    
+    Alpine.data('accordion', (idx) => ({
+      init() {
+        this.idx = idx;
+      },
+      idx: -1,
+      handleClick() {
+        this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+      },
+      handleRotate() {
+        return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+      },
+      handleToggle() {
+        return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+      }
+    }));
+  })
+</script>
+</html>
