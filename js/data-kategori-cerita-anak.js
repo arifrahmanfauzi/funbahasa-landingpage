@@ -1,0 +1,66 @@
+// js/data-kategori-cerita-anak.js
+// Data karya cerita anak untuk kategori-cerita-anak.html
+// Di-load sebelum inline script yang mendefinisikan loadCeritaAnak()
+
+var sourceData = [
+  {
+    id: "1",
+    date: "05 Jan 2026",
+    category: "Cerita Anak",
+    title: "Petualangan Kucing Oren",
+    content: "Kucing Oren adalah kucing pemberani. Suatu hari, ia memutuskan untuk menjelajahi taman besar di belakang rumah. Apa yang ia temukan di sana?",
+    author: "Rasyid Yudhistira",
+    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
+    image: "https://picsum.photos/seed/katceritaanak1/400/300",
+  },
+  {
+    id: "2",
+    date: "14 Feb 2026",
+    category: "Cerita Anak",
+    title: "Bintang Kecil yang Ingin Terbang",
+    content: "Ada bintang kecil di langit yang selalu iri pada burung. Ia ingin terbang seperti burung, tapi ia tak tahu caranya. Sampai suatu malam...",
+    author: "Elang Ade Iswara",
+    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
+    image: "https://picsum.photos/seed/katceritaanak2/400/300",
+  },
+  {
+    id: "3",
+    date: "21 Mar 2026",
+    category: "Cerita Anak",
+    title: "Hutan Ajaib di Balik Lemari",
+    content: "Setiap malam, lemari kamar tidur Nia berubah menjadi pintu masuk ke hutan ajaib. Di sana, pohon-pohon bisa berbicara dan binatang adalah teman.",
+    author: "Sevryade Anugrah",
+    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
+    image: "https://picsum.photos/seed/katceritaanak3/400/300",
+  },
+  {
+    id: "4",
+    date: "07 Apr 2026",
+    category: "Cerita Anak",
+    title: "Ikan Emas yang Bisa Berbicara",
+    content: "Rudi menemukan ikan emas di kolam dekat rumahnya. Yang aneh, ikan itu bisa berbicara! Dan ia punya permintaan yang sangat istimewa.",
+    author: "Dewi Lestari",
+    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: "https://picsum.photos/seed/katceritaanak4/400/300",
+  },
+  {
+    id: "5",
+    date: "15 Mei 2026",
+    category: "Cerita Anak",
+    title: "Pelangi yang Hilang Warna",
+    content: "Suatu hari, pelangi di langit kehilangan warnanya. Hanya tersisa warna abu-abu. Tiga anak kecil memutuskan untuk mencari warna-warna itu kembali.",
+    author: "Andrea Hirata",
+    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: "https://picsum.photos/seed/katceritaanak5/400/300",
+  },
+  {
+    id: "6",
+    date: "01 Jun 2026",
+    category: "Cerita Anak",
+    title: "Robot Kecil Bernama Tiko",
+    content: "Tiko adalah robot kecil yang tinggal di gudang tua. Ia belajar tentang persahabatan ketika bertemu dengan anak-anak yang berani masuk ke gudang itu.",
+    author: "Rasyid Yudhistira",
+    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+    image: "https://picsum.photos/seed/katceritaanak6/400/300",
+  },
+];

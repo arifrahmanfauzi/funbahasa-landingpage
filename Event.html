@@ -115,7 +115,7 @@
                 </div>
                 <template x-for="item in filteredData" :key="item">
                     <a rel="noopener noreferrer" href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
-                        <img src="https://source.unsplash.com/random/480x360" alt="" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 ">
+                        <img :src="item.image" alt="" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 ">
                         <div class="p-6 lg:px-6 lg:py-0 space-y-2 lg:col-span-5">
                             <h3 class="text-3xl lg:text-4xl font-semibold group-hover:underline group-focus:underline" x-text="item.title"></h3>
                             <span class="text-xs text-yellow-600" x-text="item.month" ></span>
@@ -142,7 +142,7 @@
                     <template x-for="item in filteredData" :key="item">
                         <div class="h-full flex items-start rounded-xl shadow-xl transform hover:scale-105 bg-white">
                             <a rel="noopener noreferrer" href="#" class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
-                                <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?1">
+                                <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500" :src="item.image">
                                 <div class="p-6 space-y-2">
                                     <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline" x-text="item.title"></h3>
                                     <span class="text-xs text-yellow-600" x-text="item.month" ></span>
@@ -177,61 +177,8 @@
             }
           </style>
 
+        <script src="js/data-event.js"></script>
         <script>
-            var dataEventNew = [
-                {
-                    id: "1", 
-                    month: "Maret",
-                    year: "2023",
-                    title: "Festival Cipta Puisi Nasional 2023", 
-                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-                },
-            ];
-            var dataEvent = [
-                {
-                    id: "1", 
-                    month: "Januari",
-                    year: "2022",
-                    title: "Lomba Menulis Cerpen Nasional 2022", 
-                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-                },
-                {
-                    id: "2", 
-                    month: "Februari",
-                    year: "2022",
-                    title: "Kreasi Puisi Pendek Nasional 2022", 
-                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-                },
-                {
-                    id: "3", 
-                    month: "Maret",
-                    year: "2022",
-                    title: "Festival Cipta Puisi Nasional 2022", 
-                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-                },
-                {
-                    id: "4", 
-                    month: "April",
-                    year: "2022",
-                    title: "Festival Cipta Cerpen Nasional 2022", 
-                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-                },
-                {
-                    id: "5", 
-                    month: "Mei",
-                    year: "2022",
-                    title: "Lomba Menulis Puisi Nasional 2022", 
-                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-                },
-                {
-                    id: "6", 
-                    month: "Juni",
-                    year: "2022",
-                    title: "Festival Puisi Pendek Nasional 2022", 
-                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-                },
-            ];
-        
 
             function loadEventNew() {
                 return {

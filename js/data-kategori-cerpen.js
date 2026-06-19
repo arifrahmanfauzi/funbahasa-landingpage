@@ -1,0 +1,66 @@
+// js/data-kategori-cerpen.js
+// Data karya cerpen untuk kategori-cerpen.html
+// Di-load sebelum inline script yang mendefinisikan loadCerpen()
+
+var sourceData = [
+  {
+    id: "1",
+    date: "15 Jan 2026",
+    category: "Cerpen",
+    title: "Rumah di Ujung Jalan",
+    content: "Di ujung jalan yang berliku, ada sebuah rumah tua yang selalu menyala lampunya. Orang-orang bilang, di sana tinggal seorang nenek yang menunggu cucunya pulang.",
+    author: "Rasyid Yudhistira",
+    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
+    image: "https://picsum.photos/seed/katcerpen1/400/300",
+  },
+  {
+    id: "2",
+    date: "28 Feb 2026",
+    category: "Cerpen",
+    title: "Kopi dan Kenangan",
+    content: "Setiap pagi, aku menyeduh kopi dengan cara yang sama. Tapi rasanya berbeda sejak kau pergi. Mungkin karena yang hilang bukanlah gula, melainkan cerita.",
+    author: "Elang Ade Iswara",
+    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
+    image: "https://picsum.photos/seed/katcerpen2/400/300",
+  },
+  {
+    id: "3",
+    date: "10 Mar 2026",
+    category: "Cerpen",
+    title: "Kereta Malam ke Surabaya",
+    content: "Kereta malam membawa aku kembali ke Surabaya. Kota yang menyimpan ribuan cerita, termasuk cerita tentang kita yang pernah singgah di stasiun yang sama.",
+    author: "Sevryade Anugrah",
+    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
+    image: "https://picsum.photos/seed/katcerpen3/400/300",
+  },
+  {
+    id: "4",
+    date: "05 Apr 2026",
+    category: "Cerpen",
+    title: "Bunga Melati di Taman Kota",
+    content: "Taman kota selalu beraroma melati di sore hari. Aku duduk di bangku yang sama, menunggu seseorang yang mungkin tak akan pernah datang.",
+    author: "Dewi Lestari",
+    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: "https://picsum.photos/seed/katcerpen4/400/300",
+  },
+  {
+    id: "5",
+    date: "20 Mei 2026",
+    category: "Cerpen",
+    title: "Surat Terakhir dari Ayah",
+    content: "Surat itu tiba di hari ulang tahunku. Tulisan tangan ayah yang bergetar, menceritakan tentang cinta yang tak pernah ia ucapkan langsung.",
+    author: "Andrea Hirata",
+    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: "https://picsum.photos/seed/katcerpen5/400/300",
+  },
+  {
+    id: "6",
+    date: "12 Jun 2026",
+    category: "Cerpen",
+    title: "Pasar Malam dan Mimpi",
+    content: "Pasar malam selalu penuh warna dan suara. Tapi malam itu berbeda, karena aku bertemu seseorang yang mengubah arah hidupku.",
+    author: "Rasyid Yudhistira",
+    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
+    image: "https://picsum.photos/seed/katcerpen6/400/300",
+  },
+];

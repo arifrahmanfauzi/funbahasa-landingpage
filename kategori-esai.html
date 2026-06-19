@@ -145,6 +145,7 @@
                 <div class="h-full flex items-start transform border-b">
                     <div class="flex flex-wrap xl:flex-nowrap md:flex-nowrap py-4">
                         <div class="w-44 mb-4 flex-shrink-0 flex flex-col">
+                            <img :src="item.image" alt="" class="w-44 h-28 object-cover rounded-xl mb-3">
                             <span class="font-semibold text-xs xl:text-sm title-font text-gray-500 mb-1 font-sans" x-text="item.category"></span>
                             <span class="mt-1 text-gray-300 text-xs xl:text-sm lg:text-sm font-sans" x-text="item.date"></span>
                         </div>
@@ -309,64 +310,8 @@
             </div>
         </div>
 
+        <script src="js/data-kategori-esai.js"></script>
         <script>
-            var sourceData = [
-              {
-                id: "1",
-                date: "21 Jan 2021",
-                category: "Esai",
-                title: "Ekologi Kepada Jalan",
-                content: "Di tubuh langit kelimut Melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, Diundang turun oleh garis tangan dan kehidupan.",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
-              },
-              {
-                id: "2",
-                date: "21 Jan 2021",
-                category: "Esai",
-                title: "Ekologi Kepada Jalan",
-                content: "Di tubuh langit kelimut Melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, Diundang turun oleh garis tangan dan kehidupan.",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
-              },
-              {
-                id: "3",
-                date: "21 Jan 2021",
-                category: "Esai",
-                title: "Ekologi Kepada Jalan",
-                content: "Di tubuh langit kelimut Melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, Diundang turun oleh garis tangan dan kehidupan.",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/3.jpg",
-              },
-              {
-                id: "4",
-                date: "21 Jan 2021",
-                category: "Esai",
-                title: "Ekologi Kepada Jalan",
-                content: "Di tubuh langit kelimut Melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, Diundang turun oleh garis tangan dan kehidupan.",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/men/4.jpg",
-              },
-              {
-                id: "5",
-                date: "21 Jan 2021",
-                category: "Esai",
-                title: "Ekologi Kepada Jalan",
-                content: "Di tubuh langit kelimut Melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, Diundang turun oleh garis tangan dan kehidupan.",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/5.jpg",
-              },
-              {
-                id: "6",
-                date: "21 Jan 2021",
-                category: "Puisi",
-                title: "Ekologi Kepada Jalan",
-                content: "Di tubuh langit kelimut Melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, Diundang turun oleh garis tangan dan kehidupan.",
-                author: "Rasyid Yudhistira",
-                profile_image: "https://randomuser.me/api/portraits/women/6.jpg",
-              },
-            ];
-      
             function loadEsai() {
               return {
                 search: "",
