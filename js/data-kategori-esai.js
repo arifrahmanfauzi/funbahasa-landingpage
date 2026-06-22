@@ -10,7 +10,6 @@ var sourceData = [
     title: "Refleksi tentang Identitas dalam Karya Sastra",
     content: "Setiap karya sastra adalah refleksi identitas penulisnya. Bagaimana pengalaman hidup, budaya, dan latar belakang membentuk suara unik seorang penulis?",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/katesai1/400/300",
   },
   {
@@ -20,7 +19,6 @@ var sourceData = [
     title: "Bahasa sebagai Perekat Bangsa",
     content: "Bahasa Indonesia bukan sekadar alat komunikasi. Ia adalah perekat yang menyatukan ribuan pulau, suku, dan budaya menjadi satu identitas nasional.",
     author: "Elang Ade Iswara",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/katesai2/400/300",
   },
   {
@@ -30,7 +28,6 @@ var sourceData = [
     title: "Seni Menulis dari Hati",
     content: "Menulis yang paling bermakna adalah menulis dari hati. Ketika kata-kata mengalir tanpa paksaan, itulah momen sastra yang paling otentik.",
     author: "Sevryade Anugrah",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/katesai3/400/300",
   },
   {
@@ -40,7 +37,6 @@ var sourceData = [
     title: "Perjalanan Seorang Penulis Muda",
     content: "Menjadi penulis bukanlah jalan yang mudah. Dari penolakan demi penolakan, hingga akhirnya karya pertama diterbitkan. Perjalanan ini mengajarkan kesabaran.",
     author: "Dewi Lestari",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/katesai4/400/300",
   },
   {
@@ -50,7 +46,6 @@ var sourceData = [
     title: "Makna Kebebasan Berekspresi",
     content: "Kebebasan berekspresi dalam sastra adalah hak fundamental. Namun, kebebasan ini juga membawa tanggung jawab untuk tidak menyakiti dan menghormati orang lain.",
     author: "Andrea Hirata",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/katesai5/400/300",
   },
   {
@@ -60,7 +55,6 @@ var sourceData = [
     title: "Sastra dan Perubahan Sosial",
     content: "Sastra bukan hanya hiburan. Ia bisa menjadi alat perubahan sosial. Karya-karya sastra telah memicu diskusi tentang isu-isu penting dalam masyarakat.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/katesai6/400/300",
   },
 ];

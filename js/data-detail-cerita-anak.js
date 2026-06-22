@@ -11,7 +11,6 @@ var sourceData = [
     title: "Petualangan Kucing Oren",
     content: "",
     duration: "3",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/detailca1/800/400",
   },
   {
@@ -22,7 +21,6 @@ var sourceData = [
     title: "Bintang Kecil yang Ingin Terbang",
     content: "",
     duration: "4",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/detailca2/800/400",
   },
   {
@@ -33,7 +31,6 @@ var sourceData = [
     title: "Hutan Ajaib di Balik Lemari",
     content: "",
     duration: "5",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/detailca3/800/400",
   },
   {
@@ -44,7 +41,6 @@ var sourceData = [
     title: "Ikan Emas yang Bisa Berbicara",
     content: "",
     duration: "3",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/detailca4/800/400",
   },
   {
@@ -55,7 +51,6 @@ var sourceData = [
     title: "Pelangi yang Hilang Warna",
     content: "",
     duration: "4",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/detailca5/800/400",
   },
   {
@@ -66,7 +61,6 @@ var sourceData = [
     title: "Robot Kecil Bernama Tiko",
     content: "",
     duration: "5",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/detailca6/800/400",
   },
   {
@@ -77,7 +71,6 @@ var sourceData = [
     title: "Kisah Si Siput dan Pelangi",
     content: "",
     duration: "3",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/detailca7/800/400",
   },
   {
@@ -88,7 +81,6 @@ var sourceData = [
     title: "Balon Warna-Warni",
     content: "",
     duration: "2",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/detailca8/800/400",
   },
   {
@@ -99,7 +91,6 @@ var sourceData = [
     title: "Taman Bermain Ajaib",
     content: "",
     duration: "4",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/detailca9/800/400",
   },
 ];

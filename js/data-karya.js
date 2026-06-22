@@ -11,7 +11,6 @@ var dataPuisi = [
     title: "Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu",
     content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan berakhir. Kau tahu, matahari selalu membelah tubuhmu setiap pagi, dan mereka tak pernah tahu itu.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/puisi1/400/300",
   },
   {
@@ -22,7 +21,6 @@ var dataPuisi = [
     title: "Ekologi Kepada Jalan",
     content: "Di tubuh langit kelimut melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, diundang turun oleh garis tangan dan kehidupan.",
     author: "Elang Ade Iswara",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/puisi2/400/300",
   },
   {
@@ -33,7 +31,6 @@ var dataPuisi = [
     title: "Surat Cinta untuk Ibu",
     content: "Ibu, aku menulis ini dengan tinta yang bercampur air mata. Setiap baris adalah doa, setiap kata adalah rindu yang tak pernah usai.",
     author: "Sevryade Anugrah",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/puisi3/400/300",
   },
   {
@@ -44,7 +41,6 @@ var dataPuisi = [
     title: "Hujan di Bulan Juni",
     content: "Hujan di bulan Juni selalu membawa kenangan. Aku duduk di beranda, menatap tetes air yang jatuh, dan teringat senyummu yang tak pernah kembali.",
     author: "Dewi Lestari",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/puisi4/400/300",
   },
   {
@@ -55,7 +51,6 @@ var dataPuisi = [
     title: "Senja yang Tak Pernah Pergi",
     content: "Senja selalu datang dengan warna jingga yang hangat. Seperti kenanganmu yang tak pernah pudar, meski waktu telah berlalu begitu saja.",
     author: "Andrea Hirata",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/puisi5/400/300",
   },
   {
@@ -66,7 +61,6 @@ var dataPuisi = [
     title: "Lautan di Matamu",
     content: "Aku menemukan lautan di matamu. Dalam dan tenang, namun penuh ombak yang tak terduga. Setiap tatapan adalah perjalanan yang tak pernah membosankan.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/puisi6/400/300",
   },
 ];
@@ -80,7 +74,6 @@ var dataCerpen = [
     title: "Rumah di Ujung Jalan",
     content: "Di ujung jalan yang berliku, ada sebuah rumah tua yang selalu menyala lampunya. Orang-orang bilang, di sana tinggal seorang nenek yang menunggu cucunya pulang.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/cerpen1/400/300",
   },
   {
@@ -91,7 +84,6 @@ var dataCerpen = [
     title: "Kopi dan Kenangan",
     content: "Setiap pagi, aku menyeduh kopi dengan cara yang sama. Tapi rasanya berbeda sejak kau pergi. Mungkin karena yang hilang bukanlah gula, melainkan cerita.",
     author: "Elang Ade Iswara",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/cerpen2/400/300",
   },
   {
@@ -102,7 +94,6 @@ var dataCerpen = [
     title: "Kereta Malam ke Surabaya",
     content: "Kereta malam membawa aku kembali ke Surabaya. Kota yang menyimpan ribuan cerita, termasuk cerita tentang kita yang pernah singgah di stasiun yang sama.",
     author: "Sevryade Anugrah",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/cerpen3/400/300",
   },
   {
@@ -113,7 +104,6 @@ var dataCerpen = [
     title: "Bunga Melati di Taman Kota",
     content: "Taman kota selalu beraroma melati di sore hari. Aku duduk di bangku yang sama, menunggu seseorang yang mungkin tak akan pernah datang.",
     author: "Dewi Lestari",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/cerpen4/400/300",
   },
   {
@@ -124,7 +114,6 @@ var dataCerpen = [
     title: "Surat Terakhir dari Ayah",
     content: "Surat itu tiba di hari ulang tahunku. Tulisan tangan ayah yang bergetar, menceritakan tentang cinta yang tak pernah ia ucapkan langsung.",
     author: "Andrea Hirata",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/cerpen5/400/300",
   },
   {
@@ -135,7 +124,6 @@ var dataCerpen = [
     title: "Pasar Malam dan Mimpi",
     content: "Pasar malam selalu penuh warna dan suara. Tapi malam itu berbeda, karena aku bertemu seseorang yang mengubah arah hidupku.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/cerpen6/400/300",
   },
 ];
@@ -149,7 +137,6 @@ var dataCeritaAnak = [
     title: "Petualangan Kucing Oren",
     content: "Kucing Oren adalah kucing pemberani. Suatu hari, ia memutuskan untuk menjelajahi taman besar di belakang rumah. Apa yang ia temukan di sana?",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/ceritaanak1/400/300",
   },
   {
@@ -160,7 +147,6 @@ var dataCeritaAnak = [
     title: "Bintang Kecil yang Ingin Terbang",
     content: "Ada bintang kecil di langit yang selalu iri pada burung. Ia ingin terbang seperti burung, tapi ia tak tahu caranya. Sampai suatu malam...",
     author: "Elang Ade Iswara",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/ceritaanak2/400/300",
   },
   {
@@ -171,7 +157,6 @@ var dataCeritaAnak = [
     title: "Hutan Ajaib di Balik Lemari",
     content: "Setiap malam, lemari kamar tidur Nia berubah menjadi pintu masuk ke hutan ajaib. Di sana, pohon-pohon bisa berbicara dan binatang adalah teman.",
     author: "Sevryade Anugrah",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/ceritaanak3/400/300",
   },
   {
@@ -182,7 +167,6 @@ var dataCeritaAnak = [
     title: "Ikan Emas yang Bisa Berbicara",
     content: "Rudi menemukan ikan emas di kolam dekat rumahnya. Yang aneh, ikan itu bisa berbicara! Dan ia punya permintaan yang sangat istimewa.",
     author: "Dewi Lestari",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/ceritaanak4/400/300",
   },
   {
@@ -193,7 +177,6 @@ var dataCeritaAnak = [
     title: "Pelangi yang Hilang Warna",
     content: "Suatu hari, pelangi di langit kehilangan warnanya. Hanya tersisa warna abu-abu. Tiga anak kecil memutuskan untuk mencari warna-warna itu kembali.",
     author: "Andrea Hirata",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/ceritaanak5/400/300",
   },
   {
@@ -204,7 +187,6 @@ var dataCeritaAnak = [
     title: "Robot Kecil Bernama Tiko",
     content: "Tiko adalah robot kecil yang tinggal di gudang tua. Ia belajar tentang persahabatan ketika bertemu dengan anak-anak yang berani masuk ke gudang itu.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/ceritaanak6/400/300",
   },
 ];
@@ -218,7 +200,6 @@ var dataArtikel = [
     title: "Mengapa Sastra Indonesia Perlu Dilestarikan",
     content: "Sastra Indonesia adalah cermin budaya bangsa. Dari pantun Melayu hingga puisi modern, setiap karya adalah warisan yang harus kita jaga bersama.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/artikel1/400/300",
   },
   {
@@ -229,7 +210,6 @@ var dataArtikel = [
     title: "Peran Digitalisasi dalam Dunia Sastra",
     content: "Platform digital seperti Fun Bahasa membuka peluang baru bagi penulis Indonesia. Sastra kini bisa menjangkau pembaca di seluruh penjuru dunia.",
     author: "Elang Ade Iswara",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/artikel2/400/300",
   },
   {
@@ -240,7 +220,6 @@ var dataArtikel = [
     title: "Puisi sebagai Terapi Jiwa",
     content: "Menulis puisi bukan sekadar hobi. Banyak penelitian menunjukkan bahwa menulis puisi bisa menjadi terapi untuk mengatasi stres dan kecemasan.",
     author: "Sevryade Anugrah",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/artikel3/400/300",
   },
   {
@@ -251,7 +230,6 @@ var dataArtikel = [
     title: "Generasi Muda dan Cinta pada Bacaan",
     content: "Di era digital, tantangan terbesar adalah membuat generasi muda mencintai bacaan. Inisiatif komunitas sastra lokal menjadi kunci keberhasilan.",
     author: "Dewi Lestari",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/artikel4/400/300",
   },
   {
@@ -262,7 +240,6 @@ var dataArtikel = [
     title: "Mengenal Sastra Lokal Indonesia",
     content: "Dari Aceh sampai Papua, setiap daerah memiliki tradisi sastra yang unik. Mengenal sastra lokal berarti mengenal jati diri bangsa Indonesia.",
     author: "Andrea Hirata",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/artikel5/400/300",
   },
   {
@@ -273,7 +250,6 @@ var dataArtikel = [
     title: "Menulis Cerpen: Tips untuk Pemula",
     content: "Cerpen adalah bentuk sastra yang menantang. Dalam ribuan kata, penulis harus mampu membentuk karakter, konflik, dan resolusi yang memuaskan.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/artikel6/400/300",
   },
 ];
@@ -287,7 +263,6 @@ var dataEsai = [
     title: "Refleksi tentang Identitas dalam Karya Sastra",
     content: "Setiap karya sastra adalah refleksi identitas penulisnya. Bagaimana pengalaman hidup, budaya, dan latar belakang membentuk suara unik seorang penulis?",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/esai1/400/300",
   },
   {
@@ -298,7 +273,6 @@ var dataEsai = [
     title: "Bahasa sebagai Perekat Bangsa",
     content: "Bahasa Indonesia bukan sekadar alat komunikasi. Ia adalah perekat yang menyatukan ribuan pulau, suku, dan budaya menjadi satu identitas nasional.",
     author: "Elang Ade Iswara",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/esai2/400/300",
   },
   {
@@ -309,7 +283,6 @@ var dataEsai = [
     title: "Seni Menulis dari Hati",
     content: "Menulis yang paling bermakna adalah menulis dari hati. Ketika kata-kata mengalir tanpa paksaan, itulah momen sastra yang paling otentik.",
     author: "Sevryade Anugrah",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/esai3/400/300",
   },
   {
@@ -320,7 +293,6 @@ var dataEsai = [
     title: "Perjalanan Seorang Penulis Muda",
     content: "Menjadi penulis bukanlah jalan yang mudah. Dari penolakan demi penolakan, hingga akhirnya karya pertama diterbitkan. Perjalanan ini mengajarkan kesabaran.",
     author: "Dewi Lestari",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/esai4/400/300",
   },
   {
@@ -331,7 +303,6 @@ var dataEsai = [
     title: "Makna Kebebasan Berekspresi",
     content: "Kebebasan berekspresi dalam sastra adalah hak fundamental. Namun, kebebasan ini juga membawa tanggung jawab untuk tidak menyakiti dan menghormati orang lain.",
     author: "Andrea Hirata",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/esai5/400/300",
   },
   {
@@ -342,7 +313,6 @@ var dataEsai = [
     title: "Sastra dan Perubahan Sosial",
     content: "Sastra bukan hanya hiburan. Ia bisa menjadi alat perubahan sosial. Karya-karya sastra telah memicu diskusi tentang isu-isu penting dalam masyarakat.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/esai6/400/300",
   },
 ];

@@ -26,7 +26,7 @@
     
     <div class="xl\:container mx-auto">
         <!--* Navigator Bar -->
-        <header class="fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
+        <header class="flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
         <div x-data="{open: false}"
             class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
             <!--* Image  -->
@@ -118,7 +118,7 @@
                     <template x-for="item in filteredData" :key="item">
                         <div>
                             <div class="flex items-center w-full pb-5 border-b">
-                                <img :src="`${item.profile_image}`" alt="blog" class="w-8 xl:w-12 lg:w-12 md:w-10 sm:w-10 h-8 xl:h-12 lg:h-12 md:h-10 sm:h-10 rounded-full flex-shrink-0 object-cover object-center">
+                                <i class="bi bi-person-circle text-gray-400" style="font-size: 2.5rem;"></i>
                                 <div class="pl-3">
                                     <p class="font-title font-bold text-gray-500 text-base" x-text="item.author"></p>
                                     <span class="font-sans font-thin text-blue-500 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs">
@@ -197,7 +197,7 @@
                             <div class="py-3">
                                 <p class="font-sans font-thin text-gray-300 text-xs mb-1" x-text="item.category"></p>
                                 <div class="flex items-center mb-2">
-                                    <img :src="`${item.profile_image}`" alt="blog" class="w-5 h-5 rounded-full flex-shrink-0 object-cover object-center">
+                                    <i class="bi bi-person-circle text-gray-400" style="font-size: 1.25rem;"></i>
                                     <h2 class="text-sm font-medium text-gray-500 font-sans title-font mb-1 pl-2" x-text="item.author"></h2>
                                 </div>
                                 <p class="leading-relaxed font-title font-extrabold text-lg text-gray-500" x-text="item.title"></p>

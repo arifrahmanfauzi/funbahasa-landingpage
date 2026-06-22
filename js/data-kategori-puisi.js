@@ -10,7 +10,6 @@ var sourceData = [
     title: "Ekologi Kepada Jalan",
     content: "Di tubuh langit kelimut melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, diundang turun oleh garis tangan dan kehidupan.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/katpuisi1/400/300",
   },
   {
@@ -20,7 +19,6 @@ var sourceData = [
     title: "Matahari Membelah Tubuhmu",
     content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan berakhir. Matahari selalu membelah tubuhmu setiap pagi, dan mereka tak pernah tahu itu.",
     author: "Elang Ade Iswara",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/katpuisi2/400/300",
   },
   {
@@ -30,7 +28,6 @@ var sourceData = [
     title: "Surat Cinta untuk Ibu",
     content: "Ibu, aku menulis ini dengan tinta yang bercampur air mata. Setiap baris adalah doa, setiap kata adalah rindu yang tak pernah usai.",
     author: "Sevryade Anugrah",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/katpuisi3/400/300",
   },
   {
@@ -40,7 +37,6 @@ var sourceData = [
     title: "Hujan di Bulan Juni",
     content: "Hujan di bulan Juni selalu membawa kenangan. Aku duduk di beranda, menatap tetes air yang jatuh, dan teringat senyummu yang tak pernah kembali.",
     author: "Dewi Lestari",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/katpuisi4/400/300",
   },
   {
@@ -50,7 +46,6 @@ var sourceData = [
     title: "Senja yang Tak Pernah Pergi",
     content: "Senja selalu datang dengan warna jingga yang hangat. Seperti kenanganmu yang tak pernah pudar, meski waktu telah berlalu begitu saja.",
     author: "Andrea Hirata",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/katpuisi5/400/300",
   },
   {
@@ -60,7 +55,6 @@ var sourceData = [
     title: "Lautan di Matamu",
     content: "Aku menemukan lautan di matamu. Dalam dan tenang, namun penuh ombak yang tak terduga. Setiap tatapan adalah perjalanan yang tak pernah membosankan.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/katpuisi6/400/300",
   },
 ];

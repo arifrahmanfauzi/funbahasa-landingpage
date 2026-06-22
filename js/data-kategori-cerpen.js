@@ -10,7 +10,6 @@ var sourceData = [
     title: "Rumah di Ujung Jalan",
     content: "Di ujung jalan yang berliku, ada sebuah rumah tua yang selalu menyala lampunya. Orang-orang bilang, di sana tinggal seorang nenek yang menunggu cucunya pulang.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/katcerpen1/400/300",
   },
   {
@@ -20,7 +19,6 @@ var sourceData = [
     title: "Kopi dan Kenangan",
     content: "Setiap pagi, aku menyeduh kopi dengan cara yang sama. Tapi rasanya berbeda sejak kau pergi. Mungkin karena yang hilang bukanlah gula, melainkan cerita.",
     author: "Elang Ade Iswara",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/katcerpen2/400/300",
   },
   {
@@ -30,7 +28,6 @@ var sourceData = [
     title: "Kereta Malam ke Surabaya",
     content: "Kereta malam membawa aku kembali ke Surabaya. Kota yang menyimpan ribuan cerita, termasuk cerita tentang kita yang pernah singgah di stasiun yang sama.",
     author: "Sevryade Anugrah",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/katcerpen3/400/300",
   },
   {
@@ -40,7 +37,6 @@ var sourceData = [
     title: "Bunga Melati di Taman Kota",
     content: "Taman kota selalu beraroma melati di sore hari. Aku duduk di bangku yang sama, menunggu seseorang yang mungkin tak akan pernah datang.",
     author: "Dewi Lestari",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/katcerpen4/400/300",
   },
   {
@@ -50,7 +46,6 @@ var sourceData = [
     title: "Surat Terakhir dari Ayah",
     content: "Surat itu tiba di hari ulang tahunku. Tulisan tangan ayah yang bergetar, menceritakan tentang cinta yang tak pernah ia ucapkan langsung.",
     author: "Andrea Hirata",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/katcerpen5/400/300",
   },
   {
@@ -60,7 +55,6 @@ var sourceData = [
     title: "Pasar Malam dan Mimpi",
     content: "Pasar malam selalu penuh warna dan suara. Tapi malam itu berbeda, karena aku bertemu seseorang yang mengubah arah hidupku.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/katcerpen6/400/300",
   },
 ];

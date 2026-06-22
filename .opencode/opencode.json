@@ -1,0 +1,57 @@
+{
+  "provider": {
+    "9router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:20128/v1",
+        "apiKey": "sk-b7f2d8283a882bc8-y90jwi-c6cacb6e"
+      },
+      "models": {
+        "ocg/glm-5.2": {
+          "name": "ocg/glm-5.2",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "ocg/kimi-k2.7-code": {
+          "name": "ocg/kimi-k2.7-code",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "ocg/qwen3.7-max": {
+          "name": "ocg/qwen3.7-max",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "model": "9router/ocg/kimi-k2.7-code",
+  "agent": {
+    "explorer": {
+      "description": "Fast explorer subagent for codebase exploration",
+      "mode": "subagent",
+      "model": "9router/ocg/deepseek-v4-pro"
+    }
+  }
+}

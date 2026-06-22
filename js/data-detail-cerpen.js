@@ -11,7 +11,6 @@ var sourceData = [
     title: "Ekologi Kepada Jalan",
     content: "",
     duration: "4",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/detailcerpen1/800/400",
   },
   {
@@ -22,7 +21,6 @@ var sourceData = [
     title: "Telur, Susu dan Kalajengking",
     content: "",
     duration: "6",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/detailcerpen2/800/400",
   },
   {
@@ -33,7 +31,6 @@ var sourceData = [
     title: "Saat-Saat Terakhir Mayor Fransisco Soledad",
     content: "",
     duration: "8",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/detailcerpen3/800/400",
   },
   {
@@ -44,7 +41,6 @@ var sourceData = [
     title: "Cinta Bajing",
     content: "",
     duration: "5",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/detailcerpen4/800/400",
   },
   {
@@ -55,7 +51,6 @@ var sourceData = [
     title: "Darah Yang Terus Mengalir",
     content: "",
     duration: "7",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/detailcerpen5/800/400",
   },
   {
@@ -66,7 +61,6 @@ var sourceData = [
     title: "Rumah di Ujung Jalan",
     content: "",
     duration: "4",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/detailcerpen6/800/400",
   },
   {
@@ -77,7 +71,6 @@ var sourceData = [
     title: "Kopi dan Kenangan",
     content: "",
     duration: "5",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/detailcerpen7/800/400",
   },
   {
@@ -88,7 +81,6 @@ var sourceData = [
     title: "Kereta Malam ke Surabaya",
     content: "",
     duration: "6",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/detailcerpen8/800/400",
   },
   {
@@ -99,7 +91,6 @@ var sourceData = [
     title: "Bunga Melati di Taman Kota",
     content: "",
     duration: "4",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/detailcerpen9/800/400",
   },
 ];

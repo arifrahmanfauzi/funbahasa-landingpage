@@ -10,7 +10,6 @@ var sourceData = [
     title: "Mengapa Sastra Indonesia Perlu Dilestarikan",
     content: "Sastra Indonesia adalah cermin budaya bangsa. Dari pantun Melayu hingga puisi modern, setiap karya adalah warisan yang harus kita jaga bersama.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/katartikel1/400/300",
   },
   {
@@ -20,7 +19,6 @@ var sourceData = [
     title: "Peran Digitalisasi dalam Dunia Sastra",
     content: "Platform digital seperti Fun Bahasa membuka peluang baru bagi penulis Indonesia. Sastra kini bisa menjangkau pembaca di seluruh penjuru dunia.",
     author: "Elang Ade Iswara",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/katartikel2/400/300",
   },
   {
@@ -30,7 +28,6 @@ var sourceData = [
     title: "Puisi sebagai Terapi Jiwa",
     content: "Menulis puisi bukan sekadar hobi. Banyak penelitian menunjukkan bahwa menulis puisi bisa menjadi terapi untuk mengatasi stres dan kecemasan.",
     author: "Sevryade Anugrah",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/katartikel3/400/300",
   },
   {
@@ -40,7 +37,6 @@ var sourceData = [
     title: "Generasi Muda dan Cinta pada Bacaan",
     content: "Di era digital, tantangan terbesar adalah membuat generasi muda mencintai bacaan. Inisiatif komunitas sastra lokal menjadi kunci keberhasilan.",
     author: "Dewi Lestari",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/katartikel4/400/300",
   },
   {
@@ -50,7 +46,6 @@ var sourceData = [
     title: "Mengenal Sastra Lokal Indonesia",
     content: "Dari Aceh sampai Papua, setiap daerah memiliki tradisi sastra yang unik. Mengenal sastra lokal berarti mengenal jati diri bangsa Indonesia.",
     author: "Andrea Hirata",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/katartikel5/400/300",
   },
   {
@@ -60,7 +55,6 @@ var sourceData = [
     title: "Menulis Cerpen: Tips untuk Pemula",
     content: "Cerpen adalah bentuk sastra yang menantang. Dalam ribuan kata, penulis harus mampu membentuk karakter, konflik, dan resolusi yang memuaskan.",
     author: "Rasyid Yudhistira",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/katartikel6/400/300",
   },
 ];

@@ -25,7 +25,7 @@
     
     <div class="xl\:container mx-auto">
         <!--* Navigator Bar -->
-        <header class="fixed z-50 flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
+        <header class="flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
         <div x-data="{open: false}"
             class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
             <!--* Image  -->
@@ -154,7 +154,7 @@
                             <p class="leading-relaxed font-sans text-sm text-gray-500 mb-4" x-text="item.content"></p>
                             <div>
                                 <a class="inline-flex items-center">
-                                    <img alt="blog" :src="`${item.profile_image}`" class="w-6 h-6 rounded-full flex-shrink-0 object-cover object-center">
+                                    <i class="bi bi-person-circle text-gray-400" style="font-size: 1.5rem;"></i>
                                     <span class="flex flex-grow pl-3">
                                       <span class="title-font font-medium text-gray-500 font-sans text-xs xl:text-sm" x-text="item.author"></span>
                                     </span>

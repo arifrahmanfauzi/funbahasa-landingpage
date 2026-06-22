@@ -11,7 +11,6 @@ var sourceData = [
     title: "Refleksi tentang Identitas dalam Karya Sastra",
     content: "",
     duration: "7",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/detaile1/800/400",
   },
   {
@@ -22,7 +21,6 @@ var sourceData = [
     title: "Bahasa sebagai Perekat Bangsa",
     content: "",
     duration: "5",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/detaile2/800/400",
   },
   {
@@ -33,7 +31,6 @@ var sourceData = [
     title: "Seni Menulis dari Hati",
     content: "",
     duration: "4",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/detaile3/800/400",
   },
   {
@@ -44,7 +41,6 @@ var sourceData = [
     title: "Perjalanan Seorang Penulis Muda",
     content: "",
     duration: "8",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/detaile4/800/400",
   },
   {
@@ -55,7 +51,6 @@ var sourceData = [
     title: "Makna Kebebasan Berekspresi",
     content: "",
     duration: "6",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/detaile5/800/400",
   },
   {
@@ -66,7 +61,6 @@ var sourceData = [
     title: "Sastra dan Perubahan Sosial",
     content: "",
     duration: "7",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/detaile6/800/400",
   },
   {
@@ -77,7 +71,6 @@ var sourceData = [
     title: "Antara Fiksi dan Realita: Sebuah Renungan",
     content: "",
     duration: "5",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/detaile7/800/400",
   },
   {
@@ -88,7 +81,6 @@ var sourceData = [
     title: "Menjaga Orisinalitas di Era Copy-Paste",
     content: "",
     duration: "4",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/detaile8/800/400",
   },
   {
@@ -99,7 +91,6 @@ var sourceData = [
     title: "Etika Menulis di Ruang Publik",
     content: "",
     duration: "6",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/detaile9/800/400",
   },
 ];

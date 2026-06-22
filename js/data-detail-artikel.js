@@ -11,7 +11,6 @@ var sourceData = [
     title: "Mengapa Sastra Indonesia Perlu Dilestarikan",
     content: "",
     duration: "6",
-    profile_image: "https://randomuser.me/api/portraits/men/1.jpg",
     image: "https://picsum.photos/seed/detailart1/800/400",
   },
   {
@@ -22,7 +21,6 @@ var sourceData = [
     title: "Peran Digitalisasi dalam Dunia Sastra",
     content: "",
     duration: "5",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/detailart2/800/400",
   },
   {
@@ -33,7 +31,6 @@ var sourceData = [
     title: "Puisi sebagai Terapi Jiwa",
     content: "",
     duration: "4",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/detailart3/800/400",
   },
   {
@@ -44,7 +41,6 @@ var sourceData = [
     title: "Generasi Muda dan Cinta pada Bacaan",
     content: "",
     duration: "7",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/detailart4/800/400",
   },
   {
@@ -55,7 +51,6 @@ var sourceData = [
     title: "Mengenal Sastra Lokal Indonesia",
     content: "",
     duration: "8",
-    profile_image: "https://randomuser.me/api/portraits/men/5.jpg",
     image: "https://picsum.photos/seed/detailart5/800/400",
   },
   {
@@ -66,7 +61,6 @@ var sourceData = [
     title: "Menulis Cerpen: Tips untuk Pemula",
     content: "",
     duration: "5",
-    profile_image: "https://randomuser.me/api/portraits/men/6.jpg",
     image: "https://picsum.photos/seed/detailart6/800/400",
   },
   {
@@ -77,7 +71,6 @@ var sourceData = [
     title: "Sastra dan Teknologi: Duet Masa Depan",
     content: "",
     duration: "6",
-    profile_image: "https://randomuser.me/api/portraits/men/2.jpg",
     image: "https://picsum.photos/seed/detailart7/800/400",
   },
   {
@@ -88,7 +81,6 @@ var sourceData = [
     title: "Komunitas Sastra Online yang Menginspirasi",
     content: "",
     duration: "4",
-    profile_image: "https://randomuser.me/api/portraits/women/3.jpg",
     image: "https://picsum.photos/seed/detailart8/800/400",
   },
   {
@@ -99,7 +91,6 @@ var sourceData = [
     title: "Membangun Kebiasaan Menulis Setiap Hari",
     content: "",
     duration: "5",
-    profile_image: "https://randomuser.me/api/portraits/women/4.jpg",
     image: "https://picsum.photos/seed/detailart9/800/400",
   },
 ];
