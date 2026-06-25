@@ -40,73 +40,49 @@
     <!--* Navigator Bar -->
     <header class="flex flex-wrap items-center justify-between w-full p-4 px-8 bg-white 4xl:h-12 3xl:w-full lg:justify-between">
         <div x-data="{open: false}" class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
-            <!--* Image  -->
             <div class="flex w-full sm:w-1/4 lg:block lg:w-3/2 md:w-1/3">
                 <a href="index.html" class="">
                     <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" class="w-28 xl:w-40 lg:w-32 sm:w-28 md:w-28">
                 </a>
             </div>
-            <!--* Hamburger Menu -->
-            <button @click="open = true"
-                class="flex items-center justify-center w-8 h-8 px-1 hover:bg-gray-300 sm:w-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+            <button @click="open = true" class="flex items-center justify-center w-8 h-8 px-1 hover:bg-gray-300 sm:w-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
                 <img src="img/hamburger-menu.svg" alt="hamburger-menu-icon">
             </button>
-            <!--* Image End  -->
-            <!--* Nav Menu Item -->
             <div class="flex flex-row hidden w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end sm:hidden md:hidden">
                 <nav class="sm:justify-end sm:w-full sm:flex">
-                    <a href="tentang_kami.html" class="block my-auto mr-10 font-bold text-gray-500 font-title hover:text-blue-500 xs:font-black-italic">Tentang
-                        Kami</a>
-                    <a href="unggah-karya.html" class="block my-auto mr-10 font-bold text-gray-500 font-title hover:text-blue-500">Unggah Karya</a>
-                    <a href="Event.html" class="block my-auto mr-10 font-bold text-gray-500 font-title hover:text-blue-500">Event</a>
-                    <a href="baca_karya.html" class="block my-auto mr-10 font-bold text-gray-500 font-title hover:text-blue-500">Baca Karya</a>
-                    <a href="login.html"
-                        class="px-5 py-1 ml-3 font-bold text-white transition-all bg-blue-500 border-transparent rounded-full font-title border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
+                    <a href="tentang_kami.html" class="block my-auto mr-10 font-semibold text-gray-500 font-title transition duration-200 hover:text-blue-500 xs:font-black-italic">Tentang Kami</a>
+                    <a href="unggah-karya.html" class="block my-auto mr-10 font-semibold text-gray-500 font-title transition duration-200 hover:text-blue-500">Unggah Karya</a>
+                    <a href="Event.html" class="block my-auto mr-10 font-semibold text-gray-500 font-title transition duration-200 hover:text-blue-500">Event</a>
+                    <a href="baca_karya.html" class="block my-auto mr-10 font-semibold text-gray-500 font-title transition duration-200 hover:text-blue-500">Baca Karya</a>
+                    <a href="login.html" class="px-5 py-1 ml-3 font-semibold text-white transition-all duration-200 bg-blue-500 border-transparent rounded-full font-title border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
                 </nav>
             </div>
-            <!--* Nav Menu Item End -->
-            <!--* Nav Menu Mobile -->
-            <div x-show="open" @click.away="open = false"
-                class="absolute z-10 max-w-md px-2 mt-8 transform right-10 w-screen-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+            <div x-show="open" @click.away="open = false" class="absolute z-10 max-w-md px-2 mt-8 transform right-10 w-screen-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                 <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                     <div class="relative grid gap-4 p-5 bg-white">
                         <a href="javascript:void(0)" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50" role="button" aria-label="Menu item">
                             <div class="ml-2">
-                                <a href="tentang_kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Tentang Kami
-                                </a>
+                                <a href="tentang_kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">Tentang Kami</a>
                             </div>
                         </a>
-
                         <a href="javascript:void(0)" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50" role="button" aria-label="Menu item">
                             <div class="ml-2">
-                                <a href="unggah-karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Unggah Karya
-                                </a>
+                                <a href="unggah-karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">Unggah Karya</a>
                             </div>
                         </a>
-
                         <a href="javascript:void(0)" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50" role="button" aria-label="Menu item">
                             <div class="ml-2">
-                                <a href="Event.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Event
-                                </a>
+                                <a href="Event.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">Event</a>
                             </div>
                         </a>
-
                         <a href="javascript:void(0)" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50" role="button" aria-label="Menu item">
                             <div class="ml-2">
-                                <a href="baca_karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                    Baca Karya
-                                </a>
+                                <a href="baca_karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">Baca Karya</a>
                             </div>
                         </a>
-
                         <a href="javascript:void(0)" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50" role="button" aria-label="Menu item">
                             <div class="flex h-10 ml-2 -ml-2 -mr-2 bg-blue-500 rounded-lg">
-                                <a href="login.html" class="pl-4 mt-2 text-base font-medium text-white" style="font-family: 'Poppins', sans-serif;">
-                                    Masuk
-                                </a>
+                                <a href="login.html" class="pl-4 mt-2 text-base font-medium text-white" style="font-family: 'Poppins', sans-serif;">Masuk</a>
                             </div>
                         </a>
                     </div>
@@ -117,111 +93,141 @@
     <!--* Navigator Bar End -->
 
     <!--* Main Content -->
-    <main class="pt-24">
+    <main class="pt-24 pb-16 bg-gradient-to-b from-blue-50 via-white to-blue-50">
         <section>
-            <div class="flex items-center justify-center min-h-screen" style="background-color: rgba(245, 245, 245);">
-                <div class="w-full p-6">
-                    <div class="container max-w-screen-lg mx-auto">
+            <div class="container max-w-screen-lg px-6 mx-auto">
+                <!--* Header Profil -->
+                <div class="mb-8 text-center">
+                    <i class="text-4xl text-blue-500 bi bi-person-circle"></i>
+                    <h2 class="mt-2 text-2xl font-semibold text-gray-900 font-title">Selamat datang, Aksara Wijaya</h2>
+                    <p class="font-sans text-sm text-gray-500">Kelola informasi profil Anda</p>
+                </div>
+
+                <!--* Quick Stats -->
+                <div class="grid grid-cols-3 gap-3 mb-6 sm:gap-4">
+                    <div class="p-4 text-center transition duration-200 ease-out bg-white border border-gray-100 rounded-2xl shadow-soft hover:-translate-y-1 hover:shadow-md">
+                        <i class="text-2xl text-blue-500 bi bi-journal-text"></i>
+                        <p class="mt-1 text-2xl font-semibold text-gray-900 font-title">12</p>
+                        <p class="text-xs text-gray-500">Karya</p>
+                    </div>
+                    <div class="p-4 text-center transition duration-200 ease-out bg-white border border-gray-100 rounded-2xl shadow-soft hover:-translate-y-1 hover:shadow-md">
+                        <i class="text-2xl text-blue-500 bi bi-calendar-event"></i>
+                        <p class="mt-1 text-2xl font-semibold text-gray-900 font-title">3</p>
+                        <p class="text-xs text-gray-500">Event</p>
+                    </div>
+                    <div class="p-4 text-center transition duration-200 ease-out bg-white border border-gray-100 rounded-2xl shadow-soft hover:-translate-y-1 hover:shadow-md">
+                        <i class="text-2xl text-blue-500 bi bi-heart-fill"></i>
+                        <p class="mt-1 text-2xl font-semibold text-gray-900 font-title">120</p>
+                        <p class="text-xs text-gray-500">Suka</p>
+                    </div>
+                </div>
+
+                <!--* Profile Card -->
+                <div class="p-6 px-4 transition duration-200 ease-out bg-white border border-gray-100 rounded-2xl shadow-soft md:p-8 hover:-translate-y-1 hover:shadow-md">
+                    <!--* Avatar Section -->
+                    <div class="flex flex-col items-center mb-8">
+                        <div class="relative">
+                            <div class="w-36 h-36 overflow-hidden rounded-full ring-4 ring-blue-100 bg-gray-100">
+                                <img id="avatar-preview" src="img/default-avatar.svg" alt="Avatar Preview" class="object-cover w-full h-full transition duration-200" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%239CA3AF%22%3E%3Cpath d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/%3E%3C/svg%3E'">
+                            </div>
+                            <label for="avatar-upload" class="absolute bottom-0 right-0 p-2.5 text-white transition duration-200 bg-blue-500 rounded-full cursor-pointer shadow-pop hover:bg-blue-600">
+                                <i class="bi bi-camera-fill"></i>
+                            </label>
+                            <input type="file" id="avatar-upload" name="avatar" accept="image/*" class="hidden" onchange="previewAvatar(event)">
+                        </div>
+                        <p class="mt-3 font-sans text-sm font-medium text-gray-700">Foto Profil</p>
+                        <p id="avatar-filename" class="mt-1 font-sans text-xs text-blue-500 hidden"></p>
+                        <p class="font-sans text-xs text-gray-400">Format: JPG, PNG. Maksimal 2MB</p>
+                    </div>
+
+                    <!--* Informasi Pribadi -->
+                    <div class="flex items-center mb-4">
+                        <i class="mr-2 text-lg text-blue-500 bi bi-person"></i>
+                        <h3 class="font-semibold text-gray-900 font-title">Informasi Pribadi</h3>
+                    </div>
+                    <p class="mb-5 font-sans text-xs text-gray-500">Pastikan data Anda sudah sesuai.</p>
+
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div>
-                            <h2 class="font-title text-xl font-extrabold xl:text-xl text-gray-500 text-center">
-                                Profil Pengguna
-                            </h2>
-                            <p class="font-sans text-sm xl:text-base text-gray-500 mb-6 text-center">
-                                Silahkan memeriksa data terkait informasi Anda
-                            </p>
-
-                        <div class="bg-white rounded-2xl shadow-lg p-4 px-4 md:p-8 mb-6">
-                            <!-- Avatar Section -->
-                            <div class="flex flex-col items-center mb-8">
-                                <div class="relative">
-                                    <div class="w-32 h-32 rounded-full bg-gray-200 overflow-hidden border-4 border-gray-100">
-                                        <img id="avatar-preview" src="img/default-avatar.svg" alt="Avatar Preview" class="w-full h-full object-cover" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%239CA3AF%22%3E%3Cpath d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/%3E%3C/svg%3E'">
-                                    </div>
-                                    <label for="avatar-upload" class="absolute bottom-0 right-0 bg-blue-500 hover:bg-blue-600 text-white rounded-full p-2 cursor-pointer shadow-lg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </label>
-                                    <input type="file" id="avatar-upload" name="avatar" accept="image/*" class="hidden" onchange="previewAvatar(event)">
+                            <label for="user-first-name" class="block mb-1 font-sans text-xs font-medium text-gray-600">Nama Depan</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <i class="text-gray-400 bi bi-person"></i>
                                 </div>
-                                <p class="font-sans text-sm text-gray-500 mt-3">Foto Profil</p>
-                                <p id="avatar-filename" class="font-sans text-xs text-blue-500 mt-1 hidden"></p>
-                                <p class="font-sans text-xs text-gray-400">Format: JPG, PNG. Maksimal 2MB</p>
-                            </div>
-
-                            <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
-                                <div class="text-gray-600">
-                                    <p class="text-sm font-sans font-semibold xl:text-lg">Informasi Pribadi</p>
-                                    <p class="font-sans text-sm mt-1 xl:text-md">Pastikan data Anda yang telah sesuai.</p>
-                                </div>
-                            
-                                <div class="lg:col-span-2 mt-5 sm:mt-0 spacing-t spacing-t-lg">
-                                    <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-6">
-                                        <div class="md:col-span-3">
-                                            <label for="user-first-name" class="font-sans text-xs lg:text-sm xl:text-base">Nama Depan</label>
-                                            <input type="text" name="first-name" id="user-first-name" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" />
-                                        </div>
-
-                                        <div class="md:col-span-3">
-                                            <label for="user-last-name" class="font-sans text-xs lg:text-sm xl:text-base">Nama Belakang</label>
-                                            <input type="text" name="last-name" id="user-last-name" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" />
-                                        </div>
-                    
-                                        <div class="md:col-span-6">
-                                            <label for="user-email" class="font-sans text-xs lg:text-sm xl:text-base">Email</label>
-                                            <input type="email" name="email" id="user-email" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            <hr class="my-5">
-
-                            <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
-                                <div class="text-gray-600">
-                                    <p class="text-sm font-sans font-semibold xl:text-lg">Ganti Kata Sandi</p>
-                                    <p class="font-sans text-xs mt-1 xl:text-md">Perbarui kata sandi Anda yang terkait dengan akun Anda.
-                                    </p>
-                                </div>
-                
-                                <div class="lg:col-span-2 mt-5 sm:mt-0 spacing-t spacing-t-lg">
-                                    <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-6">
-                                        <div class="md:col-span-3">
-                                            <label for="user-current-password" class="font-sans text-xs lg:text-sm xl:text-base">Kata Sandi Lama</label>
-                                            <input type="text" name="current-password" id="user-current-password" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
-                                        </div>
-
-                                        <div class="md:col-span-3">
-                                            <label for="user-new-password" class="font-sans text-xs lg:text-sm xl:text-base">Kata Sandi Baru</label>
-                                            <input type="text" name="new-password" id="user-new-password" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
-                                        </div>
-
-                                        <div class="md:col-span-6">
-                                            <label for="user-confirm-password" class="font-sans text-xs lg:text-sm xl:text-base">Konfirmasi Kata Sandi</label>
-                                            <input type="text" name="confirm-password" id="user-confirm-password" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
-                                        </div>
-
-                                    </div>
-                            
-                                        <div class="md:col-span-5 text-right">
-                                            <div class="inline-flex items-end pt-4">
-                                                <button class="font-sans hover:text-blue-700 text-blue-500 font-bold py-2 px-2 rounded w-24">Batal</button>
-                                            </div>
-                                            <div class="inline-flex items-end pt-4">
-                                                <button class="font-sans bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded w-24">Simpan</button>
-                                            </div>
-                                        </div>
-                                        
-                                </div>
+                                <input type="text" name="first-name" id="user-first-name" class="w-full py-2 pl-10 pr-4 font-sans text-sm text-gray-700 transition duration-200 border border-gray-200 rounded-xl focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100" value="Aksara">
                             </div>
                         </div>
+                        <div>
+                            <label for="user-last-name" class="block mb-1 font-sans text-xs font-medium text-gray-600">Nama Belakang</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <i class="text-gray-400 bi bi-person"></i>
+                                </div>
+                                <input type="text" name="last-name" id="user-last-name" class="w-full py-2 pl-10 pr-4 font-sans text-sm text-gray-700 transition duration-200 border border-gray-200 rounded-xl focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100" value="Wijaya">
+                            </div>
                         </div>
+                        <div class="md:col-span-2">
+                            <label for="user-email" class="block mb-1 font-sans text-xs font-medium text-gray-600">Email</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <i class="text-gray-400 bi bi-envelope"></i>
+                                </div>
+                                <input type="email" name="email" id="user-email" class="w-full py-2 pl-10 pr-4 font-sans text-sm text-gray-700 transition duration-200 border border-gray-200 rounded-xl focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100" value="aksara.wijaya@email.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-8 border-gray-100">
+
+                    <!--* Ganti Kata Sandi -->
+                    <div class="flex items-center mb-4">
+                        <i class="mr-2 text-lg text-blue-500 bi bi-shield-lock"></i>
+                        <h3 class="font-semibold text-gray-900 font-title">Ganti Kata Sandi</h3>
+                    </div>
+                    <p class="mb-5 font-sans text-xs text-gray-500">Perbarui kata sandi akun Anda.</p>
+
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                        <div>
+                            <label for="user-current-password" class="block mb-1 font-sans text-xs font-medium text-gray-600">Kata Sandi Lama</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <i class="text-gray-400 bi bi-shield-lock"></i>
+                                </div>
+                                <input type="password" name="current-password" id="user-current-password" class="w-full py-2 pl-10 pr-10 font-sans text-sm text-gray-700 transition duration-200 border border-gray-200 rounded-xl focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100" placeholder="Masukkan kata sandi lama">
+                                <button type="button" onclick="togglePassword('user-current-password')" class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 transition duration-200 hover:text-blue-500"><i class="bi bi-eye" id="icon-user-current-password"></i></button>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="user-new-password" class="block mb-1 font-sans text-xs font-medium text-gray-600">Kata Sandi Baru</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <i class="text-gray-400 bi bi-shield-lock"></i>
+                                </div>
+                                <input type="password" name="new-password" id="user-new-password" class="w-full py-2 pl-10 pr-10 font-sans text-sm text-gray-700 transition duration-200 border border-gray-200 rounded-xl focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100" placeholder="Masukkan kata sandi baru">
+                                <button type="button" onclick="togglePassword('user-new-password')" class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 transition duration-200 hover:text-blue-500"><i class="bi bi-eye" id="icon-user-new-password"></i></button>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="user-confirm-password" class="block mb-1 font-sans text-xs font-medium text-gray-600">Konfirmasi Kata Sandi</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <i class="text-gray-400 bi bi-shield-lock"></i>
+                                </div>
+                                <input type="password" name="confirm-password" id="user-confirm-password" class="w-full py-2 pl-10 pr-10 font-sans text-sm text-gray-700 transition duration-200 border border-gray-200 rounded-xl focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100" placeholder="Ulangi kata sandi baru">
+                                <button type="button" onclick="togglePassword('user-confirm-password')" class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 transition duration-200 hover:text-blue-500"><i class="bi bi-eye" id="icon-user-confirm-password"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--* Action Buttons -->
+                    <div class="flex items-center justify-end gap-3 pt-6 mt-6 border-t border-gray-100">
+                        <button class="px-6 py-2 font-sans text-sm font-semibold text-gray-500 transition duration-200 rounded-full hover:text-blue-500">Batal</button>
+                        <button class="px-8 py-2 font-sans text-sm font-semibold text-white transition duration-200 bg-blue-500 rounded-full shadow-soft hover:bg-blue-600 hover:-translate-y-0.5">Simpan</button>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
 
     <script>
         function previewAvatar(event) {
@@ -229,7 +235,6 @@
             const filenameElement = document.getElementById('avatar-filename');
 
             if (file) {
-                // Check file size (max 2MB)
                 if (file.size > 2 * 1024 * 1024) {
                     alert('Ukuran file terlalu besar. Maksimal 2MB.');
                     event.target.value = '';
@@ -237,7 +242,6 @@
                     return;
                 }
 
-                // Check file type
                 const allowedTypes = ['image/jpeg', 'image/png', 'image/jpg'];
                 if (!allowedTypes.includes(file.type)) {
                     alert('Format file tidak didukung. Gunakan JPG atau PNG.');
@@ -246,13 +250,11 @@
                     return;
                 }
 
-                // Show filename
                 filenameElement.textContent = file.name;
                 filenameElement.classList.remove('hidden');
 
-                // Preview the image
                 const reader = new FileReader();
-                reader.onload = function(e) {
+                reader.onload = function (e) {
                     document.getElementById('avatar-preview').src = e.target.result;
                 };
                 reader.readAsDataURL(file);
@@ -260,6 +262,21 @@
                 filenameElement.classList.add('hidden');
             }
         }
+
+        function togglePassword(id) {
+            var input = document.getElementById(id);
+            var icon = document.getElementById('icon-' + id);
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('bi-eye');
+                icon.classList.add('bi-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('bi-eye-slash');
+                icon.classList.add('bi-eye');
+            }
+        }
     </script>
-  </body>
+</body>
+
 </html>

@@ -46,15 +46,15 @@
                 class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end hidden sm:hidden md:hidden">
                 <nav class="sm:justify-end sm:w-full sm:flex">
                     <a href="tentang_kami.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500 xs:font-black-italic">Tentang Kami</a>
+                        class="block mr-10 my-auto font-semibold font-title text-gray-500 hover:text-blue-500 xs:font-black-italic transition duration-200">Tentang Kami</a>
                     <a href="unggah-karya.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Unggah Karya</a>
+                        class="block mr-10 my-auto font-semibold font-title text-gray-500 transition duration-200 hover:text-blue-500">Unggah Karya</a>
                     <a href="Event.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Event</a>
+                        class="block mr-10 my-auto font-semibold font-title text-gray-500 transition duration-200 hover:text-blue-500">Event</a>
                     <a href="baca_karya.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Baca Karya</a>
+                        class="block mr-10 my-auto font-semibold font-title text-gray-500 transition duration-200 hover:text-blue-500">Baca Karya</a>
                     <a href="login.html"
-                        class="px-5 py-1 ml-3 font-bold font-title text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
+                        class="px-5 py-1 ml-3 font-semibold font-title text-white transition-all duration-200 bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
                 </nav>
             </div>
             <!--* Nav Menu Item End -->
@@ -120,7 +120,7 @@
                             <div class="flex items-center w-full pb-5 border-b">
                                 <i class="bi bi-person-circle text-gray-400" style="font-size: 2.5rem;"></i>
                                 <div class="pl-3">
-                                    <p class="font-title font-bold text-gray-500 text-base" x-text="item.author"></p>
+                                    <p class="font-title font-semibold text-gray-500 text-base" x-text="item.author"></p>
                                     <span class="font-sans font-thin text-blue-500 xl:font-regular sm:font-thin md:font-thin lg:font-regular text-xs">
                                         <a href="kategori-cerpen.html" x-text="item.category"></a>
                                     </span>
@@ -132,7 +132,7 @@
                             </div>
                             <img :src="item.image" alt="" class="w-full h-56 object-cover rounded-xl mb-5">
                             <div class="py-10">
-                                <p class="font-title font-extrabold text-gray-500 pb-4 text-2xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl" x-text="item.title"></p>
+                                <p class="font-title font-semibold text-gray-500 pb-4 text-2xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl" x-text="item.title"></p>
                                 <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Di tubuh langit kelimut <br> melekat sebuah nukilan. <br> Tentang nujum yang muncul dari bintang-bintang, <br> diundang turun oleh garis tangan dan kehidupan.
                                 </p>
                                 <p class="font-sans text-gray-500 font-thin leading-loose xl:leading-loose lg:leading-loose md:leading-loose sm:leading-loose pb-4 text-sm xl:text-base lg:text-base md:text-base sm:text-base">Garis tangan adalah <br>penunjuk jalan-jalan yang hidup. <br> Sedang garis kehidupan adalah <br> jalan-jalan yang dilalui derup.
@@ -157,7 +157,7 @@
                 </div>
                 <div x-data="loadComment()">
                     <div class="border-t pt-8 mb-10">
-                        <p class="font-sans font-bold text-gray-500 text-base">Komentar</p>
+                        <p class="font-sans font-semibold text-gray-500 text-base">Komentar</p>
                         <div class="flex pt-2">
                             <div class="w-11/12">
                                 <form action="" class="mb-0 font-sans">
@@ -190,7 +190,7 @@
                 </div>
             </div>
             <div id="second" class="read-more xl:pl-10 lg:pl-6" x-data="loadRecommend()">
-                <p class="font-title text-base font-bold text-gray-500">Baca Lebih Banyak</p>
+                <p class="font-title text-base font-semibold text-gray-500">Baca Lebih Banyak</p>
                 <template x-for="item in filteredData" :key="item">
                     <div>
                         <div class="h-full flex items-start transform border-b pt-2">
@@ -200,7 +200,7 @@
                                     <i class="bi bi-person-circle text-gray-400" style="font-size: 1.25rem;"></i>
                                     <h2 class="text-sm font-medium text-gray-500 font-sans title-font mb-1 pl-2" x-text="item.author"></h2>
                                 </div>
-                                <p class="leading-relaxed font-title font-extrabold text-lg text-gray-500" x-text="item.title"></p>
+                                <p class="leading-relaxed font-title font-semibold text-lg text-gray-500" x-text="item.title"></p>
                             </div>
                         </div>
                     </div>
@@ -387,33 +387,33 @@
                     <img class="mt-7 w-32 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
                     <div class="mt-8 mb-6">
                         <a href="faq.html">
-                            <h4 class="faq pb-2 font-extrabold xl:font-bold lg:font-bold md:font-extrabold sm:font-extrabold font-title text-xs xl:text-base sm:text-xs hover:text-blue-500">FAQ</h4>
+                            <h4 class="faq pb-2 font-semibold font-title text-xs xl:text-base sm:text-xs hover:text-blue-500">FAQ</h4>
                         </a>
                         <a href="kebijakan-privasi.html">
-                            <h4 class="keb-priv pb-2 font-extrabold xl:font-bold lg:font-bold md:font-extrabold sm:font-extrabold font-title text-xs xl:text-base sm:text-xs hover:text-blue-500">Kebijakan Privasi</h4>
+                            <h4 class="keb-priv pb-2 font-semibold font-title text-xs xl:text-base sm:text-xs hover:text-blue-500">Kebijakan Privasi</h4>
                         </a>
-                        <h4 class="foll-us pb-2 font-bold font-title text-base">Follow Us On</h4>
+                        <h4 class="foll-us pb-2 font-semibold font-title text-base">Follow Us On</h4>
                         <div class="sosmed flex flex-row mt-2 justify-start">
                             <div class="pr-1 xl:pr-2 sm:pr-1">
                                 <a href="https://www.facebook.com/funbahasa/">
-                                    <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                    <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none transition duration-200 h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
                                 </a>
                             </div>
                             <div class="px-1 xl:px-2 sm:px-1">
                                 <a href="https://twitter.com/funbahasa">
-                                    <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                    <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none transition duration-200 h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
                                 </a>
                             </div>
                             <div class="px-1 xl:px-2 sm:px-1">
                                 <a href="https://www.instagram.com/funbahasa/">
-                                    <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                    <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none transition duration-200 h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
-                    <span class="uppercase text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                    <span class="uppercase text-xs font-semibold xl:text-sm sm:text-xs mb-2 font-title">
                         Informasi Event
                     </span>
                     <ul class="list-unstyled font-sans">
@@ -425,7 +425,7 @@
                     </ul>
                 </div>
                 <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
-                    <span class="uppercase text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                    <span class="uppercase text-xs font-semibold xl:text-sm sm:text-xs mb-2 font-title">
                         List Kategori
                     </span>
                     <ul class="list-unstyled font-sans">
@@ -437,7 +437,7 @@
                     </ul>
                 </div>
                 <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
-                    <span class="uppercase text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
+                    <span class="uppercase text-xs font-semibold xl:text-sm sm:text-xs mb-2 font-title">
                         Contact
                     </span>
                     <ul class="list-unstyled font-sans">
@@ -449,17 +449,17 @@
                     <div class="sosmed-2 flex flex-row mt-2 justify-start">
                         <div class="px-1 xl:px-2 sm:px-1">
                             <a href="https://www.facebook.com/funbahasa/">
-                                <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none transition duration-200 h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
                             </a>
                         </div>
                         <div class="px-1 xl:px-2 sm:px-1">
                             <a href="https://twitter.com/funbahasa">
-                                <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none transition duration-200 h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
                             </a>
                         </div>
                         <div class="px-1 xl:px-2 sm:px-1">
                             <a href="https://www.instagram.com/funbahasa/">
-                                <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
+                                <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none transition duration-200 h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
                             </a>
                         </div>
                     </div>
@@ -468,7 +468,7 @@
             <div class="flex flex-wrap items-center justify-center text-center">
                 <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center">
                     <div class="bg-gray-500 content-center w-full" style="height: 2px;"></div>
-                        <div class="py-1 text-sm font-extrabold text-gray-600 font-title">
+                        <div class="py-1 text-sm font-semibold text-gray-600 font-title">
                             Fun Bahasa Indonesia ©
                         </div>
                 </div>

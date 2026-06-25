@@ -12,6 +12,13 @@ var dataPuisi = [
     content: "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan berakhir. Kau tahu, matahari selalu membelah tubuhmu setiap pagi, dan mereka tak pernah tahu itu.",
     author: "Rasyid Yudhistira",
     image: "https://picsum.photos/seed/puisi1/400/300",
+    fullContent: [
+      "Kenapa terburu-buru untuk menunjuk ke atas dan bertanya kapan akan berakhir. Kau tahu, matahari selalu membelah tubuhmu setiap pagi, dan mereka tak pernah tahu itu. Mereka hanya melihatmu tersenyum, lalu mengira senyummu adalah bentuk keutuhan.",
+      "Padahal setiap fajar adalah operasi bedah. Cahaya merangkak masuk dari celah tirai, membelah dada, perut, dan paha. Membuat semua luka yang kau sembunyikan di balik pakaian menjadi nyata, walau hanya untuk sekejap.",
+      "Kau biasa, kau bilang. Menerima matahari seperti menerima napas. Tidak ada pilihan selain membuka mata dan membiarkan dunia masuk, meski dunia itu kadang terasa salah ukuran.",
+      "Aku ingin memberitahu mereka. Bahwa tubuhmu adalah peta yang tak pernah selesai digambar. Bahwa setiap garis adalah jejak perjuangan. Tapi kau menepuk pundakku dan berkata, 'Biarkan. Mereka punya matahari mereka sendiri.'",
+      "Jadi kita diam. Duduk di beranda. Menatap matahari yang sama, yang membelahmu tanpa izin, yang membuatmu hidup walau dengan cara yang sedikit kejam. Dan aku berjanji, setidaknya aku akan tahu. Setidaknya aku ada di sini, menjadi saksi bagi kepingan-kepingan cahaya yang menancap di tubuhmu.",
+    ],
   },
   {
     id: "2",
@@ -22,6 +29,13 @@ var dataPuisi = [
     content: "Di tubuh langit kelimut melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, diundang turun oleh garis tangan dan kehidupan.",
     author: "Elang Ade Iswara",
     image: "https://picsum.photos/seed/puisi2/400/300",
+    fullContent: [
+      "Di tubuh langit kelimut melekat sebuah nukilan. Tentang nujum yang muncul dari bintang-bintang, diundang turun oleh garis tangan dan kehidupan. Garis tangan adalah penunjuk jalan-jalan yang hidup. Sedang garis kehidupan adalah jalan-jalan yang dilalui derap.",
+      "Semua orang menginjakkan kakinya pada jalan-jalan berumur panjang atau yang akan menjadi mendiang. Panjang atau pendek, kehendak Sang Khalik. Sebuah padah menemuiku dan berkata, 'Jalan ini buntu dan akan mati.' Mendengar dengan telinga tuli adalah kesia-siaan yang kupeluk erat.",
+      "Aku berjalan meski tahu ujungnya adalah dinding. Bukan karena bodoh, melainkan karena jalan itu sendiri yang mengajarkan. Setiap batu, setiap genangan, setiap pohon yang merunduk adalah ayat-ayat kecil yang tak pernah masuk kitab.",
+      "Ekologi adalah cara jalan bernapas. Dia menyerap langkah kita, mencerna kelelahan kita, lalu mengembalikannya sebagai debu yang menutupi sepatu. Kita adalah tamu yang tak diundang, tapi diterima dengan hangat.",
+      "Maka aku menulis surat untuk jalan. Bukan untuk meminta arah, melainkan untuk mengucap terima kasih. Karena meski sering salah belok, setidaknya aku pernah bergerak. Setidaknya aku pernah menjadi bagian dari ekologi yang lebih besar.",
+    ],
   },
   {
     id: "3",
@@ -32,6 +46,13 @@ var dataPuisi = [
     content: "Ibu, aku menulis ini dengan tinta yang bercampur air mata. Setiap baris adalah doa, setiap kata adalah rindu yang tak pernah usai.",
     author: "Sevryade Anugrah",
     image: "https://picsum.photos/seed/puisi3/400/300",
+    fullContent: [
+      "Ibu, aku menulis ini dengan tinta yang bercampur air mata. Setiap baris adalah doa, setiap kata adalah rindu yang tak pernah usai. Aku ingin mengatakan banyak hal, tapi lidahku seperti terikat oleh waktu yang terus berlari.",
+      "Kau adalah pagi pertama yang kukenal. Suara adzan dari mulutmu, hangatnya tangan yang mengusap punggung, dan bau sabun cuci piring yang selalu menemanimu. Aku tidak tahu bahwa saat itu aku sedang menyimpan kebahagiaan yang tidak akan pernah datang dua kali.",
+      "Kini aku tinggal jauh. Di kota yang ramai tapi sepi. Aku bisa membeli makanan apa pun, tapi tidak ada yang bisa meniru rasa sayur labumu. Aku bisa tidur di kasur empuk, tapi tidak ada yang menyerupai pangkuanmu.",
+      "Maafkan aku yang sering lupa menelepon. Maafkan aku yang kadang membuatmu menunggu. Maafkan aku yang baru mengerti, bahwa cintamu adalah bentuk kerja keras yang paling mulia.",
+      "Ibu, semoga waktu berbaik hati padamu. Semoga napasmu tetap lega, senyummu tetap tumbuh, dan namamu tetap menjadi doa pertama yang kupanjatkan sebelum tidur. Aku mencintaimu, lebih dari yang bisa diucapkan oleh puisi mana pun.",
+    ],
   },
   {
     id: "4",
@@ -42,6 +63,13 @@ var dataPuisi = [
     content: "Hujan di bulan Juni selalu membawa kenangan. Aku duduk di beranda, menatap tetes air yang jatuh, dan teringat senyummu yang tak pernah kembali.",
     author: "Dewi Lestari",
     image: "https://picsum.photos/seed/puisi4/400/300",
+    fullContent: [
+      "Hujan di bulan Juni selalu membawa kenangan. Aku duduk di beranda, menatap tetes air yang jatuh, dan teringat senyummu yang tak pernah kembali. Ada sesuatu yang aneh tentang Juni. Bulan yang seharusnya hangat, tapi entah mengapa selalu terasa sedikit dingin.",
+      "Kita pernah berbagi secangkir teh di sini. Kau bercerita tentang impianmu, tentang kota-kota yang ingin kau singgahi, tentang nama-nama yang ingin kau berikan pada anak-anakmu kelak. Aku mendengarkan seperti mendengarkan lagu favorit. Setiap kata adalah nada yang kuhafal.",
+      "Lalu kau pergi. Bukan karena hujan, tapi karena angin yang berhembus ke arah berbeda. Aku tidak menahanmu. Aku hanya menyimpan payung bekas pinjamanmu, yang sampai sekarang masih menunggu pemiliknya.",
+      "Setiap Juni, aku membuka payung itu. Meski tidak hujan. Seolah-olah dengan membukanya, aku bisa membuka sedikit ruang untukmu kembali. Tapi yang datang hanya angin, membawa bau tanah basah dan kenangan yang semakin pudar.",
+      "Mungkin suatu hari nanti aku akan berhenti menunggu. Mungkin aku akan belajar menyukai hujan tanpa memikirkanmu. Tapi untuk sekarang, biarkan aku menulis puisi ini. Biarkan aku mengizinkan Juni untuk mengingatkan aku pada sesuatu yang pernah indah.",
+    ],
   },
   {
     id: "5",
@@ -52,6 +80,13 @@ var dataPuisi = [
     content: "Senja selalu datang dengan warna jingga yang hangat. Seperti kenanganmu yang tak pernah pudar, meski waktu telah berlalu begitu saja.",
     author: "Andrea Hirata",
     image: "https://picsum.photos/seed/puisi5/400/300",
+    fullContent: [
+      "Senja selalu datang dengan warna jingga yang hangat. Seperti kenanganmu yang tak pernah pudar, meski waktu telah berlalu begitu saja. Aku sering mengira senja adalah penghibur yang baik. Dia datang setiap hari tanpa diminta, membawa warna-warna lembut yang menenangkan.",
+      "Tapi senja juga pembohong. Dia membuat segalanya terlihat lebih indah daripada aslinya. Bangunan tua menjadi emas. Wajah-wajah lelah menjadi lembut. Dan kenangan tentangmu menjadi lebih manis dari yang sebenarnya pernah terjadi.",
+      "Aku berjalan menyusuri jalan yang sama, di saat senja turun. Tempat di mana kita pernah berbagi sebotol soda dan banyak cerita konyol. Sekarang hanya ada aku dan bayanganku yang semakin panjang.",
+      "Senja mengajarkanku bahwa perpisahan bisa indah. Bahwa sesuatu yang hilang tetap bisa memberi warna, asalkan kita mau melihatnya dengan cara yang benar. Kau mungkin pergi, tapi jejakmu tinggal di setiap sudut langit yang memerah.",
+      "Jadi aku tidak lagi takut pada senja. Aku membiarkannya datang, membawa kenangan, lalu pergi membawa malam. Karena aku tahu, besok dia akan kembali. Seperti kenanganmu, seperti harapan yang tak pernah benar-benar mati.",
+    ],
   },
   {
     id: "6",
@@ -62,6 +97,13 @@ var dataPuisi = [
     content: "Aku menemukan lautan di matamu. Dalam dan tenang, namun penuh ombak yang tak terduga. Setiap tatapan adalah perjalanan yang tak pernah membosankan.",
     author: "Rasyid Yudhistira",
     image: "https://picsum.photos/seed/puisi6/400/300",
+    fullContent: [
+      "Aku menemukan lautan di matamu. Dalam dan tenang, namun penuh ombak yang tak terduga. Setiap tatapan adalah perjalanan yang tak pernah membosankan. Aku belajar berenang dalam warna itu, meski kadang tenggelam dalam arti-arti yang tak kumengerti.",
+      "Matamu adalah pelabuhan yang tak pernah sepi. Banyak kapal-kapal kecil berlabuh di sana, membawa harap-harap kecil dari orang-orang yang lewat. Aku hanya salah satu penumpang yang terlalu lama berada di dermaga.",
+      "Kadang ombakmu tenang, memantulkan langit yang cerah. Kadang badai, menggelapkan segalanya dalam sekejap. Aku tidak pernah tahu cuaca di matamu hari ini. Itulah yang membuatku terus menatap, meski kadang kedinginan.",
+      "Di kedalaman matamu, aku menemukan reruntuhan. Kapal-kapal yang karam, harta yang terkubur, dan monster-monster yang hanya keluar di tengah malam. Aku ingin menyelamatkan semuanya, tapi aku sadar lautan bukan milikku untuk diselamatkan.",
+      "Biarkan aku menjadi pengamat. Orang yang duduk di tepi pantai, menulis puisi tentang warna dan gelombang. Aku tidak perlu memiliki lautanmu. Cukup tahu bahwa aku pernah melihatnya, dan itu sudah cukup untuk seumur hidup.",
+    ],
   },
 ];
 
@@ -75,6 +117,13 @@ var dataCerpen = [
     content: "Di ujung jalan yang berliku, ada sebuah rumah tua yang selalu menyala lampunya. Orang-orang bilang, di sana tinggal seorang nenek yang menunggu cucunya pulang.",
     author: "Rasyid Yudhistira",
     image: "https://picsum.photos/seed/cerpen1/400/300",
+    fullContent: [
+      "Di ujung jalan yang berliku, ada sebuah rumah tua yang selalu menyala lampunya. Orang-orang bilang, di sana tinggal seorang nenek yang menunggu cucunya pulang. Rumah itu sudah berdiri sejak zaman kolonial, dengan cat dinding yang mengelupas dan atap genteng yang ditumbuhi lumut.",
+      "Setiap malam, bila angin bertiup dari arah barat, warga bisa mendengar suara radio lawas dari dalam rumah. Suara nenek yang serak-serak basah ikut menyanyi, meski liriknya sudah tidak lagi tepat. Anak-anak sering melewati jalan itu dengan cepat, takut pada bayangan yang bergerak di balik jendela.",
+      "Tapi Rina tidak takut. Ia adalah salah satu dari sedikit anak di kampung itu yang masih mau berhenti dan menyapa. Nenek itu selalu menyambutnya dengan senyum dan segelas teh manis. 'Duduk, Nak,' katanya. 'Nenek punya banyak cerita.'",
+      "Suatu malam, Rina bertanya mengapa lampu rumah itu selalu menyala. Nenek menatap jauh ke luar jendela. 'Lampu ini untuk cucu nenek,' jawabnya pelan. 'Dia pergi mencari kerja di kota besar. Nenek takut dia pulang larut malam dan tidak menemukan jalan pulang.'",
+      "Tahun demi tahun berlalu. Cucu nenek tidak pernah datang. Tapi lampu itu tetap menyala, bahkan ketika listrik padam karena badai. Warga baru mengerti bahwa lampu itu bukan sekadar cahaya, melainkan penanda cinta yang tak pernah padam. Suatu pagi, Rina menemukan nenek telah pergi dengan tenang di kursi goyangnya, dengan senyum di bibirnya. Sejak itu, Rina yang menjaga lampu itu tetap menyala.",
+    ],
   },
   {
     id: "2",
@@ -85,6 +134,13 @@ var dataCerpen = [
     content: "Setiap pagi, aku menyeduh kopi dengan cara yang sama. Tapi rasanya berbeda sejak kau pergi. Mungkin karena yang hilang bukanlah gula, melainkan cerita.",
     author: "Elang Ade Iswara",
     image: "https://picsum.photos/seed/cerpen2/400/300",
+    fullContent: [
+      "Setiap pagi, aku menyeduh kopi dengan cara yang sama. Tiga sendok kopi, satu sendok gula, air panas yang baru mendidih. Tapi rasanya berbeda sejak kau pergi. Mungkin karena yang hilang bukanlah gula, melainkan cerita yang kita bagi di atas meja dapur.",
+      "Kita dulu punya ritual sederhana. Kau akan mengeluh tentang bosmu, aku akan membaca koran dengan setengah hati, lalu kita tertawa pada lelucon yang sebenarnya tidak lucu. Kopi kita selalu dingin sebelum habis, karena kita terlalu asyik bercerita.",
+      "Sekarang aku meminum kopi sendirian. Koran masih ada, tapi aku tidak pernah membelinya lagi. Lelucon yang kita buat kini terdengar aneh jika kuceritakan pada diri sendiri. Aku mencoba menambah gula, tapi manisnya palsu.",
+      "Suatu hari, seorang tetangga datang dan menanyakan mengapa aku terlihat murung. Aku menawarkannya kopi. Dia menerima dan mulai bercerita tentang kebunnya, cucunya, dan rencananya untuk membuat toko kecil. Aku mendengarkan, sesekali tertawa, dan untuk pertama kalinya kopi itu tidak terasa begitu pahit.",
+      "Aku mengerti sekarang. Kopi memang penting, tapi yang membuatnya bermakna adalah orang yang menemani. Aku tidak bisa menggantikanmu, tapi aku bisa belajar menemukan cerita baru. Satu sendok gula, tiga sendok kopi, dan sedikit keberanian untuk membuka pintu.",
+    ],
   },
   {
     id: "3",
@@ -95,6 +151,13 @@ var dataCerpen = [
     content: "Kereta malam membawa aku kembali ke Surabaya. Kota yang menyimpan ribuan cerita, termasuk cerita tentang kita yang pernah singgah di stasiun yang sama.",
     author: "Sevryade Anugrah",
     image: "https://picsum.photos/seed/cerpen3/400/300",
+    fullContent: [
+      "Kereta malam membawa aku kembali ke Surabaya. Kota yang menyimpan ribuan cerita, termasuk cerita tentang kita yang pernah singgah di stasiun yang sama. Aku duduk di kursi dekat jendela, menatap kegelapan yang berlalu, dan merasakan gugup yang aneh.",
+      "Surabaya adalah kota pertama kita. Kita pernah berjalan kaki di Jalan Tunjungan tengah malam, mencari makan setelah bioskop. Kau bilang Surabaya adalah kota yang tidak pernah tidur, dan aku setuju. Lampu-lampunya menyala seperti janji yang belum sempat ditepati.",
+      "Aku datang karena sebuah undangan pernikahan. Teman kuliah menikah, dan aku tidak punya alasan untuk menolak. Tapi dalam hati, aku tahu Surabaya juga adalah kamu. Setiap sudut kota ini punya potongan kenangan tentang kita.",
+      "Di stasiun, aku sempat berhenti sejenak di tempat kita biasa menunggu. Bangku besi yang sama, pilar yang sama, bahkan bau kopi dari gerobak penjual yang sama. Aku hampir menoleh, berharap kau akan muncul dari kerumunan dengan senyum biasamu. Tapi tentu saja tidak.",
+      "Kereta berangkat lagi, membawa aku menjauh dari Surabaya. Aku meninggalkan kota itu untuk kedua kalinya. Kali ini, aku tidak menangis. Aku hanya mengucapkan selamat tinggal pada bayanganmu, dan berharap suatu hari nanti Surabaya hanya akan menjadi nama kota yang pernah kusinggahi.",
+    ],
   },
   {
     id: "4",
@@ -105,6 +168,13 @@ var dataCerpen = [
     content: "Taman kota selalu beraroma melati di sore hari. Aku duduk di bangku yang sama, menunggu seseorang yang mungkin tak akan pernah datang.",
     author: "Dewi Lestari",
     image: "https://picsum.photos/seed/cerpen4/400/300",
+    fullContent: [
+      "Taman kota selalu beraroma melati di sore hari. Aku duduk di bangku yang sama, menunggu seseorang yang mungkin tak akan pernah datang. Namaku Sari, dan sudah tiga tahun aku datang ke taman ini setiap Sabtu sore. Bukan karena aku percaya pada keajaiban, tapi karena aku belum bisa berhenti.",
+      "Dia pernah berjanji akan kembali. 'Tunggu aku di taman,' katanya sebelum pergi. 'Di bangku dekat pohon melati.' Aku menunggu. Satu Sabtu, dua Sabtu, ratusan Sabtu. Aku hampir melupakan wajahnya, tapi tidak janjinya.",
+      "Pengunjung taman mengenalku. Penjual es kelapa selalu menyapa. Anak-anak yang bermain skateboard memberiku senyum sopan. Mereka mungkin mengira aku gila, atau mungkin mereka mengerti ada sesuatu yang lebih besar dari sekadar duduk di bangku.",
+      "Suatu Sabtu, seorang pria tua duduk di sampingku. Dia tidak bertanya apa yang k tunggu. Dia hanya berkata, 'Melati selalu berbunga, meski tidak ada yang menciumnya. Mereka tidak menunggu siapa pun.' Kalimat itu sederhana, tapi menusuk.",
+      "Aku masih datang ke taman. Tapi sekarang, aku juga membawa buku. Aku membaca sambil sesekali mencium aroma melati. Aku belajar bahwa menunggu boleh, tapi hidup harus terus berjalan. Dan mungkin suatu hari, saat aku terlalu asyik membaca, seseorang akan duduk di sampingku dan bertanya, 'Buku apa yang sedang kamu baca?'",
+    ],
   },
   {
     id: "5",
@@ -115,6 +185,13 @@ var dataCerpen = [
     content: "Surat itu tiba di hari ulang tahunku. Tulisan tangan ayah yang bergetar, menceritakan tentang cinta yang tak pernah ia ucapkan langsung.",
     author: "Andrea Hirata",
     image: "https://picsum.photos/seed/cerpen5/400/300",
+    fullContent: [
+      "Surat itu tiba di hari ulang tahunku. Tulisan tangan ayah yang bergetar, menceritakan tentang cinta yang tak pernah ia ucapkan langsung. Ayah sudah pergi tiga bulan sebelumnya. Surat ini ditemukan oleh ibu di antara buku-buku lamanya, dalam amplop yang sudah menguning.",
+      "Aku membukanya dengan tangan gemetar. Ayah bukan orang yang suka menulis surat. Dia lebih banyak diam dan bekerja. Tapi di surat itu, dia menulis panjang lebar. Dia menulis tentang malam-malam dia pulang larut, tentang lelah yang tak pernah ia ceritakan, tentang kebanggaannya padaku yang tak pernah ia katakan.",
+      "'Maafkan Ayah yang sering keras,' tulisnya. 'Ayah hanya ingin kamu kuat. Tapi Ayah lupa, kuat tidak berarti tidak boleh lemah. Jika suatu hari kamu menangis, biarkan. Tangisan juga adalah doa.' Aku menangis sejadi-jadinya di kamar yang sunyi.",
+      "Surat itu juga berisi daftar kecil. Hal-hal yang Ayah ingin kulakukan: belajar memasak, pergi ke pantai, menulis buku, memaafkan seseorang. Di bagian bawah, dia menulis, 'Yang terpenting, jadilah bahagia dengan caramu sendiri.'",
+      "Aku menyimpan surat itu di dompet. Setiap kali hidup terasa berat, aku membacanya lagi. Ayah mungkin tidak pernah mengatakan cinta dengan kata-kata manis. Tapi dalam surat itu, aku menemukan lautan cinta yang selama ini tersimpan rapi di balik kekerasannya.",
+    ],
   },
   {
     id: "6",
@@ -125,6 +202,13 @@ var dataCerpen = [
     content: "Pasar malam selalu penuh warna dan suara. Tapi malam itu berbeda, karena aku bertemu seseorang yang mengubah arah hidupku.",
     author: "Rasyid Yudhistira",
     image: "https://picsum.photos/seed/cerpen6/400/300",
+    fullContent: [
+      "Pasar malam selalu penuh warna dan suara. Tapi malam itu berbeda, karena aku bertemu seseorang yang mengubah arah hidupku. Namanya Indra, penjual lukisan keliling yang baru pertama kali datang ke kampungku. Ia membawa kanvas-kanvas kecil, gambar-gambar penuh warna yang tampak hidup di bawah lampu pasar.",
+      "Aku berhenti di depan lapaknya. Salah satu lukisan menarik perhatianku: gambar seorang anak kecil yang menatap ke atas, ke arah bintang-bintang yang jatuh. 'Itu lukisan impian,' kata Indra. 'Anak itu sedang melihat apa yang ingin ia capai.'",
+      "Kami berbicara lama malam itu. Indra bercerita bahwa dulu ia bekerja di kantoran, tapi memilih meninggalkan segalanya untuk melukis. 'Orang mengira aku gila,' katanya tertawa. 'Tapi aku baru merasa hidup setelah berani menjadi gila.'",
+      "Aku pulang dengan membawa satu lukisan. Malam itu, aku tidak bisa tidur. Aku terus memikirkan kata-kata Indra. Aku punya impian juga: menulis. Tapi aku terlalu takut untuk memulai, terlalu khawatir tentang apa kata orang.",
+      "Pagi berikutnya, aku mulai menulis. Satu halaman, dua halaman, lalu sepuluh. Tiga bulan kemudian, cerita pertamaku diterbitkan di majalah lokal. Aku tidak pernah bertemu Indra lagi. Tapi setiap kali aku melihat lukisan itu di dinding kamarku, aku ingat bahwa kadang impian hanya butuh satu pertemuan kecil untuk bangkit.",
+    ],
   },
 ];
 
@@ -138,6 +222,13 @@ var dataCeritaAnak = [
     content: "Kucing Oren adalah kucing pemberani. Suatu hari, ia memutuskan untuk menjelajahi taman besar di belakang rumah. Apa yang ia temukan di sana?",
     author: "Rasyid Yudhistira",
     image: "https://picsum.photos/seed/ceritaanak1/400/300",
+    fullContent: [
+      "Kucing Oren adalah kucing pemberani. Bulunya oranye cerah seperti matahari sore. Ia tinggal bersama keluarga Ahmad di ujung kampung. Setiap hari, Oren hanya berkelahi dengan ekornya sendiri atau tidur di bawah kursi beranda. Tapi suatu pagi, ia memutuskan untuk melakukan sesuatu yang berbeda.",
+      "'Aku akan menjelajahi taman besar!' serunya. Taman itu berada di belakang rumah, dipenuhi pohon-pohon tinggi dan semak-semak lebat. Semua kucing lain takut masuk ke sana karena konon ada monster raksasa yang tinggal di dalam gua batu.",
+      "Oren berjalan perlahan menyusuri jalan setapak. Bunyi jangkrik dan katak mengiringi langkahnya. Tiba-tiba, ia melihat sesuatu yang bergerak di semak-semak. Hati Oren berdegup kencang. Ia mengumpulkan keberanian dan mendekat.",
+      "Yang keluar dari semak-semak adalah seekor kelinci kecil yang terluka. Kelinci itu ketakutan dan tidak bisa berjalan. Oren lalu membantu kelinci itu, membersihkan lukanya dengan lidahnya, dan menemani kelinci itu pulang ke liangnya.",
+      "Sejak hari itu, Oren dikenal sebagai pahlawan taman. Monster raksasa itu ternyata hanya cerita. Yang ada hanyalah teman-teman kecil yang butuh pertolongan. Oren belajar bahwa keberanian sejati bukan berarti tidak takut, tapi tetap melangkah meski takut.",
+    ],
   },
   {
     id: "2",
@@ -148,6 +239,13 @@ var dataCeritaAnak = [
     content: "Ada bintang kecil di langit yang selalu iri pada burung. Ia ingin terbang seperti burung, tapi ia tak tahu caranya. Sampai suatu malam...",
     author: "Elang Ade Iswara",
     image: "https://picsum.photos/seed/ceritaanak2/400/300",
+    fullContent: [
+      "Ada bintang kecil di langit yang selalu iri pada burung. Ia melihat burung-burung beterbangan bebas dari pohon ke pohon, dari gunung ke laut. 'Aku ingin terbang seperti mereka,' kata Bintang Kecil dengan sedih. 'Tapi aku hanya bisa diam di langit.'",
+      "Setiap malam, Bintang Kecil mencoba bergerak. Ia mendorong dirinya dengan sekuat tenaga, tapi tetap saja tidak bergerak. Bintang-bintang lain menenangkannya. 'Kamu punya tugas sendiri,' kata Bintang Tua. 'Kamu menyinari dunia di malam hari.'",
+      "Tapi Bintang Kecil tidak puas. Suatu malam, ia bertanya pada Bulan, 'Bulan, bagaimana cara terbang?' Bulan tersenyum. 'Terbang bukan hanya soal sayap. Terbang adalah soal memberi kebahagiaan pada orang lain.'",
+      "Bintang Kecil tidak mengerti. Lalu suatu malam, ia melihat seorang anak kecil yang tersesat di hutan. Anak itu menangis dan menatap langit. Saat Bintang Kecil bersinar lebih terang, anak itu melihat jalan pulang. Wajahnya yang tadinya sedih berubah gembira.",
+      "'Ah, aku mengerti sekarang,' kata Bintang Kecil. Ia memang tidak terbang seperti burung, tapi cahayanya bisa membimbing orang pulang. Bintang Kecil belajar bahwa setiap makhluk punya cara sendiri untuk melayang, dan cahayanya adalah sayapnya.",
+    ],
   },
   {
     id: "3",
@@ -158,6 +256,13 @@ var dataCeritaAnak = [
     content: "Setiap malam, lemari kamar tidur Nia berubah menjadi pintu masuk ke hutan ajaib. Di sana, pohon-pohon bisa berbicara dan binatang adalah teman.",
     author: "Sevryade Anugrah",
     image: "https://picsum.photos/seed/ceritaanak3/400/300",
+    fullContent: [
+      "Setiap malam, lemari kamar tidur Nia berubah menjadi pintu masuk ke hutan ajaib. Ia menemukan hal itu secara tidak sengaja saat berusia tujuh tahun. Malam itu, ia mencari boneka kesayangannya dan membuka lemari yang seharusnya hanya berisi pakaian.",
+      "Tapi yang ia lihat adalah lorong hijau yang dipenuhi cahaya keperakan. Nia berjalan masuk dengan hati-hati. Di ujung lorong, ada hutan yang luas dengan pohon-pohon tinggi menjulang. 'Selamat datang, Nia,' kata sebuah pohon ek yang sangat tua.",
+      "Nia terkejut. 'Kamu bisa bicara?' tanyanya. 'Tentu saja,' jawab Pohon Ek. 'Di sini semua bisa bicara, kecuali kamu yang belum mencoba mendengarkan.' Sejak malam itu, Nia mengunjungi hutan ajaib setiap malam. Ia berteman dengan kelinci bernama Kiki, burung hantu bijak bernama Hoot, dan kura-kura penjaga sungai bernama Koko.",
+      "Suatu hari, hutan itu dalam bahaya. Seorang penyihir jahat ingin menebang semua pohon untuk membangun istana. Nia dan teman-temannya menyusun rencana. Mereka membuktikan bahwa kekuatan persahabatan bisa mengalahkan sihir jahat.",
+      "Penyihir itu akhirnya pergi, dan hutan diselamatkan. Nia belajar bahwa imajinasi adalah pintu ajaib yang selalu terbuka baginya. Sampai hari ini, setiap kali ia merasa sedih, ia hanya perlu membuka lemari dan mendengarkan dengan hati.",
+    ],
   },
   {
     id: "4",
@@ -168,6 +273,13 @@ var dataCeritaAnak = [
     content: "Rudi menemukan ikan emas di kolam dekat rumahnya. Yang aneh, ikan itu bisa berbicara! Dan ia punya permintaan yang sangat istimewa.",
     author: "Dewi Lestari",
     image: "https://picsum.photos/seed/ceritaanak4/400/300",
+    fullContent: [
+      "Rudi menemukan ikan emas di kolam dekat rumahnya. Ikan itu berkilauan seperti koin emas di bawah sinar matahari. Saat Rudi hendak menangkapnya, ikan itu berkata, 'Tunggu! Aku bisa memberimu tiga permintaan jika kamu melepaskanku.'",
+      "Rudi terkejut. 'Kamu bisa bicara?' tanyanya. 'Tentu saja,' jawab Ikan Emas. 'Tapi ingat, setiap permintaan memiliki konsekuensi. Pilihlah dengan bijak.' Rudi memikirkan permintaannya dengan matang. Ia ingin kaya, pintar, dan terkenal.",
+      "Permintaan pertama: Rudi ingin menjadi kaya. Seketika, rumahnya berubah menjadi istana megah. Tapi tetangganya mulai iri dan menjauhinya. Permintaan kedua: Rudi ingin menjadi pintar. Otaknya penuh pengetahuan, tapi tidak ada yang mau berteman karena ia selalu merasa lebih tahu.",
+      "Rudi mulai sedih. Ia menyadari bahwa kekayaan dan kepintaran tidak membuatnya bahagia. Untuk permintaan terakhir, ia berkata, 'Aku ingin semua orang di desaku bahagia dan sehat.' Ikan Emas tersenyum. 'Permintaan yang baik,' katanya.",
+      "Desa Rudi berubah menjadi tempat yang penuh tawa. Tetangga-tetangganya kembali ramah. Rudi belajar bahwa kebahagiaan sejati datang dari memberi, bukan dari meminta untuk diri sendiri. Ikan Emas melompat ke kolam dan pergi, meninggalkan kilauan emas yang tak akan pernah Rudi lupakan.",
+    ],
   },
   {
     id: "5",
@@ -178,6 +290,13 @@ var dataCeritaAnak = [
     content: "Suatu hari, pelangi di langit kehilangan warnanya. Hanya tersisa warna abu-abu. Tiga anak kecil memutuskan untuk mencari warna-warna itu kembali.",
     author: "Andrea Hirata",
     image: "https://picsum.photos/seed/ceritaanak5/400/300",
+    fullContent: [
+      "Suatu hari, pelangi di langit kehilangan warnanya. Hanya tersisa warna abu-abu yang suram. Semua orang di desa bingung dan sedih. Tidak ada yang tahu harus berbuat apa. Tiga anak kecil bernama Andi, Bella, dan Ciko memutuskan untuk mencari warna-warna itu kembali.",
+      "Mereka berangkat pagi-pagi dengan membawa bekal roti dan air. Pertama, mereka mencari warna merah. Mereka menemukannya di pipi seorang kakek yang sedang tersenyum melihat cucunya bermain. 'Warna merah adalah kehangatan keluarga,' bisik Pelangi.",
+      "Lalu mereka mencari warna kuning. Mereka menemukannya di ladang bunga matahari yang sedang mekar. 'Warna kuning adalah kegembiraan,' kata Pelangi. Kemudian warna biru muncul dari lautan yang tenang, hijau dari daun-daun yang berjatuhan, dan ungu dari senja yang indah.",
+      "Setiap warna mewakili sesuatu yang berharga: cinta, kebahagiaan, ketenangan, pertumbuhan, dan keindahan. Anak-anak itu mengumpulkan semua warna dalam kantong ajaib yang diberikan Pelangi. Tapi kantong itu hanya bisa terbuka jika mereka bersama.",
+      "Ketiga anak itu kembali ke desa dan membuka kantong bersama-sama. Warna-warna melesat ke langit dan membentuk pelangi yang lebih indah dari sebelumnya. Desa bersorak gembira. Anak-anak itu belajar bahwa keindahan dunia ada dalam hal-hal sederhana yang sering kita lupakan.",
+    ],
   },
   {
     id: "6",
@@ -188,6 +307,13 @@ var dataCeritaAnak = [
     content: "Tiko adalah robot kecil yang tinggal di gudang tua. Ia belajar tentang persahabatan ketika bertemu dengan anak-anak yang berani masuk ke gudang itu.",
     author: "Rasyid Yudhistira",
     image: "https://picsum.photos/seed/ceritaanak6/400/300",
+    fullContent: [
+      "Tiko adalah robot kecil yang tinggal di gudang tua di pinggir kota. Tubuhnya berkarat, matanya redup, dan baterainya hampir habis. Dahulu, ia adalah robot pembantu di pabrik besar. Tapi setelah pabrik tutup, ia ditinggalkan sendirian di gudang yang berdebu.",
+      "Suatu hari, tiga anak bernama Raka, Sinta, dan Umar bermain petak umpet. Umar bersembunyi di gudang tua dan menemukan Tiko. 'Lihat! Ada robot di sini!' serunya. Anak-anak lain datang dan menatap Tiko dengan penuh rasa ingin tahu.",
+      "'Apakah kamu masih hidup?' tanya Sinta dengan hati-hati. Tiko menggerakkan kepalanya perlahan. 'Baterai... hampir... habis,' katanya dengan suara berderit. Anak-anak itu memutuskan untuk menyelamatkan Tiko. Mereka membawanya ke bengkel kecil milik kakek Umar.",
+      "Kakek Umar membantu membersihkan Tiko dan mengganti baterainya. Setelah beberapa hari, Tiko bisa berjalan dan berbicara dengan lancar. Anak-anak mengajari Tiko banyak hal: cara bermain layangan, cara menanam bunga, dan cara tertawa.",
+      "Tiko belajar bahwa persahabatan bukan hanya untuk manusia. Robot juga bisa punya teman. Sejak itu, gudang tua tidak lagi sepi. Tiko dan anak-anak mengubahnya menjadi markas rahasia tempat mereka belajar, bermain, dan bermimpi setiap hari.",
+    ],
   },
 ];
 
@@ -201,6 +327,13 @@ var dataArtikel = [
     content: "Sastra Indonesia adalah cermin budaya bangsa. Dari pantun Melayu hingga puisi modern, setiap karya adalah warisan yang harus kita jaga bersama.",
     author: "Rasyid Yudhistira",
     image: "https://picsum.photos/seed/artikel1/400/300",
+    fullContent: [
+      "Sastra Indonesia adalah cermin perjalanan bangsa yang telah menemani masyarakatnya selama ratusan tahun. Dari hikayat, syair, pantun, hingga novel modern, setiap karya menyimpan nilai-nilai budaya, sejarah, dan identitas kolektif. Melestarikan sastra berarti menjaga jati diri bangsa agar tidak hilang ditelan arus globalisasi yang membawa budaya asing begitu deras.",
+      "Di era digital seperti sekarang, tantangan pelestarian sastra semakin kompleks. Banyak generasi muda yang lebih akrab dengan konten visual dan platform media sosial ketimbang membaca buku atau puisi. Padahal, di dalam karya sastra terdapat kekayaan bahasa, kritik sosial, dan pemikiran-pemikiran mendalam yang bisa menjadi bekal menghadapi kehidupan.",
+      "Pelestarian sastra tidak hanya menjadi tanggung jawab akademisi atau penulis. Setiap orang bisa berkontribusi, mulai dari membaca karya-karya lokal, membagikannya di media sosial, hingga mengikuti kegiatan sastra di komunitas. Semakin banyak orang yang terlibat, semakin kuat ekosistem sastra Indonesia akan bertahan.",
+      "Platform digital juga bisa menjadi sarana pelestarian yang ampuh. Dengan mengubah karya sastra menjadi e-book, podcast, atau konten digital lainnya, kita bisa menjangkau audiens yang lebih luas. Generasi muda perlu diajak untuk tidak hanya mengonsumsi, tetapi juga menciptakan karya sastra yang relevan dengan zamannya.",
+      "Dengan menjaga dan mengembangkan sastra Indonesia, kita ikut menjaga keberagaman budaya serta memperkuat pemahaman antarbudaya. Sastra bukan sekadar hiburan, melainkan warisan berharga yang harus terus dilestarikan demi generasi mendatang.",
+    ],
   },
   {
     id: "2",
@@ -211,6 +344,13 @@ var dataArtikel = [
     content: "Platform digital seperti Fun Bahasa membuka peluang baru bagi penulis Indonesia. Sastra kini bisa menjangkau pembaca di seluruh penjuru dunia.",
     author: "Elang Ade Iswara",
     image: "https://picsum.photos/seed/artikel2/400/300",
+    fullContent: [
+      "Digitalisasi telah mengubah banyak aspek kehidupan, termasuk cara kita memproduksi, mendistribusikan, dan mengonsumsi sastra. Dahulu, karya sastra hanya bisa dinikmati melalui buku cetak yang terbatas jangkauannya. Kini, sebuah puisi atau cerpen bisa tersebar ke seluruh penjuru dunia hanya dalam hitungan detik.",
+      "Platform daring membuka peluang besar bagi penulis muda untuk mengenalkan karya mereka tanpa harus melalui proses penerbitan konvensional yang seringkali panjang dan selektif. Blog, media sosial, serta situs karya sastra menjadi ruang publikasi alternatif yang demokratis dan inklusif.",
+      "Namun, digitalisasi juga membawa tantangan tersendiri. Karya sastra yang mudah diakses seringkali menjadi korban plagiarisme dan pembajakan. Selain itu, algoritma platform digital cenderung mengutamakan konten yang viral, bukan konten yang bermutu. Hal ini menuntut penulis untuk tetap kritis dan kreatif dalam menyajikan karyanya.",
+      "Di sisi lain, digitalisasi memungkinkan berbagai eksperimen bentuk sastra. Hypertext poetry, fiksi interaktif, dan sastra multimedia adalah contoh bagaimana teknologi memperluas batasan-batasan kreativitas. Tradisi bercerita yang telah ada sejak lama kini menemukan medium baru yang menarik.",
+      "Digitalisasi bukan ancaman bagi sastra, melainkan peluang yang perlu dikelola dengan bijak. Penulis, penerbit, pembaca, dan pembuat kebijakan perlu bersama-sama menciptakan ekosistem digital yang mendukung pertumbuhan sastra Indonesia yang sehat dan berkelanjutan.",
+    ],
   },
   {
     id: "3",
@@ -221,6 +361,13 @@ var dataArtikel = [
     content: "Menulis puisi bukan sekadar hobi. Banyak penelitian menunjukkan bahwa menulis puisi bisa menjadi terapi untuk mengatasi stres dan kecemasan.",
     author: "Sevryade Anugrah",
     image: "https://picsum.photos/seed/artikel3/400/300",
+    fullContent: [
+      "Puisi sering dianggap sebagai karya sastra yang abstrak dan sulit dipahami. Padahal, puisi memiliki kekuatan luar biasa untuk menyentuh emosi dan membantu proses penyembuhan batin. Banyak orang menemukan ketenangan dan pemahaman diri melalui bait-bait puisi yang mereka baca atau tulis sendiri.",
+      "Menulis puisi bisa menjadi bentuk terapi ekspresif. Ketika seseorang kesulitan mengungkapkan perasaan secara langsung, kata-kata metaforis dalam puisi dapat menjadi saluran yang aman. Melalui puisi, emosi yang terpendam bisa tersalurkan dengan cara yang kreatif dan terkontrol.",
+      "Membaca puisi juga memiliki manfaat serupa. Puisi mengajak pembaca untuk berhenti sejenak, merenung, dan menghargai keindahan bahasa. Ritme dan bunyi dalam puisi dapat menenangkan pikiran yang bising, mirip dengan efek meditasi atau musik yang lembut.",
+      "Dalam beberapa program kesehatan mental, puisi bahkan digunakan sebagai bagian dari intervensi terapeutik. Pasien didorong untuk menulis perasaan mereka dalam bentuk puisi atau jurnal kreatif. Hasilnya, banyak yang merasa lebih lega dan mampu melihat masalah dari sudut pandang baru.",
+      "Puisi bukan sekadar susunan kata indah. Ia adalah ruang bagi jiwa untuk bernapas, bercermin, dan pulih. Di tengah hiruk-pikuk kehidupan modern, puisi menawarkan ketenangan yang sangat berharga.",
+    ],
   },
   {
     id: "4",
@@ -231,6 +378,13 @@ var dataArtikel = [
     content: "Di era digital, tantangan terbesar adalah membuat generasi muda mencintai bacaan. Inisiatif komunitas sastra lokal menjadi kunci keberhasilan.",
     author: "Dewi Lestari",
     image: "https://picsum.photos/seed/artikel4/400/300",
+    fullContent: [
+      "Isu melemahnya minat baca di kalangan generasi muda sering menjadi perbincangan. Banyak pihak khawatir bahwa anak-anak muda lebih tertarik pada video pendek dan game ketimbang membaca buku. Namun, anggapan tersebut perlu dikaji lebih dalam karena realitanya tidak sesederhana itu.",
+      "Generasi muda sebenarnya masih membaca, tetapi cara dan medium yang mereka gunakan berubah. Mereka membaca di layar ponsel, mengikuti serial fiksi daring, serta mengonsumsi berbagai konten berbasis teks di media sosial. Tantangan utamanya adalah bagaimana membuat bacaan panjang seperti buku tetap menarik bagi mereka.",
+      "Literasi digital dan literasi konvensional perlu dipadukan. Anak muda perlu diajak membaca dengan pendekatan yang sesuai dengan kebiasaan mereka. Misalnya, melalui book club daring, resensi visual, atau adaptasi karya sastra ke dalam format digital yang interaktif.",
+      "Orang tua, guru, dan tokoh masyarakat memiliki peran penting dalam menumbuhkan kebiasaan membaca. Keteladan, diskusi rutin tentang buku, serta ketersediaan akses ke perpustakaan dan sumber bacaan berkualitas akan sangat membantu. Cinta pada bacaan tidak tumbuh secara instan, melainkan melalui proses yang konsisten.",
+      "Jika generasi muda berhasil mencintai bacaan, masa depan sastra Indonesia akan semakin cerah. Mereka akan menjadi pembaca sekaligus kreator yang membawa warisan sastra ke arah yang lebih segar dan relevan.",
+    ],
   },
   {
     id: "5",
@@ -241,6 +395,13 @@ var dataArtikel = [
     content: "Dari Aceh sampai Papua, setiap daerah memiliki tradisi sastra yang unik. Mengenal sastra lokal berarti mengenal jati diri bangsa Indonesia.",
     author: "Andrea Hirata",
     image: "https://picsum.photos/seed/artikel5/400/300",
+    fullContent: [
+      "Indonesia adalah negara kepulauan dengan kekayaan budaya yang luar biasa. Setiap daerah memiliki tradisi sastra lokal yang unik, mulai dari pantun Melayu, geguritan Jawa, tembang Sunda, hingga epos Bugis. Karya-karya ini adalah bukti keberagaman dan kearifan lokal yang telah diwariskan turun-temurun.",
+      "Sastra lokal tidak hanya indah secara bahasa, tetapi juga kaya akan nilai-nilai sosial, spiritual, dan filosofis. Melalui sastra lokal, kita bisa memahami cara masyarakat setempat memandang alam, hubungan antarmanusia, dan eksistensi manusia di dunia. Ia adalah ensiklopedia hidup sebuah komunitas.",
+      "Sayangnya, banyak karya sastra lokal yang terancam punah karena tidak lagi dibaca atau dipraktikkan oleh generasi muda. Globalisasi dan dominasi bahasa Indonesia serta bahasa asing membuat sastra daerah semakin terpinggirkan. Upaya dokumentasi dan revitalisasi menjadi sangat penting.",
+      "Berbagai inisiatif mulai dilakukan untuk melestarikan sastra lokal, seperti festival budaya, penerjemahan ke bahasa Indonesia, serta penggunaan teknologi digital untuk mendokumentasikan naskah-naskah kuno. Pendidikan di sekolah juga perlu mengenalkan sastra daerah kepada siswa sejak dini.",
+      "Mengenal sastra lokal berarti mengenal diri sendiri dan menghargai warisan nenek moyang. Dengan memahami akar budaya kita, kita akan lebih percaya diri menyambut perubahan zaman tanpa kehilangan identitas.",
+    ],
   },
   {
     id: "6",
@@ -251,6 +412,13 @@ var dataArtikel = [
     content: "Cerpen adalah bentuk sastra yang menantang. Dalam ribuan kata, penulis harus mampu membentuk karakter, konflik, dan resolusi yang memuaskan.",
     author: "Rasyid Yudhistira",
     image: "https://picsum.photos/seed/artikel6/400/300",
+    fullContent: [
+      "Cerpen adalah salah satu bentuk sastra yang populer karena bisa dibaca dalam satu duduk. Bagi pemula, menulis cerpen bisa terasa menantang karena harus mampu menyampaikan cerita lengkap dalam ruang yang terbatas. Namun, dengan latihan dan teknik yang tepat, siapa pun bisa mulai menulis cerpen yang menarik.",
+      "Langkah pertama adalah menemukan ide. Ide bisa datang dari pengalaman pribadi, observasi sekitar, berita, atau imajinasi murni. Jangan terlalu memaksakan diri untuk menciptakan ide besar; kadang cerita sederhana tentang kehidupan sehari-hari justru paling menyentuh pembaca.",
+      "Setelah punya ide, buatlah kerangka cerita. Tentukan tokoh, latar, konflik, dan penyelesaian. Cerpen yang baik memiliki struktur yang jelas meski singkat. Konflik menjadi jantung cerita karena itulah yang membuat pembaca ingin tahu kelanjutannya.",
+      "Perhatikan juga penggunaan bahasa dan gaya bercerita. Pilihlah kata-kata yang tepat, hindari narasi yang berlebihan, dan tunjukkan emosi melalui tindakan tokoh rather than hanya menjelaskan. Show, don't tell adalah prinsip klasik yang sangat berguna.",
+      "Terakhir, jangan lupa untuk merevisi. Tulisan pertama jarang sempurna. Bacalah ulang, perbaiki alur, perhalus kalimat, dan minta masukan dari orang lain. Menulis adalah proses, dan setiap cerpen yang kamu tulis adalah langkah menuju kematangan sebagai penulis.",
+    ],
   },
 ];
 
@@ -264,6 +432,13 @@ var dataEsai = [
     content: "Setiap karya sastra adalah refleksi identitas penulisnya. Bagaimana pengalaman hidup, budaya, dan latar belakang membentuk suara unik seorang penulis?",
     author: "Rasyid Yudhistira",
     image: "https://picsum.photos/seed/esai1/400/300",
+    fullContent: [
+      "Setiap karya sastra, entah itu puisi, cerpen, atau novel, selalu membawa jejak identitas penulisnya. Identitas tidak hanya berarti nama atau asal daerah, melainkan keseluruhan pengalaman hidup yang membentuk cara seseorang melihat dunia. Seorang penulis yang besar adalah penulis yang berani menampilkan jejak-jejak identitasnya dalam karya.",
+      "Pengalaman masa kecil sering kali menjadi sumber utama identitas sastra. Tempat tinggal, bahasa yang digunakan di rumah, makanan khas, dan ritual keluarga menjadi bahan baku yang kaya. Penulis seperti Andrea Hirata, misalnya, tidak bisa dipisahkan dari latar Belitong yang menjadi rumah bagi imajinasinya.",
+      "Budaya juga memainkan peran penting. Dalam konteks Indonesia yang majemuk, identitas budaya bisa berarti etnis, agama, kelas sosial, atau status daerah. Penulis seringkali harus bernegosiasi dengan berbagai identitas tersebut, memilih mana yang ingin ditonjolkan dan mana yang ingin dikritisi.",
+      "Namun identitas dalam sastra bukanlah sesuatu yang statis. Ia bisa berkembang, berubah, dan bahkan diragukan. Banyak karya sastra modern yang justru menampilkan krisis identitas, pertanyaan tentang siapa aku, dan di mana aku berada. Ketegangan inilah yang membuat karya sastra menjadi relevan.",
+      "Sebagai pembaca, memahami identitas penulis membantu kita memahami karya dengan lebih dalam. Tapi yang lebih penting, kita juga diajak untuk merefleksikan identitas kita sendiri. Sastra adalah cermin, dan setiap karya mengajak kita bertanya, 'Siapa aku sebenarnya?'",
+    ],
   },
   {
     id: "2",
@@ -274,6 +449,13 @@ var dataEsai = [
     content: "Bahasa Indonesia bukan sekadar alat komunikasi. Ia adalah perekat yang menyatukan ribuan pulau, suku, dan budaya menjadi satu identitas nasional.",
     author: "Elang Ade Iswara",
     image: "https://picsum.photos/seed/esai2/400/300",
+    fullContent: [
+      "Bahasa Indonesia adalah salah satu keajaiban negeri ini. Di tengah keberagaman yang luar biasa, dengan lebih dari seribu bahasa daerah, bahasa Indonesia berhasil menjadi lingua franca yang dipahami oleh hampir seluruh rakyat. Ia bukan sekadar alat komunikasi, melainkan perekat sosial dan politik yang kuat.",
+      "Sejarah bahasa Indonesia tidak lepas dari perjuangan. Dari bahasa Melayu yang berkembang di jalur perdagangan, menjadi bahasa persatuan yang diikrarkan pada Sumpah Pemuda 1928. Keputusan tersebut bukanlah hal yang mudah, mengingat banyak pihak yang memiliki kepentingan dan bahasa sendiri.",
+      "Dalam sastra, bahasa Indonesia berfungsi sebagai medium yang menghubungkan berbagai pengalaman lokal. Penulis dari Papua bisa dibaca oleh pembaca di Aceh. Puisi dari Minangkabau bisa disukai oleh orang Jawa. Ini adalah bukti bahwa bahasa Indonesia mampu menampung kekayaan lokal tanpa menghapuskannya.",
+      "Tentu saja, posisi bahasa Indonesia tidak selalu mudah. Ia sering mendapat tekanan dari bahasa asing, terutama bahasa Inggris, dan juga dari bahasa-bahasa daerah yang ingin mempertahankan eksistensinya. Tapi justru di sinilah peran sastra menjadi penting: menjadikan bahasa Indonesia sebagai ruang pertemuan, bukan penyeragaman.",
+      "Menjaga bahasa Indonesia berarti menjaga persatuan. Setiap karya sastra yang ditulis dalam bahasa Indonesia adalah kontribusi terhadap perekatan bangsa. Bahasa adalah lebih dari kata-kata; ia adalah rumah bersama tempat kita berbagi cerita, impian, dan masa depan.",
+    ],
   },
   {
     id: "3",
@@ -284,6 +466,13 @@ var dataEsai = [
     content: "Menulis yang paling bermakna adalah menulis dari hati. Ketika kata-kata mengalir tanpa paksaan, itulah momen sastra yang paling otentik.",
     author: "Sevryade Anugrah",
     image: "https://picsum.photos/seed/esai3/400/300",
+    fullContent: [
+      "Ada perbedaan besar antara menulis karena tugas dan menulis karena hati memaksa. Tulisan yang lahir dari paksaan seringkali kaku, mekanis, dan kehilangan jiwa. Sementara tulisan yang lahir dari dorongan batin biasanya memiliki denyut yang hidup, bahkan jika bahasanya sederhana.",
+      "Menulis dari hati berarti jujur pada diri sendiri. Tidak menulis apa yang orang ingin baca, melainkan apa yang memang perlu diucapkan. Ini membutuhkan keberanian, karena kejujuran seringkali memperlihatkan luka, kelemahan, dan kerentanan. Tapi di situlah letak keindahan sastra.",
+      "Banyak penulis hebat yang mengatakan bahwa mereka menulis karena tidak bisa tidak menulis. Ada sesuatu di dalam diri yang mendorong untuk mengeluarkan kata-kata. Proses ini tidak selalu nyaman, tapi hasilnya biasanya lebih otentik dan menyentuh.",
+      "Tentu saja, menulis dari hati saja tidak cukup. Teknik, tata bahasa, dan struktur tetap penting. Hati memberikan bahan bakar, tapi keterampilanlah yang mengemudikan kendaraan. Seorang penulis perlu melatih keduanya secara berimbang.",
+      "Bagi pembaca, tulisan dari hati mudah dikenali. Ada getaran yang berbeda, ada ketulusan yang tidak bisa dipalsukan. Di era di mana konten diproduksi massal, tulisan yang datang dari hati adalah oase yang langka dan berharga.",
+    ],
   },
   {
     id: "4",
@@ -294,6 +483,13 @@ var dataEsai = [
     content: "Menjadi penulis bukanlah jalan yang mudah. Dari penolakan demi penolakan, hingga akhirnya karya pertama diterbitkan. Perjalanan ini mengajarkan kesabaran.",
     author: "Dewi Lestari",
     image: "https://picsum.photos/seed/esai4/400/300",
+    fullContent: [
+      "Setiap penulis yang kini dikenal banyak orang pasti pernah melewati fase yang sulit. Fase di mana tulisan-tulisannya ditolak, diabaikan, atau dikritik habis-habisan. Perjalanan seorang penulis muda penuh dengan keraguan, tapi juga penuh dengan pembelajaran.",
+      "Penolakan adalah makanan sehari-hari bagi penulis pemula. Naskah dikirim ke penerbit, lalu ditolak dengan alasan yang kadang tidak jelas. Banyak yang menyerah di tahap ini. Tapi mereka yang bertahan biasanya belajar sesuatu: bahwa penolakan bukan penghakiman akhir, melainkan undangan untuk memperbaiki diri.",
+      "Selain penolakan, penulis muda juga harus menghadapi ekspektasi. Ekspektasi dari orang tua, teman, dan diri sendiri. Tekanan untuk segera sukses seringkali membuat proses kreatif menjadi tidak menyenangkan. Padahal, menulis adalah maraton, bukan sprint.",
+      "Yang paling penting dalam perjalanan ini adalah komunitas. Bertemu dengan penulis lain, berbagi pengalaman, dan saling mendukung bisa membuat perjalanan menjadi lebih ringan. Tidak ada penulis yang benar-benar sendirian; setiap karya adalah hasil dialog dengan banyak hal.",
+      "Ketika akhirnya karya pertama diterbitkan, rasanya seperti menyeberangi garis finis. Tapi sebenarnya, itu baru awal. Setiap buku baru adalah perjalanan baru. Yang membuat seorang penulis bertahan bukanlah pencapaian, melainkan cinta pada proses menulis itu sendiri.",
+    ],
   },
   {
     id: "5",
@@ -304,6 +500,13 @@ var dataEsai = [
     content: "Kebebasan berekspresi dalam sastra adalah hak fundamental. Namun, kebebasan ini juga membawa tanggung jawab untuk tidak menyakiti dan menghormati orang lain.",
     author: "Andrea Hirata",
     image: "https://picsum.photos/seed/esai5/400/300",
+    fullContent: [
+      "Sastra selalu memiliki hubungan yang kompleks dengan kebebasan. Di satu sisi, sastra membutuhkan ruang untuk mengkritik, menyuarakan yang tertindas, dan mengeksplorasi hal-hal yang tabu. Di sisi lain, kebebasan tersebut tidak bisa berjalan tanpa batas, karena kata-kata pun bisa menjadi senjata.",
+      "Kebebasan berekspresi dalam sastra bukan berarti kebebasan untuk menghina, memfitnah, atau memicu kebencian. Sastra yang baik justru menggunakan kebebasannya untuk memperluas empati, memahami perbedaan, dan mengajak pembaca berpikir kritis. Kekuatan sastra terletak pada kemampuannya mengubah perspektif.",
+      "Banyak penulis di seluruh dunia yang mengalami penindasan karena karyanya dianggap menantang kekuasaan. Buku dibakar, penulis dipenjara, dan karya dilarang. Hal ini menunjukkan betapa berbahayanya sastra di mata mereka yang takut pada kebenaran.",
+      "Tapi pembatasan kebebasan juga bisa datang dari dalam diri penulis. Rasa takut akan penolakan, kritik, atau isolasi sosial seringkali membuat penulis memilih untuk diam. Mengatasi rasa takut ini adalah bagian dari perjuangan sastra.",
+      "Pada akhirnya, kebebasan berekspresi adalah hak yang harus dilindungi dan tanggung jawab yang harus dijalankan. Sastra yang bebas dan bertanggung jawab adalah sastra yang mampu menyembuhkan, menginspirasi, dan membebaskan. Itulah makna sejati dari kebebasan.",
+    ],
   },
   {
     id: "6",
@@ -314,5 +517,12 @@ var dataEsai = [
     content: "Sastra bukan hanya hiburan. Ia bisa menjadi alat perubahan sosial. Karya-karya sastra telah memicu diskusi tentang isu-isu penting dalam masyarakat.",
     author: "Rasyid Yudhistira",
     image: "https://picsum.photos/seed/esai6/400/300",
+    fullContent: [
+      "Sastra sering dianggap sebagai produk budaya yang hanya untuk dinikmati. Padahal, sepanjang sejarah, sastra telah berkali-kali membuktikan diri sebagai kekuatan yang mampu mendorong perubahan sosial. Dari novel anti-perbudakan hingga puisi-puisi perlawanan, kata-kata telah mengubah dunia.",
+      "Di Indonesia, sastra juga memiliki peran serupa. Karya-karya sastra pada masa kolonial menjadi salah satu alat untuk membangun kesadaran nasional. Penulis-penulis seperti Chairil Anwar dan Pramoedya Ananta Toer menggunakan karya mereka untuk menyentuh hati banyak orang.",
+      "Sastra mampu mengubah masyarakat karena ia bekerja pada level emosi dan imajinasi. Ketika pembaca membaca tentang pengalaman tokoh fiksi, mereka diajak untuk merasakan hidup dari sudut pandang orang lain. Proses ini membangun empati, dan empati adalah fondasi perubahan.",
+      "Tentu saja, sastra tidak bisa berdiri sendiri. Ia perlu didukung oleh gerakan sosial, pendidikan, dan kebijakan. Tapi sastra bisa menjadi percikan awal. Sebuah novel bisa membuat orang mulai berbicara tentang isu yang selama ini dianggap tabu.",
+      "Penulis masa kini memiliki tanggung jawab besar. Di tengah berbagai krisis sosial dan lingkungan, sastra bisa menjadi suara yang mengingatkan, menantang, dan menginspirasi. Menulis bukanlah aktivitas pasif; itu adalah bentuk partisipasi dalam perubahan.",
+    ],
   },
 ];

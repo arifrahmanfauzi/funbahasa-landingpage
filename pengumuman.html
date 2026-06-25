@@ -1,477 +1,495 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Fun Bahasa #BahasaAdalahKita</title>
-    <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
-    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
-	<link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
-
-    <style>
-		/*Overrides for Tailwind CSS */
-
-		/*Form fields*/
-		.dataTables_wrapper select,
-		.dataTables_wrapper .dataTables_filter input {
-			color: rgb(64, 70, 66);
-			padding-left: 1rem;
-			padding-right: 1rem;
-			padding-top: .5rem;
-			padding-bottom: .5rem;
-			line-height: 1.25;
-			border-width: 2px;
-			border-radius: .25rem;
-			border-color: rgb(237, 242, 247);
-			background-color: rgb(237, 242, 247);
-		}
-
-		/*Row Hover*/
-		table.dataTable.hover tbody tr:hover,
-		table.dataTable.display tbody tr:hover {
-			background-color: rgb(211, 238, 249);
-		}
-
-		/*Pagination Buttons*/
-		.dataTables_wrapper .dataTables_paginate .paginate_button {
-			font-weight: 700;
-			border-radius: .25rem;
-			border: 1px solid transparent;
-		}
-
-		/*Pagination Buttons - Current selected */
-		.dataTables_wrapper .dataTables_paginate .paginate_button.current {
-			color: #fff !important;
-			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
-			font-weight: 700;
-			border-radius: .25rem;
-			background: rgb(37, 170, 227) !important;
-			border: 1px solid transparent;
-		}
-
-		/*Pagination Buttons - Hover */
-		.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-			color: #fff !important;
-			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
-			font-weight: 700;
-			border-radius: .25rem;
-			background: rgb(37, 170, 227) !important;
-			border: 1px solid transparent;
-		}
-
-		/*Add padding to bottom border */
-		table.dataTable.no-footer {
-			border-bottom: 1px solid #e2e8f0;
-			margin-top: 0.75em;
-			margin-bottom: 0.75em;
-		}
-
-		/*Change colour of responsive icon*/
-		table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
-		table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
-			background-color: rgb(37, 170, 227) !important;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Pengumuman Pemenang | Fun Bahasa</title>
+  <link rel="shortcut icon" href="img/funbahasa.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
 </head>
 
-<body class="antialiased bg-body text-body font-body absolute">
-    <div class="xl\:container mx-auto">
-        <!--* Navigator Bar -->
-        <header class="flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
-        <div x-data="{open: false}"
-            class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
-            <!--* Image  -->
-            <div class="flex w-full sm:w-1/4 lg:block lg:w-3/2 md:w-1/3">
-                <a href="index.html" class="">
-                    <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" class="w-28 xl:w-40 lg:w-32 sm:w-28 md:w-28">
+<body class="antialiased bg-body text-body font-body">
+  <div class="xl\:container mx-auto">
+    <!--* Navigator Bar -->
+    <header class="flex flex-wrap items-center justify-between w-full p-4 px-8 bg-white 4xl:h-12 3xl:w-full lg:justify-between">
+      <div x-data="{open: false}" class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
+        <div class="flex w-full sm:w-1/4 lg:block lg:w-3/2 md:w-1/3">
+          <a href="index.html" class="">
+            <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" class="w-28 xl:w-40 lg:w-32 sm:w-28 md:w-28">
+          </a>
+        </div>
+        <button @click="open = true" class="flex items-center justify-center w-8 h-8 px-1 hover:bg-gray-300 sm:w-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+          <img src="img/hamburger-menu.svg" alt="hamburger-menu-icon">
+        </button>
+        <div class="flex flex-row hidden w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end sm:hidden md:hidden">
+          <nav class="sm:justify-end sm:w-full sm:flex">
+            <a href="tentang_kami.html" class="block my-auto mr-10 font-semibold text-gray-500 transition duration-200 font-title hover:text-blue-500 xs:font-black-italic">Tentang Kami</a>
+            <a href="unggah-karya.html" class="block my-auto mr-10 font-semibold text-gray-500 transition duration-200 font-title hover:text-blue-500">Unggah Karya</a>
+            <a href="Event.html" class="block my-auto mr-10 font-semibold text-gray-500 transition duration-200 font-title hover:text-blue-500">Event</a>
+            <a href="baca_karya.html" class="block my-auto mr-10 font-semibold text-gray-500 transition duration-200 font-title hover:text-blue-500">Baca Karya</a>
+            <a href="login.html" class="px-5 py-1 ml-3 font-semibold text-white transition-all duration-200 bg-blue-500 border-transparent rounded-full font-title border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
+          </nav>
+        </div>
+        <div x-show="open" @click.away="open = false" class="absolute z-10 max-w-md px-2 mt-8 transform right-10 w-screen-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+          <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+            <div class="relative grid gap-4 p-5 bg-white">
+              <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                <div class="ml-2">
+                  <a href="tentang_kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">Tentang Kami</a>
+                </div>
+              </a>
+              <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                <div class="ml-2">
+                  <a href="unggah-karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">Unggah Karya</a>
+                </div>
+              </a>
+              <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                <div class="ml-2">
+                  <a href="Event.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">Event</a>
+                </div>
+              </a>
+              <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                <div class="ml-2">
+                  <a href="baca_karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">Baca Karya</a>
+                </div>
+              </a>
+              <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                <div class="flex h-10 ml-2 -ml-2 -mr-2 bg-blue-500 rounded-lg">
+                  <a href="login.html" class="pl-4 mt-2 text-base font-medium text-white" style="font-family: 'Poppins', sans-serif;">Masuk</a>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!--* Navigator Bar End -->
+
+  <!--* Main Content -->
+  <main>
+    <!--* Hero Section -->
+    <section class="pt-28 pb-12 bg-gradient-to-b from-blue-50 to-white xl:pt-36 lg:pt-32">
+      <div class="container px-6 mx-auto text-center xl:px-16">
+        <i class="text-5xl text-blue-500 bi bi-trophy-fill xl:text-6xl"></i>
+        <h1 class="mt-4 text-3xl font-semibold text-gray-900 font-title xl:text-5xl">Pengumuman Pemenang</h1>
+        <p class="mt-2 text-lg font-semibold text-gray-500 font-title xl:text-2xl">Kreasi Puisi Pendek Nasional 2023</p>
+        <div class="flex flex-wrap justify-center gap-3 mt-6">
+          <span class="inline-flex items-center px-3 py-1 text-sm font-medium text-blue-700 transition duration-200 bg-blue-100 rounded-full">
+            <i class="mr-1.5 bi bi-people-fill"></i> 100 Peserta
+          </span>
+          <span class="inline-flex items-center px-3 py-1 text-sm font-medium text-blue-700 transition duration-200 bg-blue-100 rounded-full">
+            <i class="mr-1.5 bi bi-award-fill"></i> 200 Finalis
+          </span>
+          <span class="inline-flex items-center px-3 py-1 text-sm font-medium text-blue-700 transition duration-200 bg-blue-100 rounded-full">
+            <i class="mr-1.5 bi bi-calendar-event"></i> 2023
+          </span>
+        </div>
+      </div>
+    </section>
+    <!--* Hero Section End -->
+
+    <!--* Announcement Card -->
+    <section class="py-12">
+      <div class="container px-6 mx-auto xl:px-16">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-5">
+          <div class="flex items-center justify-center lg:col-span-2">
+            <img class="w-full max-w-md" src="img/winner-announce-shadow.svg" alt="winner-announce">
+          </div>
+          <div class="lg:col-span-3">
+            <div class="p-6 bg-white border border-gray-100 rounded-2xl shadow-soft xl:p-8">
+              <div class="flex items-center mb-4">
+                <i class="mr-2 text-2xl text-blue-500 bi bi-megaphone-fill"></i>
+                <h2 class="text-lg font-semibold text-gray-900 font-title">Selamat kepada Para Pemenang!</h2>
+              </div>
+              <div class="space-y-4 font-sans text-sm leading-relaxed text-gray-600 md:text-base">
+                <p>
+                  Funmin ucapkan terima kasih kepada peserta Kreasi Puisi Pendek Nasional 2023 yang telah mengirimkan karya terbaiknya. Selamat bagi para pemenang dan finalis 200 puisi terbaik. Bagi Funners yang belum menjadi juara, tetaplah berkarya dan tetap semangat untuk mengembangkan kemampuan menulis.
+                </p>
+                <div class="p-4 rounded-xl bg-blue-50">
+                  <p class="flex items-start">
+                    <i class="mr-2 mt-0.5 text-blue-500 bi bi-telephone-fill"></i>
+                    <span>Kepada pemenang, akan dihubungi langsung oleh <span class="font-semibold text-blue-600">Kak Anisa</span> melalui nomor <span class="font-semibold text-blue-600">+62 857-4957-0828</span>. Harap berhati-hati apabila dihubungi oleh nomor tidak dikenal mengatasnamakan Fun Bahasa untuk menghindari penipuan.</span>
+                  </p>
+                </div>
+                <div class="p-4 rounded-xl bg-blue-50">
+                  <p class="flex items-start">
+                    <i class="mr-2 mt-0.5 text-blue-500 bi bi-envelope-fill"></i>
+                    <span>Fasilitas lomba akan mulai dikirim pada tanggal <span class="font-semibold text-blue-600">15 Mei 2023</span> melalui surel masing-masing. Apabila tidak ada di kotak masuk, segera periksa ke seluruh folder, termasuk di folder spam. Jika masih belum ada, bisa langsung segera hubungi narahubung, ya.</span>
+                  </p>
+                </div>
+                <p class="pt-2 font-medium text-gray-700">
+                  Salam literasi,<br>Fun Bahasa
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--* Announcement Card End -->
+
+    <!--* Catatan Penjurian -->
+    <section class="py-14 bg-blue-100">
+      <div class="container px-6 mx-auto xl:px-16">
+        <div class="text-center">
+          <i class="text-3xl text-blue-500 bi bi-chat-square-quote-fill"></i>
+          <h2 class="mt-2 text-2xl font-semibold text-gray-900 font-title xl:text-3xl">Catatan Penjurian</h2>
+        </div>
+        <div class="mt-8 slider-wrapper">
+          <div class="slides-container" id="slides-container">
+            <div class="slide">
+              <div class="max-w-3xl p-6 mx-auto bg-white rounded-2xl shadow-soft xl:p-8">
+                <img src="img/quote.svg" class="w-12 xl:w-16" alt="quote">
+                <div class="mt-4 font-sans text-sm leading-relaxed text-gray-600 xl:text-base">
+                  <p>
+                    Selain kesegaran diksi, kerapian tipografi, dan keindahan gaya bahasa, ada isu dan konten yang juga perlu diperhatikan dalam suatu karya puisi. Karena isu dan konten akan mempengaruhi bagaimana proses riset dilakukan, serta pemilihan diksi yang akan berkaitan dengan pembangunan citraan atau nuansa yang diinginkan penyair. Sehingga, dalam penyusunan kata per kata, kalimat per kalimat, hingga pada tiap baitnya, puisi tidak lepas dari logika bahasa.
+                  </p>
+                  <p class="mt-4">
+                    Dalam kasus ini, semisal konten puisi bicara soal 'petani', maka secara umum akan muncul diksi-diksi yang mencitrakan petani seperti sawah, kerbau, cangkul, dan lain sebagainya. Sedangkan, isu yang dimunculkan semisal adalah 'gagal panen', maka diksi yang muncul akan mencitrakan kesedihan, harapan, mimpi, kekacauan, dan lain sebagainya. Pada event kali ini, saya melihat masih banyak penyair yang kurang memperhatikan logika-logika tersebut, sehingga konten dan isu yang sebenarnya menarik pada akhirnya tidak begitu terbaca dikarenakan diksi yang dimunculkan tidak sampai pada citraan yang diinginkan. Namun, ada juga beberapa yang sudah berupaya untuk melakukannya. Meskipun beberapa puisi tersebut masih perlu dilakukan pembacaan yang intens, dan melalui proses editing yang ketat. Selebihnya, penyair terpilih, saya pikir sudah berupaya semaksimal mungkin untuk melalui proses kreatif dalam keberhasilannya.
+                  </p>
+                </div>
+                <div class="flex items-center mt-6">
+                  <i class="text-4xl text-gray-300 bi bi-person-circle"></i>
+                  <div class="ml-3">
+                    <p class="font-semibold text-gray-900 font-title">Yusri Ihza F. A.</p>
+                    <p class="text-xs text-gray-500">Juri KPPN 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="max-w-3xl p-6 mx-auto bg-white rounded-2xl shadow-soft xl:p-8">
+                <img src="img/quote.svg" class="w-12 xl:w-16" alt="quote">
+                <div class="mt-4 font-sans text-sm leading-relaxed text-gray-600 xl:text-base">
+                  <p>
+                    Setidaknya, 20 besar puisi KPPN2023 memiliki rentang tawaran puitik yang serupa. Puisi naratif kami catat mendominasi di antara itu. Dan dapat dikatakan, di situlah permasalahannya. Menjadi PR bagi tim juri &mdash; dan tentunya para peserta &mdash; untuk merespon ruang naratif dalam batasan jumlah kata semacam ini. Pertaruhannya adalah demi mewujudkan tokoh (subjek lirik) serta kisah atau situasi secara efektif tanpa kehilangan efek puitik sehingga tidak mencerabut jiwa puisi. Di antara judul-judul puisi tersebut, sebagian dinilai cukup berhasil mencapai arah itu.
+                  </p>
+                </div>
+                <div class="flex items-center mt-6">
+                  <i class="text-4xl text-gray-300 bi bi-person-circle"></i>
+                  <div class="ml-3">
+                    <p class="font-semibold text-gray-900 font-title">Nanda Alifya Rahmah</p>
+                    <p class="text-xs text-gray-500">Juri KPPN 2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-4 mt-6">
+          <button class="slide-arrow p-2 text-blue-500 transition duration-200 rounded-full hover:bg-blue-200" id="slide-arrow-prev" aria-label="Sebelumnya">
+            <img src="img/arrow-left.svg" alt="arrow-left" class="w-6">
+          </button>
+          <div class="flex gap-2" id="slide-dots"></div>
+          <button class="slide-arrow p-2 text-blue-500 transition duration-200 rounded-full hover:bg-blue-200" id="slide-arrow-next" aria-label="Berikutnya">
+            <img src="img/arrow-right.svg" alt="arrow-right" class="w-6">
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--* Catatan Penjurian End -->
+
+    <!--* Daftar Pemenang -->
+    <section class="py-14">
+      <div class="container px-6 mx-auto xl:px-16">
+        <div class="flex items-center mb-8">
+          <i class="mr-2 text-2xl text-blue-500 bi bi-trophy-fill"></i>
+          <h2 class="text-2xl font-semibold text-gray-900 font-title xl:text-3xl">Daftar Pemenang</h2>
+        </div>
+        <div class="p-4 bg-white border border-gray-100 rounded-2xl shadow-soft xl:p-6">
+          <div class="mb-4">
+            <div class="relative max-w-sm">
+              <i class="absolute left-3 top-2.5 text-gray-400 bi bi-search"></i>
+              <input type="text" id="search-input" placeholder="Cari nama atau judul karya..." class="w-full py-2 pl-9 pr-4 font-sans text-sm text-gray-700 transition duration-200 border border-gray-200 rounded-full focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100">
+            </div>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full font-sans text-sm">
+              <thead>
+                <tr class="bg-blue-500 text-white">
+                  <th class="px-4 py-3 text-left font-semibold rounded-tl-xl">No</th>
+                  <th class="px-4 py-3 text-left font-semibold">Nama</th>
+                  <th class="px-4 py-3 text-left font-semibold">Judul Karya</th>
+                  <th class="px-4 py-3 text-left font-semibold rounded-tr-xl">Sebagai</th>
+                </tr>
+              </thead>
+              <tbody id="winners-tbody"></tbody>
+            </table>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-4 pt-4 mt-4 border-t border-gray-100">
+            <p class="font-sans text-xs text-gray-500" id="page-info"></p>
+            <div class="flex items-center gap-2" id="pagination-controls"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--* Daftar Pemenang End -->
+  </main>
+  <!--* Main Content End -->
+
+  <!--* Footer -->
+  <style>
+    @media screen and (max-width: 767px) {
+      .foll-us { display: none; }
+      .sosmed { display: none; }
+    }
+    @media screen and (min-width: 768px) {
+      .sosmed-2 { display: none; }
+    }
+    @media screen and (min-width: 1024px) {
+      .sosmed-2 { display: none; }
+    }
+    @media screen and (min-width: 1280px) {
+      .sosmed-2 { display: none; }
+    }
+    .slider-wrapper { position: relative; overflow: hidden; }
+    .slides-container { display: flex; overflow: scroll; scroll-behavior: smooth; list-style: none; margin: 0; padding: 0; }
+    .slide { flex: 1 0 100%; }
+    .slides-container { scrollbar-width: none; -ms-overflow-style: none; }
+    .slides-container::-webkit-scrollbar { width: 0; height: 0; }
+    .slide-dot { width: 8px; height: 8px; border-radius: 9999px; background: #bfdbfe; border: none; cursor: pointer; transition: background 0.2s ease-out; }
+    .slide-dot.active { background: #3b82f6; }
+  </style>
+  <footer class="relative pt-16 text-gray-500 xl:mx-20 sm:mx-10">
+    <div class="mt-5 bg-blue-100 px-9 xl:px-10 lg:px-10 md:px-10 sm:px-10 xl:rounded-t-2xl lg:rounded-t-2xl md:rounded-t-2xl sm:rounded-t-2xl">
+      <div class="grid grid-cols-2 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3">
+        <div class="col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-3">
+          <img class="w-32 mt-7 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
+          <div class="mt-8 mb-6">
+            <a href="faq.html">
+              <h4 class="pb-2 text-xs font-semibold faq font-title xl:text-base sm:text-xs hover:text-blue-500">FAQ</h4>
+            </a>
+            <a href="kebijakan-privasi.html">
+              <h4 class="pb-2 text-xs font-semibold keb-priv font-title xl:text-base sm:text-xs hover:text-blue-500">Kebijakan Privasi</h4>
+            </a>
+            <h4 class="pb-2 text-base font-semibold foll-us font-title">Follow Us On</h4>
+            <div class="flex flex-row justify-start mt-2 sosmed">
+              <div class="pr-1 xl:pr-2 sm:pr-1">
+                <a href="https://www.facebook.com/funbahasa/">
+                  <img src="img/fb.svg" class="w-6 h-6 transform rounded-full hover:shadow-lg hover:scale-105 motion-reduce:transform-none transition duration-200 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6" alt="">
                 </a>
+              </div>
+              <div class="px-1 xl:px-2 sm:px-1">
+                <a href="https://twitter.com/funbahasa">
+                  <img src="img/twt.svg" class="w-6 h-6 transform rounded-full hover:shadow-lg hover:scale-105 motion-reduce:transform-none transition duration-200 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6" alt="">
+                </a>
+              </div>
+              <div class="px-1 xl:px-2 sm:px-1">
+                <a href="https://www.instagram.com/funbahasa/">
+                  <img src="img/ig.svg" class="w-6 h-6 transform rounded-full hover:shadow-lg hover:scale-105 motion-reduce:transform-none transition duration-200 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6" alt="">
+                </a>
+              </div>
             </div>
-            <!--* Hamburger Menu -->
-            <button @click="open = true"
-                class="flex justify-center items-center w-8 h-8 px-1 hover:bg-gray-300 sm:w-8 h-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
-                <img src="img/hamburger-menu.svg" alt="hamburger-menu-icon">
-            </button>
-            <!--* Image End  -->
-            <!--* Nav Menu Item -->
-            <div
-                class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end hidden sm:hidden md:hidden">
-                <nav class="sm:justify-end sm:w-full sm:flex">
-                    <a href="tentang_kami.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500 xs:font-black-italic">Tentang Kami</a>
-                    <a href="unggah-karya.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Unggah Karya</a>
-                    <a href="Event.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Event</a>
-                    <a href="baca_karya.html"
-                        class="block mr-10 my-auto font-bold font-title text-gray-500 hover:text-blue-500">Baca Karya</a>
-                    <a href="login.html"
-                        class="px-5 py-1 ml-3 font-bold font-title text-white transition-all bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
-                </nav>
-            </div>
-            <!--* Nav Menu Item End -->
-            <!--* Nav Menu Mobile -->
-            <div x-show="open" @click.away="open = false"
-                class="absolute z-10 max-w-md px-2 transform right-10 w-screen-md mt-8 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                    <div class="relative grid bg-white gap-4 p-5">
-                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                        <div class="ml-2">
-                            <a href="tentang_kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                Tentang Kami
-                            </a>
-                        </div>
-                    </a>
-
-                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                        <div class="ml-2">
-                            <a href="unggah-karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                Unggah Karya
-                            </a>
-                        </div>
-                    </a>
-
-                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                        <div class="ml-2">
-                            <a href="Event.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                Event
-                            </a>
-                        </div>
-                    </a>
-
-                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                        <div class="ml-2">
-                            <a href="baca_karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                                Baca Karya
-                            </a>
-                        </div>
-                    </a>
-
-                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                    <div class="flex ml-2 bg-blue-500 rounded-lg -ml-2 -mr-2 h-10">
-                        <a href="login.html" class="pl-4 mt-2 text-base font-medium text-white" style="font-family: 'Poppins', sans-serif;">
-                            Masuk
-                        </a>
-                    </div>
-                    </a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        </header>
+        <div class="col-span-2 mb-10 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 xl:pt-12 lg:pt-12 md:pt-12">
+          <span class="mb-2 text-xs font-semibold uppercase xl:text-sm sm:text-xs font-title">Informasi Event</span>
+          <ul class="font-sans list-unstyled">
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="#">Pendaftaran</a></li>
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="#">Panduan</a></li>
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="#">Poster</a></li>
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="#">Unggah</a></li>
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="#">Pengumuman</a></li>
+          </ul>
+        </div>
+        <div class="col-span-2 mb-10 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 xl:pt-12 lg:pt-12 md:pt-12">
+          <span class="mb-2 text-xs font-semibold uppercase xl:text-sm sm:text-xs font-title">List Kategori</span>
+          <ul class="font-sans list-unstyled">
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="kategori-puisi.html">Puisi</a></li>
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="kategori-cerpen.html">Cerpen</a></li>
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="kategori-cerita-anak.html">Cerita Anak</a></li>
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="kategori-artikel.html">Artikel</a></li>
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="kategori-esai.html">Esai</a></li>
+          </ul>
+        </div>
+        <div class="col-span-2 mb-10 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 xl:pt-12 lg:pt-12 md:pt-12">
+          <span class="mb-2 text-xs font-semibold uppercase xl:text-sm sm:text-xs font-title">Contact</span>
+          <ul class="font-sans list-unstyled">
+            <li><p class="pt-2 pb-2 text-xs text-gray-700 xl:font-regular sm:font-thin xl:text-sm sm:text-xs">Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</p></li>
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="#">funbahasa@gmail.com</a></li>
+            <li><a class="pb-2 text-xs text-gray-700 hover:text-blue-500 xl:font-regular sm:font-thin xl:text-sm sm:text-xs" href="www.funbahasa.com">www.funbahasa.com</a></li>
+            <li><p class="pt-2 pb-2 text-xs text-gray-700 xl:font-regular sm:font-thin xl:text-sm sm:text-xs">+62 815-1531-2240</p></li>
+          </ul>
+          <div class="flex flex-row justify-start mt-2 sosmed-2">
+            <div class="px-1 xl:px-2 sm:px-1">
+              <a href="https://www.facebook.com/funbahasa/"><img src="img/fb.svg" class="w-6 h-6 transform rounded-full hover:shadow-lg hover:scale-105 motion-reduce:transform-none transition duration-200 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6" alt=""></a>
+            </div>
+            <div class="px-1 xl:px-2 sm:px-1">
+              <a href="https://twitter.com/funbahasa"><img src="img/twt.svg" class="w-6 h-6 transform rounded-full hover:shadow-lg hover:scale-105 motion-reduce:transform-none transition duration-200 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6" alt=""></a>
+            </div>
+            <div class="px-1 xl:px-2 sm:px-1">
+              <a href="https://www.instagram.com/funbahasa/"><img src="img/ig.svg" class="w-6 h-6 transform rounded-full hover:shadow-lg hover:scale-105 motion-reduce:transform-none transition duration-200 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center justify-center text-center">
+        <div class="relative w-full px-4 mx-auto text-center sm:w-1/2 md:w-4/12">
+          <div class="content-center w-full bg-gray-500" style="height: 2px;"></div>
+          <div class="py-1 text-sm font-semibold text-gray-600 font-title">Fun Bahasa Indonesia &copy;</div>
+        </div>
+      </div>
     </div>
-    <!--* Navigator Bar End -->
+  </footer>
+  <!--* Footer End -->
 
-        <!--* Main Content -->
-        <main>
-            <div class="container mx-auto pt-28 xl:pt-36 lg:pt-32 px-10 xl:px-16 lg:px-16 md:px-10">
-                <!--* Greeting -->
-                <h1 class="title-pengumuman font-title font-extrabold text-gray-500 text-2xl xl:text-5xl xl:text-5xl sm:text-3xl md:text-4xl lg:text-4xl text-center">Pengumuman Pemenang</h1>
-                <h1 class="title-lomba font-title font-extrabold text-gray-500 text-2xl xl:text-5xl xl:text-5xl sm:text-3xl md:text-4xl lg:text-4xl text-center">Kreasi Puisi Pendek Nasional 2023</h1>
-                <div class="flex justify-center">
-                    <div class="bg-blue-500 w-52 mt-2 rounded-xl left-36 h-2 "></div>
-                </div>
-                <div class="flex pt-20">
-                    <div class="xl:pr-14 xl:w-2/5">
-                      <img class="img-winner" style="width: 500px;" src="img/winner-announce-shadow.svg" alt="">
-                    </div>
-                    <div class="xl:w-3/5 lg:w-full md:w-full sm:w-full w-full">
-                        <p class="font-sans font-medium text-sm text-gray-500 leading-loose sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose">
-                            Funmin ucapkan terima kasih kepada peserta Kreasi Puisi Pendek Nasional 2023 yang telah mengirimkan karya terbaiknya. Selamat bagi para pemenang dan finalis 200 puisi terbaik. Bagi Funners yang belum menjadi juara, tetaplah berkarya dan tetap semangat untuk mengembangkan kemampuan menulis. Hari esok masih ada bagi Funners untuk terus belajar dan berkembang. Funmin percaya, kita semua akan dapat mencapai hasil yang terbaik.
-    
-                            <br><br>Kepada pemenang, akan dihubungi langsung oleh Kak Anisa melalui nomor +62 857-4957-0828. Harap berhati-hati apabila dihubungi oleh nomor tidak dikenal mengatasnamakan Fun Bahasa untuk menghindari penipuan.
-    
-                            <br><br>Fasilitas lomba akan mulai dikirim pada tanggal 15 Mei 2023 melalui surel masing-masing. Apabila tidak ada di kotak masuk, segera periksa ke seluruh folder, termasuk di folder spam. Jika masih belum ada, bisa langsung segera hubungi narahubung, ya.
-    
-                            <br><br>Salam literasi,
-    
-                            <br><br>Fun Bahasa
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!--* Greeting End  -->
+  <script>
+    // --- Sample data: replace with real data ---
+    var winnersData = [
+      { no: 1, nama: "Daviatul Umam", judul: "Megaremmeng", status: "Juara 1" },
+      { no: 2, nama: "Ikhda Amelia Syahhadati", judul: "Relikui Jarak", status: "Juara 2" },
+      { no: 3, nama: "Rangga Saputra", judul: "Beranda Waktu", status: "Juara 3" }
+    ];
+    var sampleNames = ["Nayla Azzahra","Bayu Segara","Cinta Anjani","Dimas Aryo Pratama","Eka Putri Ramadhani","Fajar Nuruddin","Gita Lestari","Hana Maharani","Ilham Permana","Jihan Kirana","Kevin Aldi","Laras Wulandari","Maulana Akbar","Nadia Safitri","Oka Pradana","Putri Anggraeni","Rizki Ramadhan","Sari Dewanti","Tegar Wijaya","Umi Kalsum","Vino Bastian","Winda Cantika","Yusuf Hamengku","Zahra Adinda","Arif Budiman","Bella Sasmita","Candra Kusuma","Diah Pitaloka","Elang Pratomo","Farah Nabila"];
+    var sampleTitles = ["Selat Sunyi","Puing-puing Senja","Bisik Tanah","Surat dari Laut","Anatomi Hujan","Catatan Bocah Tani","Rumah Membungkuk","Lentera di Batas","Kabut dan Ingatan","Noken Kosong","Garam di Luka","Senandung Bajo","Jejak Seribu Pulau","Pintu Bambu","Anak Ombak","Ladang dan Mimpi","Benih yang Berbicara","Sungai yang Lupa","Pelita dan Badai","Pasar Pagi di Matamu","Lentera Nelayan","Garis Pantai","Hujan di Atap Bambu","Mimpi Anak Sungai","Sawah Menyanyi","Pelita Senja","Ombak yang Pulang","Angin dari Timur","Bisik Daun Kelapa","Senja di Pelabuhan"];
+    for (var i = 4; i <= 100; i++) {
+      winnersData.push({ no: i, nama: sampleNames[(i - 4) % sampleNames.length], judul: sampleTitles[(i - 4) % sampleTitles.length], status: "Finalis" });
+    }
 
-            <!--* Catatan Penjurian  -->
-            <section class="bg-blue-100 mt-16 py-14 text-gray-500 mb-10">
-                <div class="text-center font-title font-extrabold text-3xl">
-                    <p>Catatan Penjurian</p>
-                </div>
-                <div class="slider-wrapper pl-4 xl:px-36 lg:px-32 md:px-28 sm:px-24 pt-8">
-                    <div class="slides-container" id="slides-container">
-                        <div class="slide">
-                            <img src="img/quote.svg" class="w-16 xl:w-24 sm:w-16 md:w-16 lg:w-24">
-                            <div class="font-sans leading-loose sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose text-xs xl:text-sm sm:text-xs md:text-xs lg:text-sm font-thin xl:font-regular sm:font-thin md:font-thin lg:font-regular">
-                                <p>Selain kesegaran diksi, kerapian tipografi, dan keindahan gaya bahasa, ada isu dan konten yang juga perlu diperhatikan dalam suatu karya puisi. Karena isu dan konten akan mempengaruhi bagaimana proses riset dilakukan, serta pemilihan diksi yang akan berkaitan dengan pembangunan citraan atau nuansa yang diinginkan penyair. Sehingga, dalam penyusunan kata per kata, kalimat per kalimat, hingga pada tiap baitnya, puisi tidak lepas dari logika bahasa.
-                                <br><br>
-                                Dalam kasus ini, semisal konten puisi bicara soal ‘petani’, maka secara umum akan muncul diksi-diksi yang mencitrakan petani seperti sawah, kerbau, cangkul, dan lain sebagainya. Sedangkan, Issue yang dimunculkan semisal adalah ‘gagal panen’, maka diksi yang muncul akan mencitrakan kesedihan, harapan, mimpi, kekacauan, dan lain sebagainya. Pada event kali ini, saya melihat masih banyak penyair yang kurang memperhatikan logika-logika tersebut, sehingga konten dan isu yang sebenarnya menarik pada akhirnya tidak begitu terbaca dikarenakan diksi yang dimunculkan tidak sampai pada citraan yang diinginkan. Namun, ada juga beberapa yang sudah berupaya untuk melakukannya. Meskipun beberapa puisi tersebut masih perlu dilakukan pembacaan yang intens, dan melalui proses editing yang ketat. Selebihnya, penyair terpilih, saya pikir sudah berupaya semaksimal mungkin untuk melalui proses kreatif dalam keberhasilannya.</p>
-                            </div>
-                            <div class="mt-10">
-                                <p class="font-title font-bold text-sm xl:text-base sm:text-sm md:text-sm lg:text-base">Yusri Ihza F. A.</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="img/quote.svg" class="w-16 xl:w-24 sm:w-16 md:w-16 lg:w-24">
-                            <div class="font-sans leading-loose sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose text-xs xl:text-sm sm:text-xs md:text-xs lg:text-sm font-thin xl:font-regular sm:font-thin md:font-thin lg:font-regular">
-                                <p>Setidaknya, 20 besar puisi KPPN2023 memiliki rentang tawaran puitik yang serupa. Puisi naratif kami catat mendominasi di antara itu. Dan dapat dikatakan, di situlah permasalahannya. Menjadi PR bagi tim juri – dan tentunya para peserta – untuk merespon ruang naratif dalam batasan jumlah kata semacam ini. Pertaruhannya adalah demi mewujudkan  tokoh (subjek lirik) serta kisah atau situasi secara efektif tanpa kehilangan efek puitik sehingga tidak mencerabut jiwa puisi. Di antara judul-judul puisi tersebut, sebagian dinilai cukup berhasil mencapai arah itu.</p>
-                            </div>
-                            <div class="mt-10">
-                                <p class="font-title font-bold text-sm xl:text-base sm:text-sm md:text-sm lg:text-base">Nanda Alifya Rahmah</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Button -->
-                <div class="flex justify-end px-7 xl:px-36 lg:px-32 md:px-28 sm:px-24">
-                    <div>
-                        <button class="slide-arrow" id="slide-arrow-prev">
-                            <img src="img/arrow-left.svg" alt="arrow-left" class="w-8 xl:mx-2 lg:mx-2 md:mx-2 sm:mx-1">
-                        </button>
-                    </div>
-                    <div>
-                        <button class="slide-arrow" id="slide-arrow-next">
-                            <img src="img/arrow-right.svg" alt="arrow-right" class="w-8 xl:mx-2 lg:mx-2 md:mx-2 sm:mx-1">
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <style>
-                .slider-wrapper {
-                    position: relative;
-                    overflow: hidden;
-                }
-                .slides-container {
-                    /* width: 100%; */
-                    display: flex;
-                    overflow: scroll;
-                    scroll-behavior: smooth;
-                    list-style: none;
-                    /* margin: 0;
-                    padding: 0; */
-                }
-                .slide {
-                    /* width: 100%;
-                    height: 100%; */
-                    flex: 1 0 100%;
-                }
-                .slides-container {
-                    scrollbar-width: none; /* Firefox */
-                    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-                }
-                /* WebKit */
-                .slides-container::-webkit-scrollbar { 
-                    width: 0;
-                    height: 0;
-                }
-            </style>
-            
-            <script>
-                const slidesContainer = document.getElementById("slides-container");
-                const slide = document.querySelector(".slide");
-                const prevButton = document.getElementById("slide-arrow-prev");
-                const nextButton = document.getElementById("slide-arrow-next");
-            
-                nextButton.addEventListener("click", () => {
-                    const slideWidth = slide.clientWidth;
-                    slidesContainer.scrollLeft += slideWidth;
-                });
-            
-                prevButton.addEventListener("click", () => {
-                    const slideWidth = slide.clientWidth;
-                    slidesContainer.scrollLeft -= slideWidth;
-                });
-            </script>
-            <!--* What They Said End  -->
+    // --- Winner table pagination + search ---
+    var perPage = 15;
+    var currentPage = 1;
+    var searchTerm = "";
+    var filteredData = winnersData;
 
-            <!--* Table -->
-            <div>
-                <!--Container-->
-                <div class="container w-full md:w-4/5 xl:w-3/5 mx-auto px-2 font-title text-sm">
-                    <div id='recipients' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
-                        <table id="content" class="stripe hover" style="width:100%; padding-top: 1em; padding-bottom: 1em;">
-                            <thead>
-                                <tr>
-                                    <th data-priority="1">No</th>
-                                    <th data-priority="2">Nama</th>
-                                    <th data-priority="3">Judul Karya</th>
-                                    <th data-priority="4">Sebagai</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Daviatul Umam</td>
-                                    <td>Megaremmeng</td>
-                                    <td>Juara 1</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Ikhda Amelia Syahhadati</td>
-                                    <td>Relikui Jarak</td>
-                                    <td>Juara 2</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!--/Container-->
-            </div>
-            <!--* Table End -->
-            
-            <!-- jQuery -->
-	        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    function statusBadge(status) {
+      if (status === "Juara 1") return '<span class="inline-block px-2.5 py-0.5 text-xs font-semibold text-gray-800 rounded-full" style="background:#FFD700">Juara 1</span>';
+      if (status === "Juara 2") return '<span class="inline-block px-2.5 py-0.5 text-xs font-semibold text-gray-800 rounded-full" style="background:#C0C0C0">Juara 2</span>';
+      if (status === "Juara 3") return '<span class="inline-block px-2.5 py-0.5 text-xs font-semibold text-white rounded-full" style="background:#CD7F32">Juara 3</span>';
+      return '<span class="inline-block px-2.5 py-0.5 text-xs font-semibold text-blue-700 bg-blue-100 rounded-full">Finalis</span>';
+    }
 
-            <!--Datatables -->
-            <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-            <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-            <script>
-                $(document).ready(function() {
+    function updateFiltered() {
+      var term = searchTerm.toLowerCase().trim();
+      if (term === "") {
+        filteredData = winnersData;
+      } else {
+        filteredData = winnersData.filter(function (w) {
+          return w.nama.toLowerCase().includes(term) || w.judul.toLowerCase().includes(term);
+        });
+      }
+      currentPage = 1;
+    }
 
-                    var table = $('#content').DataTable({
-                            responsive: true
-                        })
-                        .columns.adjust()
-                        .responsive.recalc();
-                });
-            </script>
-        </main>
-
-    <!--* Footer  -->
-    <style>
-        @media screen and (max-width: 767px) {
-            .foll-us{
-                display: none;
-            }
-            .sosmed{
-                display: none;
-            }
+    function renderTable() {
+      var tbody = document.getElementById("winners-tbody");
+      var start = (currentPage - 1) * perPage;
+      var end = start + perPage;
+      var pageData = filteredData.slice(start, end);
+      var html = "";
+      if (pageData.length === 0) {
+        html = '<tr><td colspan="4" class="px-4 py-8 text-center text-gray-400">Tidak ada hasil untuk "' + searchTerm + '"</td></tr>';
+      } else {
+        for (var i = 0; i < pageData.length; i++) {
+          var w = pageData[i];
+          var isJuara1 = w.status === "Juara 1";
+          var rowBg = isJuara1 ? ' style="background:rgba(255,215,0,0.08)"' : '';
+          var hoverClass = isJuara1 ? "" : "hover:bg-blue-50";
+          html += '<tr class="border-b border-gray-100 transition duration-200 ' + hoverClass + '"' + rowBg + '>'
+            + '<td class="px-4 py-3 font-medium text-gray-700">' + w.no + '</td>'
+            + '<td class="px-4 py-3 font-medium text-gray-900">' + w.nama + '</td>'
+            + '<td class="px-4 py-3 text-gray-600">' + w.judul + '</td>'
+            + '<td class="px-4 py-3">' + statusBadge(w.status) + '</td>'
+            + '</tr>';
         }
+      }
+      tbody.innerHTML = html;
+      var info = document.getElementById("page-info");
+      if (filteredData.length === 0) {
+        info.textContent = "Tidak ada peserta ditemukan";
+      } else {
+        info.textContent = "Menampilkan " + (start + 1) + "\u2013" + Math.min(end, filteredData.length) + " dari " + filteredData.length + " peserta";
+      }
+    }
 
-        @media screen and (min-width: 768px) {
-            .sosmed-2{
-                display: none;
-            }
+    function renderPagination() {
+      var totalPages = Math.ceil(filteredData.length / perPage);
+      var controls = document.getElementById("pagination-controls");
+      if (totalPages <= 1) { controls.innerHTML = ""; return; }
+      var html = "";
+      html += '<button onclick="goToPage(' + (currentPage - 1) + ')" class="p-1.5 text-gray-500 transition duration-200 border border-gray-200 rounded-full hover:bg-blue-50 hover:text-blue-500 ' + (currentPage === 1 ? "opacity-40 cursor-not-allowed" : "") + '"><i class="bi bi-chevron-left"></i></button>';
+      for (var p = 1; p <= totalPages; p++) {
+        if (p === currentPage) {
+          html += '<button class="w-7 h-7 text-xs font-medium text-white transition duration-200 border rounded-full bg-blue-500 border-blue-500">' + p + '</button>';
+        } else {
+          html += '<button onclick="goToPage(' + p + ')" class="w-7 h-7 text-xs font-medium text-gray-600 transition duration-200 border border-gray-300 rounded-full hover:bg-blue-50">' + p + '</button>';
         }
+      }
+      html += '<button onclick="goToPage(' + (currentPage + 1) + ')" class="p-1.5 text-gray-500 transition duration-200 border border-gray-200 rounded-full hover:bg-blue-50 hover:text-blue-500 ' + (currentPage === totalPages ? "opacity-40 cursor-not-allowed" : "") + '"><i class="bi bi-chevron-right"></i></button>';
+      controls.innerHTML = html;
+    }
 
-        @media screen and (min-width: 1024px) {
-            .sosmed-2{
-                display: none;
-            }
-        }
+    function goToPage(page) {
+      var totalPages = Math.ceil(filteredData.length / perPage);
+      if (page < 1 || page > totalPages) return;
+      currentPage = page;
+      renderTable();
+      renderPagination();
+    }
 
-        @media screen and (max-width: 1279px) {
-            .img-winner{
-                display: none;
-            }
-        }
+    document.getElementById("search-input").addEventListener("input", function () {
+      searchTerm = this.value;
+      updateFiltered();
+      renderTable();
+      renderPagination();
+    });
 
-        @media screen and (min-width: 1280px) {
-            .sosmed-2{
-                display: none;
-            }
+    renderTable();
+    renderPagination();
+
+    // --- Slider with dot indicators ---
+    (function () {
+      var slidesContainer = document.getElementById("slides-container");
+      var slides = slidesContainer.children;
+      var prevButton = document.getElementById("slide-arrow-prev");
+      var nextButton = document.getElementById("slide-arrow-next");
+      var dotsContainer = document.getElementById("slide-dots");
+      var currentIndex = 0;
+
+      for (var i = 0; i < slides.length; i++) {
+        var dot = document.createElement("button");
+        dot.className = "slide-dot" + (i === 0 ? " active" : "");
+        dot.setAttribute("data-index", i);
+        dot.addEventListener("click", function () {
+          var idx = parseInt(this.getAttribute("data-index"));
+          goToSlide(idx);
+        });
+        dotsContainer.appendChild(dot);
+      }
+
+      function updateDots() {
+        var dots = dotsContainer.children;
+        for (var i = 0; i < dots.length; i++) {
+          dots[i].className = "slide-dot" + (i === currentIndex ? " active" : "");
         }
-    </style>
-    <footer class="relative pt-16 xl:mx-20 sm:mx-10 text-gray-500">
-        <div class="mt-5 px-9 xl:px-10 lg:px-10 md:px-10 sm:px-10 bg-blue-100 xl:rounded-t-2xl lg:rounded-t-2xl md:rounded-t-2xl sm:rounded-t-2xl">
-            <div class="grid grid-cols-2 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3">
-                <div class="col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-3">
-                    <img class="mt-7 w-32 xl:w-40 lg:w-36 md:w-28 sm:w-24" src="img/funbahasa-logo.svg" alt="funbahasa-logo">
-                    <div class="mt-8 mb-6">
-                        <h4 class="foll-us pb-2 font-bold font-sans xl:text-base lg:text-base md:text-xs sm:text-xs">Follow Us On</h4>
-                        <div class="sosmed flex flex-row mt-2 justify-start">
-                            <div class="pr-1 xl:pr-2 sm:pr-1">
-                                <a href="https://www.facebook.com/funbahasa/">
-                                    <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
-                                </a>
-                            </div>
-                            <div class="px-1 xl:px-2 sm:px-1">
-                                <a href="https://twitter.com/funbahasa">
-                                    <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
-                                </a>
-                            </div>
-                            <div class="px-1 xl:px-2 sm:px-1">
-                                <a href="https://www.instagram.com/funbahasa/">
-                                    <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
-                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        Informasi Event
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
-                    </ul>
-                </div>
-                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
-                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        List Kategori
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-puisi.html"> Puisi </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerpen.html"> Cerpen </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerita-anak.html"> Cerita Anak </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-artikel.html"> Artikel </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-esai.html"> Esai </a> </li>
-                    </ul>
-                </div>
-                <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
-                    <span class="uppercase text-gray-600 text-xs font-extrabold xl:text-sm sm:text-xs xl:font-extrabold sm:font-bold mb-2 font-title">
-                        Contact
-                    </span>
-                    <ul class="list-unstyled font-sans">
-                        <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</p> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
-                        <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
-                        <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> +62 815-1531-2240 </p> </li>
-                    </ul>
-                    <div class="sosmed-2 flex flex-row mt-2 justify-start">
-                        <div class="px-1 xl:px-2 sm:px-1">
-                            <a href="https://www.facebook.com/funbahasa/">
-                                <img src="img/fb.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
-                            </a>
-                        </div>
-                        <div class="px-1 xl:px-2 sm:px-1">
-                            <a href="https://twitter.com/funbahasa">
-                                <img src="img/twt.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
-                            </a>
-                        </div>
-                        <div class="px-1 xl:px-2 sm:px-1">
-                            <a href="https://www.instagram.com/funbahasa/">
-                                <img src="img/ig.svg" class="hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none h-6 w-6 xl:h-9 lg:h-8 md:h-7 sm:h-6 xl:w-9 lg:w-8 md:w-7 sm:w-6 rounded-full" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-wrap items-center justify-center text-center">
-                <div class="relative w-full sm:w-1/2 md:w-4/12 px-4 mx-auto text-center">
-                    <div class="bg-black content-center w-full" style="height: 2px;"></div>
-                        <div class="py-1 text-sm font-extrabold text-gray-600 font-title">
-                            Fun Bahasa Indonesia ©
-                        </div>
-                </div>
-            </div>
-        </div>
-        
-    </footer>
-    <!--* Footer End  -->
-    
+      }
+
+      function goToSlide(index) {
+        currentIndex = index;
+        slidesContainer.scrollLeft = slides[0].clientWidth * index;
+        updateDots();
+      }
+
+      nextButton.addEventListener("click", function () {
+        currentIndex = Math.min(currentIndex + 1, slides.length - 1);
+        goToSlide(currentIndex);
+      });
+
+      prevButton.addEventListener("click", function () {
+        currentIndex = Math.max(currentIndex - 1, 0);
+        goToSlide(currentIndex);
+      });
+    })();
+  </script>
 </body>
 
 </html>
