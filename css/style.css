@@ -15303,6 +15303,11 @@ html {
   background-color: rgba(211, 238, 249, var(--tw-bg-opacity));
 }
 
+.bg-blue-150 {
+  --tw-bg-opacity:1;
+  background-color: rgba(230, 244, 252, var(--tw-bg-opacity));
+}
+
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgba(168, 221, 244, var(--tw-bg-opacity));
