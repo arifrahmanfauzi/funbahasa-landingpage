@@ -16,13 +16,13 @@
   <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 </head>
 
-<body class="antialiased bg-body text-body font-body absolute">
+<body class="antialiased absolute">
   <!--* Navigator Bar -->
   <header class="flex flex-wrap items-center justify-between w-full p-4 px-8 4xl:h-12 3xl:w-full lg:justify-between bg-white">
     <div x-data="{open: false}"
         class="flex justify-between w-full navbar-menu lg:w-full 3xl:w-full xl:justify-between">
         <!--* Image  -->
-        <div class="flex w-full sm:w-1/4 lg:block lg:w-3/2 md:w-1/3">
+        <div class="flex w-full sm:w-1/4 lg:block md:w-1/3">
             <a href="index.html" class="">
                 <img src="img/funbahasa-logo.svg" alt="funbahasa-logo" class="w-28 xl:w-40 lg:w-32 sm:w-28 md:w-28">
             </a>
@@ -38,7 +38,7 @@
             class="flex flex-row w-full md:flex md:items-center md:w-full lg:flex lg:items-center lg:w-full lg:justify-end hidden sm:hidden md:hidden">
             <nav class="sm:justify-end sm:w-full sm:flex">
                 <a href="tentang_kami.html"
-                    class="block mr-10 my-auto font-semibold font-title text-gray-500 hover:text-blue-500 xs:font-black-italic transition duration-200">Tentang Kami</a>
+                    class="block mr-10 my-auto font-semibold font-title text-gray-500 hover:text-blue-500 transition duration-200">Tentang Kami</a>
                 <a href="unggah-karya.html"
                     class="block mr-10 my-auto font-semibold font-title text-gray-500 transition duration-200 hover:text-blue-500">Unggah Karya</a>
                 <a href="Event.html"
@@ -46,54 +46,20 @@
                 <a href="baca_karya.html"
                     class="block mr-10 my-auto font-semibold font-title text-gray-500 transition duration-200 hover:text-blue-500">Baca Karya</a>
                 <a href="login.html"
-                    class="px-5 py-1 ml-3 font-semibold font-title text-white transition-all duration-200 bg-blue-500 border-transparent rounded-full border-1 hover:border-blue-500 hover:shadow-lg hover:bg-blue-400">Masuk</a>
+                    class="px-5 py-1 ml-3 font-semibold font-title text-white transition-all duration-200 bg-blue-600 rounded-full hover:shadow-soft hover:bg-blue-700">Masuk</a>
             </nav>
         </div>
         <!--* Nav Menu Item End -->
         <!--* Nav Menu Mobile -->
         <div x-show="open" @click.away="open = false"
-            class="absolute z-10 max-w-md px-2 transform right-10 w-screen-md mt-8 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-            <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                <div class="relative grid bg-white gap-4 p-5">
-                  <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                    <div class="ml-2">
-                        <a href="tentang_kami.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                            Tentang Kami
-                        </a>
-                    </div>
-                </a>
-
-                <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                    <div class="ml-2">
-                        <a href="unggah-karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                            Unggah Karya
-                        </a>
-                    </div>
-                </a>
-
-                <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                    <div class="ml-2">
-                        <a href="Event.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                            Event
-                        </a>
-                    </div>
-                </a>
-
-                <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                    <div class="ml-2">
-                        <a href="baca_karya.html" class="text-base font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">
-                            Baca Karya
-                        </a>
-                    </div>
-                </a>
-
-                <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                  <div class="flex ml-2 bg-blue-500 rounded-lg -ml-2 -mr-2 h-10">
-                      <a href="login.html" class="pl-4 mt-2 text-base font-medium text-white" style="font-family: 'Poppins', sans-serif;">
-                          Masuk
-                      </a>
-                  </div>
-                </a>
+            class="absolute z-10 px-2 mt-8 transform right-10 w-72 sm:px-0 lg:hidden">
+            <div class="overflow-hidden bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                <div class="relative grid gap-2 p-4">
+                    <a href="tentang_kami.html" class="block px-4 py-3 text-base font-medium text-gray-900 rounded-lg hover:bg-gray-50" style="font-family: 'Poppins', sans-serif;">Tentang Kami</a>
+                    <a href="unggah-karya.html" class="block px-4 py-3 text-base font-medium text-gray-900 rounded-lg hover:bg-gray-50" style="font-family: 'Poppins', sans-serif;">Unggah Karya</a>
+                    <a href="Event.html" class="block px-4 py-3 text-base font-medium text-gray-900 rounded-lg hover:bg-gray-50" style="font-family: 'Poppins', sans-serif;">Event</a>
+                    <a href="baca_karya.html" class="block px-4 py-3 text-base font-medium text-gray-900 rounded-lg hover:bg-gray-50" style="font-family: 'Poppins', sans-serif;">Baca Karya</a>
+                    <a href="login.html" class="block px-4 py-3 mt-1 text-base font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700" style="font-family: 'Poppins', sans-serif;">Masuk</a>
                 </div>
             </div>
         </div>
@@ -322,11 +288,11 @@
                     Informasi Event
                 </span>
                 <ul class="list-unstyled font-sans">
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pendaftaran </a> </li>
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Panduan </a> </li>
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Poster </a> </li>
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Unggah </a> </li>
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> Pengumuman</a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="Event.html"> Pendaftaran </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="Event.html"> Panduan </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="img/fcpn2026.jpg"> Poster </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="unggah-karya.html"> Unggah </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="pengumuman.html"> Pengumuman</a> </li>
                 </ul>
             </div>
             <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
@@ -334,11 +300,11 @@
                     List Kategori
                 </span>
                 <ul class="list-unstyled font-sans">
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-puisi.html"> Puisi </a> </li>
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerpen.html"> Cerpen </a> </li>
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerita-anak.html"> Cerita Anak </a> </li>
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-artikel.html"> Artikel </a> </li>
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-esai.html"> Esai </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-puisi.html"> Puisi </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerpen.html"> Cerpen </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-cerita-anak.html"> Cerita Anak </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-artikel.html"> Artikel </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="kategori-esai.html"> Esai </a> </li>
                 </ul>
             </div>
             <div class="col-span-2 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 mb-10 xl:pt-12 lg:pt-12 md:pt-12">
@@ -346,10 +312,10 @@
                     Contact
                 </span>
                 <ul class="list-unstyled font-sans">
-                    <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</p> </li>
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="#"> funbahasa@gmail.com </a> </li>
-                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-regular sm:font-thin pb-2 xl:text-sm sm:text-xs" href="www.funbahasa.com"> www.funbahasa.com </a> </li>
-                    <li> <p class="text-gray-700 text-xs xl:font-regular sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> +62 815-1531-2240 </p> </li>
+                    <li> <p class="text-gray-700 text-xs xl:font-normal sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> Ruko de Farda RK-5, Dusun Keboan, Keboananom, Gedangan, Kabupaten Sidoarjo, Jawa Timur 61254</p> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="mailto:funbahasa@gmail.com"> funbahasa@gmail.com </a> </li>
+                    <li> <a class="text-gray-700 hover:text-blue-500 text-xs xl:font-normal sm:font-thin pb-2 xl:text-sm sm:text-xs" href="https://www.funbahasa.com"> www.funbahasa.com </a> </li>
+                    <li> <p class="text-gray-700 text-xs xl:font-normal sm:font-thin pb-2 pt-2 xl:text-sm sm:text-xs"> +62 815-1531-2240 </p> </li>
                 </ul>
                 <div class="sosmed-2 flex flex-row mt-2 justify-start">
                     <div class="px-1 xl:px-2 sm:px-1">

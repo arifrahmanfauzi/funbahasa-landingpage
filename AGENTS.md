@@ -6,13 +6,15 @@ Static marketing/landing site for Fun Bahasa (Indonesian language & literature p
 - Pages are static `.html` at repo root, each linking `css/style.css` + a per-page `js/data-*.js`.
 - Tailwind CSS **v2.2.19** (not v3). Config in `tailwind.config.js`: custom blue/gray palettes, extra `3xl`/`4xl` breakpoints, `Poppins` as default `font-sans`.
 - Alpine.js v2.8.1 and Bootstrap Icons are loaded from CDN in each `<head>` — not from npm.
-- Content language is Indonesian (`<html lang="id">`).
+- Content language is Indonesian (`<html lang="id">`) on all pages including `login.html`.
+- Typography: `font-title` is the Nunito display face (configured in `tailwind.config.js`); `font-sans` is Poppins body. Headings/nav/buttons use `font-title`, body copy uses `font-sans`.
 
 ## Design conventions
 - Softer visual weight: headings, nav links, buttons, and footer labels use `font-semibold` instead of `font-bold` / `font-extrabold`.
 - Custom shadows are defined in `tailwind.config.js`: `shadow-soft` (low-opacity, large blur) and `shadow-pop` (slightly stronger). Prefer these over the default hard shadows for cards and elevated surfaces.
 - Interactive elements (cards, buttons, links, tabs, pagination arrows, social icons) use `transition duration-200 ease-out` for smooth hover/focus states.
-- Cards lift on hover with `hover:-translate-y-1 hover:shadow-soft`.
+- Cards lift on hover with `hover:-translate-y-1 hover:shadow-soft`. Avoid `hover:scale-105`; the repo is being unified on the translate + soft-shadow language.
+- Primary buttons use `bg-blue-600` with white text (white on `bg-blue-500` fails WCAG AA). "Lihat Semua"/"Ikuti Kami" use `bg-yellow-600` with `text-gray-900`, not muted gray text.
 - Smooth scrolling for in-page tab links is enabled globally via `html { scroll-behavior: smooth; }` in `styles.css`.
 
 ## Build
@@ -44,4 +46,7 @@ Static marketing/landing site for Fun Bahasa (Indonesian language & literature p
 
 ## Gotchas
 - `README.md` is UTF-16 LE with CRLF. UTF-8 editors will corrupt it — re-save as UTF-16 or convert deliberately.
-- In `tailwind.config.js`, `orange: 'FCB316'` is missing the leading `#`, so it's an invalid color and `bg-orange`/`text-orange` won't render as that hex.
+- `orange: '#FCB316'` in `tailwind.config.js` was fixed; `bg-orange` now renders the brand yellow. Do not remove the `#`.
+- `font-title` (Nunito), `gray-50`, `blue-150`, and the `motion-reduce`/`active` transform variants are now configured and generated. If they disappear, the build used a stale config or CLI.
+- `bg-body`, `text-body`, `font-body`, `title-font`, `xs:`, `w-screen-md` and `border-1` are stale no-op class names; they only remain in unrefreshed artifact pages and must not be copied.
+- Design audit status and deferred content decisions are in `anti-slop/audit-001-2026-11-17.md`.

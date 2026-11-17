@@ -21,6 +21,7 @@ module.exports = {
 
       blue: {
         100: "#d3eef9",
+        150: "#e6f4fc",
         200: "#a8ddf4",
         300: "#7cccee",
         400: "#51bbe9",
@@ -31,6 +32,7 @@ module.exports = {
         900: "#07222d",
       },
       gray: {
+        50: "#f7f8f7",
         100: "#d9dad9",
         200: "#b3b5b3",
         300: "#8c908e",
@@ -51,7 +53,7 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
-      'orange': 'FCB316',
+      'orange': '#FCB316',
     },
     spacing: {
       px: '1px',
@@ -191,6 +193,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      title: ['Nunito', 'Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       sans: [
         'Poppins',
         'ui-sans-serif',
@@ -866,13 +869,13 @@ module.exports = {
     textOpacity: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
     textOverflow: ['responsive'],
     textTransform: ['responsive'],
-    transform: ['responsive'],
+    transform: ['responsive', 'motion-reduce', 'motion-safe'],
     transformOrigin: ['responsive'],
     transitionDelay: ['responsive'],
     transitionDuration: ['responsive'],
     transitionProperty: ['responsive'],
     transitionTimingFunction: ['responsive'],
-    translate: ['responsive', 'hover', 'focus'],
+    translate: ['responsive', 'hover', 'focus', 'active'],
     userSelect: ['responsive'],
     verticalAlign: ['responsive'],
     visibility: ['responsive'],
