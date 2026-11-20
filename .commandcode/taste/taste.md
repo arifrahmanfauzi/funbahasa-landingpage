@@ -1,0 +1,3 @@
+- Prefers UI designs to be mobile-responsive (mobile-first layouts). Confidence: 0.8
+- Communicates in Indonesian; expects analysis and explanations (root cause + solution, not just the fix) delivered in Indonesian. Confidence: 0.8
+- Preserves a brand's base colors as its trademark — does not change them when improving or redesigning the UI. Confidence: 0.9

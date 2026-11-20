@@ -218,13 +218,13 @@
                                                 <img src="img/file-upload-rev2.svg" alt="image file-upload" class="mx-auto py-2">
                                                 <div class="input_field flex flex-col w-max mx-auto text-center">
                                                     <label>
-                                                        <input class="text-sm cursor-pointer w-36 hidden" type="file" multiple />
+                                                        <input id="berkas-naskah" class="text-sm cursor-pointer w-36 hidden" type="file" multiple onchange="previewFileNames(this, 'berkas-naskah-name', 'Tambahkan berkas')" />
                                                         <div class="text bg-gray-200 text-white rounded font-semibold cursor-pointer p-1 px-3 hover:bg-gray-400">
                                                             Pilih
                                                         </div>
                                                     </label>
                                     
-                                                    <div class="font-sans font-thin text-xs text-gray-200">Tambahkan berkas</div>
+                                                    <div id="berkas-naskah-name" class="font-sans text-xs text-gray-500 break-words">Tambahkan berkas</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -234,13 +234,13 @@
                                                 <img src="img/file-upload-rev2.svg" alt="image file-upload" class="mx-auto py-2">
                                                 <div class="input_field flex flex-col w-max mx-auto text-center">
                                                     <label>
-                                                        <input class="text-sm cursor-pointer w-36 hidden" type="file" multiple />
+                                                        <input id="sampul-naskah" class="text-sm cursor-pointer w-36 hidden" type="file" multiple onchange="previewFileNames(this, 'sampul-naskah-name', 'Tambahkan gambar')" />
                                                         <div class="text bg-gray-200 text-white rounded font-semibold cursor-pointer p-1 px-3 hover:bg-gray-400">
                                                             Pilih
                                                         </div>
                                                     </label>
                                     
-                                                    <div class="font-sans font-thin text-xs text-gray-200">Tambahkan gambar</div>
+                                                    <div id="sampul-naskah-name" class="font-sans text-xs text-gray-500 break-words">Tambahkan gambar</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -391,5 +391,24 @@
     </footer>
     <!--* Footer End  -->
 
+    <script>
+        function previewFileNames(input, targetId, placeholder) {
+            var target = document.getElementById(targetId);
+            if (!target) return;
+            if (input.files && input.files.length > 0) {
+                var names = [];
+                for (var i = 0; i < input.files.length; i++) {
+                    names.push(input.files[i].name);
+                }
+                target.textContent = names.join(', ');
+                target.classList.remove('text-gray-500');
+                target.classList.add('text-blue-600', 'font-medium');
+            } else {
+                target.textContent = placeholder;
+                target.classList.remove('text-blue-600', 'font-medium');
+                target.classList.add('text-gray-500');
+            }
+        }
+    </script>
 </body>
 </html>

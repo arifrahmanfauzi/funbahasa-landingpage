@@ -48,8 +48,9 @@
             </div>
             <!--* Hamburger Menu -->
             <button @click="open = true" aria-label="Buka menu"
-                class="flex items-center justify-center w-8 h-8 px-1 hover:bg-gray-300 sm:w-8 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
+                class="flex items-center justify-center w-11 h-11 p-2 hover:bg-gray-100 lg:hidden xl:hidden 2xl:hidden 3xl:hidden">
                 <img src="img/hamburger-menu.svg" alt="hamburger-menu-icon">
+                <span class="sr-only">Menu</span>
             </button>
             <!--* Image End  -->
             <!--* Nav Menu Item -->
@@ -61,13 +62,13 @@
                     <a href="Event.html" class="block my-auto mr-10 font-semibold text-gray-500 font-title transition duration-200 hover:text-blue-500">Event</a>
                     <a href="baca_karya.html" class="block my-auto mr-10 font-semibold text-gray-500 font-title transition duration-200 hover:text-blue-500">Baca Karya</a>
                     <a href="login.html"
-                        class="px-5 py-1 ml-3 font-semibold text-white transition duration-200 ease-out bg-blue-600 rounded-full font-title hover:shadow-soft hover:bg-blue-700">Masuk</a>
+                        class="px-5 py-2.5 ml-3 font-semibold text-white transition duration-200 ease-out bg-blue-600 rounded-full font-title hover:shadow-soft hover:bg-blue-700">Masuk</a>
                 </nav>
             </div>
             <!--* Nav Menu Item End -->
             <!--* Nav Menu Mobile -->
             <div x-show="open" @click.away="open = false"
-                class="absolute z-10 px-2 mt-8 transform right-10 w-72 sm:px-0 lg:hidden">
+                class="absolute z-10 px-2 mt-8 transform right-4 w-64 sm:px-0 lg:hidden">
                 <div class="overflow-hidden bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                     <div class="relative grid gap-2 p-4">
                         <a href="tentang_kami.html" class="block px-4 py-3 text-base font-medium text-gray-900 rounded-lg hover:bg-gray-50" style="font-family: 'Poppins', sans-serif;">
@@ -207,14 +208,6 @@
                 return { posts: dataPosts };
             }
         </script>
-        <style>
-            .post-line-clamp-2 {
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-            }
-        </style>
         <section class="py-16 bg-blue-50 xl:py-24 font-title">
             <div class="px-10 mx-auto xl:px-36 sm:px-36 md:px-16 lg:px-32">
                 <div class="flex flex-col items-start justify-between mb-10 md:flex-row md:items-center">
@@ -517,7 +510,7 @@
 
             <div class="relative my-16 post-column font-title">
                 <img src="img/dots-icon.svg" alt="dots" class="absolute dots-icon">
-                <div class="relative grid mb-10 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 gap-7">
+                <div class="relative grid grid-cols-1 gap-7 mb-10 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
                     <img src="img/plus-icon.svg" alt="plus" class="absolute plus-icon">
                     <div class="p-4 text-left transition duration-200 ease-out transform bg-gray-100 puisi-col1 rounded-2xl hover:-translate-y-1 hover:shadow-soft motion-reduce:transform-none">
                         <a href="kategori-puisi.html">
@@ -527,20 +520,20 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-span-3 px-7 py-5 text-2xl text-gray-900 div-kategori rounded-2xl bg-orange xl:text-3xl lg:text-3xl md:text-2xl">
+                    <div class="col-span-1 px-7 py-5 text-2xl text-gray-900 div-kategori rounded-2xl bg-orange sm:col-span-2 md:col-span-3 lg:col-span-3 xl:col-span-3 xl:text-3xl lg:text-3xl md:text-2xl">
                         <div class="text-kategori">
                             <p><i class="font-semibold">Kategori</i> Karya</p>
                         </div>
                         <div class="button-kategori">
                             <a href="baca_karya.html">
                                 <button
-                                    class="px-5 py-2 mx-auto mt-4 text-xs font-semibold text-white transition duration-200 ease-out transform bg-blue-600 rounded-full shadow-soft xl:px-6 lg:px-5 max-w-max hover:shadow-pop hover:-translate-y-1 active:translate-y-0 font-title">
+                                    class="px-5 py-3 mx-auto mt-4 text-xs font-semibold text-white transition duration-200 ease-out transform bg-blue-600 rounded-full shadow-soft xl:px-6 lg:px-5 max-w-max hover:shadow-pop hover:-translate-y-1 active:translate-y-0 motion-reduce:transform-none font-title">
                                     Lihat Semua <i class="bi bi-arrow-right-short" style="font-size: 20px;"></i>
                                 </button>
                             </a>
                         </div>
                     </div>
-                    <div class="col-span-3 p-4 text-left transition duration-200 ease-out transform bg-gray-100 puisi-col2 rounded-2xl hover:-translate-y-1 hover:shadow-soft motion-reduce:transform-none">
+                    <div class="col-span-1 p-4 text-left transition duration-200 ease-out transform bg-gray-100 puisi-col2 rounded-2xl sm:col-span-2 hover:-translate-y-1 hover:shadow-soft motion-reduce:transform-none">
                         <a href="kategori-puisi.html">
                             <div class="div-puisi">
                                 <img src="img/puisi.svg" class="block w-8 pb-3 mt-3 ml-3 display sm:w-8">
@@ -549,7 +542,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 gap-7">
+                <div class="grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
                     <div class="p-4 text-left transition duration-200 ease-out transform bg-gray-100 rounded-2xl hover:-translate-y-1 hover:shadow-soft motion-reduce:transform-none">
                         <a href="kategori-cerpen.html">
                             <div class="div-cerpen">
